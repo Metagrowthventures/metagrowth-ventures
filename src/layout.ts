@@ -1,8 +1,8 @@
 export const nav = () => `
 <header class="site-header" id="site-header">
   <div class="header-inner">
-    <a href="/" class="logo">
-      <span class="logo-meta">Meta</span><span class="logo-growth">Growth</span><span class="logo-ventures"> Ventures</span>
+    <a href="/" class="logo logo-img-link">
+      <img src="/static/logo.png" alt="MetaGrowth Ventures" class="site-logo-img" />
     </a>
     <nav class="main-nav" id="main-nav">
       <ul class="nav-list">
@@ -40,8 +40,8 @@ export const footer = () => `
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="/" class="logo footer-logo">
-        <span class="logo-meta">Meta</span><span class="logo-growth">Growth</span><span class="logo-ventures"> Ventures</span>
+      <a href="/" class="logo footer-logo logo-img-link">
+        <img src="/static/logo.png" alt="MetaGrowth Ventures" class="footer-logo-img" />
       </a>
       <p class="footer-tagline">Revenue Infrastructure &amp; Executive Growth Firm</p>
       <p class="footer-statement">Building systems. Installing accountability. Deploying talent.</p>
@@ -238,13 +238,29 @@ export const globalStyles = () => `
   }
   .header-inner {
     max-width: var(--max-w); margin: 0 auto;
-    padding: 0 24px; height: 72px;
+    padding: 0 24px; height: 80px;
     display: flex; align-items: center; gap: 32px;
   }
-  .logo { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
-  .logo-meta { color: var(--white); }
-  .logo-growth { color: var(--green); }
-  .logo-ventures { color: rgba(255,255,255,0.55); font-size: 0.9em; }
+  .logo-img-link { display: flex; align-items: center; flex-shrink: 0; }
+  .site-logo-img {
+    height: 62px;
+    width: auto;
+    max-width: 220px;
+    display: block;
+    object-fit: contain;
+    object-position: left center;
+    transition: opacity var(--transition);
+  }
+  .site-logo-img:hover { opacity: 0.80; }
+  .footer-logo-img {
+    height: 110px;
+    width: auto;
+    max-width: 300px;
+    display: block;
+    object-fit: contain;
+    object-position: left center;
+    margin-bottom: 8px;
+  }
   .main-nav { flex: 1; }
   .nav-list { display: flex; align-items: center; gap: 4px; }
   .nav-link {
@@ -362,7 +378,7 @@ export const globalStyles = () => `
     max-width: var(--max-w); margin: 0 auto; padding: 0 24px;
     display: grid; grid-template-columns: 1fr 2fr; gap: 64px;
   }
-  .footer-logo { font-size: 1.2rem; margin-bottom: 12px; display: inline-block; }
+  .footer-logo { display: inline-block; margin-bottom: 4px; }
   .footer-tagline { color: var(--green); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; }
   .footer-statement { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 20px; }
   .footer-linkedin {
@@ -411,7 +427,7 @@ export const globalStyles = () => `
   }
 
   /* Page hero */
-  body { padding-top: 72px; }
+  body { padding-top: 80px; }
 
   /* Utility */
   .green { color: var(--green); }
@@ -603,6 +619,7 @@ export const page = (title: string, content: string, extraHead = '') => `
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title} | MetaGrowth Ventures</title>
   <meta name="description" content="MetaGrowth Ventures — Revenue Infrastructure &amp; Executive Growth Firm. We build systems, install accountability, and deploy talent for B2B companies ready to scale.">
+  <link rel="icon" type="image/png" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
