@@ -620,7 +620,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 /* Hero */
 .home-hero {
   min-height: calc(100vh - 72px);
-  background: linear-gradient(135deg, var(--navy) 0%, #0d1e3a 50%, #0a1e35 100%);
+  background: linear-gradient(135deg, #0d0d0d 0%, #111111 50%, #0a0a0a 100%);
   display: flex; align-items: center;
   position: relative; overflow: hidden;
   padding: 100px 0 80px;
@@ -634,7 +634,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .hero-glow {
   position: absolute; right: -100px; top: 50%;
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(0,198,122,0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(201,168,76,0.13) 0%, transparent 70%);
   transform: translateY(-50%);
 }
 .hero-content { position: relative; z-index: 1; max-width: 780px; }
@@ -660,15 +660,15 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--green); }
 .pain-icon {
   width: 52px; height: 52px; border-radius: 12px;
-  background: rgba(10,22,40,0.06);
+  background: rgba(201,168,76,0.09);
   display: flex; align-items: center; justify-content: center;
-  color: var(--navy); font-size: 1.3rem; margin-bottom: 18px;
+  color: var(--green); font-size: 1.3rem; margin-bottom: 18px;
 }
-.pain-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--navy); }
+.pain-card h3 { font-size: 1.1rem; margin-bottom: 10px; color: var(--gray-800); }
 .pain-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 16px; }
 .pain-result {
   font-size: 0.82rem; color: var(--green); font-weight: 700;
-  background: rgba(0,198,122,0.08); padding: 8px 12px;
+  background: rgba(201,168,76,0.08); padding: 8px 12px;
   border-radius: 6px; border-left: 3px solid var(--green);
 }
 
@@ -684,7 +684,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   min-width: 200px;
 }
 .dt-stage-btn:hover, .dt-stage-btn.active {
-  background: rgba(0,198,122,0.12); border-color: var(--green);
+  background: rgba(201,168,76,0.10); border-color: var(--green);
 }
 .dt-stage-range { font-size: 1.4rem; font-weight: 800; color: var(--white); margin-bottom: 6px; }
 .dt-stage-label { font-size: 0.82rem; color: rgba(255,255,255,0.55); }
@@ -728,14 +728,14 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .sol-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--green); }
 .sol-icon {
   width: 48px; height: 48px; border-radius: 10px;
-  background: rgba(0,198,122,0.1);
+  background: rgba(201,168,76,0.10);
   display: flex; align-items: center; justify-content: center;
   color: var(--green); font-size: 1.2rem; margin-bottom: 14px;
 }
 .sol-tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); font-weight: 700; margin-bottom: 10px; }
-.sol-tile h3 { font-size: 1rem; margin-bottom: 10px; color: var(--navy); }
+.sol-tile h3 { font-size: 1rem; margin-bottom: 10px; color: var(--gray-800); }
 .sol-tile p { font-size: 0.875rem; color: var(--gray-600); margin-bottom: 20px; }
-.sol-link { color: var(--navy); font-size: 0.875rem; font-weight: 700; display: flex; align-items: center; gap: 6px; transition: gap var(--transition); }
+.sol-link { color: var(--gray-800); font-size: 0.875rem; font-weight: 700; display: flex; align-items: center; gap: 6px; transition: gap var(--transition); }
 .sol-link:hover { color: var(--green); gap: 10px; }
 
 /* Difference section */
@@ -757,7 +757,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .how-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 56px; }
 .how-step { position: relative; }
 .how-step-num {
-  font-size: 5rem; font-weight: 900; color: rgba(10,22,40,0.06);
+  font-size: 5rem; font-weight: 900; color: rgba(201,168,76,0.08);
   line-height: 1; margin-bottom: -20px; font-family: var(--font-head);
 }
 .how-step-content {
@@ -768,11 +768,11 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .how-step:hover .how-step-content { border-color: var(--green); box-shadow: var(--shadow); }
 .how-step-icon {
   width: 48px; height: 48px; border-radius: 10px;
-  background: rgba(0,198,122,0.1);
+  background: rgba(201,168,76,0.10);
   display: flex; align-items: center; justify-content: center;
   color: var(--green); font-size: 1.2rem; margin-bottom: 16px;
 }
-.how-step-content h3 { font-size: 1rem; margin-bottom: 10px; color: var(--navy); }
+.how-step-content h3 { font-size: 1rem; margin-bottom: 10px; color: var(--gray-800); }
 .how-step-content p { font-size: 0.875rem; color: var(--gray-600); }
 
 /* Metrics */
@@ -789,7 +789,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 }
 .cs-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--green); }
 .cs-industry { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); font-weight: 700; margin-bottom: 10px; }
-.cs-card h3 { font-size: 1.4rem; color: var(--navy); margin-bottom: 20px; }
+.cs-card h3 { font-size: 1.4rem; color: var(--gray-800); margin-bottom: 20px; }
 .cs-challenge, .cs-solution {
   font-size: 0.875rem; color: var(--gray-600); margin-bottom: 12px; line-height: 1.6;
 }
@@ -813,14 +813,14 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   transition: all var(--transition); letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.logo-item:hover { color: var(--navy); border-color: var(--gray-400); }
+.logo-item:hover { color: var(--gray-800); border-color: var(--green); }
 
 /* Testimonials */
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 52px; }
 
 /* Lead magnet */
 .lead-mag-box {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  background: linear-gradient(135deg, #0d0d0d 0%, #141414 100%);
   border-radius: var(--radius-lg); padding: 64px;
   text-align: center;
 }
@@ -849,6 +849,6 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 </style>
 `, `
 <style>
-.site-header.scrolled { background: rgba(10,22,40,0.98); }
+.site-header.scrolled { background: rgba(13,13,13,0.99); border-bottom-color: rgba(201,168,76,0.22); }
 </style>
 `)
