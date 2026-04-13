@@ -18,20 +18,23 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         MetaGrowth helps founders, CEOs, and sales leaders install the systems, structure, talent, and leadership needed to scale revenue with more control and less chaos.
       </p>
       <div class="hero-cta-row">
-        <a href="/contact#book" class="btn btn-primary btn-lg">
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary hero-cta-btn">
           <i class="fas fa-calendar-check"></i> Book a Strategy Call
         </a>
-        <a href="#decision-tree" class="btn btn-secondary btn-lg">
-          See the Decision Tree
+        <a href="/assessment" class="btn btn-secondary hero-cta-btn">
+          Take Your Revenue Assessment
         </a>
-        <a href="/solutions" class="btn btn-secondary btn-lg">
+        <a href="/solutions" class="btn btn-secondary hero-cta-btn">
           Explore Solutions
         </a>
       </div>
       <div class="hero-bullets">
         <div class="bullet-item"><span class="bullet-dot"></span>Revenue Architecture</div>
+        <span class="bullet-divider">|</span>
         <div class="bullet-item"><span class="bullet-dot"></span>Talent Acquisition</div>
+        <span class="bullet-divider">|</span>
         <div class="bullet-item"><span class="bullet-dot"></span>Sales Execution</div>
+        <span class="bullet-divider">|</span>
         <div class="bullet-item"><span class="bullet-dot"></span>Executive Leadership</div>
       </div>
       <div class="hero-proof-bar">
@@ -123,7 +126,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>No ICP definition or messaging framework</li>
               <li>Unable to delegate or hand off sales</li>
             </ul>
-            <a href="/contact#book" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -158,7 +161,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>Weak pipeline visibility and forecasting</li>
               <li>Ramp time too slow, turnover too high</li>
             </ul>
-            <a href="/contact#book" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -177,6 +180,16 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-desc">Structured vetting to upgrade your sales talent density</div>
               <a href="/solutions/recruiting" class="dt-rec-link">Learn More →</a>
             </div>
+            <div class="dt-rec-card">
+              <div class="dt-rec-name"><i class="fas fa-percentage"></i> Commission-Only Infrastructure</div>
+              <div class="dt-rec-desc">Add 1099 reps with zero base risk — full systems, training, and oversight included</div>
+              <a href="/solutions/commission-only" class="dt-rec-link">Learn More →</a>
+            </div>
+            <div class="dt-rec-card">
+              <div class="dt-rec-name"><i class="fas fa-cogs"></i> Managed Sales Pods</div>
+              <div class="dt-rec-desc">A fully managed, embedded sales team that executes inside your business</div>
+              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Learn More →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -193,7 +206,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>Coaching is reactive, not structured</li>
               <li>Difficulty hiring and ramping new reps quickly</li>
             </ul>
-            <a href="/contact#book" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -212,6 +225,12 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-desc">Structured accountability and sales OS for your leadership</div>
               <a href="/solutions/sales-growth-lab" class="dt-rec-link">Learn More →</a>
             </div>
+            <div class="dt-rec-card dt-rec-card--highlight">
+              <div class="dt-rec-badge">New Program</div>
+              <div class="dt-rec-name"><i class="fas fa-handshake"></i> Rev Share Only Program</div>
+              <div class="dt-rec-desc">Zero upfront cost. We embed a full sales team and only get paid when you close revenue — pure performance alignment.</div>
+              <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="dt-rec-link">Apply to the Program →</a>
+            </div>
           </div>
         </div>
       </div>
@@ -228,7 +247,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>Need someone to own revenue, not just advise</li>
               <li>Sales team lacks executive direction and accountability</li>
             </ul>
-            <a href="/contact#book" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -246,6 +265,12 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-name"><i class="fas fa-flask"></i> CEO Growth Lab</div>
               <div class="dt-rec-desc">Strategic peer network and quarterly deep-dive sessions for CEOs</div>
               <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Learn More →</a>
+            </div>
+            <div class="dt-rec-card dt-rec-card--highlight">
+              <div class="dt-rec-badge">New Program</div>
+              <div class="dt-rec-name"><i class="fas fa-handshake"></i> Rev Share Only Program</div>
+              <div class="dt-rec-desc">Zero upfront cost. We embed a full sales team and only get paid when you close revenue — pure performance alignment at scale.</div>
+              <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="dt-rec-link">Apply to the Program →</a>
             </div>
           </div>
         </div>
@@ -426,28 +451,28 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
     </div>
     <div class="metrics-grid fade-in">
       <div class="metric-card">
-        <div class="metric-number">$1.9M+</div>
+        <div class="metric-number">$100M+</div>
         <div class="metric-label">Pipeline Generated</div>
       </div>
       <div class="metric-card">
-        <div class="metric-number">21,000+</div>
+        <div class="metric-number">75,000+</div>
         <div class="metric-label">Prospecting Outreaches</div>
       </div>
       <div class="metric-card">
-        <div class="metric-number">380+</div>
-        <div class="metric-label">Discovery Meetings</div>
+        <div class="metric-number">11,000+</div>
+        <div class="metric-label">Booked Meetings</div>
       </div>
       <div class="metric-card">
-        <div class="metric-number">1000%+</div>
-        <div class="metric-label">Revenue Increase</div>
+        <div class="metric-number">$16M+</div>
+        <div class="metric-label">Revenue Added</div>
       </div>
       <div class="metric-card">
-        <div class="metric-number">54</div>
-        <div class="metric-label">New Clients Added</div>
+        <div class="metric-number">320+</div>
+        <div class="metric-label">Clients Added</div>
       </div>
       <div class="metric-card">
-        <div class="metric-number">$2M+</div>
-        <div class="metric-label">Contracted Revenue</div>
+        <div class="metric-number">$16M+</div>
+        <div class="metric-label">In Revenue Added</div>
       </div>
     </div>
     <div class="text-center" style="margin-top:52px;">
@@ -474,9 +499,9 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
           <strong>Solution:</strong> Complete sales operating system + leveraged prospecting support + team structure
         </div>
         <div class="cs-results">
-          <div class="cs-result-item"><span class="cs-result-num">$1.9M+</span> Pipeline</div>
+          <div class="cs-result-item"><span class="cs-result-num">$100M+</span> Pipeline</div>
           <div class="cs-result-item"><span class="cs-result-num">21K+</span> Outreaches</div>
-          <div class="cs-result-item"><span class="cs-result-num">380+</span> Discovery Meetings</div>
+          <div class="cs-result-item"><span class="cs-result-num">11,000+</span> Booked Meetings</div>
         </div>
         <a href="/case-studies#azul-arc" class="btn btn-outline btn-sm" style="margin-top:20px;">Read Full Story</a>
       </div>
@@ -506,9 +531,9 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
           <strong>Solution:</strong> Commission-only model + automation + multi-channel outreach infrastructure
         </div>
         <div class="cs-results">
-          <div class="cs-result-item"><span class="cs-result-num">1000%+</span> Revenue Increase</div>
-          <div class="cs-result-item"><span class="cs-result-num">54</span> New Clients</div>
-          <div class="cs-result-item"><span class="cs-result-num">$2M+</span> Contracted</div>
+          <div class="cs-result-item"><span class="cs-result-num">$16M+</span> Revenue Added</div>
+          <div class="cs-result-item"><span class="cs-result-num">320+</span> Clients Added</div>
+          <div class="cs-result-item"><span class="cs-result-num">75,000+</span> Outreaches</div>
         </div>
         <a href="/case-studies#private" class="btn btn-outline btn-sm" style="margin-top:20px;">Read Full Story</a>
       </div>
@@ -523,15 +548,59 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
       <span class="section-label">Companies &amp; Leadership Teams We've Supported</span>
       <p style="color:var(--gray-600);margin-top:8px;">Across technology, consulting, professional services, manufacturing, and growth-stage B2B environments.</p>
     </div>
-    <div class="logo-band fade-in">
-      <div class="logo-item">Azul Arc</div>
-      <div class="logo-item">Speakeasy</div>
-      <div class="logo-item">TechVentures</div>
-      <div class="logo-item">ProServices Co.</div>
-      <div class="logo-item">GrowthCo</div>
-      <div class="logo-item">ScaleB2B</div>
-      <div class="logo-item">RevEngine</div>
-      <div class="logo-item">PipelinePro</div>
+  </div>
+  <!-- Scrolling marquee logo band -->
+  <div class="logo-marquee-wrap fade-in">
+    <div class="logo-marquee-track">
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/bonzo.png" alt="Bonzo" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/azularc.png" alt="Azul Arc" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/contentbacon.png" alt="Content Bacon" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/seek.png" alt="Seek" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/thinglogix.png" alt="ThingLogix" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/xceleran.png" alt="Xceleran" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/cityblast.png" alt="CityBlast" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/zentap.png" alt="Zentap" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kievanos.png" alt="Kievanos" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/earthvisionz.png" alt="EarthVisionz" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kloudrac.png" alt="KloudRac" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/dcube.png" alt="D·Cube" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/admazing.png" alt="AdMazing.co" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/centsai.png" alt="CentSai One" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mobilize-comms.png" alt="Mobilize Comms" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/qlientology.png" alt="Qlientology" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/speakeasy.png" alt="Speakeasy" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/veztek.png" alt="VezTek USA" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/rehash-leads.png" alt="RehashLeads" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/net-activity.png" alt="Net Activity" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/plus-delta-314.png" alt="Plus Delta 314" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mastermind.png" alt="Mastermind" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/smb-agency.png" alt="SMB Agency" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/upward-insights.png" alt="Upward Insights" class="logo-img"></div>
+      <!-- Duplicate set for seamless infinite loop -->
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/bonzo.png" alt="Bonzo" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/azularc.png" alt="Azul Arc" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/contentbacon.png" alt="Content Bacon" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/seek.png" alt="Seek" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/thinglogix.png" alt="ThingLogix" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/xceleran.png" alt="Xceleran" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/cityblast.png" alt="CityBlast" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/zentap.png" alt="Zentap" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kievanos.png" alt="Kievanos" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/earthvisionz.png" alt="EarthVisionz" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kloudrac.png" alt="KloudRac" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/dcube.png" alt="D·Cube" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/admazing.png" alt="AdMazing.co" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/centsai.png" alt="CentSai One" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mobilize-comms.png" alt="Mobilize Comms" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/qlientology.png" alt="Qlientology" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/speakeasy.png" alt="Speakeasy" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/veztek.png" alt="VezTek USA" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/rehash-leads.png" alt="RehashLeads" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/net-activity.png" alt="Net Activity" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/plus-delta-314.png" alt="Plus Delta 314" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mastermind.png" alt="Mastermind" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/smb-agency.png" alt="SMB Agency" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/upward-insights.png" alt="Upward Insights" class="logo-img"></div>
     </div>
   </div>
 </section>
@@ -579,25 +648,45 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 </section>
 
 <!-- SECTION 11: LEAD MAGNET -->
-<section class="section section-gray">
+<section class="section section-dark" style="background:#0A0A0A;">
   <div class="container">
-    <div class="lead-mag-box fade-in">
-      <div class="lead-mag-content">
-        <span class="section-label">Not Sure Where to Start?</span>
-        <h2>Find your revenue growth path<br>in under 5 minutes</h2>
-        <p>Download our Ecosystem Guide, request a Revenue Architecture Review, or take the Sales Decision Tree Assessment to get a recommended path based on your exact situation.</p>
-        <div class="lead-mag-btns">
-          <a href="/resources" class="btn btn-primary btn-lg">
-            <i class="fas fa-download"></i> Download the Ecosystem Guide
-          </a>
-          <a href="/contact#book" class="btn btn-outline btn-lg">
-            Request a Revenue Review
-          </a>
-          <a href="#decision-tree" class="btn btn-outline btn-lg">
-            Take the Assessment
-          </a>
+    <div style="text-align:center;margin-bottom:48px;">
+      <span class="section-label" style="color:var(--green);">Not Sure Where to Start?</span>
+      <h2 style="color:#fff;margin-top:10px;margin-bottom:12px;">Find your revenue growth path<br>in under 5 minutes</h2>
+      <p style="color:rgba(255,255,255,0.5);max-width:480px;margin:0 auto;font-size:1rem;">Choose the path that fits where you are right now.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto;">
+
+      <!-- Card 1 -->
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(173,120,5,0.35);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;gap:12px;">
+        <div style="width:48px;height:48px;background:rgba(173,120,5,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#ad7805;">
+          <i class="fas fa-file-arrow-down" style="font-size:1.25rem;"></i>
         </div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;font-family:Inter,sans-serif;">Download the Guide</div>
+        <div style="font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.6;flex:1;">Get the Revenue System Blueprint — a free executive framework for building predictable B2B revenue.</div>
+        <a href="/resources" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;padding:12px 20px;background:#ad7805;color:#0A0A0A;border-radius:999px;font-size:0.875rem;font-weight:700;text-align:center;text-decoration:none;letter-spacing:0.02em;"><i class="fas fa-download"></i> Download Free</a>
       </div>
+
+      <!-- Card 2 -->
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;gap:12px;">
+        <div style="width:48px;height:48px;background:rgba(173,120,5,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#ad7805;">
+          <i class="fas fa-calendar-check" style="font-size:1.25rem;"></i>
+        </div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;font-family:Inter,sans-serif;">Request a Revenue Review</div>
+        <div style="font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.6;flex:1;">Book a strategy call and get a personalized revenue architecture recommendation for your exact situation.</div>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;padding:12px 20px;background:transparent;color:#ad7805;border:1.5px solid #ad7805;border-radius:999px;font-size:0.875rem;font-weight:700;text-align:center;text-decoration:none;letter-spacing:0.02em;"><i class="fas fa-calendar-check"></i> Book a Call</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;gap:12px;">
+        <div style="width:48px;height:48px;background:rgba(173,120,5,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#ad7805;">
+          <i class="fas fa-chart-bar" style="font-size:1.25rem;"></i>
+        </div>
+        <div style="font-size:1.05rem;font-weight:700;color:#fff;font-family:Inter,sans-serif;">Take the Assessment</div>
+        <div style="font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.6;flex:1;">Run the Revenue System Audit&#8482; — a 5–7 minute diagnostic that reveals exactly where your pipeline is leaking.</div>
+        <a href="/assessment" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;padding:12px 20px;background:transparent;color:#ad7805;border:1.5px solid #ad7805;border-radius:999px;font-size:0.875rem;font-weight:700;text-align:center;text-decoration:none;letter-spacing:0.02em;"><i class="fas fa-arrow-right"></i> Run the Audit</a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -608,7 +697,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
     <h2>Let's build revenue the right way.</h2>
     <p>Whether you need a sales operating system, recruiting engine, leadership support, or full execution — we can help you identify the right path and deploy it with discipline.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">
         <i class="fas fa-calendar-check"></i> Book a Strategy Call
       </a>
       <a href="/contact" class="btn btn-secondary btn-lg">Contact MetaGrowth</a>
@@ -617,35 +706,53 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 </section>
 
 <style>
+/* Hero CTA row */
+.hero-cta-row { display: flex; flex-wrap: nowrap; gap: 12px; margin-top: 32px; align-items: center; }
+.hero-cta-btn { padding: 14px 22px; font-size: 0.95rem; white-space: nowrap; flex: 1; text-align: center; }
+@media (max-width: 640px) {
+  .hero-cta-row { flex-wrap: wrap; }
+  .hero-cta-btn { flex: 1 1 100%; }
+}
+
 /* Hero */
 .home-hero {
   min-height: calc(100vh - 72px);
-  background: linear-gradient(135deg, #0d0d0d 0%, #111111 50%, #0a0a0a 100%);
   display: flex; align-items: center;
   position: relative; overflow: hidden;
   padding: 100px 0 80px;
+  background-color: #111111;
+  background-image: url('/static/hero-texture.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .hero-bg-grid {
-  position: absolute; inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-  background-size: 60px 60px;
+  position: absolute; inset: 0; z-index: 0;
+  /* Subtle dark veil to keep it consistent edge-to-edge */
+  background: rgba(0, 0, 0, 0.30);
 }
 .hero-glow {
-  position: absolute; right: -100px; top: 50%;
+  position: absolute; right: -100px; top: 50%; z-index: 1;
   width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(201,168,76,0.13) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(173,120,5,0.10) 0%, transparent 70%);
   transform: translateY(-50%);
+  pointer-events: none;
 }
-.hero-content { position: relative; z-index: 1; max-width: 780px; }
+.hero-content { position: relative; z-index: 2; max-width: 780px; }
 .hero-bullets {
-  display: flex; flex-wrap: wrap; gap: 24px; margin-top: 40px;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 28px;
+  padding: 14px 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius);
+  width: fit-content;
 }
 .bullet-item {
-  display: flex; align-items: center; gap: 10px;
-  color: rgba(255,255,255,0.6); font-size: 0.9rem; font-weight: 500;
+  display: flex; align-items: center; gap: 8px;
+  color: rgba(255,255,255,0.7); font-size: 0.88rem; font-weight: 500;
 }
-.bullet-dot { width: 8px; height: 8px; background: var(--green); border-radius: 50; flex-shrink: 0; }
+.bullet-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; flex-shrink: 0; }
+.bullet-divider { color: rgba(255,255,255,0.15); font-size: 0.85rem; line-height: 1; }
 
 /* Pain grid */
 .pain-grid {
@@ -660,7 +767,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--green); }
 .pain-icon {
   width: 52px; height: 52px; border-radius: 12px;
-  background: rgba(201,168,76,0.09);
+  background: rgba(173,120,5,0.09);
   display: flex; align-items: center; justify-content: center;
   color: var(--green); font-size: 1.3rem; margin-bottom: 18px;
 }
@@ -668,7 +775,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .pain-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 16px; }
 .pain-result {
   font-size: 0.82rem; color: var(--green); font-weight: 700;
-  background: rgba(201,168,76,0.08); padding: 8px 12px;
+  background: rgba(173,120,5,0.08); padding: 8px 12px;
   border-radius: 6px; border-left: 3px solid var(--green);
 }
 
@@ -684,7 +791,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   min-width: 200px;
 }
 .dt-stage-btn:hover, .dt-stage-btn.active {
-  background: rgba(201,168,76,0.10); border-color: var(--green);
+  background: rgba(173,120,5,0.10); border-color: var(--green);
 }
 .dt-stage-range { font-size: 1.4rem; font-weight: 800; color: var(--white); margin-bottom: 6px; }
 .dt-stage-label { font-size: 0.82rem; color: rgba(255,255,255,0.55); }
@@ -714,6 +821,17 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .dt-rec-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; margin-bottom: 10px; }
 .dt-rec-link { color: var(--green); font-size: 0.85rem; font-weight: 600; }
 .dt-rec-link:hover { text-decoration: underline; }
+.dt-rec-card--highlight {
+  background: rgba(173,120,5,0.08); border-color: rgba(173,120,5,0.35);
+  position: relative;
+}
+.dt-rec-card--highlight:hover { border-color: var(--green); background: rgba(173,120,5,0.13); }
+.dt-rec-badge {
+  display: inline-block; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  background: var(--green); color: var(--navy);
+  padding: 3px 8px; border-radius: 4px; margin-bottom: 10px;
+}
 
 /* Solutions grid */
 .solutions-grid {
@@ -728,7 +846,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .sol-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--green); }
 .sol-icon {
   width: 48px; height: 48px; border-radius: 10px;
-  background: rgba(201,168,76,0.10);
+  background: rgba(173,120,5,0.10);
   display: flex; align-items: center; justify-content: center;
   color: var(--green); font-size: 1.2rem; margin-bottom: 14px;
 }
@@ -757,7 +875,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .how-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 56px; }
 .how-step { position: relative; }
 .how-step-num {
-  font-size: 5rem; font-weight: 900; color: rgba(201,168,76,0.08);
+  font-size: 5rem; font-weight: 900; color: rgba(173,120,5,0.08);
   line-height: 1; margin-bottom: -20px; font-family: var(--font-head);
 }
 .how-step-content {
@@ -768,7 +886,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .how-step:hover .how-step-content { border-color: var(--green); box-shadow: var(--shadow); }
 .how-step-icon {
   width: 48px; height: 48px; border-radius: 10px;
-  background: rgba(201,168,76,0.10);
+  background: rgba(173,120,5,0.10);
   display: flex; align-items: center; justify-content: center;
   color: var(--green); font-size: 1.2rem; margin-bottom: 16px;
 }
@@ -801,32 +919,119 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 .cs-result-item { font-size: 0.82rem; color: var(--gray-600); display: flex; align-items: center; gap: 6px; }
 .cs-result-num { color: var(--green); font-weight: 800; font-size: 1rem; }
 
-/* Logo band */
-.logo-band {
+/* Logo marquee */
+.logo-marquee-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 8px 0;
+}
+.logo-marquee-wrap::before,
+.logo-marquee-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+.logo-marquee-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, var(--gray-50) 0%, transparent 100%);
+}
+.logo-marquee-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, var(--gray-50) 0%, transparent 100%);
+}
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: max-content;
+  animation: marquee-scroll 38s linear infinite;
+}
+.logo-marquee-track:hover { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.logo-tile {
+  flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
-  flex-wrap: wrap; gap: 16px;
+  height: 72px;
+  padding: 0 28px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), box-shadow var(--transition);
+  cursor: default;
 }
-.logo-item {
-  padding: 16px 32px; background: var(--white);
-  border: 1px solid var(--gray-200); border-radius: var(--radius);
-  color: var(--gray-400); font-weight: 700; font-size: 0.9rem;
-  transition: all var(--transition); letter-spacing: 0.02em;
+.logo-tile:hover {
+  border-color: var(--green);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.logo-tile--img {
+  padding: 10px 18px;
+  min-width: 160px;
+}
+.logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(0.7) brightness(1.1);
+  transition: filter var(--transition);
+}
+.logo-tile--img:hover .logo-img {
+  filter: grayscale(0%) contrast(1) brightness(1);
+}
+.logo-text {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--gray-400);
+  white-space: nowrap;
+  transition: color var(--transition);
 }
-.logo-item:hover { color: var(--gray-800); border-color: var(--green); }
+.logo-tile:hover .logo-text { color: var(--gray-800); }
 
 /* Testimonials */
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 52px; }
 
 /* Lead magnet */
 .lead-mag-box {
-  background: linear-gradient(135deg, #0d0d0d 0%, #141414 100%);
-  border-radius: var(--radius-lg); padding: 64px;
+  background: linear-gradient(135deg, #0A0A0A 0%, #111111 100%);
+  border-radius: var(--radius-lg); padding: 64px 56px;
   text-align: center;
 }
-.lead-mag-box h2 { color: var(--white); margin-bottom: 16px; }
-.lead-mag-box p { color: rgba(255,255,255,0.65); max-width: 580px; margin: 0 auto 36px; font-size: 1.05rem; }
-.lead-mag-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.lead-mag-box h2 { color: var(--white); margin-bottom: 12px; }
+.lead-mag-box > div > p { color: rgba(255,255,255,0.55); max-width: 480px; margin: 0 auto 40px; font-size: 1rem; }
+.lmb-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: left; margin-top: 8px; }
+.lmb-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 28px 26px 24px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.lmb-card:hover { border-color: var(--green); background: rgba(173,120,5,0.06); }
+.lmb-icon { width: 44px; height: 44px; background: rgba(173,120,5,0.12); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--green); font-size: 1.1rem; flex-shrink: 0; }
+.lmb-title { font-size: 1rem; font-weight: 700; color: var(--white); line-height: 1.3; }
+.lmb-desc { font-size: 0.875rem; color: rgba(255,255,255,0.55); line-height: 1.6; flex: 1; }
+.lmb-btn {
+  display: inline-block; margin-top: 6px; padding: 10px 18px;
+  border-radius: 999px; font-size: 0.85rem; font-weight: 700;
+  text-decoration: none; text-align: center; transition: all 0.2s;
+}
+.lmb-btn-primary { background: var(--green); color: #0A0A0A; }
+.lmb-btn-primary:hover { background: var(--green-dark); color: #0A0A0A; }
+.lmb-btn-outline { background: transparent; color: var(--green); border: 1.5px solid var(--green); }
+.lmb-btn-outline:hover { background: var(--green); color: #0A0A0A; }
+@media (max-width: 900px) { .lmb-cards { grid-template-columns: 1fr; } }
 
 /* Responsive */
 @media (max-width: 1100px) {
@@ -849,6 +1054,6 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 </style>
 `, `
 <style>
-.site-header.scrolled { background: rgba(13,13,13,0.99); border-bottom-color: rgba(201,168,76,0.22); }
+.site-header.scrolled { background: rgba(13,13,13,0.99); border-bottom-color: rgba(173,120,5,0.22); }
 </style>
 `)

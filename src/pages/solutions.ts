@@ -7,8 +7,8 @@ export const solutionsPage = () => page('Solutions', `
     <h1 class="hero-title">A Complete Revenue <span class="accent">Ecosystem</span></h1>
     <p class="hero-sub">From infrastructure build to full execution — MetaGrowth has the right engagement for your stage, team, and growth goals.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Book a Strategy Call</a>
-      <a href="/#decision-tree" class="btn btn-secondary btn-lg">Take the Assessment</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Book a Strategy Call</a>
+      <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
 </section>
@@ -110,8 +110,8 @@ export const solutionsPage = () => page('Solutions', `
     <h2>Not sure which solution fits?</h2>
     <p>Book a strategy call and we'll help you identify the right engagement for your stage, team, and growth goals — at no cost.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
-      <a href="/#decision-tree" class="btn btn-secondary btn-lg">Take the Decision Tree</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
 </section>
@@ -128,7 +128,7 @@ export const solutionsPage = () => page('Solutions', `
 .full-sol-card:hover { border-color: var(--green); transform: translateX(4px); box-shadow: var(--shadow); }
 .fsol-icon {
   width: 60px; height: 60px; border-radius: 14px;
-  background: rgba(201,168,76,0.10);
+  background: rgba(173,120,5,0.10);
   display: flex; align-items: center; justify-content: center;
   color: var(--green); font-size: 1.4rem; flex-shrink: 0;
 }
@@ -154,7 +154,7 @@ export const ceoGrowthLabPage = () => page('CEO Growth Lab', `
     <h1 class="hero-title">Precision Peer Network for <span class="accent">Growth-Oriented CEOs</span></h1>
     <p class="hero-sub">Strategic clarity, systems review, and leadership calibration for CEOs seeking control, consistency, and scale.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Apply for CEO Growth Lab</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Apply for CEO Growth Lab</a>
       <a href="/contact" class="btn btn-secondary btn-lg">Learn More</a>
     </div>
   </div>
@@ -196,7 +196,7 @@ export const ceoGrowthLabPage = () => page('CEO Growth Lab', `
           <div class="quick-fact"><span class="qf-label">Commitment</span><span>12 months</span></div>
           <div class="quick-fact"><span class="qf-label">Group Size</span><span>8–12 CEOs</span></div>
           <div class="quick-fact"><span class="qf-label">Industry</span><span>B2B Focused</span></div>
-          <a href="/contact#book" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Apply Now</a>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Apply Now</a>
         </div>
       </div>
     </div>
@@ -292,7 +292,7 @@ export const ceoGrowthLabPage = () => page('CEO Growth Lab', `
     <h2>Ready to lead revenue with structure?</h2>
     <p>Apply for the next CEO Growth Lab cohort and get clarity, accountability, and a peer network built for scale.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Apply for CEO Growth Lab</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Apply for CEO Growth Lab</a>
       <a href="/contact" class="btn btn-secondary btn-lg">Ask a Question</a>
     </div>
   </div>
@@ -308,7 +308,7 @@ export const salesGrowthLabPage = () => page('Sales Growth Lab', `
     <h1 class="hero-title">Structured Execution for <span class="accent">Sales Leaders</span></h1>
     <p class="hero-sub">Move from reactive management to disciplined revenue leadership with a Sales Operating System and real accountability.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Book a Sales Growth Lab Call</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Book a Sales Growth Lab Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">View All Solutions</a>
     </div>
   </div>
@@ -349,7 +349,7 @@ export const salesGrowthLabPage = () => page('Sales Growth Lab', `
           <div class="quick-fact"><span class="qf-label">Cadence</span><span>Weekly touchpoints</span></div>
           <div class="quick-fact"><span class="qf-label">Reporting</span><span>Monthly traction reports</span></div>
           <div class="quick-fact"><span class="qf-label">Includes</span><span>Sales OS Installation</span></div>
-          <a href="/contact#book" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Get Started</a>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Get Started</a>
         </div>
       </div>
     </div>
@@ -446,7 +446,7 @@ export const salesGrowthLabPage = () => page('Sales Growth Lab', `
     <h2>Ready to lead with discipline?</h2>
     <p>Book a call and we'll assess where your sales leadership is today and what structure would unlock the most growth.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Book a Sales Growth Lab Call</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Book a Sales Growth Lab Call</a>
     </div>
   </div>
 </section>
@@ -461,7 +461,7 @@ export const hyperlaunchPage = () => page('HyperLaunch Sales System', `
     <h1 class="hero-title">90-Day Sales <span class="accent">Operating System</span> Build</h1>
     <p class="hero-sub">We install the systems, process, messaging, KPIs, and CRM architecture needed to scale beyond founder-led sales — in 90 days.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Build My Sales System</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Build My Sales System</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -492,7 +492,7 @@ export const hyperlaunchPage = () => page('HyperLaunch Sales System', `
           <div class="quick-fact"><span class="qf-label">Format</span><span>Done-With-You</span></div>
           <div class="quick-fact"><span class="qf-label">Best For</span><span>$0–$5M Revenue</span></div>
           <div class="quick-fact"><span class="qf-label">Output</span><span>Full Sales OS</span></div>
-          <a href="/contact#book" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Start the Build</a>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Start the Build</a>
         </div>
         <div class="side-box" style="margin-top:20px;">
           <h4>Who HyperLaunch Is For</h4>
@@ -565,7 +565,7 @@ export const hyperlaunchPage = () => page('HyperLaunch Sales System', `
     <h2>Build your sales system in 90 days.</h2>
     <p>Stop patching a broken process. Let's build the infrastructure your growth requires — in 90 focused days.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Build My Sales System</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Build My Sales System</a>
       <a href="/case-studies" class="btn btn-secondary btn-lg">See Results</a>
     </div>
   </div>
@@ -609,7 +609,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
     <h1 class="hero-title">We Build, Recruit, Coach,<br>and <span class="accent">Manage the Revenue Engine</span></h1>
     <p class="hero-sub">Full-service sales execution for companies that want results without managing every moving part internally.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -637,7 +637,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
           <div class="quick-fact"><span class="qf-label">Management</span><span>MetaGrowth-owned</span></div>
           <div class="quick-fact"><span class="qf-label">KPIs</span><span>Weekly enforcement</span></div>
           <div class="quick-fact"><span class="qf-label">Contract</span><span>12-month roadmap</span></div>
-          <a href="/contact#book" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Get Started</a>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Get Started</a>
         </div>
       </div>
     </div>
@@ -677,7 +677,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
     <h2>Ready for a revenue engine that runs without you?</h2>
     <p>Book a strategy call and we'll scope a Managed Sales Pod deployment for your company's exact situation.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
       <a href="/case-studies" class="btn btn-secondary btn-lg">See Results</a>
     </div>
   </div>
@@ -703,7 +703,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
     <h1 class="hero-title">Scale Without Fixed <span class="accent">Salary Overhead</span></h1>
     <p class="hero-sub">Unlimited 1099 rep infrastructure supported by system build, commission modeling, training, and CRM enforcement.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">See If You Qualify</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">See If You Qualify</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -745,7 +745,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
           <div class="quick-fact"><span class="qf-label">Overhead</span><span>No fixed salary</span></div>
           <div class="quick-fact"><span class="qf-label">Includes</span><span>Full system build</span></div>
           <div class="quick-fact"><span class="qf-label">Training</span><span>MetaGrowth managed</span></div>
-          <a href="/contact#book" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Check Qualification</a>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Check Qualification</a>
         </div>
       </div>
     </div>
@@ -783,7 +783,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
     <h2>See if you qualify for commission-only scaling.</h2>
     <p>Not every company is a fit — but for those that are, it's one of the highest-leverage growth models available.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">See If You Qualify</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">See If You Qualify</a>
     </div>
   </div>
 </section>
@@ -798,7 +798,7 @@ export const recruitingPage = () => page('Recruiting Services', `
     <h1 class="hero-title">Structured Screening. Deep Vetting.<br><span class="accent">Better Sales Hires.</span></h1>
     <p class="hero-sub">Hire SDRs, AEs, and sales leaders through a process designed to identify producers, not just polished interviewees.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Start a Search</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Start a Search</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -853,7 +853,7 @@ export const recruitingPage = () => page('Recruiting Services', `
     <h2>Stop hiring based on interviews alone.</h2>
     <p>Start a search with MetaGrowth Recruiting and get candidates who are evaluated on what actually predicts sales performance.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Start a Search</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Start a Search</a>
       <a href="/contact" class="btn btn-secondary btn-lg">Ask About Roles</a>
     </div>
   </div>
@@ -869,7 +869,7 @@ ${solDetailStyles()}
 .recruit-process { display: flex; flex-direction: column; gap: 0; margin-top: 48px; }
 .rp-step { display: flex; gap: 32px; align-items: flex-start; padding: 32px 0; border-bottom: 1px solid var(--gray-200); }
 .rp-step:last-child { border-bottom: none; }
-.rp-num { font-size: 3rem; font-weight: 900; color: rgba(201,168,76,0.20); line-height: 1; flex-shrink: 0; min-width: 64px; }
+.rp-num { font-size: 3rem; font-weight: 900; color: rgba(173,120,5,0.20); line-height: 1; flex-shrink: 0; min-width: 64px; }
 .rp-body h4 { color: var(--gray-800); margin-bottom: 8px; }
 .rp-body p { color: var(--gray-600); font-size: 0.95rem; }
 @media (max-width: 900px) { .roles-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -885,7 +885,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
     <h1 class="hero-title">Executive Revenue Leadership<br><span class="accent">Without Full-Time C-Suite Cost</span></h1>
     <p class="hero-sub">Strategy, accountability, hiring roadmap, forecasting, and performance management from a revenue leader who takes ownership.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -914,7 +914,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
           <div class="quick-fact"><span class="qf-label">Ownership</span><span>Full revenue function</span></div>
           <div class="quick-fact"><span class="qf-label">Reporting</span><span>Direct to CEO</span></div>
           <div class="quick-fact"><span class="qf-label">Hours</span><span>Defined retainer model</span></div>
-          <a href="/contact#book" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Talk to a Fractional CRO</a>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Talk to a Fractional CRO</a>
         </div>
       </div>
     </div>
@@ -960,7 +960,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
     <h2>Close the revenue leadership gap — this week.</h2>
     <p>Book a call with a MetaGrowth Fractional CRO and get an honest assessment of what your revenue function needs to scale.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
     </div>
   </div>
 </section>
@@ -975,7 +975,7 @@ export const precisionEngagementsPage = () => page('Precision Engagements', `
     <h1 class="hero-title">Solve Specific Revenue <span class="accent">Bottlenecks Fast</span></h1>
     <p class="hero-sub">Targeted projects for companies that need a focused intervention without a long-term retainer commitment.</p>
     <div class="hero-cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Request a Targeted Engagement</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Request a Targeted Engagement</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">View All Solutions</a>
     </div>
   </div>
@@ -1014,7 +1014,7 @@ export const precisionEngagementsPage = () => page('Precision Engagements', `
           <li>You want to test MetaGrowth's approach before a larger commitment</li>
           <li>You have internal capability but need a specific component filled</li>
         </ul>
-        <a href="/contact#book" class="btn btn-primary">Request an Engagement</a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Request an Engagement</a>
       </div>
       <div>
         <span class="section-label">Project Formats</span>
@@ -1034,7 +1034,7 @@ export const precisionEngagementsPage = () => page('Precision Engagements', `
     <h2>Have a specific bottleneck in mind?</h2>
     <p>Tell us what's blocking your growth and we'll scope the right targeted engagement — usually deliverable within 2–3 weeks.</p>
     <div class="cta-row">
-      <a href="/contact#book" class="btn btn-primary btn-lg">Request a Targeted Engagement</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Request a Targeted Engagement</a>
       <a href="/contact" class="btn btn-secondary btn-lg">Ask a Question</a>
     </div>
   </div>
@@ -1044,10 +1044,10 @@ ${solDetailStyles()}
 .pe-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 .pe-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px 24px; transition: all var(--transition); }
 .pe-card:hover { border-color: var(--green); transform: translateY(-4px); box-shadow: var(--shadow); }
-.pe-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(201,168,76,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.2rem; margin-bottom: 14px; }
+.pe-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.2rem; margin-bottom: 14px; }
 .pe-card h4 { color: var(--gray-800); margin-bottom: 8px; font-size: 1rem; }
 .pe-card p { font-size: 0.85rem; color: var(--gray-600); margin-bottom: 14px; }
-.pe-timeline { font-size: 0.78rem; font-weight: 700; color: var(--green); background: rgba(201,168,76,0.10); padding: 4px 12px; border-radius: 100px; display: inline-block; }
+.pe-timeline { font-size: 0.78rem; font-weight: 700; color: var(--green); background: rgba(173,120,5,0.10); padding: 4px 12px; border-radius: 100px; display: inline-block; }
 @media (max-width: 1100px) { .pe-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .pe-grid { grid-template-columns: 1fr; } }
 </style>
@@ -1077,12 +1077,12 @@ function solDetailStyles() {
 .quick-fact span:last-child { color: var(--gray-800); font-weight: 600; }
 .fit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 28px; }
 .fit-card { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px; }
-.fit-card.green-border { border-color: rgba(201,168,76,0.35); background: rgba(201,168,76,0.04); }
+.fit-card.green-border { border-color: rgba(173,120,5,0.35); background: rgba(173,120,5,0.04); }
 .fit-card h4 { color: var(--gray-800); margin-bottom: 4px; }
 .includes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 52px; }
 .include-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px 26px; transition: all var(--transition); }
 .include-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: var(--shadow); }
-.inc-icon { width: 52px; height: 52px; border-radius: 12px; background: rgba(201,168,76,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; margin-bottom: 16px; }
+.inc-icon { width: 52px; height: 52px; border-radius: 12px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; margin-bottom: 16px; }
 .include-card h4 { color: var(--gray-800); margin-bottom: 8px; }
 .include-card p { font-size: 0.875rem; color: var(--gray-600); }
 .quarter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -1096,7 +1096,7 @@ function solDetailStyles() {
 .transform-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .transform-before, .transform-after { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; padding: 4px 10px; border-radius: 100px; }
 .transform-before { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.4); }
-.transform-after { background: rgba(201,168,76,0.15); color: var(--green); }
+.transform-after { background: rgba(173,120,5,0.15); color: var(--green); }
 .transform-item { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
 .transform-item.after { color: var(--white); font-weight: 600; }
 .transform-arrow { color: var(--green); font-weight: 700; }
