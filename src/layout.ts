@@ -117,6 +117,15 @@ export const globalStyles = () => `
     --transition: 0.22s ease;
     --max-w: 1400px;
   }
+  /* Prevent FOUT/CLS from font swap */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: local('Inter');
+    size-adjust: 100%;
+  }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; overflow-x: hidden; }
   body {
@@ -556,9 +565,10 @@ export const globalStyles = () => `
     font-size: 0.8rem; font-weight: 600;
   }
 
-  /* Scroll animation */
-  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  /* Scroll animation — opacity only (no translateY = no CLS) */
+  .fade-in { opacity: 0; transition: opacity 0.5s ease; will-change: opacity; }
+  .fade-in.visible { opacity: 1; will-change: auto; }
+  @media (prefers-reduced-motion: reduce) { .fade-in { opacity: 1; transition: none; } }
 </style>
 `
 
@@ -594,11 +604,15 @@ export const globalScript = () => `
     });
   });
 
-  // Fade in on scroll
+  // Fade in on scroll — mark above-fold elements visible immediately to prevent CLS
+  document.querySelectorAll('.fade-in').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) el.classList.add('visible');
+  });
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-in:not(.visible)').forEach(el => observer.observe(el));
 
   // Decision tree
   const dtBtns = document.querySelectorAll('[data-stage]');
@@ -651,7 +665,9 @@ export const page = (title: string, content: string, extraHead = '', description
   <link rel="icon" type="image/png" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
   ${preloadImage ? `<link rel="preload" as="image" href="${preloadImage}" fetchpriority="high">` : ''}

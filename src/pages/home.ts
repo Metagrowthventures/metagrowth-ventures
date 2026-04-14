@@ -925,6 +925,8 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   position: relative;
   width: 100%;
   padding: 8px 0;
+  min-height: 88px; /* reserve space to prevent CLS */
+  contain: layout;
 }
 .logo-marquee-wrap::before,
 .logo-marquee-wrap::after {
@@ -949,6 +951,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   gap: 20px;
   width: max-content;
   animation: marquee-scroll 38s linear infinite;
+  will-change: transform;
 }
 .logo-marquee-track:hover { animation-play-state: paused; }
 @keyframes marquee-scroll {
