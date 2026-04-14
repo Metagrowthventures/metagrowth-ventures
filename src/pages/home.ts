@@ -552,55 +552,55 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   <!-- Scrolling marquee logo band -->
   <div class="logo-marquee-wrap fade-in">
     <div class="logo-marquee-track">
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/bonzo.png" alt="Bonzo" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/azularc.png" alt="Azul Arc" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/contentbacon.png" alt="Content Bacon" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/seek.png" alt="Seek" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/thinglogix.png" alt="ThingLogix" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/xceleran.png" alt="Xceleran" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/cityblast.png" alt="CityBlast" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/zentap.png" alt="Zentap" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/kievanos.png" alt="Kievanos" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/earthvisionz.png" alt="EarthVisionz" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/kloudrac.png" alt="KloudRac" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/dcube.png" alt="D·Cube" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/admazing.png" alt="AdMazing.co" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/centsai.png" alt="CentSai One" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/mobilize-comms.png" alt="Mobilize Comms" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/qlientology.png" alt="Qlientology" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/speakeasy.png" alt="Speakeasy" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/veztek.png" alt="VezTek USA" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/rehash-leads.png" alt="RehashLeads" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/net-activity.png" alt="Net Activity" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/plus-delta-314.png" alt="Plus Delta 314" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/mastermind.png" alt="Mastermind" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/smb-agency.png" alt="SMB Agency" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/upward-insights.png" alt="Upward Insights" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/bonzo.png" alt="Bonzo" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/azularc.png" alt="Azul Arc" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/contentbacon.png" alt="Content Bacon" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/seek.png" alt="Seek" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/thinglogix.png" alt="ThingLogix" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/xceleran.png" alt="Xceleran" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/cityblast.png" alt="CityBlast" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/zentap.png" alt="Zentap" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kievanos.png" alt="Kievanos" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/earthvisionz.png" alt="EarthVisionz" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kloudrac.png" alt="KloudRac" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/dcube.png" alt="D·Cube" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/admazing.png" alt="AdMazing.co" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/centsai.png" alt="CentSai One" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mobilize-comms.png" alt="Mobilize Comms" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/qlientology.png" alt="Qlientology" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/speakeasy.png" alt="Speakeasy" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/veztek.png" alt="VezTek USA" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/rehash-leads.png" alt="RehashLeads" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/net-activity.png" alt="Net Activity" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/plus-delta-314.png" alt="Plus Delta 314" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mastermind.png" alt="Mastermind" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/smb-agency.png" alt="SMB Agency" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/upward-insights.png" alt="Upward Insights" class="logo-img" width="120" height="40" loading="lazy"></div>
       <!-- Duplicate set for seamless infinite loop -->
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/bonzo.png" alt="Bonzo" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/azularc.png" alt="Azul Arc" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/contentbacon.png" alt="Content Bacon" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/seek.png" alt="Seek" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/thinglogix.png" alt="ThingLogix" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/xceleran.png" alt="Xceleran" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/cityblast.png" alt="CityBlast" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/zentap.png" alt="Zentap" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/kievanos.png" alt="Kievanos" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/earthvisionz.png" alt="EarthVisionz" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/kloudrac.png" alt="KloudRac" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/dcube.png" alt="D·Cube" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/admazing.png" alt="AdMazing.co" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/centsai.png" alt="CentSai One" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/mobilize-comms.png" alt="Mobilize Comms" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/qlientology.png" alt="Qlientology" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/speakeasy.png" alt="Speakeasy" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/veztek.png" alt="VezTek USA" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/rehash-leads.png" alt="RehashLeads" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/net-activity.png" alt="Net Activity" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/plus-delta-314.png" alt="Plus Delta 314" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/mastermind.png" alt="Mastermind" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/smb-agency.png" alt="SMB Agency" class="logo-img"></div>
-      <div class="logo-tile logo-tile--img"><img src="/static/clients/upward-insights.png" alt="Upward Insights" class="logo-img"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/bonzo.png" alt="Bonzo" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/azularc.png" alt="Azul Arc" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/contentbacon.png" alt="Content Bacon" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/seek.png" alt="Seek" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/thinglogix.png" alt="ThingLogix" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/xceleran.png" alt="Xceleran" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/cityblast.png" alt="CityBlast" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/zentap.png" alt="Zentap" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kievanos.png" alt="Kievanos" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/earthvisionz.png" alt="EarthVisionz" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/kloudrac.png" alt="KloudRac" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/dcube.png" alt="D·Cube" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/admazing.png" alt="AdMazing.co" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/centsai.png" alt="CentSai One" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mobilize-comms.png" alt="Mobilize Comms" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/qlientology.png" alt="Qlientology" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/speakeasy.png" alt="Speakeasy" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/veztek.png" alt="VezTek USA" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/rehash-leads.png" alt="RehashLeads" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/net-activity.png" alt="Net Activity" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/plus-delta-314.png" alt="Plus Delta 314" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/mastermind.png" alt="Mastermind" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/smb-agency.png" alt="SMB Agency" class="logo-img" width="120" height="40" loading="lazy"></div>
+      <div class="logo-tile logo-tile--img"><img src="/static/clients/upward-insights.png" alt="Upward Insights" class="logo-img" width="120" height="40" loading="lazy"></div>
     </div>
   </div>
 </section>

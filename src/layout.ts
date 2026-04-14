@@ -2,7 +2,7 @@ export const nav = () => `
 <header class="site-header" id="site-header">
   <div class="header-inner">
     <a href="/" class="logo logo-img-link">
-      <img src="/static/logo.png" alt="MetaGrowth Ventures" class="site-logo-img" />
+      <img src="/static/logo.png" alt="MetaGrowth Ventures" class="site-logo-img" width="160" height="38" fetchpriority="high" />
     </a>
     <nav class="main-nav" id="main-nav">
       <ul class="nav-list">
@@ -42,7 +42,7 @@ export const footer = () => `
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="/" class="logo footer-logo logo-img-link">
-        <img src="/static/logo.png" alt="MetaGrowth Ventures" class="footer-logo-img" />
+        <img src="/static/logo.png" alt="MetaGrowth Ventures" class="footer-logo-img" width="300" height="110" loading="lazy" />
       </a>
       <p class="footer-tagline">Revenue Infrastructure &amp; Executive Growth Firm</p>
       <p class="footer-statement">Building systems. Installing accountability. Deploying talent.</p>
@@ -118,16 +118,18 @@ export const globalStyles = () => `
     --max-w: 1400px;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
   body {
     font-family: var(--font-body);
     color: var(--gray-800);
     background: var(--white);
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    width: 100%;
   }
   a { color: inherit; text-decoration: none; }
-  img { max-width: 100%; display: block; }
+  img { max-width: 100%; display: block; height: auto; }
   ul { list-style: none; }
 
   /* Typography */
@@ -614,19 +616,45 @@ export const globalScript = () => `
 </script>
 `
 
-export const page = (title: string, content: string, extraHead = '') => `
+const PAGE_DESCRIPTIONS: Record<string, string> = {
+  'Build a Predictable Revenue Engine': 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.',
+  'About': 'Learn how MetaGrowth Ventures helps B2B founders and CEOs install revenue infrastructure, sales leadership, and execution systems that scale.',
+  'Case Studies': 'See how MetaGrowth Ventures helped B2B companies generate $100M+ in pipeline, book 11,000+ meetings, and add 320+ clients across industries.',
+  'How We Work': 'MetaGrowth Ventures follows a structured engagement model — diagnose, design, deploy, and optimize — to build revenue systems that last.',
+  'Industries': 'MetaGrowth Ventures serves B2B SaaS, professional services, consulting, and technology companies looking to scale revenue with discipline.',
+  'Resources': 'Free B2B revenue resources from MetaGrowth Ventures — guides, diagnostics, and frameworks for founders and sales leaders building scalable revenue.',
+  'Contact': 'Get in touch with MetaGrowth Ventures to discuss your revenue growth challenges and find the right solution for your B2B business.',
+  'Solutions': 'MetaGrowth Ventures offers revenue systems, sales recruiting, fractional CRO, commission-only infrastructure, and managed sales pods for B2B companies.',
+  'CEO Growth Lab': 'The CEO Growth Lab by MetaGrowth Ventures gives B2B founders strategic clarity, peer networks, and quarterly deep dives to accelerate revenue growth.',
+  'Sales Growth Lab': 'MetaGrowth Ventures Sales Growth Lab helps B2B sales teams improve outreach, pipeline creation, messaging, and execution discipline.',
+  'HyperLaunch Sales System': 'HyperLaunch by MetaGrowth Ventures builds your complete B2B sales infrastructure in 90 days — ICP, process, CRM, messaging, and KPIs.',
+  'Managed Sales Pods': 'MetaGrowth Ventures Managed Sales Pods give B2B companies a fully deployed outbound sales team without the overhead of building one internally.',
+  'Commission-Only Infrastructure': 'MetaGrowth Ventures Commission-Only Infrastructure lets B2B companies scale sales with performance-based reps and zero base salary risk.',
+  'Recruiting Services': 'MetaGrowth Ventures recruits high-performance B2B sales talent — SDRs, AEs, and sales leaders — using behavioral assessment and structured hiring.',
+  'Fractional CRO': 'MetaGrowth Ventures Fractional CRO service gives B2B companies senior revenue leadership and execution without the full-time executive cost.',
+  'Precision Engagements': 'MetaGrowth Ventures Precision Engagements deliver targeted playbooks, outreach cadences, and scripts to launch B2B sales fast.',
+  'Revenue System Audit': 'Run the MetaGrowth Revenue System Audit — a free 5–7 minute diagnostic that identifies exactly where your B2B pipeline is leaking.',
+  'Assessment': 'Take the MetaGrowth Revenue Assessment — a free diagnostic that reveals your biggest revenue growth opportunity in under 5 minutes.',
+}
+
+export const page = (title: string, content: string, extraHead = '', description = '', preloadImage = '') => {
+  const metaDesc = description || PAGE_DESCRIPTIONS[title] || 'MetaGrowth Ventures — Revenue Infrastructure &amp; Executive Growth Firm. We build systems, install accountability, and deploy talent for B2B companies ready to scale.'
+  return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title} | MetaGrowth Ventures</title>
-  <meta name="description" content="MetaGrowth Ventures — Revenue Infrastructure &amp; Executive Growth Firm. We build systems, install accountability, and deploy talent for B2B companies ready to scale.">
+  <meta name="description" content="${metaDesc}">
+  <link rel="canonical" href="https://metagrowth.ventures">
   <link rel="icon" type="image/png" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
+  ${preloadImage ? `<link rel="preload" as="image" href="${preloadImage}" fetchpriority="high">` : ''}
   ${globalStyles()}
   ${extraHead}
 </head>
@@ -638,3 +666,4 @@ export const page = (title: string, content: string, extraHead = '') => `
 </body>
 </html>
 `
+}
