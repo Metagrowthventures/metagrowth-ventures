@@ -155,7 +155,7 @@ export const ceoGrowthLabPage = () => page('CEO Growth Lab', `
     <p class="hero-sub">Strategic clarity, systems review, and leadership calibration for CEOs seeking control, consistency, and scale.</p>
     <div class="hero-cta-row">
       <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Apply for CEO Growth Lab</a>
-      <a href="/contact" class="btn btn-secondary btn-lg">Learn More</a>
+      <a href="/contact" class="btn btn-secondary btn-lg">Contact MetaGrowth</a>
     </div>
   </div>
 </section>

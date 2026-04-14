@@ -133,17 +133,17 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-rocket"></i> HyperLaunch Sales System</div>
               <div class="dt-rec-desc">90-day infrastructure build — ICP, process, CRM, messaging, KPIs</div>
-              <a href="/solutions/hyperlaunch" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/hyperlaunch" class="dt-rec-link">Explore HyperLaunch →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-crosshairs"></i> Precision Engagements</div>
               <div class="dt-rec-desc">Targeted playbook, scripts, and outreach cadence to launch fast</div>
-              <a href="/solutions/precision-engagements" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/precision-engagements" class="dt-rec-link">Explore Precision Engagements →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-flask"></i> CEO Growth Lab</div>
               <div class="dt-rec-desc">Strategic clarity, peer network, and quarterly deep dives</div>
-              <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Explore CEO Growth Lab →</a>
             </div>
           </div>
         </div>
@@ -168,27 +168,27 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-chart-bar"></i> Sales Growth Lab</div>
               <div class="dt-rec-desc">Sales OS installation, accountability rhythm, and advisory</div>
-              <a href="/solutions/sales-growth-lab" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/sales-growth-lab" class="dt-rec-link">Explore Sales Growth Lab →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-rocket"></i> HyperLaunch Sales System</div>
               <div class="dt-rec-desc">Build the infrastructure your team needs to execute consistently</div>
-              <a href="/solutions/hyperlaunch" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/hyperlaunch" class="dt-rec-link">Explore HyperLaunch →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-search"></i> Recruiting Services</div>
               <div class="dt-rec-desc">Structured vetting to upgrade your sales talent density</div>
-              <a href="/solutions/recruiting" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/recruiting" class="dt-rec-link">Explore Recruiting Services →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-percentage"></i> Commission-Only Infrastructure</div>
               <div class="dt-rec-desc">Add 1099 reps with zero base risk — full systems, training, and oversight included</div>
-              <a href="/solutions/commission-only" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/commission-only" class="dt-rec-link">Explore Commission-Only →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-cogs"></i> Managed Sales Pods</div>
               <div class="dt-rec-desc">A fully managed, embedded sales team that executes inside your business</div>
-              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Explore Managed Sales Pods →</a>
             </div>
           </div>
         </div>
@@ -213,17 +213,17 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-cogs"></i> Managed Sales Pods</div>
               <div class="dt-rec-desc">Full revenue engine — recruit, onboard, coach, manage, track</div>
-              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Explore Managed Sales Pods →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-percentage"></i> Commission-Only Infrastructure</div>
               <div class="dt-rec-desc">Scale with 1099 reps supported by full systems and training</div>
-              <a href="/solutions/commission-only" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/commission-only" class="dt-rec-link">Explore Commission-Only →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-chart-bar"></i> Sales Growth Lab</div>
               <div class="dt-rec-desc">Structured accountability and sales OS for your leadership</div>
-              <a href="/solutions/sales-growth-lab" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/sales-growth-lab" class="dt-rec-link">Explore Sales Growth Lab →</a>
             </div>
             <div class="dt-rec-card dt-rec-card--highlight">
               <div class="dt-rec-badge">New Program</div>
@@ -254,17 +254,17 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-crown"></i> Fractional CRO</div>
               <div class="dt-rec-desc">Executive revenue leadership without full-time C-suite cost</div>
-              <a href="/solutions/fractional-cro" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/fractional-cro" class="dt-rec-link">Explore Fractional CRO →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-cogs"></i> Managed Sales Pods</div>
               <div class="dt-rec-desc">Done-for-you execution layer with full oversight and KPI tracking</div>
-              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/managed-sales-pods" class="dt-rec-link">Explore Managed Sales Pods →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-flask"></i> CEO Growth Lab</div>
               <div class="dt-rec-desc">Strategic peer network and quarterly deep-dive sessions for CEOs</div>
-              <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Learn More →</a>
+              <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Explore CEO Growth Lab →</a>
             </div>
             <div class="dt-rec-card dt-rec-card--highlight">
               <div class="dt-rec-badge">New Program</div>
@@ -293,56 +293,56 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         <div class="sol-tag">For CEOs</div>
         <h3>CEO Growth Lab</h3>
         <p>Strategic clarity, peer accountability, and quarterly deep dives for growth-oriented CEOs.</p>
-        <a href="/solutions/ceo-growth-lab" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/ceo-growth-lab" class="sol-link">Explore CEO Growth Lab <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-chart-bar"></i></div>
         <div class="sol-tag">For Sales Leaders</div>
         <h3>Sales Growth Lab</h3>
         <p>Structured execution, Sales OS installation, and weekly accountability for revenue leaders.</p>
-        <a href="/solutions/sales-growth-lab" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/sales-growth-lab" class="sol-link">Explore Sales Growth Lab <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-rocket"></i></div>
         <div class="sol-tag">Infrastructure Build</div>
         <h3>HyperLaunch Sales System</h3>
         <p>90-day build of your complete sales operating system — process, CRM, KPIs, messaging, and onboarding.</p>
-        <a href="/solutions/hyperlaunch" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/hyperlaunch" class="sol-link">Explore HyperLaunch <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-cogs"></i></div>
         <div class="sol-tag">Done-For-You</div>
         <h3>Managed Sales Pods</h3>
         <p>We build, recruit, train, and manage your complete revenue execution engine.</p>
-        <a href="/solutions/managed-sales-pods" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/managed-sales-pods" class="sol-link">Explore Managed Sales Pods <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-percentage"></i></div>
         <div class="sol-tag">Performance-Based</div>
         <h3>Commission-Only Infrastructure</h3>
         <p>Scale with 1099 reps supported by training, CRM, commission modeling, and system infrastructure.</p>
-        <a href="/solutions/commission-only" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/commission-only" class="sol-link">Explore Commission-Only <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-search"></i></div>
         <div class="sol-tag">Talent Acquisition</div>
         <h3>Recruiting Services</h3>
         <p>Deep vetting, behavioral assessment, and structured screening to hire producers, not just presenters.</p>
-        <a href="/solutions/recruiting" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/recruiting" class="sol-link">Explore Recruiting Services <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-crown"></i></div>
         <div class="sol-tag">Executive Leadership</div>
         <h3>Fractional CRO</h3>
         <p>Revenue leadership that takes ownership — strategy, accountability, hiring, forecasting, and performance management.</p>
-        <a href="/solutions/fractional-cro" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/fractional-cro" class="sol-link">Explore Fractional CRO <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-crosshairs"></i></div>
         <div class="sol-tag">Targeted Projects</div>
         <h3>Precision Engagements</h3>
         <p>Focused interventions for specific bottlenecks — playbooks, comp plans, CRM audits, and outreach sequences.</p>
-        <a href="/solutions/precision-engagements" class="sol-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        <a href="/solutions/precision-engagements" class="sol-link">Explore Precision Engagements <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
     <div class="text-center" style="margin-top:52px;">
