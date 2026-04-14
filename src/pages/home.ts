@@ -1056,4 +1056,6 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 <style>
 .site-header.scrolled { background: rgba(13,13,13,0.99); border-bottom-color: rgba(173,120,5,0.22); }
 </style>
-`)
+<link rel="preload" as="image" href="/static/hero-texture.jpg" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/webfonts/fa-solid-900.woff2" crossorigin>
+`, 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.')
