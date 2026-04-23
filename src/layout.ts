@@ -29,6 +29,7 @@ export const nav = () => `
         <li><a href="/assessment" class="nav-link" style="color:var(--green);font-weight:700;">Free Assessment</a></li>
       </ul>
     </nav>
+    <a href="https://app.metagrowth.ventures" target="_blank" class="btn btn-secondary header-cta-login">Login</a>
     <a href="/assessment" class="btn btn-primary header-cta" style="background:var(--green);color:var(--navy);">Free Assessment</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -305,7 +306,9 @@ export const globalStyles = () => `
   }
   .dropdown li a:hover { background: rgba(173,120,5,0.12); color: var(--green); }
   .header-cta { display: none; flex-shrink: 0; white-space: nowrap; font-size: 0.83rem; font-weight: 600; padding: 10px 20px; }
-  @media (min-width: 1200px) { .header-cta { display: inline-flex; } }
+  .header-cta-login { display: none; flex-shrink: 0; white-space: nowrap; font-size: 0.83rem; font-weight: 600; padding: 10px 18px; border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.75); }
+  .header-cta-login:hover { border-color: var(--green); color: var(--green); }
+  @media (min-width: 1200px) { .header-cta { display: inline-flex; } .header-cta-login { display: inline-flex; } }
   .hamburger {
     display: flex; flex-direction: column; gap: 5px;
     background: none; border: none; cursor: pointer; padding: 8px;
