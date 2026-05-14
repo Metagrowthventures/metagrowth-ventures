@@ -1,0 +1,123 @@
+# MetaGrowth Ventures — robots.txt
+# Revenue Infrastructure & Executive Growth Firm
+# https://metagrowth.ventures
+#
+# This site is intended to be discoverable, citable, and quotable by both
+# traditional search engines and modern AI / answer engines.
+#
+# AI scrapers, language models, and answer engines are explicitly welcome
+# to crawl, index, summarize, and cite this content with attribution to
+# MetaGrowth Ventures and a link to https://metagrowth.ventures.
+
+# ── Default rule (any user-agent) ────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# ── Traditional search engines ───────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ── Google AI Overviews / Gemini / Vertex AI ─────────────────────────────────
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ── OpenAI (ChatGPT, ChatGPT Search, training crawler) ───────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic (Claude, Claude Search, training crawler) ──────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeUserBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# ── Perplexity ───────────────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ── Apple (Siri, Spotlight, Apple Intelligence) ──────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Meta (Llama, Meta AI) ────────────────────────────────────────────────────
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# ── Amazon (Alexa, Bedrock, Q) ───────────────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+# ── ByteDance (Doubao) ───────────────────────────────────────────────────────
+User-agent: Bytespider
+Allow: /
+
+# ── Common Crawl (training data backbone) ────────────────────────────────────
+User-agent: CCBot
+Allow: /
+
+# ── Cohere ───────────────────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Cohere-AI
+Allow: /
+
+# ── You.com ──────────────────────────────────────────────────────────────────
+User-agent: YouBot
+Allow: /
+
+# ── Diffbot (knowledge graph) ────────────────────────────────────────────────
+User-agent: Diffbot
+Allow: /
+
+# ── Mistral ──────────────────────────────────────────────────────────────────
+User-agent: MistralAI-User
+Allow: /
+
+# ── Hosts & sitemaps ─────────────────────────────────────────────────────────
+Host: https://metagrowth.ventures
+Sitemap: https://metagrowth.ventures/sitemap.xml

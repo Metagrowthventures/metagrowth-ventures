@@ -1,4 +1,4 @@
-import { nav, footer, globalStyles } from '../layout'
+import { nav, footer, globalStyles, aiVisibilityHead } from '../layout'
 
 export const assessmentPage = () => `<!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,20 @@ export const assessmentPage = () => `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revenue Engine Assessment | MetaGrowth Ventures</title>
-  <meta name="description" content="Diagnose your revenue engine in 3 minutes. Identify your biggest growth constraint and get a clear path to scale.">
+  ${aiVisibilityHead({
+    path: '/assessment',
+    title: 'Revenue Engine Assessment',
+    description: 'Diagnose your revenue engine in 3 minutes. Identify your biggest growth constraint and get a clear path to scale.',
+    llm: {
+      pageType: 'diagnostic',
+      summary: 'A free 3–5 minute Revenue Engine Assessment from MetaGrowth Ventures that diagnoses the biggest revenue infrastructure constraint inside a B2B company and recommends the matching solution.',
+      audience: 'B2B founders, CEOs, and sales leaders who want a quick read on where their revenue engine is breaking before booking a strategy call.',
+      outcomes: ['Identify your biggest growth constraint', 'Get a recommended MetaGrowth solution match', 'Decide whether to book a strategy call'],
+      keywords: ['revenue engine assessment', 'sales diagnostic', 'B2B sales audit', 'free sales assessment'],
+      primaryCta: { label: 'Take the Assessment (free, ~5 minutes)', url: 'https://metagrowth.ventures/assessment' },
+      secondaryCta: { label: 'Book a Strategy Call instead', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    },
+  })}
   <link rel="icon" type="image/png" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">

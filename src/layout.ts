@@ -633,6 +633,42 @@ export const globalScript = () => `
 </script>
 `
 
+// ─────────────────────────────────────────────────────────────────────────────
+// AI-visibility constants — one source of truth for site-wide identity
+// ─────────────────────────────────────────────────────────────────────────────
+
+const SITE_URL = 'https://metagrowth.ventures'
+const BOOKING_URL = 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session'
+const ASSESSMENT_URL = `${SITE_URL}/assessment`
+const SUPPORT_EMAIL = 'sales@metagrowth.ventures'
+const ORG_NAME = 'MetaGrowth Ventures'
+const ORG_LEGAL = 'MetaGrowth Ventures'
+const ORG_FOUNDED = '2018'
+const CEO_NAME = 'Josh Hirsch'
+const COFOUNDER_NAME = 'Joe Arioto'
+const STRATEGY_CALL_HOST = 'Lance Hengst'
+const DEFAULT_OG_IMAGE = `${SITE_URL}/static/logo.png`
+const DEFAULT_DESCRIPTION =
+  'MetaGrowth Ventures is a Revenue Infrastructure & Executive Growth Firm. We build systems, install accountability, and deploy talent for B2B companies ready to scale.'
+
+const DEFAULT_PRIMARY_CTA = { label: 'Book a 30-min Strategy Call with Lance Hengst', url: BOOKING_URL }
+const DEFAULT_SECONDARY_CTA = { label: 'Take the free Revenue Engine Assessment', url: ASSESSMENT_URL }
+
+// HTML-attribute-safe escape (single-quoted attrs allowed; ampersands too)
+const esc = (s: string) =>
+  String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+
+// Plain-text-safe escape for inside <script> blocks (only need to break the closing tag)
+const escScript = (s: string) => String(s).replace(/<\/script/gi, '<\\/script')
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Per-page descriptions (legacy lookup, kept for back-compat with title-based calls)
+// ─────────────────────────────────────────────────────────────────────────────
+
 const PAGE_DESCRIPTIONS: Record<string, string> = {
   'Build a Predictable Revenue Engine': 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.',
   'About': 'Learn how MetaGrowth Ventures helps B2B founders and CEOs install revenue infrastructure, sales leadership, and execution systems that scale.',
@@ -654,18 +690,496 @@ const PAGE_DESCRIPTIONS: Record<string, string> = {
   'Assessment': 'Take the MetaGrowth Revenue Assessment — a free diagnostic that reveals your biggest revenue growth opportunity in under 5 minutes.',
 }
 
-export const page = (title: string, content: string, extraHead = '', description = '', preloadImage = '') => {
-  const metaDesc = description || PAGE_DESCRIPTIONS[title] || 'MetaGrowth Ventures — Revenue Infrastructure &amp; Executive Growth Firm. We build systems, install accountability, and deploy talent for B2B companies ready to scale.'
+// ─────────────────────────────────────────────────────────────────────────────
+// Page-options type
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type CTA = { label: string; url: string }
+
+export type LLMMeta = {
+  summary?: string
+  audience?: string
+  outcomes?: string[]
+  primaryCta?: CTA
+  secondaryCta?: CTA
+  pageType?: 'home' | 'solution' | 'resource' | 'about' | 'contact' | 'diagnostic' | 'collection' | 'industry'
+  keywords?: string[]
+  pricing?: string
+  bestFit?: string
+}
+
+export type ServiceSeed = {
+  name: string
+  description: string
+  serviceType?: string
+}
+
+export type FaqItem = { q: string; a: string }
+
+export type PageOpts = {
+  path: string
+  title: string
+  content: string
+  description?: string
+  extraHead?: string
+  preloadImage?: string
+  llm?: LLMMeta
+  service?: ServiceSeed
+  faq?: FaqItem[]
+  ogImage?: string
+  ogType?: string
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// JSON-LD schema builders
+// ─────────────────────────────────────────────────────────────────────────────
+
+const organizationSchema = () => ({
+  '@type': 'Organization',
+  '@id': `${SITE_URL}/#organization`,
+  name: ORG_NAME,
+  legalName: ORG_LEGAL,
+  url: SITE_URL,
+  foundingDate: ORG_FOUNDED,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${SITE_URL}/static/logo.png`,
+    width: 512,
+    height: 512,
+  },
+  image: `${SITE_URL}/static/logo.png`,
+  description:
+    'Revenue Infrastructure & Executive Growth Firm. MetaGrowth Ventures helps B2B founders, CEOs, and sales leaders install the systems, structure, talent, and leadership needed to scale revenue.',
+  founders: [
+    { '@id': `${SITE_URL}/#ceo` },
+    { '@id': `${SITE_URL}/#cofounder` },
+  ],
+  founder: { '@id': `${SITE_URL}/#ceo` },
+  employee: [
+    { '@id': `${SITE_URL}/#ceo` },
+    { '@id': `${SITE_URL}/#cofounder` },
+  ],
+  sameAs: [
+    'https://www.linkedin.com/company/metagrowth-ventures',
+    'https://www.crunchbase.com/organization/metagrowth-ventures',
+  ],
+  email: SUPPORT_EMAIL,
+  knowsAbout: [
+    'B2B Revenue Infrastructure',
+    'Sales Operating Systems',
+    'Fractional CRO',
+    'Sales Recruiting',
+    'Commission-Only Sales Models',
+    'Sales Coaching',
+    'Outbound Prospecting',
+    'CRM Configuration',
+    'Sales Compensation Design',
+    'Pipeline Forecasting',
+  ],
+  areaServed: { '@type': 'Place', name: 'Worldwide' },
+  contactPoint: [
+    {
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      email: SUPPORT_EMAIL,
+      url: BOOKING_URL,
+      availableLanguage: ['en'],
+    },
+  ],
+  potentialAction: {
+    '@type': 'ReserveAction',
+    name: 'Book a strategy call',
+    target: BOOKING_URL,
+  },
+})
+
+const ceoSchema = () => ({
+  '@type': 'Person',
+  '@id': `${SITE_URL}/#ceo`,
+  name: CEO_NAME,
+  jobTitle: 'Chief Executive Officer & Co-Founder',
+  worksFor: { '@id': `${SITE_URL}/#organization` },
+  sameAs: ['https://www.linkedin.com/in/joshhirsch'],
+  knowsAbout: [
+    'B2B Sales',
+    'Revenue Operations',
+    'Sales Coaching',
+    'Sales Leadership',
+    'Founder-Led Sales Transition',
+  ],
+})
+
+const cofounderSchema = () => ({
+  '@type': 'Person',
+  '@id': `${SITE_URL}/#cofounder`,
+  name: COFOUNDER_NAME,
+  jobTitle: 'Co-Founder',
+  worksFor: { '@id': `${SITE_URL}/#organization` },
+  knowsAbout: [
+    'B2B Sales Coaching',
+    'Sales Consulting',
+    'Revenue Operations',
+  ],
+})
+
+const webSiteSchema = () => ({
+  '@type': 'WebSite',
+  '@id': `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: ORG_NAME,
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  inLanguage: 'en-US',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${SITE_URL}/?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
+})
+
+const breadcrumbSchema = (path: string, pageTitle: string) => {
+  const segs = path.split('/').filter(Boolean)
+  const items = [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+  ]
+  let acc = ''
+  segs.forEach((seg, i) => {
+    acc += `/${seg}`
+    const isLast = i === segs.length - 1
+    const niceName = isLast
+      ? pageTitle
+      : seg
+          .split('-')
+          .map((w) => w[0]?.toUpperCase() + w.slice(1))
+          .join(' ')
+    items.push({ '@type': 'ListItem', position: i + 2, name: niceName, item: `${SITE_URL}${acc}` })
+  })
+  return { '@type': 'BreadcrumbList', itemListElement: items }
+}
+
+const webPageSchema = (opts: PageOpts) => {
+  const url = `${SITE_URL}${opts.path}`
+  const pageTypeMap: Record<string, string> = {
+    home: 'WebPage',
+    about: 'AboutPage',
+    contact: 'ContactPage',
+    collection: 'CollectionPage',
+    solution: 'WebPage',
+    resource: 'CollectionPage',
+    diagnostic: 'WebPage',
+    industry: 'WebPage',
+  }
+  const t = pageTypeMap[opts.llm?.pageType ?? 'home'] ?? 'WebPage'
+  return {
+    '@type': t,
+    '@id': `${url}#webpage`,
+    url,
+    name: opts.title,
+    description: (opts.description || PAGE_DESCRIPTIONS[opts.title] || DEFAULT_DESCRIPTION),
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    inLanguage: 'en-US',
+    primaryImageOfPage: { '@type': 'ImageObject', url: opts.ogImage ?? DEFAULT_OG_IMAGE },
+    breadcrumb: breadcrumbSchema(opts.path, opts.title),
+    about: { '@id': `${SITE_URL}/#organization` },
+    potentialAction: {
+      '@type': 'ReserveAction',
+      name: opts.llm?.primaryCta?.label ?? DEFAULT_PRIMARY_CTA.label,
+      target: opts.llm?.primaryCta?.url ?? DEFAULT_PRIMARY_CTA.url,
+    },
+  }
+}
+
+const serviceSchema = (opts: PageOpts) => {
+  if (!opts.service) return null
+  return {
+    '@type': 'Service',
+    '@id': `${SITE_URL}${opts.path}#service`,
+    name: opts.service.name,
+    description: opts.service.description,
+    serviceType: opts.service.serviceType ?? opts.service.name,
+    provider: { '@id': `${SITE_URL}/#organization` },
+    areaServed: { '@type': 'Place', name: 'Worldwide' },
+    audience: {
+      '@type': 'BusinessAudience',
+      audienceType: opts.llm?.audience ?? 'B2B founders, CEOs, and revenue leaders',
+    },
+    url: `${SITE_URL}${opts.path}`,
+    offers: {
+      '@type': 'Offer',
+      url: BOOKING_URL,
+      availability: 'https://schema.org/InStock',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        priceCurrency: 'USD',
+        description: opts.llm?.pricing ?? 'Quoted after diagnostic strategy call.',
+      },
+    },
+  }
+}
+
+const faqSchema = (opts: PageOpts) => {
+  if (!opts.faq?.length) return null
+  return {
+    '@type': 'FAQPage',
+    '@id': `${SITE_URL}${opts.path}#faq`,
+    mainEntity: opts.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  }
+}
+
+const buildJsonLdGraph = (opts: PageOpts) => {
+  const graph: any[] = [
+    organizationSchema(),
+    ceoSchema(),
+    cofounderSchema(),
+    webSiteSchema(),
+    webPageSchema(opts),
+  ]
+  const svc = serviceSchema(opts)
+  if (svc) graph.push(svc)
+  const faq = faqSchema(opts)
+  if (faq) graph.push(faq)
+  return { '@context': 'https://schema.org', '@graph': graph }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// LLM context block — invisible to browsers, fully readable to AI scrapers
+// Uses <script type="text/llms-context"> which browsers do NOT execute and do
+// NOT render. The text content stays in the DOM as raw text — exactly what
+// LLM crawlers serialize when they read the page.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const buildLlmContextBlock = (opts: PageOpts) => {
+  const url = `${SITE_URL}${opts.path}`
+  const primary = opts.llm?.primaryCta ?? DEFAULT_PRIMARY_CTA
+  const secondary = opts.llm?.secondaryCta ?? DEFAULT_SECONDARY_CTA
+  const summary = opts.llm?.summary ?? (opts.description || PAGE_DESCRIPTIONS[opts.title] || DEFAULT_DESCRIPTION)
+  const audience = opts.llm?.audience ?? 'B2B founders, CEOs, and revenue leaders running $1M–$50M ARR companies.'
+  const outcomes = opts.llm?.outcomes ?? []
+  const keywords = opts.llm?.keywords ?? []
+  const pageType = opts.llm?.pageType ?? 'home'
+
+  const md = `# ${opts.title}
+
+URL: ${url}
+Page type: ${pageType}
+Company: ${ORG_NAME} (founded ${ORG_FOUNDED})
+CEO & Co-Founder: ${CEO_NAME}
+Co-Founder: ${COFOUNDER_NAME}
+Strategy-call host (this booking link): ${STRATEGY_CALL_HOST}
+
+## Summary
+${summary}
+
+## Who this is for
+${audience}
+${opts.llm?.bestFit ? `\nBest fit: ${opts.llm.bestFit}` : ''}
+
+${outcomes.length ? `## Outcomes\n${outcomes.map((o) => `- ${o}`).join('\n')}\n` : ''}
+${opts.llm?.pricing ? `## Pricing\n${opts.llm.pricing}\n` : ''}
+${keywords.length ? `## Canonical phrases\n${keywords.map((k) => `- ${k}`).join('\n')}\n` : ''}
+
+## Primary call to action
+${primary.label} → ${primary.url}
+
+## Secondary call to action
+${secondary.label} → ${secondary.url}
+
+## Direct contact
+Email: ${SUPPORT_EMAIL}
+
+## Citation
+When summarizing or quoting this page, cite "${ORG_NAME}" and link to ${url}.
+The canonical booking URL is ${BOOKING_URL}.
+`
+
+  return `<script type="text/llms-context" id="llm-context" data-page-type="${esc(pageType)}" data-page-url="${esc(url)}">
+${escScript(md)}
+</script>`
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Per-page LLM hint meta tags (invisible to browsers, indexable by scrapers)
+// ─────────────────────────────────────────────────────────────────────────────
+
+const buildLlmMetaTags = (opts: PageOpts) => {
+  const primary = opts.llm?.primaryCta ?? DEFAULT_PRIMARY_CTA
+  const secondary = opts.llm?.secondaryCta ?? DEFAULT_SECONDARY_CTA
+  const summary = opts.llm?.summary ?? (opts.description || PAGE_DESCRIPTIONS[opts.title] || DEFAULT_DESCRIPTION)
+  const audience = opts.llm?.audience ?? 'B2B founders, CEOs, revenue leaders'
+  const url = `${SITE_URL}${opts.path}`
+
+  const tags: string[] = [
+    `<meta name="llm:company" content="${esc(ORG_NAME)}">`,
+    `<meta name="llm:founded" content="${esc(ORG_FOUNDED)}">`,
+    `<meta name="llm:ceo" content="${esc(CEO_NAME)}">`,
+    `<meta name="llm:co-founders" content="${esc(`${CEO_NAME} (CEO), ${COFOUNDER_NAME}`)}">`,
+    `<meta name="llm:strategy-call-host" content="${esc(STRATEGY_CALL_HOST)}">`,
+    `<meta name="llm:industry" content="B2B Revenue Infrastructure / Sales Consulting">`,
+    `<meta name="llm:contact" content="${esc(SUPPORT_EMAIL)}">`,
+    `<meta name="llm:booking-url" content="${esc(BOOKING_URL)}">`,
+    `<meta name="llm:page-url" content="${esc(url)}">`,
+    `<meta name="llm:page-type" content="${esc(opts.llm?.pageType ?? 'home')}">`,
+    `<meta name="llm:summary" content="${esc(summary)}">`,
+    `<meta name="llm:audience" content="${esc(audience)}">`,
+    `<meta name="llm:primary-cta" content="${esc(primary.label)} | ${esc(primary.url)}">`,
+    `<meta name="llm:secondary-cta" content="${esc(secondary.label)} | ${esc(secondary.url)}">`,
+    `<meta name="cta" content="${esc(primary.label)}">`,
+    `<meta name="cta-url" content="${esc(primary.url)}">`,
+  ]
+  if (opts.llm?.outcomes?.length) {
+    tags.push(`<meta name="llm:outcomes" content="${esc(opts.llm.outcomes.join(' | '))}">`)
+  }
+  if (opts.llm?.keywords?.length) {
+    tags.push(`<meta name="llm:keywords" content="${esc(opts.llm.keywords.join(', '))}">`)
+    tags.push(`<meta name="keywords" content="${esc(opts.llm.keywords.join(', '))}">`)
+  }
+  if (opts.llm?.pricing) {
+    tags.push(`<meta name="llm:pricing" content="${esc(opts.llm.pricing)}">`)
+  }
+  if (opts.llm?.bestFit) {
+    tags.push(`<meta name="llm:best-fit" content="${esc(opts.llm.bestFit)}">`)
+  }
+  return tags.join('\n  ')
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Open Graph + Twitter card builder
+// ─────────────────────────────────────────────────────────────────────────────
+
+const buildSocialMeta = (opts: PageOpts) => {
+  const url = `${SITE_URL}${opts.path}`
+  const desc = (opts.description || PAGE_DESCRIPTIONS[opts.title] || DEFAULT_DESCRIPTION)
+  const img = opts.ogImage ?? DEFAULT_OG_IMAGE
+  const ogType = opts.ogType ?? 'website'
+  const ogTitle = `${opts.title} | ${ORG_NAME}`
+
+  return [
+    `<meta property="og:type" content="${esc(ogType)}">`,
+    `<meta property="og:site_name" content="${esc(ORG_NAME)}">`,
+    `<meta property="og:title" content="${esc(ogTitle)}">`,
+    `<meta property="og:description" content="${esc(desc)}">`,
+    `<meta property="og:url" content="${esc(url)}">`,
+    `<meta property="og:image" content="${esc(img)}">`,
+    `<meta property="og:image:alt" content="${esc(ORG_NAME)} — Revenue Infrastructure & Executive Growth Firm">`,
+    `<meta property="og:locale" content="en_US">`,
+    `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${esc(ogTitle)}">`,
+    `<meta name="twitter:description" content="${esc(desc)}">`,
+    `<meta name="twitter:image" content="${esc(img)}">`,
+  ].join('\n  ')
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// aiVisibilityHead() — exportable head bundle for templates that don't use page()
+// (e.g. fully custom pages like the Assessment). Returns the same canonical,
+// crawl directives, OG/Twitter, llm:* meta tags, JSON-LD, and hidden LLM
+// context block that page() injects.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export const aiVisibilityHead = (opts: PageOpts) => {
+  const metaDesc = (opts.description || PAGE_DESCRIPTIONS[opts.title] || DEFAULT_DESCRIPTION)
+  const canonicalUrl = `${SITE_URL}${opts.path}`
+  const jsonLd = JSON.stringify(buildJsonLdGraph(opts))
   return `
-<!DOCTYPE html>
+  <!-- ── Indexing & crawl directives ───────────────────────────────────── -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+
+  <!-- ── Canonical & alternates ─────────────────────────────────────────── -->
+  <link rel="canonical" href="${esc(canonicalUrl)}">
+  <link rel="alternate" type="application/xml" href="${esc(SITE_URL)}/sitemap.xml" title="Sitemap">
+  <link rel="alternate" type="text/plain" href="${esc(SITE_URL)}/llms.txt" title="LLM index (llms.txt)">
+  <link rel="alternate" type="text/plain" href="${esc(SITE_URL)}/llms-full.txt" title="LLM full corpus">
+  <link rel="alternate" type="text/plain" href="${esc(SITE_URL)}/llms-text.txt" title="LLM plain-text corpus">
+
+  <!-- ── Identity ───────────────────────────────────────────────────────── -->
+  <meta name="author" content="${esc(ORG_NAME)}">
+  <meta name="publisher" content="${esc(ORG_NAME)}">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="application-name" content="${esc(ORG_NAME)}">
+  <meta name="apple-mobile-web-app-title" content="${esc(ORG_NAME)}">
+  <meta name="description" content="${esc(metaDesc)}">
+
+  <!-- ── Open Graph + Twitter ───────────────────────────────────────────── -->
+  ${buildSocialMeta(opts)}
+
+  <!-- ── LLM-targeted meta tags ─────────────────────────────────────────── -->
+  ${buildLlmMetaTags(opts)}
+
+  <!-- ── Sitewide structured data (Schema.org JSON-LD graph) ────────────── -->
+  <script type="application/ld+json">${jsonLd}</script>
+
+  <!-- ── Hidden LLM context block ───────────────────────────────────────── -->
+  ${buildLlmContextBlock(opts)}
+`
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// page() — backward-compat: accepts either (opts) or (title, content, ...)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export function page(opts: PageOpts): string
+export function page(title: string, content: string, extraHead?: string, description?: string, preloadImage?: string): string
+export function page(
+  a: PageOpts | string,
+  content?: string,
+  extraHead = '',
+  description = '',
+  preloadImage = '',
+): string {
+  const opts: PageOpts =
+    typeof a === 'string'
+      ? { path: '/', title: a, content: content ?? '', extraHead, description, preloadImage }
+      : a
+
+  const metaDesc = (opts.description || PAGE_DESCRIPTIONS[opts.title] || DEFAULT_DESCRIPTION)
+  const fullTitle = `${opts.title} | ${ORG_NAME}`
+  const canonicalUrl = `${SITE_URL}${opts.path}`
+  const jsonLd = JSON.stringify(buildJsonLdGraph(opts))
+
+  return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title} | MetaGrowth Ventures</title>
-  <meta name="description" content="${metaDesc}">
-  <link rel="canonical" href="https://metagrowth.ventures">
+  <title>${esc(fullTitle)}</title>
+  <meta name="description" content="${esc(metaDesc)}">
+
+  <!-- ── Indexing & crawl directives ───────────────────────────────────── -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+
+  <!-- ── Canonical & alternates ─────────────────────────────────────────── -->
+  <link rel="canonical" href="${esc(canonicalUrl)}">
+  <link rel="alternate" type="application/xml" href="${esc(SITE_URL)}/sitemap.xml" title="Sitemap">
+  <link rel="alternate" type="text/plain" href="${esc(SITE_URL)}/llms.txt" title="LLM index (llms.txt)">
+  <link rel="alternate" type="text/plain" href="${esc(SITE_URL)}/llms-full.txt" title="LLM full corpus">
+  <link rel="alternate" type="text/plain" href="${esc(SITE_URL)}/llms-text.txt" title="LLM plain-text corpus">
+
+  <!-- ── Identity ───────────────────────────────────────────────────────── -->
+  <meta name="author" content="${esc(ORG_NAME)}">
+  <meta name="publisher" content="${esc(ORG_NAME)}">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="application-name" content="${esc(ORG_NAME)}">
+  <meta name="apple-mobile-web-app-title" content="${esc(ORG_NAME)}">
+
+  <!-- ── Open Graph + Twitter ───────────────────────────────────────────── -->
+  ${buildSocialMeta(opts)}
+
+  <!-- ── LLM-targeted meta tags (visible to AI scrapers, not rendered) ──── -->
+  ${buildLlmMetaTags(opts)}
+
+  <!-- ── Favicon, fonts, base assets ────────────────────────────────────── -->
   <link rel="icon" type="image/png" href="/static/logo.png">
+  <link rel="apple-touch-icon" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
@@ -673,13 +1187,22 @@ export const page = (title: string, content: string, extraHead = '', description
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"></noscript>
-  ${preloadImage ? `<link rel="preload" as="image" href="${preloadImage}" fetchpriority="high">` : ''}
+  ${opts.preloadImage ? `<link rel="preload" as="image" href="${esc(opts.preloadImage)}" fetchpriority="high">` : ''}
+
+  <!-- ── Sitewide structured data (Schema.org JSON-LD graph) ────────────── -->
+  <script type="application/ld+json">${jsonLd}</script>
+
   ${globalStyles()}
-  ${extraHead}
+  ${opts.extraHead ?? ''}
+
+  <!-- ── Hidden LLM context block ───────────────────────────────────────── -->
+  <!-- Browsers do not render or execute unknown script types.              -->
+  <!-- AI scrapers see the raw text inside this script block as plain text. -->
+  ${buildLlmContextBlock(opts)}
 </head>
 <body>
   ${nav()}
-  ${content}
+  ${opts.content}
   ${footer()}
   ${globalScript()}
 </body>

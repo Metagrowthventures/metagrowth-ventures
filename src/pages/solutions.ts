@@ -1,6 +1,18 @@
 import { page } from '../layout'
 
-export const solutionsPage = () => page('Solutions', `
+export const solutionsPage = () => page({
+  path: '/solutions',
+  title: 'Solutions',
+  llm: {
+    pageType: 'collection',
+    summary: 'MetaGrowth Ventures offers eight distinct revenue solutions: CEO Growth Lab, Sales Growth Lab, HyperLaunch Sales System, Managed Sales Pods, Commission-Only Infrastructure, Recruiting Services, Fractional CRO, and Precision Engagements. Engagement is matched to company stage, team, and bottleneck.',
+    audience: 'B2B founders, CEOs, and sales leaders evaluating which engagement fits their stage and bottleneck.',
+    outcomes: ['Pick the right MetaGrowth engagement for your stage', 'See all eight solution lines in one place', 'Move from analysis to a strategy call'],
+    keywords: ['B2B sales solutions', 'fractional CRO', 'sales recruiting', 'managed sales pod', 'commission-only sales'],
+    primaryCta: { label: 'Book a 30-min Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Our Services</div>
@@ -144,10 +156,29 @@ export const solutionsPage = () => page('Solutions', `
   .fsol-icon { width: 48px; height: 48px; font-size: 1.1rem; }
 }
 </style>
-`)
+` })
 
 // CEO Growth Lab
-export const ceoGrowthLabPage = () => page('CEO Growth Lab', `
+export const ceoGrowthLabPage = () => page({
+  path: '/solutions/ceo-growth-lab',
+  title: 'CEO Growth Lab',
+  llm: {
+    pageType: 'solution',
+    summary: 'A precision peer network for growth-oriented B2B CEOs combining monthly 1:1 coaching, group labs, and quarterly deep-dive strategy sessions.',
+    audience: 'B2B CEOs and founders running growth-stage companies who need executive accountability and a peer cohort of comparable-stage operators.',
+    outcomes: ['Strategic clarity at the CEO level', 'Executive accountability and a peer cohort', 'Quarterly deep-dive strategy resets'],
+    bestFit: 'Founders professionalizing how they lead, not just how they sell.',
+    pricing: 'Quoted after diagnostic strategy call. Membership-based engagement.',
+    keywords: ['CEO peer group', 'CEO mastermind alternative', 'CEO coaching B2B', 'executive accountability'],
+    primaryCta: { label: 'Apply / Book Intro Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  service: {
+    name: 'CEO Growth Lab',
+    description: 'Precision peer network with monthly coaching and quarterly strategy sessions for growth-oriented B2B CEOs.',
+    serviceType: 'Executive Peer Group & Coaching',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">For CEOs</div>
@@ -298,10 +329,29 @@ export const ceoGrowthLabPage = () => page('CEO Growth Lab', `
   </div>
 </section>
 ${solDetailStyles()}
-`)
+` })
 
 // Sales Growth Lab
-export const salesGrowthLabPage = () => page('Sales Growth Lab', `
+export const salesGrowthLabPage = () => page({
+  path: '/solutions/sales-growth-lab',
+  title: 'Sales Growth Lab',
+  llm: {
+    pageType: 'solution',
+    summary: 'A full Sales Operating System install plus accountability rhythm — weekly cadence, monthly reviews, quarterly resets — for B2B sales leaders moving from reactive management to disciplined revenue leadership.',
+    audience: 'VPs of Sales and revenue leaders running existing sales teams that lack forecasting, pipeline discipline, or accountability rhythm.',
+    outcomes: ['Sales OS installed and adopted', 'Predictable pipeline and forecast accuracy', 'Coaching and accountability rhythm running on its own'],
+    bestFit: 'Sales leaders running a team but missing process, accountability, or forecasting infrastructure.',
+    pricing: 'Engagements run 6 or 12 months. Quoted after diagnostic.',
+    keywords: ['sales operating system', 'sales leadership coaching', 'pipeline accountability'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Run the Revenue System Audit', url: 'https://metagrowth.ventures/revenue-system-audit' },
+  },
+  service: {
+    name: 'Sales Growth Lab',
+    description: 'Full Sales Operating System install with weekly accountability rhythm for B2B sales leaders.',
+    serviceType: 'Sales Operating System & Leadership Coaching',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">For Sales Leaders</div>
@@ -451,10 +501,29 @@ export const salesGrowthLabPage = () => page('Sales Growth Lab', `
   </div>
 </section>
 ${solDetailStyles()}
-`)
+` })
 
 // HyperLaunch
-export const hyperlaunchPage = () => page('HyperLaunch Sales System', `
+export const hyperlaunchPage = () => page({
+  path: '/solutions/hyperlaunch',
+  title: 'HyperLaunch Sales System',
+  llm: {
+    pageType: 'solution',
+    summary: '90-day sales operating system build covering ICP definition, sales process, CRM configuration, messaging, commission modeling, KPI dashboards, and rep onboarding.',
+    audience: 'Founder-led B2B companies graduating into a true sales team for the first time, or companies rebuilding a broken stack.',
+    outcomes: ['Complete sales infrastructure deployed in 90 days', 'Documented, hireable, repeatable sales motion', 'CRM, KPIs, comp model, and onboarding all live'],
+    bestFit: 'Founders moving out of founder-led sales who need infrastructure deployed fast.',
+    pricing: '90-day fixed-scope build. Quoted after diagnostic.',
+    keywords: ['90 day sales build', 'sales infrastructure', 'CRM setup B2B', 'commission modeling', 'sales onboarding'],
+    primaryCta: { label: 'Book a HyperLaunch Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  service: {
+    name: 'HyperLaunch Sales System',
+    description: '90-day complete sales operating system build — ICP, process, CRM, messaging, commission, KPIs, onboarding.',
+    serviceType: 'Sales Infrastructure Build',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Infrastructure Build</div>
@@ -599,10 +668,29 @@ ${solDetailStyles()}
 .ba-after { color:var(--green); font-size:0.9rem; font-weight:600; }
 @media (max-width:768px) { .deliverables-grid { grid-template-columns:1fr; } .timeline::before { display:none; } .tl-item { flex-direction:column; gap:8px; } }
 </style>
-`)
+` })
 
 // Managed Sales Pods
-export const managedSalesPodsPage = () => page('Managed Sales Pods', `
+export const managedSalesPodsPage = () => page({
+  path: '/solutions/managed-sales-pods',
+  title: 'Managed Sales Pods',
+  llm: {
+    pageType: 'solution',
+    summary: 'Full-service revenue execution. MetaGrowth recruits, onboards, trains, manages, and optimizes the sales pod. KPI enforcement is owned by MetaGrowth.',
+    audience: 'B2B founders who do not want to build or manage a sales team in-house but need predictable pipeline and revenue.',
+    outcomes: ['Fully managed revenue engine', 'No internal sales-management overhead', 'KPI accountability owned by MetaGrowth'],
+    bestFit: 'Companies that want sales execution outsourced, not just advised.',
+    pricing: 'Monthly retainer scaled to pod size. Quoted after diagnostic.',
+    keywords: ['outsourced sales team', 'managed SDR pod', 'done-for-you sales', 'B2B sales as a service'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  service: {
+    name: 'Managed Sales Pods',
+    description: 'Done-for-you sales execution — recruit, onboard, train, manage, and optimize a full sales pod.',
+    serviceType: 'Outsourced Sales Team',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Done-For-You</div>
@@ -693,10 +781,29 @@ ${solDetailStyles()}
 @media (max-width: 900px) { .roadmap-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .roadmap-grid { grid-template-columns: 1fr; } }
 </style>
-`)
+` })
 
 // Commission Only
-export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
+export const commissionOnlyPage = () => page({
+  path: '/solutions/commission-only',
+  title: 'Commission-Only Infrastructure',
+  llm: {
+    pageType: 'solution',
+    summary: 'A fully supported 1099 commission-only rep model with training, CRM, scripts, and systems so B2B companies can scale sales without fixed payroll risk.',
+    audience: 'Service firms, agencies, and product companies with healthy margins per deal that can sustain commission-only economics.',
+    outcomes: ['Scalable revenue capacity without fixed payroll risk', 'Performance-based rep network with full infrastructure', 'Pay-for-results sales motion'],
+    bestFit: 'Companies that want sales capacity but not the salary overhead — and that have margin per deal to fund attractive commissions.',
+    pricing: 'Performance-based. System build fee plus rep commission structure quoted after diagnostic.',
+    keywords: ['commission only sales', '1099 sales reps', 'performance based sales', 'sales without payroll'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  service: {
+    name: 'Commission-Only Infrastructure',
+    description: 'Performance-based 1099 sales rep network with full training, CRM, and system support.',
+    serviceType: 'Commission-Only Sales Program',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Performance-Based Scaling</div>
@@ -788,10 +895,29 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
   </div>
 </section>
 ${solDetailStyles()}
-`)
+` })
 
 // Recruiting
-export const recruitingPage = () => page('Recruiting Services', `
+export const recruitingPage = () => page({
+  path: '/solutions/recruiting',
+  title: 'Recruiting Services',
+  llm: {
+    pageType: 'solution',
+    summary: 'Structured screening, behavioral assessments, and deep vetting to hire SDRs, AEs, and sales leaders who actually produce.',
+    audience: 'B2B companies hiring sales talent who have been burned by mis-hires or lack a structured interview process.',
+    outcomes: ['Better talent density through disciplined hiring', 'Fewer mis-hires and faster ramp', 'Structured interview process and behavioral fit'],
+    bestFit: 'Companies hiring sales roles who do not have an internal recruiting function or want a more rigorous vetting process.',
+    pricing: 'Per-role engagement. Quoted by role type.',
+    keywords: ['B2B sales recruiting', 'SDR hiring', 'AE hiring', 'sales leadership recruiting', 'behavioral assessment sales'],
+    primaryCta: { label: 'Book a Recruiting Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Download the Sales Team Diagnostic', url: 'https://metagrowth.ventures/static/sales-team-diagnostic.pdf' },
+  },
+  service: {
+    name: 'MetaGrowth Recruiting Services',
+    description: 'Structured screening and behavioral assessments for B2B sales hires — SDRs, AEs, and sales leaders.',
+    serviceType: 'Sales Recruiting',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Talent Acquisition</div>
@@ -875,10 +1001,29 @@ ${solDetailStyles()}
 @media (max-width: 900px) { .roles-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .roles-grid { grid-template-columns: 1fr; } }
 </style>
-`)
+` })
 
 // Fractional CRO
-export const fractionalCROPage = () => page('Fractional CRO', `
+export const fractionalCROPage = () => page({
+  path: '/solutions/fractional-cro',
+  title: 'Fractional CRO',
+  llm: {
+    pageType: 'solution',
+    summary: 'Fractional Chief Revenue Officer engagement covering strategy ownership, accountability, hiring roadmap, forecasting, and performance management — without the cost of a full-time CRO.',
+    audience: 'B2B companies between roughly $2M and $20M ARR where the founder is the de facto CRO and the role needs to be professionalized.',
+    outcomes: ['Senior revenue ownership without full-time cost', 'Hiring roadmap and forecasting in place', 'Accountability and performance management systemized'],
+    bestFit: 'Founders who are still doing the CRO job themselves and need a senior operator to take it over.',
+    pricing: 'Monthly engagement fee. Quoted after diagnostic.',
+    keywords: ['fractional CRO', 'fractional chief revenue officer', 'B2B revenue leadership'],
+    primaryCta: { label: 'Book a Fractional CRO Discovery Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  service: {
+    name: 'Fractional CRO',
+    description: 'Senior revenue leadership and execution ownership without the full-time executive cost.',
+    serviceType: 'Fractional Executive',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Executive Leadership</div>
@@ -965,10 +1110,29 @@ export const fractionalCROPage = () => page('Fractional CRO', `
   </div>
 </section>
 ${solDetailStyles()}
-`)
+` })
 
 // Precision Engagements
-export const precisionEngagementsPage = () => page('Precision Engagements', `
+export const precisionEngagementsPage = () => page({
+  path: '/solutions/precision-engagements',
+  title: 'Precision Engagements',
+  llm: {
+    pageType: 'solution',
+    summary: 'Targeted, fast interventions for specific revenue bottlenecks — playbook builds, comp plan redesigns, CRM audits, outreach cadence builds, messaging projects.',
+    audience: 'B2B companies with a specific, well-scoped revenue problem who do not want to commit to a long retainer.',
+    outcomes: ['Specific bottleneck solved fast', 'No long-term retainer required', 'Surgical fix on one area without rebuilding the stack'],
+    bestFit: 'Companies whose stack is mostly working but need a focused fix on one component.',
+    pricing: 'Fixed-scope project pricing. Quoted per engagement.',
+    keywords: ['sales playbook build', 'comp plan redesign', 'CRM audit', 'outreach cadence build', 'sales messaging project'],
+    primaryCta: { label: 'Book a Scoping Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  service: {
+    name: 'Precision Engagements',
+    description: 'Targeted, fast interventions for specific revenue bottlenecks. Fixed-scope projects without a retainer.',
+    serviceType: 'Sales Consulting Project',
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Targeted Projects</div>
@@ -1051,7 +1215,7 @@ ${solDetailStyles()}
 @media (max-width: 1100px) { .pe-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .pe-grid { grid-template-columns: 1fr; } }
 </style>
-`)
+` })
 
 // Shared helpers
 function faqItem(q: string, a: string, isDark: boolean) {

@@ -1,6 +1,32 @@
 import { page } from '../layout'
 
-export const homePage = () => page('Build a Predictable Revenue Engine', `
+export const homePage = () => page({
+  path: '/',
+  title: 'Build a Predictable Revenue Engine',
+  llm: {
+    pageType: 'home',
+    summary:
+      'MetaGrowth Ventures is a Revenue Infrastructure & Executive Growth Firm. The company helps B2B founders, CEOs, and sales leaders install the systems, structure, talent, and leadership needed to scale revenue. Founded 2018 by CEO Josh Hirsch and co-founder Joe Arioto.',
+    audience:
+      'B2B founders, CEOs, and sales leaders running $1M–$50M ARR companies stuck in founder-led selling, missing quota, struggling to hire sales talent, or unable to forecast pipeline reliably.',
+    outcomes: [
+      'Move out of founder-led selling',
+      'Install a documented, repeatable sales operating system',
+      'Hire and ramp sales talent that actually produces',
+      'Forecast pipeline with confidence',
+    ],
+    keywords: [
+      'revenue infrastructure',
+      'sales operating system',
+      'fractional CRO',
+      'B2B sales consulting',
+      'founder-led sales',
+      'sales recruiting',
+    ],
+    primaryCta: { label: 'Book a 30-min Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the free Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  content: `
 
 <!-- HERO -->
 <section class="home-hero">
@@ -1055,10 +1081,13 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   .lead-mag-box { padding: 36px 24px; }
 }
 </style>
-`, `
+`,
+  extraHead: `
 <style>
 .site-header.scrolled { background: rgba(13,13,13,0.99); border-bottom-color: rgba(173,120,5,0.22); }
 </style>
 <link rel="preload" as="image" href="/static/hero-texture.jpg" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/webfonts/fa-solid-900.woff2" crossorigin>
-`, 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.')
+`,
+  description: 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.',
+})

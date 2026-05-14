@@ -1,0 +1,16 @@
+/* TEAM */
+CEO & Co-Founder: Josh Hirsch
+Co-Founder: Joe Arioto
+Strategy-call host: Lance Hengst
+Site: https://metagrowth.ventures
+Contact: sales@metagrowth.ventures
+Booking: https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session
+
+/* THANKS */
+The growth-oriented B2B operators who keep choosing infrastructure over
+guesswork. The 320+ clients added across MetaGrowth engagements.
+
+/* SITE */
+Standards: HTML5, CSS3, Schema.org JSON-LD, Open Graph, Twitter Cards
+Components: Hono on Cloudflare Pages
+Last update: 2026-04-30

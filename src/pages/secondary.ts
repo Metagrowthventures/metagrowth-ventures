@@ -1,7 +1,19 @@
-import { page, nav, footer, globalStyles } from '../layout'
+import { page, nav, footer, globalStyles, aiVisibilityHead } from '../layout'
 
 // ─── ABOUT ───────────────────────────────────────────────────────────────────
-export const aboutPage = () => page('About', `
+export const aboutPage = () => page({
+  path: '/about',
+  title: 'About',
+  llm: {
+    pageType: 'about',
+    summary: 'MetaGrowth Ventures is a Revenue Infrastructure & Executive Growth Firm founded in 2018 by Josh Hirsch (CEO) and Joe Arioto. The firm builds the system, installs the accountability, and deploys the talent rather than handing over reports.',
+    audience: 'B2B founders, CEOs, and operators evaluating MetaGrowth as a revenue partner.',
+    outcomes: ['Understand the MetaGrowth philosophy', 'See the track record: $100M+ pipeline, 21K+ outreaches, $16M+ revenue, 320+ clients', 'Decide whether to book a strategy call'],
+    keywords: ['MetaGrowth Ventures about', 'MetaGrowth founders', 'Josh Hirsch CEO MetaGrowth', 'Joe Arioto MetaGrowth'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Take the Revenue Engine Assessment', url: 'https://metagrowth.ventures/assessment' },
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">About MetaGrowth Ventures</div>
@@ -173,10 +185,22 @@ export const aboutPage = () => page('About', `
 @media (max-width: 1100px) { .about-layout { grid-template-columns: 1fr; } .diff-compare-grid { grid-template-columns: 1fr; } .principles-grid { grid-template-columns: repeat(2, 1fr); } .ecosystem-diagram { flex-direction: column; } .eco-items { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .principles-grid { grid-template-columns: 1fr; } .about-stat-box { grid-template-columns: 1fr; } .about-stat:nth-child(odd) { border-right: none; } }
 </style>
-`)
+` })
 
 // ─── CASE STUDIES ─────────────────────────────────────────────────────────────
-export const caseStudiesPage = () => page('Case Studies', `
+export const caseStudiesPage = () => page({
+  path: '/case-studies',
+  title: 'Case Studies',
+  llm: {
+    pageType: 'collection',
+    summary: 'Real-client revenue outcomes across MetaGrowth engagements: $100M+ pipeline generated, 21,000+ prospecting outreaches, $16M+ revenue added, 320+ clients added across 8 solutions and multiple industries.',
+    audience: 'B2B founders and revenue leaders evaluating MetaGrowth and looking for proof of outcomes.',
+    outcomes: ['See verified client outcomes', 'Understand the engagement-to-revenue path', 'Build conviction before booking a call'],
+    keywords: ['MetaGrowth case studies', 'B2B sales case studies', 'sales infrastructure results'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Explore Solutions', url: 'https://metagrowth.ventures/solutions' },
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Case Studies</div>
@@ -337,10 +361,22 @@ csfBtns.forEach(btn => {
   });
 });
 </script>
-`)
+` })
 
 // ─── HOW WE WORK ──────────────────────────────────────────────────────────────
-export const howWeWorkPage = () => page('How We Work', `
+export const howWeWorkPage = () => page({
+  path: '/how-we-work',
+  title: 'How We Work',
+  llm: {
+    pageType: 'about',
+    summary: 'The MetaGrowth engagement methodology: Diagnose, Design, Deploy, Drive. A four-stage cycle that begins with a diagnostic, designs the right system for the company stage, deploys the system and talent, then drives accountability rhythm until outcomes are sustained.',
+    audience: 'Buyers evaluating how MetaGrowth actually delivers an engagement.',
+    outcomes: ['Understand the four engagement phases', 'See how diagnostics feed engagement scope', 'See accountability/cadence model'],
+    keywords: ['MetaGrowth methodology', 'sales engagement model', 'diagnose design deploy drive'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Run the Revenue System Audit', url: 'https://metagrowth.ventures/revenue-system-audit' },
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">How We Work</div>
@@ -516,10 +552,22 @@ export const howWeWorkPage = () => page('How We Work', `
 @media (max-width: 900px) { .hww-phase { grid-template-columns: 1fr; gap: 16px; } .hww-num { font-size: 2.5rem; } .expect-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .expect-grid { grid-template-columns: 1fr; } }
 </style>
-`)
+` })
 
 // ─── INDUSTRIES ───────────────────────────────────────────────────────────────
-export const industriesPage = () => page('Industries', `
+export const industriesPage = () => page({
+  path: '/industries',
+  title: 'Industries',
+  llm: {
+    pageType: 'industry',
+    summary: 'Industry-specific bottleneck patterns and MetaGrowth solution mappings across Software/SaaS, Consulting & Coaching, Professional Services, Manufacturing, Technical Services, Agencies, and Growth-Stage B2B.',
+    audience: 'B2B operators looking for industry-specific framing of their revenue infrastructure problems.',
+    outcomes: ['See your industry bottleneck pattern', 'Get the MetaGrowth solution mapping for your industry', 'Decide whether to book a strategy call'],
+    keywords: ['B2B SaaS sales consulting', 'manufacturing inside sales', 'professional services prospecting', 'agency new business development', 'technical services sales'],
+    primaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Explore Solutions', url: 'https://metagrowth.ventures/solutions' },
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Industries</div>
@@ -574,10 +622,22 @@ export const industriesPage = () => page('Industries', `
 .ind-service-link:hover { color: var(--green); }
 @media (max-width: 900px) { .ind-body { grid-template-columns: 1fr; gap: 20px; } }
 </style>
-`)
+` })
 
 // ─── RESOURCES ────────────────────────────────────────────────────────────────
-export const resourcesPage = () => page('Resources', `
+export const resourcesPage = () => page({
+  path: '/resources',
+  title: 'Resources',
+  llm: {
+    pageType: 'resource',
+    summary: "Free, ungated resources: The Founder's Growth Guide, The Revenue System Blueprint, the Sales Team Performance Diagnostic, the AI Stack Guide 2026, plus the live Revenue System Audit and Revenue Engine Assessment.",
+    audience: 'B2B founders and sales leaders looking for frameworks before committing to an engagement.',
+    outcomes: ["Download the Founder's Growth Guide", 'Run the Revenue System Audit', 'Use the Revenue System Blueprint as an internal framework'],
+    keywords: ['B2B revenue resources', 'sales team diagnostic', 'revenue system blueprint', 'founder growth guide', 'AI stack for sales'],
+    primaryCta: { label: 'Run the Revenue System Audit', url: 'https://metagrowth.ventures/revenue-system-audit' },
+    secondaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+  },
+  content: `
 <section class="page-hero">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Resources</div>
@@ -720,10 +780,22 @@ export const resourcesPage = () => page('Resources', `
 @media (max-width: 900px) { .lead-magnets-grid { grid-template-columns: 1fr; } .lm-card.featured { grid-template-columns: 1fr; } .resource-cats { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .resource-cats { grid-template-columns: 1fr; } }
 </style>
-`)
+` })
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
-export const contactPage = () => page('Contact', `
+export const contactPage = () => page({
+  path: '/contact',
+  title: 'Contact',
+  llm: {
+    pageType: 'contact',
+    summary: 'Contact MetaGrowth Ventures. Email sales@metagrowth.ventures or book a 30-minute strategy call directly with Lance Hengst on the MetaGrowth team.',
+    audience: 'Anyone trying to reach MetaGrowth Ventures for a sales conversation, partnership, or general inquiry.',
+    outcomes: ['Reach MetaGrowth via email', 'Book a 30-min strategy call', 'Get a response within one business day'],
+    keywords: ['contact MetaGrowth Ventures', 'book strategy call MetaGrowth', 'sales@metagrowth.ventures'],
+    primaryCta: { label: 'Book a 30-min Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    secondaryCta: { label: 'Email sales@metagrowth.ventures', url: 'mailto:sales@metagrowth.ventures' },
+  },
+  content: `
 <section class="page-hero" style="padding-bottom:60px;">
   <div class="container page-hero-content">
     <div class="hero-eyebrow">Get In Touch</div>
@@ -931,7 +1003,7 @@ if (form) {
 @media (max-width: 1100px) { .contact-layout { grid-template-columns: 1fr; } .contact-info-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; } .contact-proof-box { grid-template-columns: repeat(3, 1fr); } .cp-metric { border-bottom: none; border-right: 1px solid rgba(255,255,255,0.08); } .cp-metric:last-child { border-right: none; } }
 @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } .contact-info-col { grid-template-columns: 1fr; } .contact-proof-box { grid-template-columns: 1fr; } .cp-metric { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; } .cp-metric:last-child { border-bottom: none !important; } }
 </style>
-`)
+` })
 
 // Helpers
 function industryCard(icon: string, name: string, bottleneckLabel: string, bottleneck: string, fitLabel: string, fit: string, solutions: string[]) {
@@ -952,7 +1024,20 @@ export const revenueSystemAuditPage = () => `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revenue System Audit™ | MetaGrowth Ventures</title>
-  <meta name="description" content="Identify where revenue is leaking inside your sales process. 5-7 minute executive diagnostic.">
+  ${aiVisibilityHead({
+    path: '/revenue-system-audit',
+    title: 'Revenue System Audit',
+    description: 'Identify where revenue is leaking inside your sales process. A free 5–7 minute executive diagnostic from MetaGrowth Ventures.',
+    llm: {
+      pageType: 'diagnostic',
+      summary: 'A free 5–7 minute Revenue System Audit™ that identifies where revenue is leaking across the seven stages of a B2B revenue engine: Market & ICP Clarity, Messaging, Pipeline Generation, Qualification, Execution, Pipeline Management, and Optimization.',
+      audience: 'B2B founders and revenue leaders who want a quick scored diagnostic before booking a strategy call.',
+      outcomes: ['Score your revenue engine across 7 stages', 'See where pipeline is leaking', 'Get a recommended MetaGrowth solution match'],
+      keywords: ['revenue system audit', 'sales process audit', 'pipeline diagnostic', 'B2B revenue audit'],
+      primaryCta: { label: 'Run the Audit (free, 5–7 minutes)', url: 'https://metagrowth.ventures/revenue-system-audit' },
+      secondaryCta: { label: 'Book a Strategy Call', url: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' },
+    },
+  })}
   <link rel="icon" type="image/png" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
