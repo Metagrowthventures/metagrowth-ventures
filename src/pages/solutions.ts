@@ -1505,6 +1505,8 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
 
 ${solDetailStyles()}
 <style>
+/* ── Growth OS Hero CTA centering ───────────────────────────────────────── */
+.gos-hero .hero-cta-row { justify-content: center; }
 /* ── Growth OS Hero ──────────────────────────────────────────────────────── */
 .gos-hero { min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; background: #111 url('/static/hero-texture.jpg') center/cover no-repeat; position: relative; padding: 100px 0 80px; }
 .gos-hero::before { content:''; position:absolute; inset:0; background: linear-gradient(135deg,rgba(0,0,0,0.82) 0%,rgba(0,0,0,0.55) 100%); }
