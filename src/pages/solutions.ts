@@ -101,6 +101,16 @@ export const solutionsPage = () => page('Solutions', `
         </div>
         <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
       </a>
+      <a href="/solutions/growth-os" class="full-sol-card" style="border-color:rgba(173,120,5,0.35);background:rgba(173,120,5,0.03);">
+        <div class="fsol-icon" style="background:rgba(173,120,5,0.15);"><i class="fas fa-layer-group"></i></div>
+        <div class="fsol-body">
+          <div class="fsol-tag" style="color:var(--green);">Revenue Infrastructure Platform</div>
+          <h3>Growth OS™</h3>
+          <p>Centralized outbound revenue infrastructure — CRM workflows, AI-assisted outreach, pipeline visibility, accountability systems, and revenue operations.</p>
+          <div class="fsol-outcome">Key Outcome: Fully operationalized outbound revenue engine</div>
+        </div>
+        <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
     </div>
   </div>
 </section>
@@ -1052,6 +1062,501 @@ ${solDetailStyles()}
 @media (max-width: 640px) { .pe-grid { grid-template-columns: 1fr; } }
 </style>
 `)
+
+// Growth OS
+export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure For Modern Sales Teams', `
+
+<!-- HERO -->
+<section class="gos-hero">
+  <div class="container gos-hero-inner">
+    <div class="hero-eyebrow">Revenue Infrastructure Platform</div>
+    <h1 class="gos-hero-title">Growth OS™<br><span class="accent">Revenue Infrastructure For Modern Sales Teams</span></h1>
+    <p class="gos-hero-sub">Build, manage, and scale outbound sales with centralized systems, CRM workflows, AI-assisted outreach, pipeline visibility, and operational accountability.</p>
+    <p class="gos-hero-sub2">Whether you run it internally or want expert oversight, Growth OS™ helps operationalize predictable revenue generation.</p>
+    <div class="hero-cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Demo</a>
+      <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
+    </div>
+  </div>
+</section>
+
+<!-- CALLOUT -->
+<section class="gos-callout">
+  <div class="container">
+    <div class="gos-callout-box fade-in">
+      <p class="gos-callout-lead">Most companies don't have a true revenue system.</p>
+      <p class="gos-callout-body">They have disconnected tools, inconsistent follow up, weak CRM discipline, fragmented outbound efforts, and sales processes that live inside individual reps instead of scalable infrastructure.</p>
+      <p class="gos-callout-cta-text"><strong>Growth OS™ centralizes and operationalizes outbound sales execution.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2 — THE PROBLEM -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px;">
+      <span class="section-label">The Problem</span>
+      <h2 class="section-title">Why Most Revenue Systems Fail</h2>
+    </div>
+    <div class="gos-problem-grid fade-in">
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-random"></i></div>
+        <h4>Inconsistent Outbound</h4>
+        <p>Salespeople prospect inconsistently, follow-up weakens over time, and pipeline activity becomes unpredictable.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-database"></i></div>
+        <h4>CRM Chaos</h4>
+        <p>Leads fall through cracks, pipelines become unreliable, and leadership loses visibility into actual performance.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-unlink"></i></div>
+        <h4>Disconnected Tools</h4>
+        <p>CRM, LinkedIn, email outreach, automations, reporting, and workflows rarely operate together cohesively.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-user-tie"></i></div>
+        <h4>Founder Dependency</h4>
+        <p>Too much revenue generation depends on leadership instead of scalable systems and process enforcement.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-exclamation-triangle"></i></div>
+        <h4>Weak Accountability</h4>
+        <p>Without KPI visibility and operational structure, activity and execution decline rapidly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 — WHAT IS GROWTH OS -->
+<section class="section">
+  <div class="container">
+    <div class="gos-what-grid fade-in">
+      <div class="gos-what-main">
+        <span class="section-label">What Is Growth OS™</span>
+        <h2 class="section-title">Revenue Infrastructure Built For B2B Growth</h2>
+        <p style="font-size:1.05rem;color:var(--gray-600);margin-bottom:28px;">Growth OS™ is a centralized outbound revenue infrastructure platform designed to operationalize:</p>
+        <div class="gos-pill-grid">
+          <span class="gos-pill">Prospecting</span>
+          <span class="gos-pill">Follow-up</span>
+          <span class="gos-pill">CRM Workflows</span>
+          <span class="gos-pill">AI-Assisted Outreach</span>
+          <span class="gos-pill">Pipeline Management</span>
+          <span class="gos-pill">Reporting</span>
+          <span class="gos-pill">Sales Accountability</span>
+          <span class="gos-pill">Revenue Operations</span>
+        </div>
+        <div class="gos-not-crm">
+          <p><strong>This is not "just another CRM."</strong></p>
+          <p>Growth OS™ connects your outbound systems, workflows, messaging, accountability, and execution into one operational framework.</p>
+        </div>
+      </div>
+      <div class="gos-what-side">
+        <div class="side-box">
+          <h4>Platform Snapshot</h4>
+          <div class="quick-fact"><span class="qf-label">Focus</span><span>Outbound Revenue</span></div>
+          <div class="quick-fact"><span class="qf-label">Best For</span><span>B2B Sales Teams</span></div>
+          <div class="quick-fact"><span class="qf-label">Options</span><span>Self-Managed / Managed</span></div>
+          <div class="quick-fact"><span class="qf-label">Setup</span><span>Infrastructure + Systems</span></div>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 — HOW IT WORKS -->
+<section class="section section-dark" id="how-it-works">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px;">
+      <span class="section-label">The Stack</span>
+      <h2 style="color:var(--white);margin-bottom:0;">The Revenue Infrastructure Stack™</h2>
+    </div>
+    <div class="gos-stack-grid fade-in">
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-bullhorn"></i></div>
+        <h4>Outbound Infrastructure</h4>
+        <ul>
+          <li>LinkedIn outreach systems</li>
+          <li>Email sequencing</li>
+          <li>Domain &amp; inbox frameworks</li>
+          <li>AI-assisted messaging</li>
+          <li>Follow-up automation</li>
+        </ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-funnel-dollar"></i></div>
+        <h4>CRM &amp; Pipeline Management</h4>
+        <ul>
+          <li>Pipeline stages</li>
+          <li>Lead routing</li>
+          <li>Automated workflows</li>
+          <li>KPI tracking</li>
+          <li>Opportunity management</li>
+        </ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-chart-line"></i></div>
+        <h4>Reporting &amp; Visibility</h4>
+        <ul>
+          <li>Leadership dashboards</li>
+          <li>Activity tracking</li>
+          <li>Conversion visibility</li>
+          <li>Pipeline reporting</li>
+          <li>Revenue forecasting support</li>
+        </ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-tasks"></i></div>
+        <h4>Operational Accountability</h4>
+        <ul>
+          <li>Rep scorecards</li>
+          <li>Follow-up standards</li>
+          <li>Activity benchmarks</li>
+          <li>Workflow enforcement</li>
+          <li>Pipeline hygiene systems</li>
+        </ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-robot"></i></div>
+        <h4>AI &amp; Automation</h4>
+        <ul>
+          <li>AI prompt libraries</li>
+          <li>Messaging assistance</li>
+          <li>Prospect research workflows</li>
+          <li>Personalization frameworks</li>
+          <li>Automated operational workflows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 — TWO OPTIONS -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px;">
+      <span class="section-label">Two Ways To Use Growth OS™</span>
+      <h2 class="section-title">Choose the model that fits your team</h2>
+    </div>
+    <div class="gos-options-grid fade-in">
+
+      <!-- Option 1 -->
+      <div class="gos-option-card">
+        <div class="gos-option-badge">Option 1</div>
+        <h3>Growth OS™ Self-Managed</h3>
+        <p class="gos-option-tagline">Build &amp; Run Your Revenue Infrastructure Internally</p>
+        <p class="gos-option-desc">Ideal for companies that want the systems, workflows, templates, and infrastructure while managing execution internally.</p>
+        <div class="gos-includes-block">
+          <h5>Includes</h5>
+          <ul>
+            <li>CRM workflow systems</li>
+            <li>LinkedIn outreach framework</li>
+            <li>Email sequencing infrastructure</li>
+            <li>Dashboarding &amp; KPI tracking</li>
+            <li>AI-assisted messaging prompts</li>
+            <li>SOP library</li>
+            <li>Templates &amp; scripts</li>
+            <li>Automation workflows</li>
+            <li>Pipeline frameworks</li>
+          </ul>
+        </div>
+        <div class="gos-best-for">
+          <h5>Best For</h5>
+          <ul>
+            <li>Founder-led sales teams</li>
+            <li>Small outbound teams</li>
+            <li>Companies building internal SDR teams</li>
+            <li>Businesses wanting more operational structure</li>
+          </ul>
+        </div>
+        <div class="gos-pricing">
+          <h5>Pricing</h5>
+          <div class="gos-price-row"><span class="gos-tier">Starter</span><span class="gos-price">$225<span>/mo</span></span></div>
+          <div class="gos-price-row"><span class="gos-tier">Growth</span><span class="gos-price">$397<span>/mo</span></span></div>
+          <div class="gos-price-row"><span class="gos-tier">Pro</span><span class="gos-price">$697<span>/mo</span></span></div>
+        </div>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;">Explore Self-Managed</a>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="gos-option-card gos-option-featured">
+        <div class="gos-option-badge gos-badge-gold">Option 2</div>
+        <h3>Growth OS™ Managed</h3>
+        <p class="gos-option-tagline">Revenue Infrastructure + Operational Oversight</p>
+        <p class="gos-option-desc">We help oversee, optimize, and operationalize your outbound revenue engine — infrastructure plus active management, optimization, response handling, and outbound oversight.</p>
+        <div class="gos-includes-block">
+          <h5>Includes Everything In Self-Managed Plus:</h5>
+          <ul>
+            <li>Inbox monitoring</li>
+            <li>Response handling</li>
+            <li>Appointment coordination</li>
+            <li>Campaign optimization</li>
+            <li>Deliverability oversight</li>
+            <li>CRM enforcement</li>
+            <li>KPI oversight</li>
+            <li>Weekly optimization reviews</li>
+            <li>Follow-up management</li>
+            <li>Pipeline activity oversight</li>
+          </ul>
+        </div>
+        <div class="gos-best-for">
+          <h5>Best For</h5>
+          <ul>
+            <li>Companies lacking internal outbound management</li>
+            <li>Teams wanting operational support</li>
+            <li>Businesses needing accountability and consistency</li>
+            <li>Organizations scaling outbound aggressively</li>
+          </ul>
+        </div>
+        <div class="gos-pricing">
+          <h5>Pricing</h5>
+          <div class="gos-price-row"><span class="gos-tier">Starting at</span><span class="gos-price">$1,500<span>/mo</span></span></div>
+        </div>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-gold" style="width:100%;justify-content:center;margin-top:28px;">Book A Strategy Call</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6 — DIFFERENTIATION -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:48px;">
+      <span class="section-label">What Makes Growth OS™ Different</span>
+      <h2 style="color:var(--white);margin-bottom:16px;">Most Companies Buy Tools.<br>High-Growth Companies Build Revenue Infrastructure.</h2>
+    </div>
+    <div class="gos-diff-grid fade-in">
+      <div class="gos-diff-fail">
+        <h5 style="color:rgba(255,255,255,0.4);margin-bottom:18px;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;">Why Most Sales Systems Fail</h5>
+        <ul>
+          <li><i class="fas fa-times"></i> Nobody owns execution</li>
+          <li><i class="fas fa-times"></i> Follow-up becomes inconsistent</li>
+          <li><i class="fas fa-times"></i> CRM discipline disappears</li>
+          <li><i class="fas fa-times"></i> Outbound weakens over time</li>
+          <li><i class="fas fa-times"></i> Leadership loses visibility</li>
+          <li><i class="fas fa-times"></i> Systems become fragmented</li>
+        </ul>
+      </div>
+      <div class="gos-diff-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="gos-diff-win">
+        <h5 style="color:var(--green);margin-bottom:18px;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;">Growth OS™ Operationalizes Consistency</h5>
+        <ul>
+          <li><i class="fas fa-check"></i> Centralized execution ownership</li>
+          <li><i class="fas fa-check"></i> Systematic follow-up frameworks</li>
+          <li><i class="fas fa-check"></i> Enforced CRM discipline</li>
+          <li><i class="fas fa-check"></i> Always-on outbound infrastructure</li>
+          <li><i class="fas fa-check"></i> Real-time leadership visibility</li>
+          <li><i class="fas fa-check"></i> Unified revenue operations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 — IDEAL CLIENTS -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">Who It's Built For</span>
+      <h2 class="section-title">Growth OS™ Is Built For</h2>
+    </div>
+    <div class="gos-who-grid fade-in">
+      <div class="gos-who-card">
+        <div class="gos-who-icon"><i class="fas fa-building"></i></div>
+        <h4>B2B Companies</h4>
+        <p>With complex or consultative sales cycles that demand consistent, structured outbound.</p>
+      </div>
+      <div class="gos-who-card">
+        <div class="gos-who-icon"><i class="fas fa-rocket"></i></div>
+        <h4>Founder-Led Sales Teams</h4>
+        <p>That need scalable infrastructure beyond founder involvement to maintain growth momentum.</p>
+      </div>
+      <div class="gos-who-card">
+        <div class="gos-who-icon"><i class="fas fa-tasks"></i></div>
+        <h4>Sales Teams Needing Accountability</h4>
+        <p>Organizations struggling with consistency, follow-up, or CRM discipline across the team.</p>
+      </div>
+      <div class="gos-who-card">
+        <div class="gos-who-icon"><i class="fas fa-chart-bar"></i></div>
+        <h4>Companies Scaling Outbound</h4>
+        <p>Businesses building predictable pipeline generation systems that don't break under scale.</p>
+      </div>
+      <div class="gos-who-card">
+        <div class="gos-who-icon"><i class="fas fa-cogs"></i></div>
+        <h4>Revenue Operations Leaders</h4>
+        <p>Teams wanting centralized reporting, visibility, and operational workflows in one place.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8 — OUTCOMES -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">Expected Outcomes</span>
+      <h2 class="section-title">What Companies Typically Improve</h2>
+    </div>
+    <div class="gos-outcomes-grid fade-in">
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>More consistent outbound activity</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Better pipeline visibility</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Faster speed-to-lead</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Improved follow-up consistency</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Cleaner CRM management</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Higher accountability across reps</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Stronger outbound systems</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Better leadership reporting</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>Reduced operational chaos</span></div>
+      <div class="gos-outcome-item"><i class="fas fa-check-circle"></i><span>More predictable pipeline generation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9 — ADD-ONS -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">Optional Add-Ons</span>
+      <h2 class="section-title">Additional Growth Infrastructure Services</h2>
+    </div>
+    <div class="gos-addons-grid fade-in">
+      <div class="gos-addon"><i class="fas fa-database"></i><span>CRM Implementation</span></div>
+      <div class="gos-addon"><i class="fas fa-hubspot" style="font-family:sans-serif;font-weight:700;font-style:normal;">HS</i><span>HubSpot Optimization</span></div>
+      <div class="gos-addon"><i class="fas fa-envelope-open-text"></i><span>Domain &amp; Inbox Setup</span></div>
+      <div class="gos-addon"><i class="fas fa-robot"></i><span>AI Sequence Development</span></div>
+      <div class="gos-addon"><i class="fab fa-linkedin"></i><span>LinkedIn Profile Optimization</span></div>
+      <div class="gos-addon"><i class="fas fa-search"></i><span>Sales Recruiting</span></div>
+      <div class="gos-addon"><i class="fas fa-user-graduate"></i><span>SDR Onboarding</span></div>
+      <div class="gos-addon"><i class="fas fa-tachometer-alt"></i><span>KPI Dashboard Customization</span></div>
+      <div class="gos-addon"><i class="fas fa-sitemap"></i><span>Sales Process Development</span></div>
+      <div class="gos-addon"><i class="fas fa-cogs"></i><span>Revenue Operations Consulting</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10 — CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Build A Revenue System That Actually Operates Consistently</h2>
+    <p>Growth OS™ helps companies operationalize outbound sales through centralized infrastructure, workflows, accountability systems, and revenue operations.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book A Demo</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-secondary btn-lg">Schedule A Strategy Call</a>
+    </div>
+    <p class="gos-footer-note">Growth OS™ is built and supported by MetaGrowth Ventures — specialists in outbound revenue systems, sales infrastructure, recruiting, and operational growth systems for B2B companies.</p>
+  </div>
+</section>
+
+${solDetailStyles()}
+<style>
+/* ── Growth OS Hero ──────────────────────────────────────────────────────── */
+.gos-hero { min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; background: #111 url('/static/hero-texture.jpg') center/cover no-repeat; position: relative; padding: 100px 0 80px; }
+.gos-hero::before { content:''; position:absolute; inset:0; background: linear-gradient(135deg,rgba(0,0,0,0.82) 0%,rgba(0,0,0,0.55) 100%); }
+.gos-hero-inner { position: relative; z-index: 1; max-width: 820px; text-align: center; }
+.gos-hero-title { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; color: var(--white); line-height: 1.1; margin: 16px 0 28px; }
+.gos-hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.78); max-width: 680px; margin: 0 auto 16px; line-height: 1.65; }
+.gos-hero-sub2 { font-size: 1rem; color: rgba(255,255,255,0.55); max-width: 580px; margin: 0 auto 36px; }
+/* ── Callout ───────────────────────────────────────────────────────────── */
+.gos-callout { background: var(--navy); padding: 64px 0; }
+.gos-callout-box { max-width: 760px; margin: 0 auto; text-align: center; }
+.gos-callout-lead { font-size: 1.5rem; font-weight: 700; color: var(--white); margin-bottom: 20px; }
+.gos-callout-body { font-size: 1rem; color: rgba(255,255,255,0.6); line-height: 1.75; margin-bottom: 20px; }
+.gos-callout-cta-text { font-size: 1.05rem; color: var(--green); }
+/* ── Problem grid ──────────────────────────────────────────────────────── */
+.gos-problem-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.gos-problem-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px 22px; transition: all var(--transition); }
+.gos-problem-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: var(--shadow); }
+.gos-prob-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.1); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.2rem; margin-bottom: 14px; }
+.gos-problem-card h4 { font-size: 0.95rem; color: var(--gray-800); margin-bottom: 8px; }
+.gos-problem-card p { font-size: 0.83rem; color: var(--gray-600); line-height: 1.5; }
+/* ── What section ──────────────────────────────────────────────────────── */
+.gos-what-grid { display: grid; grid-template-columns: 1fr 320px; gap: 56px; align-items: start; }
+.gos-pill-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.gos-pill { background: rgba(173,120,5,0.1); color: var(--green); border: 1px solid rgba(173,120,5,0.25); border-radius: 100px; padding: 6px 16px; font-size: 0.83rem; font-weight: 600; }
+.gos-not-crm { background: var(--gray-50); border-left: 4px solid var(--green); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; }
+.gos-not-crm p { font-size: 0.95rem; color: var(--gray-600); line-height: 1.65; margin: 0; }
+.gos-not-crm p + p { margin-top: 8px; }
+/* ── Stack grid ────────────────────────────────────────────────────────── */
+.gos-stack-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.gos-stack-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 28px 22px; transition: all var(--transition); }
+.gos-stack-card:hover { border-color: var(--green); }
+.gos-stack-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.12); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.2rem; margin-bottom: 14px; }
+.gos-stack-card h4 { font-size: 0.9rem; color: var(--white); margin-bottom: 12px; }
+.gos-stack-card ul { list-style: none; padding: 0; margin: 0; }
+.gos-stack-card ul li { font-size: 0.8rem; color: rgba(255,255,255,0.55); padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.gos-stack-card ul li:last-child { border-bottom: none; }
+/* ── Options grid ──────────────────────────────────────────────────────── */
+.gos-options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.gos-option-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 40px 36px; }
+.gos-option-featured { border-color: var(--green); box-shadow: 0 0 0 1px var(--green), var(--shadow-lg); }
+.gos-option-badge { display: inline-block; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; background: var(--gray-50); color: var(--gray-400); padding: 4px 12px; border-radius: 100px; margin-bottom: 16px; }
+.gos-badge-gold { background: rgba(173,120,5,0.12); color: var(--green); }
+.gos-option-card h3 { font-size: 1.5rem; color: var(--gray-800); margin-bottom: 8px; }
+.gos-option-tagline { font-size: 0.95rem; font-weight: 600; color: var(--green); margin-bottom: 12px; }
+.gos-option-desc { font-size: 0.88rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 24px; }
+.gos-includes-block, .gos-best-for { margin-bottom: 20px; }
+.gos-includes-block h5, .gos-best-for h5, .gos-pricing h5 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gray-400); font-weight: 700; margin-bottom: 10px; }
+.gos-includes-block ul, .gos-best-for ul { list-style: none; padding: 0; margin: 0; }
+.gos-includes-block ul li, .gos-best-for ul li { font-size: 0.85rem; color: var(--gray-600); padding: 5px 0 5px 20px; position: relative; border-bottom: 1px solid var(--gray-200); }
+.gos-includes-block ul li:last-child, .gos-best-for ul li:last-child { border-bottom: none; }
+.gos-includes-block ul li::before, .gos-best-for ul li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+.gos-pricing { border-top: 1px solid var(--gray-200); padding-top: 20px; margin-top: 4px; }
+.gos-price-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--gray-200); }
+.gos-price-row:last-child { border-bottom: none; }
+.gos-tier { font-size: 0.85rem; font-weight: 600; color: var(--gray-600); }
+.gos-price { font-size: 1.3rem; font-weight: 800; color: var(--gray-800); }
+.gos-price span { font-size: 0.75rem; font-weight: 500; color: var(--gray-400); }
+.btn-gold { background: var(--green) !important; color: #fff !important; }
+/* ── Differentiation ───────────────────────────────────────────────────── */
+.gos-diff-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: center; max-width: 860px; margin: 0 auto; }
+.gos-diff-fail ul, .gos-diff-win ul { list-style: none; padding: 0; margin: 0; }
+.gos-diff-fail ul li, .gos-diff-win ul li { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.9rem; }
+.gos-diff-fail ul li { color: rgba(255,255,255,0.45); }
+.gos-diff-win ul li { color: var(--white); font-weight: 500; }
+.gos-diff-fail ul li i { color: rgba(255,80,80,0.7); }
+.gos-diff-win ul li i { color: var(--green); }
+.gos-diff-arrow { display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--green); }
+/* ── Who grid ──────────────────────────────────────────────────────────── */
+.gos-who-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+.gos-who-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px 22px; text-align: center; transition: all var(--transition); }
+.gos-who-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: var(--shadow); }
+.gos-who-icon { width: 52px; height: 52px; border-radius: 50%; background: rgba(173,120,5,0.1); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; margin: 0 auto 14px; }
+.gos-who-card h4 { font-size: 0.9rem; color: var(--gray-800); margin-bottom: 8px; }
+.gos-who-card p { font-size: 0.82rem; color: var(--gray-600); }
+/* ── Outcomes ──────────────────────────────────────────────────────────── */
+.gos-outcomes-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 760px; margin: 0 auto; }
+.gos-outcome-item { display: flex; align-items: center; gap: 12px; padding: 14px 18px; background: var(--gray-50); border-radius: var(--radius); border: 1px solid var(--gray-200); font-size: 0.9rem; color: var(--gray-800); }
+.gos-outcome-item i { color: var(--green); font-size: 1rem; flex-shrink: 0; }
+/* ── Add-ons ───────────────────────────────────────────────────────────── */
+.gos-addons-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.gos-addon { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px 16px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; transition: all var(--transition); }
+.gos-addon:hover { border-color: var(--green); transform: translateY(-2px); }
+.gos-addon i { color: var(--green); font-size: 1.3rem; }
+.gos-addon span { font-size: 0.8rem; font-weight: 600; color: var(--gray-600); }
+/* ── Footer note ───────────────────────────────────────────────────────── */
+.gos-footer-note { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 28px; max-width: 600px; margin-left: auto; margin-right: auto; }
+/* ── Responsive ────────────────────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .gos-problem-grid, .gos-stack-grid, .gos-who-grid, .gos-addons-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 960px) {
+  .gos-options-grid { grid-template-columns: 1fr; }
+  .gos-what-grid { grid-template-columns: 1fr; }
+  .gos-diff-grid { grid-template-columns: 1fr; gap: 32px; }
+  .gos-diff-arrow { display: none; }
+}
+@media (max-width: 720px) {
+  .gos-problem-grid, .gos-stack-grid, .gos-who-grid { grid-template-columns: repeat(2, 1fr); }
+  .gos-addons-grid { grid-template-columns: repeat(2, 1fr); }
+  .gos-outcomes-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .gos-problem-grid, .gos-stack-grid, .gos-who-grid, .gos-addons-grid { grid-template-columns: 1fr; }
+}
+</style>
+`, '', 'Growth OS™ — centralized outbound revenue infrastructure for B2B sales teams. CRM workflows, AI-assisted outreach, pipeline visibility, and operational accountability.')
 
 // Shared helpers
 function faqItem(q: string, a: string, isDark: boolean) {

@@ -11,6 +11,7 @@ import {
   recruitingPage,
   fractionalCROPage,
   precisionEngagementsPage,
+  growthOSPage,
 } from './pages/solutions'
 import {
   aboutPage,
@@ -155,6 +156,7 @@ app.get('/solutions/commission-only', (c) => c.html(commissionOnlyPage()))
 app.get('/solutions/recruiting', (c) => c.html(recruitingPage()))
 app.get('/solutions/fractional-cro', (c) => c.html(fractionalCROPage()))
 app.get('/solutions/precision-engagements', (c) => c.html(precisionEngagementsPage()))
+app.get('/solutions/growth-os', (c) => c.html(growthOSPage()))
 
 // ── Secondary pages ───────────────────────────────────────────────────────────
 app.get('/about', (c) => c.html(aboutPage()))

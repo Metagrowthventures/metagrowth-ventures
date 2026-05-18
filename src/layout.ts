@@ -18,6 +18,7 @@ export const nav = () => `
             <li><a href="/solutions/recruiting">Recruiting Services</a></li>
             <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
             <li><a href="/solutions/precision-engagements">Precision Engagements</a></li>
+            <li><a href="/solutions/growth-os">Growth OS™</a></li>
           </ul>
         </li>
         <li><a href="/how-we-work" class="nav-link">How We Work</a></li>
