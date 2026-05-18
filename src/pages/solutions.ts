@@ -1308,6 +1308,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
               <li>Up to 3 simultaneous campaigns</li>
               <li>Outsourced data sourcing when necessary</li>
             </ul>
+            <a href="https://buy.stripe.com/8x2cN41vx9Nj0oz40V14402" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:14px;font-size:0.88rem;">Get Started</a>
           </div>
           <!-- Pro -->
           <div class="gos-tier-card gos-tier-pro">
@@ -1326,6 +1327,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
               <li>Appointment setting included</li>
               <li>Priority support &amp; optimization reviews</li>
             </ul>
+            <a href="https://buy.stripe.com/bJe4gyb672kR2wH8hb14403" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:14px;font-size:0.88rem;">Get Started</a>
           </div>
         </div>
         <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;">Explore Self-Managed</a>
