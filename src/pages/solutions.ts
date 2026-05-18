@@ -1289,6 +1289,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
               <li>CRM workflows &amp; pipeline setup</li>
               <li>SOP library, templates &amp; scripts</li>
             </ul>
+            <a href="https://buy.stripe.com/6oU14m3DF9Nj6MXdBv14401" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:14px;font-size:0.88rem;">Get Started</a>
           </div>
           <!-- Growth -->
           <div class="gos-tier-card">
