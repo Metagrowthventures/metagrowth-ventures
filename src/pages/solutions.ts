@@ -1271,10 +1271,61 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
           </ul>
         </div>
         <div class="gos-pricing">
-          <h5>Pricing</h5>
-          <div class="gos-price-row"><span class="gos-tier">Starter</span><span class="gos-price">$225<span>/mo</span></span></div>
-          <div class="gos-price-row"><span class="gos-tier">Growth</span><span class="gos-price">$397<span>/mo</span></span></div>
-          <div class="gos-price-row"><span class="gos-tier">Pro</span><span class="gos-price">$697<span>/mo</span></span></div>
+          <h5>Pricing — One-time onboarding fee applies</h5>
+          <!-- Starter -->
+          <div class="gos-tier-card">
+            <div class="gos-tier-header">
+              <div>
+                <span class="gos-tier-name">Starter</span>
+                <span class="gos-onboard-fee">+ $750 onboarding</span>
+              </div>
+              <span class="gos-price">$225<span>/mo</span></span>
+            </div>
+            <ul class="gos-tier-features">
+              <li>Full system build — we build it for you</li>
+              <li>1 active campaign with integrated data enrichment</li>
+              <li>LinkedIn outreach framework</li>
+              <li>Email sequencing infrastructure</li>
+              <li>CRM workflows &amp; pipeline setup</li>
+              <li>SOP library, templates &amp; scripts</li>
+            </ul>
+          </div>
+          <!-- Growth -->
+          <div class="gos-tier-card">
+            <div class="gos-tier-header">
+              <div>
+                <span class="gos-tier-name">Growth</span>
+                <span class="gos-onboard-fee">+ $750 onboarding</span>
+              </div>
+              <span class="gos-price">$397<span>/mo</span></span>
+            </div>
+            <ul class="gos-tier-features">
+              <li>Everything in Starter</li>
+              <li>Management oversight &amp; optimization</li>
+              <li>Bi-weekly customer success check-ins</li>
+              <li>Up to 3 custom edits &amp; tweaks per month</li>
+              <li>Up to 3 simultaneous campaigns</li>
+              <li>Outsourced data sourcing when necessary</li>
+            </ul>
+          </div>
+          <!-- Pro -->
+          <div class="gos-tier-card gos-tier-pro">
+            <div class="gos-tier-header">
+              <div>
+                <span class="gos-tier-name">Pro</span>
+                <span class="gos-onboard-fee">+ $1,250 onboarding</span>
+              </div>
+              <span class="gos-price">$697<span>/mo</span></span>
+            </div>
+            <ul class="gos-tier-features">
+              <li>Everything in Growth</li>
+              <li>Unlimited updates (within reasonable scope)</li>
+              <li>Up to 5 simultaneous campaigns</li>
+              <li>Full managed oversight</li>
+              <li>Appointment setting included</li>
+              <li>Priority support &amp; optimization reviews</li>
+            </ul>
+          </div>
         </div>
         <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;">Explore Self-Managed</a>
       </div>
@@ -1508,6 +1559,17 @@ ${solDetailStyles()}
 .gos-tier { font-size: 0.85rem; font-weight: 600; color: var(--gray-600); }
 .gos-price { font-size: 1.3rem; font-weight: 800; color: var(--gray-800); }
 .gos-price span { font-size: 0.75rem; font-weight: 500; color: var(--gray-400); }
+/* ── Tier cards ─────────────────────────────────────────────────────────── */
+.gos-tier-card { border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 16px 18px; margin-bottom: 12px; background: var(--white); }
+.gos-tier-card:last-of-type { margin-bottom: 0; }
+.gos-tier-pro { border-color: rgba(173,120,5,0.4); background: rgba(173,120,5,0.03); }
+.gos-tier-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.gos-tier-name { display: block; font-size: 0.9rem; font-weight: 800; color: var(--gray-800); margin-bottom: 2px; }
+.gos-onboard-fee { display: block; font-size: 0.72rem; color: var(--gray-400); font-weight: 500; }
+.gos-tier-features { list-style: none; padding: 0; margin: 0; }
+.gos-tier-features li { font-size: 0.8rem; color: var(--gray-600); padding: 4px 0 4px 18px; position: relative; border-bottom: 1px solid rgba(0,0,0,0.04); }
+.gos-tier-features li:last-child { border-bottom: none; }
+.gos-tier-features li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700; font-size: 0.75rem; }
 .btn-gold { background: var(--green) !important; color: #fff !important; }
 /* ── Differentiation ───────────────────────────────────────────────────── */
 .gos-diff-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: center; max-width: 860px; margin: 0 auto; }
