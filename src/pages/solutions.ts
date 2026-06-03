@@ -1068,221 +1068,467 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
 
 <!-- HERO -->
 <section class="ros-hero">
+  <div class="ros-hero-grid-bg"></div>
+  <div class="ros-hero-glow ros-glow-1"></div>
+  <div class="ros-hero-glow ros-glow-2"></div>
   <div class="container ros-hero-inner">
-    <div class="hero-eyebrow">AI-Powered Revenue Infrastructure</div>
-    <h1 class="ros-hero-title">Stop Guessing.<br><span class="accent">Build a Revenue Machine.</span></h1>
+    <div class="ros-hero-badge"><span class="ros-badge-dot"></span>AI-Powered Revenue Infrastructure</div>
+    <h1 class="ros-hero-title">Stop Guessing.<br><span class="ros-gold-text">Build a Revenue Machine.</span></h1>
     <p class="ros-hero-sub">MetaGrowth Revenue OS™ deploys done-for-you outbound infrastructure, AI signal systems, CRM workflows, and managed pipeline generation — so your team closes deals instead of chasing leads.</p>
-    <div class="hero-cta-row" style="justify-content:center;margin-top:32px;">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Revenue Infrastructure Review</a>
-      <a href="#pricing" class="btn btn-secondary btn-lg">See Pricing</a>
+    <div class="ros-hero-cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg ros-hero-btn-primary"><i class="fas fa-calendar-check"></i> Book a Revenue Infrastructure Review</a>
+      <a href="#pricing" class="btn ros-hero-btn-ghost btn-lg"><i class="fas fa-tag"></i> See Pricing</a>
     </div>
     <div class="ros-trust-bar">
-      <div class="ros-stat"><span class="ros-stat-num">14 Days</span><span class="ros-stat-label">To Full Infrastructure</span></div>
+      <div class="ros-stat">
+        <span class="ros-stat-num">14 Days</span>
+        <span class="ros-stat-label">To Full Infrastructure</span>
+      </div>
       <div class="ros-stat-divider"></div>
-      <div class="ros-stat"><span class="ros-stat-num">10–30+</span><span class="ros-stat-label">Meetings/Month</span></div>
+      <div class="ros-stat">
+        <span class="ros-stat-num">10–30+</span>
+        <span class="ros-stat-label">Meetings/Month</span>
+      </div>
       <div class="ros-stat-divider"></div>
-      <div class="ros-stat"><span class="ros-stat-num">AI-First</span><span class="ros-stat-label">Signal Intelligence</span></div>
+      <div class="ros-stat">
+        <span class="ros-stat-num">AI-First</span>
+        <span class="ros-stat-label">Signal Intelligence</span>
+      </div>
+    </div>
+    <!-- Floating tech stack pills -->
+    <div class="ros-tech-pills">
+      <span class="ros-pill"><i class="fas fa-brain"></i> AI Targeting</span>
+      <span class="ros-pill"><i class="fas fa-envelope"></i> Email Infrastructure</span>
+      <span class="ros-pill"><i class="fas fa-linkedin fab"></i> LinkedIn Outreach</span>
+      <span class="ros-pill"><i class="fas fa-database"></i> CRM Orchestration</span>
+      <span class="ros-pill"><i class="fas fa-chart-bar"></i> Pipeline Reporting</span>
+      <span class="ros-pill ros-pill-gold"><i class="fas fa-shield-alt"></i> Managed Execution</span>
     </div>
   </div>
 </section>
 
-<!-- NOT A LEAD GEN AGENCY -->
-<section class="section section-gray">
+<!-- NOT A LEAD GEN AGENCY - OS PLATFORM -->
+<section class="section ros-platform-section">
   <div class="container">
-    <div class="text-center fade-in" style="margin-bottom:56px;">
+    <div class="text-center fade-in" style="margin-bottom:64px;">
       <span class="section-label">The Platform</span>
-      <h2 class="section-title">Not a Lead Gen Agency.<br>An Operating System.</h2>
-      <p class="section-subtitle">Traditional lead gen agencies hand you contacts. MetaGrowth Revenue OS™ builds the entire revenue engine inside your business — AI-powered targeting, automated outbound sequences, CRM orchestration, pipeline reporting, and managed appointment generation.</p>
-      <p class="section-subtitle" style="margin-top:12px;">The infrastructure lives in our ecosystem — cloneable, template-driven, and built to compound operationally over time.</p>
+      <h2 class="section-title" style="color:var(--white);">Not a Lead Gen Agency.<br><span class="ros-gold-text">An Operating System.</span></h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.6);max-width:700px;margin:20px auto 0;">Traditional lead gen agencies hand you contacts. MetaGrowth Revenue OS™ builds the entire revenue engine — AI-powered targeting, automated outbound, CRM orchestration, and managed pipeline generation.</p>
     </div>
-    <div class="ros-platform-grid fade-in">
-      <div class="ros-platform-card ros-card-featured">
-        <div class="ros-plat-icon"><i class="fas fa-server"></i></div>
-        <div class="ros-plat-tag">Core Capability</div>
-        <h4>Infrastructure Deployment</h4>
-        <p>Complete CRM buildout, automated workflow installation, email domain configuration, mailbox setup, and deliverability architecture — live in 14 days.</p>
-        <ul class="ros-plat-list">
-          <li>CRM Setup &amp; Configuration</li>
-          <li>Automated Workflow Installation</li>
-          <li>Lead Routing Systems</li>
-          <li>Dashboarding &amp; Reporting</li>
-        </ul>
+
+    <!-- Tab nav -->
+    <div class="ros-tab-nav fade-in">
+      <button class="ros-tab active" data-tab="infrastructure"><i class="fas fa-server"></i> Infrastructure</button>
+      <button class="ros-tab" data-tab="signals"><i class="fas fa-brain"></i> Signal Intel</button>
+      <button class="ros-tab" data-tab="outbound"><i class="fas fa-paper-plane"></i> AI Outbound</button>
+      <button class="ros-tab" data-tab="crm"><i class="fas fa-project-diagram"></i> CRM OS</button>
+      <button class="ros-tab" data-tab="appointments"><i class="fas fa-calendar-check"></i> Appointments</button>
+      <button class="ros-tab" data-tab="revops"><i class="fas fa-sync-alt"></i> RevOps</button>
+    </div>
+
+    <!-- Tab panels -->
+    <div class="ros-tab-panels fade-in">
+
+      <div class="ros-tab-panel active" id="tab-infrastructure">
+        <div class="ros-panel-layout">
+          <div class="ros-panel-text">
+            <div class="ros-panel-badge ros-badge-gold">Core Capability</div>
+            <h3 style="color:var(--white);font-size:1.6rem;margin:12px 0 16px;">Infrastructure Deployment</h3>
+            <p style="color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:24px;">Complete CRM buildout, automated workflow installation, email domain configuration, mailbox setup, and deliverability architecture — live in 14 days.</p>
+            <ul class="ros-feature-list">
+              <li><i class="fas fa-check-circle"></i> CRM Setup &amp; Configuration</li>
+              <li><i class="fas fa-check-circle"></i> Automated Workflow Installation</li>
+              <li><i class="fas fa-check-circle"></i> Lead Routing Systems</li>
+              <li><i class="fas fa-check-circle"></i> Dashboarding &amp; Reporting</li>
+              <li><i class="fas fa-check-circle"></i> Email Domain Configuration</li>
+              <li><i class="fas fa-check-circle"></i> Mailbox Warm-Up &amp; Deliverability</li>
+            </ul>
+          </div>
+          <div class="ros-panel-visual">
+            <div class="ros-arch-card">
+              <div class="ros-arch-header"><span class="ros-arch-dot green"></span><span class="ros-arch-dot yellow"></span><span class="ros-arch-dot red"></span><span style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-left:8px;">Revenue Infrastructure Stack</span></div>
+              <div class="ros-arch-layers">
+                <div class="ros-arch-layer ros-layer-active"><i class="fas fa-database"></i><span>CRM Core</span><span class="ros-layer-status">Deployed</span></div>
+                <div class="ros-arch-layer ros-layer-active"><i class="fas fa-route"></i><span>Workflow Engine</span><span class="ros-layer-status">Active</span></div>
+                <div class="ros-arch-layer ros-layer-active"><i class="fas fa-envelope-open-text"></i><span>Email Infrastructure</span><span class="ros-layer-status">Warm</span></div>
+                <div class="ros-arch-layer ros-layer-active"><i class="fas fa-chart-line"></i><span>Pipeline Dashboard</span><span class="ros-layer-status">Live</span></div>
+                <div class="ros-arch-layer"><i class="fas fa-bullseye"></i><span>Lead Routing</span><span class="ros-layer-status ros-status-pending">Configuring</span></div>
+              </div>
+              <div class="ros-arch-footer"><i class="fas fa-clock"></i> Infrastructure live in 14 days</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ros-platform-card">
-        <div class="ros-plat-icon"><i class="fas fa-robot"></i></div>
-        <h4>AI-Powered Outbound</h4>
-        <p>Buyer signal detection, AI-driven personalization at scale, multi-touch email sequences, and video outreach — all running on autopilot.</p>
-        <ul class="ros-plat-list">
-          <li>Buyer Signal Intelligence</li>
-          <li>AI Personalization Engine</li>
-          <li>Multi-Channel Sequencing</li>
-          <li>Automated Follow-Up</li>
-        </ul>
+
+      <div class="ros-tab-panel" id="tab-signals">
+        <div class="ros-panel-layout">
+          <div class="ros-panel-text">
+            <div class="ros-panel-badge" style="background:rgba(139,92,246,0.15);color:#a78bfa;border-color:rgba(139,92,246,0.3);">Signal Intelligence</div>
+            <h3 style="color:var(--white);font-size:1.6rem;margin:12px 0 16px;">AI-Powered Signal Intel</h3>
+            <p style="color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:24px;">Buyer intent signals, website visitor identification, hiring &amp; funding triggers, LinkedIn engagement tracking — every relevant buying signal captured and scored automatically.</p>
+            <ul class="ros-feature-list">
+              <li><i class="fas fa-check-circle"></i> Buyer Intent Signal Detection</li>
+              <li><i class="fas fa-check-circle"></i> Website Visitor Identification</li>
+              <li><i class="fas fa-check-circle"></i> Hiring &amp; Funding Trigger Tracking</li>
+              <li><i class="fas fa-check-circle"></i> LinkedIn Engagement Monitoring</li>
+              <li><i class="fas fa-check-circle"></i> AI Lead Scoring &amp; Prioritization</li>
+              <li><i class="fas fa-check-circle"></i> Real-Time Alert Workflows</li>
+            </ul>
+          </div>
+          <div class="ros-panel-visual">
+            <div class="ros-arch-card">
+              <div class="ros-arch-header"><span class="ros-arch-dot green"></span><span class="ros-arch-dot yellow"></span><span class="ros-arch-dot red"></span><span style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-left:8px;">Signal Detection Engine</span></div>
+              <div class="ros-signals-list">
+                <div class="ros-signal-row"><span class="ros-sig-badge ros-sig-hot">HOT</span><span>Visited /pricing · 3x this week</span><span class="ros-sig-score">94</span></div>
+                <div class="ros-signal-row"><span class="ros-sig-badge ros-sig-warm">WARM</span><span>LinkedIn post engagement</span><span class="ros-sig-score">71</span></div>
+                <div class="ros-signal-row"><span class="ros-sig-badge ros-sig-hot">HOT</span><span>Funding round announced</span><span class="ros-sig-score">88</span></div>
+                <div class="ros-signal-row"><span class="ros-sig-badge ros-sig-warm">WARM</span><span>Hired VP Sales last 30d</span><span class="ros-sig-score">67</span></div>
+                <div class="ros-signal-row"><span class="ros-sig-badge ros-sig-new">NEW</span><span>Form submission detected</span><span class="ros-sig-score">55</span></div>
+              </div>
+              <div class="ros-arch-footer"><i class="fas fa-bolt"></i> Signals processed in real-time</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ros-platform-card">
-        <div class="ros-plat-icon"><i class="fas fa-funnel-dollar"></i></div>
-        <h4>Pipeline Generation</h4>
-        <p>End-to-end outbound management from ICP targeting to qualified appointment booking and pipeline reporting.</p>
-        <ul class="ros-plat-list">
-          <li>ICP Development</li>
-          <li>Messaging Strategy</li>
-          <li>Campaign Management</li>
-          <li>Appointment Setting</li>
-        </ul>
+
+      <div class="ros-tab-panel" id="tab-outbound">
+        <div class="ros-panel-layout">
+          <div class="ros-panel-text">
+            <div class="ros-panel-badge" style="background:rgba(59,130,246,0.15);color:#60a5fa;border-color:rgba(59,130,246,0.3);">AI Outbound Engine</div>
+            <h3 style="color:var(--white);font-size:1.6rem;margin:12px 0 16px;">AI-Powered Outbound</h3>
+            <p style="color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:24px;">Buyer signal detection, AI-driven personalization at scale, multi-touch email sequences, LinkedIn outreach, and video prospecting — all running on autopilot 24/7.</p>
+            <ul class="ros-feature-list">
+              <li><i class="fas fa-check-circle"></i> Multi-Touch Email Sequences</li>
+              <li><i class="fas fa-check-circle"></i> LinkedIn Outreach Automation</li>
+              <li><i class="fas fa-check-circle"></i> AI Personalization at Scale</li>
+              <li><i class="fas fa-check-circle"></i> Video Prospecting</li>
+              <li><i class="fas fa-check-circle"></i> Automated Follow-Up Cadences</li>
+              <li><i class="fas fa-check-circle"></i> Multi-Channel Orchestration</li>
+            </ul>
+          </div>
+          <div class="ros-panel-visual">
+            <div class="ros-arch-card">
+              <div class="ros-arch-header"><span class="ros-arch-dot green"></span><span class="ros-arch-dot yellow"></span><span class="ros-arch-dot red"></span><span style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-left:8px;">Active Campaign Channels</span></div>
+              <div class="ros-channel-grid">
+                <div class="ros-channel-item ros-ch-active"><i class="fas fa-envelope"></i><span>Email</span><span class="ros-ch-stat">2,400 sent</span></div>
+                <div class="ros-channel-item ros-ch-active"><i class="fab fa-linkedin"></i><span>LinkedIn</span><span class="ros-ch-stat">340 connects</span></div>
+                <div class="ros-channel-item ros-ch-active"><i class="fas fa-video"></i><span>Video</span><span class="ros-ch-stat">180 views</span></div>
+                <div class="ros-channel-item"><i class="fas fa-phone"></i><span>Phone</span><span class="ros-ch-stat ros-status-pending">Add-on</span></div>
+              </div>
+              <div class="ros-outbound-stats">
+                <div class="ros-ob-stat"><span class="ros-ob-num">34%</span><span>Open Rate</span></div>
+                <div class="ros-ob-stat"><span class="ros-ob-num">8.2%</span><span>Reply Rate</span></div>
+                <div class="ros-ob-stat"><span class="ros-ob-num">12</span><span>Meetings Booked</span></div>
+              </div>
+              <div class="ros-arch-footer"><i class="fas fa-robot"></i> AI personalization active on all sequences</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ros-platform-card">
-        <div class="ros-plat-icon"><i class="fas fa-sync-alt"></i></div>
-        <h4>RevOps Management</h4>
-        <p>Ongoing campaign optimization, email deliverability management, AI data enrichment, lead nurture automation, and workflow maintenance.</p>
-        <ul class="ros-plat-list">
-          <li>Deliverability Management</li>
-          <li>AI Data Enrichment</li>
-          <li>Nurture Automation</li>
-          <li>KPI Reporting</li>
-        </ul>
+
+      <div class="ros-tab-panel" id="tab-crm">
+        <div class="ros-panel-layout">
+          <div class="ros-panel-text">
+            <div class="ros-panel-badge" style="background:rgba(16,185,129,0.15);color:#34d399;border-color:rgba(16,185,129,0.3);">CRM Operating System</div>
+            <h3 style="color:var(--white);font-size:1.6rem;margin:12px 0 16px;">CRM + Workflow Automation</h3>
+            <p style="color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:24px;">Full CRM buildout, multi-step workflow automation, AI meeting intelligence, pipeline visibility, and team communication integrations — your entire sales motion in one place.</p>
+            <ul class="ros-feature-list">
+              <li><i class="fas fa-check-circle"></i> Full CRM Architecture &amp; Build</li>
+              <li><i class="fas fa-check-circle"></i> Automated Workflow Orchestration</li>
+              <li><i class="fas fa-check-circle"></i> AI Meeting Intelligence</li>
+              <li><i class="fas fa-check-circle"></i> Real-Time Pipeline Visibility</li>
+              <li><i class="fas fa-check-circle"></i> Team Notification Systems</li>
+              <li><i class="fas fa-check-circle"></i> Revenue Forecasting Dashboards</li>
+            </ul>
+          </div>
+          <div class="ros-panel-visual">
+            <div class="ros-arch-card">
+              <div class="ros-arch-header"><span class="ros-arch-dot green"></span><span class="ros-arch-dot yellow"></span><span class="ros-arch-dot red"></span><span style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-left:8px;">Pipeline Overview</span></div>
+              <div class="ros-pipeline-stages">
+                <div class="ros-stage"><span class="ros-stage-label">Prospecting</span><span class="ros-stage-count">142</span><div class="ros-stage-bar" style="width:100%"></div></div>
+                <div class="ros-stage"><span class="ros-stage-label">Contacted</span><span class="ros-stage-count">67</span><div class="ros-stage-bar" style="width:65%"></div></div>
+                <div class="ros-stage"><span class="ros-stage-label">Meeting Set</span><span class="ros-stage-count">24</span><div class="ros-stage-bar" style="width:42%"></div></div>
+                <div class="ros-stage"><span class="ros-stage-label">Proposal</span><span class="ros-stage-count">11</span><div class="ros-stage-bar" style="width:28%"></div></div>
+                <div class="ros-stage"><span class="ros-stage-label">Closing</span><span class="ros-stage-count">4</span><div class="ros-stage-bar" style="width:14%;background:var(--green)"></div></div>
+              </div>
+              <div class="ros-arch-footer"><i class="fas fa-chart-line"></i> Pipeline value: $847,000</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ros-platform-card">
-        <div class="ros-plat-icon"><i class="fas fa-project-diagram"></i></div>
-        <h4>CRM + Workflow Automation</h4>
-        <p>Team communication integrations, multi-step workflow automation, AI meeting intelligence, and full pipeline visibility.</p>
-        <ul class="ros-plat-list">
-          <li>Team Communication Integrations</li>
-          <li>Automated Workflow Orchestration</li>
-          <li>AI Meeting Intelligence</li>
-          <li>Real-Time Pipeline Visibility</li>
-        </ul>
+
+      <div class="ros-tab-panel" id="tab-appointments">
+        <div class="ros-panel-layout">
+          <div class="ros-panel-text">
+            <div class="ros-panel-badge" style="background:rgba(245,158,11,0.15);color:#fbbf24;border-color:rgba(245,158,11,0.3);">Appointment Generation</div>
+            <h3 style="color:var(--white);font-size:1.6rem;margin:12px 0 16px;">Pipeline Generation</h3>
+            <p style="color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:24px;">End-to-end outbound management from ICP targeting to qualified appointment booking. We generate, qualify, and route meetings directly onto your calendar.</p>
+            <ul class="ros-feature-list">
+              <li><i class="fas fa-check-circle"></i> ICP Development &amp; Targeting</li>
+              <li><i class="fas fa-check-circle"></i> Messaging Strategy &amp; Copywriting</li>
+              <li><i class="fas fa-check-circle"></i> Campaign Management</li>
+              <li><i class="fas fa-check-circle"></i> Lead Qualification</li>
+              <li><i class="fas fa-check-circle"></i> Appointment Setting &amp; Routing</li>
+              <li><i class="fas fa-check-circle"></i> Pipeline Reporting</li>
+            </ul>
+          </div>
+          <div class="ros-panel-visual">
+            <div class="ros-arch-card">
+              <div class="ros-arch-header"><span class="ros-arch-dot green"></span><span class="ros-arch-dot yellow"></span><span class="ros-arch-dot red"></span><span style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-left:8px;">This Month's Results</span></div>
+              <div class="ros-calendar-preview">
+                <div class="ros-cal-item ros-cal-booked"><i class="fas fa-calendar-check"></i><div><strong>Discovery Call</strong><span>Acme Corp · Tomorrow 2pm</span></div><span class="ros-cal-badge">Qualified</span></div>
+                <div class="ros-cal-item ros-cal-booked"><i class="fas fa-calendar-check"></i><div><strong>Demo Scheduled</strong><span>TechStart Inc · Wed 10am</span></div><span class="ros-cal-badge">Qualified</span></div>
+                <div class="ros-cal-item ros-cal-pending"><i class="fas fa-clock"></i><div><strong>Intro Call</strong><span>GrowthCo · Pending confirm</span></div><span class="ros-cal-badge ros-badge-pending">Pending</span></div>
+                <div class="ros-cal-item ros-cal-booked"><i class="fas fa-calendar-check"></i><div><strong>Strategy Session</strong><span>Apex Sales · Fri 3pm</span></div><span class="ros-cal-badge">Qualified</span></div>
+              </div>
+              <div class="ros-arch-footer"><i class="fas fa-trophy"></i> 18 meetings booked this month</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ros-platform-card">
-        <div class="ros-plat-icon"><i class="fas fa-users-cog"></i></div>
-        <h4>Managed Execution</h4>
-        <p>We don't hand you software and walk away. Our team actively runs your outbound system, manages campaigns, and optimizes performance every month.</p>
-        <ul class="ros-plat-list">
-          <li>Dedicated RevOps Support</li>
-          <li>Monthly Strategy Reviews</li>
-          <li>Performance Optimization</li>
-          <li>Ongoing System Maintenance</li>
-        </ul>
+
+      <div class="ros-tab-panel" id="tab-revops">
+        <div class="ros-panel-layout">
+          <div class="ros-panel-text">
+            <div class="ros-panel-badge" style="background:rgba(239,68,68,0.15);color:#f87171;border-color:rgba(239,68,68,0.3);">Revenue Operations</div>
+            <h3 style="color:var(--white);font-size:1.6rem;margin:12px 0 16px;">Managed RevOps</h3>
+            <p style="color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:24px;">We don't hand you software and walk away. Ongoing campaign optimization, deliverability management, AI data enrichment, nurture automation, and workflow maintenance — every month.</p>
+            <ul class="ros-feature-list">
+              <li><i class="fas fa-check-circle"></i> Dedicated RevOps Support</li>
+              <li><i class="fas fa-check-circle"></i> Monthly Strategy Reviews</li>
+              <li><i class="fas fa-check-circle"></i> Deliverability Management</li>
+              <li><i class="fas fa-check-circle"></i> AI Data Enrichment</li>
+              <li><i class="fas fa-check-circle"></i> Nurture Automation</li>
+              <li><i class="fas fa-check-circle"></i> KPI Reporting &amp; Optimization</li>
+            </ul>
+          </div>
+          <div class="ros-panel-visual">
+            <div class="ros-arch-card">
+              <div class="ros-arch-header"><span class="ros-arch-dot green"></span><span class="ros-arch-dot yellow"></span><span class="ros-arch-dot red"></span><span style="color:rgba(255,255,255,0.4);font-size:0.72rem;margin-left:8px;">Monthly Performance Report</span></div>
+              <div class="ros-kpi-grid">
+                <div class="ros-kpi"><span class="ros-kpi-val" style="color:var(--green);">99.1%</span><span class="ros-kpi-label">Deliverability</span></div>
+                <div class="ros-kpi"><span class="ros-kpi-val" style="color:#60a5fa;">2,847</span><span class="ros-kpi-label">Contacts Enriched</span></div>
+                <div class="ros-kpi"><span class="ros-kpi-val" style="color:#fbbf24;">+14%</span><span class="ros-kpi-label">Reply Rate MoM</span></div>
+                <div class="ros-kpi"><span class="ros-kpi-val" style="color:#34d399;">18</span><span class="ros-kpi-label">Meetings Booked</span></div>
+              </div>
+              <div class="ros-arch-footer"><i class="fas fa-check-circle" style="color:var(--green);"></i> All systems operating optimally</div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
 <!-- LAUNCH TIMELINE -->
-<section class="section section-dark">
+<section class="section ros-tl-section">
   <div class="container">
-    <div class="text-center fade-in" style="margin-bottom:56px;">
+    <div class="text-center fade-in" style="margin-bottom:72px;">
       <span class="section-label">Launch Timeline</span>
-      <h2 style="color:var(--white);">From Zero to Pipeline in 8 Weeks</h2>
+      <h2 style="color:var(--white);margin-bottom:16px;">From Zero to Pipeline<br><span class="ros-gold-text">in 8 Weeks</span></h2>
+      <p style="color:rgba(255,255,255,0.55);max-width:560px;margin:0 auto;">A proven deployment sequence that activates your entire revenue infrastructure — methodically, measurably, and fast.</p>
     </div>
-    <div class="ros-timeline fade-in">
-      <div class="ros-tl-item">
-        <div class="ros-tl-week">Week 1–2</div>
-        <div class="ros-tl-card">
+    <div class="ros-tl-new fade-in">
+
+      <!-- Step 1 -->
+      <div class="ros-tl-step">
+        <div class="ros-tl-step-number">01</div>
+        <div class="ros-tl-step-line"></div>
+        <div class="ros-tl-step-card">
+          <div class="ros-tl-step-meta">
+            <span class="ros-tl-phase">Week 1–2</span>
+            <span class="ros-tl-status ros-status-complete"><i class="fas fa-check"></i> Foundation</span>
+          </div>
           <h4>Infrastructure Buildout</h4>
           <p>Ideal customer profiling, CRM deployment, workflow setup, email domain configuration, mailbox warm-up, and campaign development.</p>
-          <div class="ros-tl-tags"><span>CRM Setup</span><span>Domain Config</span><span>Signal Systems</span><span>ICP Refinement</span></div>
+          <div class="ros-tl-checklist">
+            <span><i class="fas fa-check-circle"></i> CRM Setup</span>
+            <span><i class="fas fa-check-circle"></i> Domain Config</span>
+            <span><i class="fas fa-check-circle"></i> Signal Systems</span>
+            <span><i class="fas fa-check-circle"></i> ICP Refinement</span>
+          </div>
+          <div class="ros-tl-progress"><div class="ros-tl-bar" style="width:100%"></div></div>
         </div>
       </div>
-      <div class="ros-tl-item">
-        <div class="ros-tl-week">Week 2–4</div>
-        <div class="ros-tl-card">
+
+      <!-- Step 2 -->
+      <div class="ros-tl-step">
+        <div class="ros-tl-step-number">02</div>
+        <div class="ros-tl-step-line"></div>
+        <div class="ros-tl-step-card">
+          <div class="ros-tl-step-meta">
+            <span class="ros-tl-phase">Week 2–4</span>
+            <span class="ros-tl-status ros-status-active"><i class="fas fa-bolt"></i> Activation</span>
+          </div>
           <h4>Outbound Activation</h4>
           <p>Email campaigns live, LinkedIn outreach active, AI personalization running, video outreach launched, and first replies flowing in.</p>
-          <div class="ros-tl-tags"><span>Email Live</span><span>LinkedIn Active</span><span>AI Personalization</span><span>First Replies</span></div>
+          <div class="ros-tl-checklist">
+            <span><i class="fas fa-check-circle"></i> Email Live</span>
+            <span><i class="fas fa-check-circle"></i> LinkedIn Active</span>
+            <span><i class="fas fa-check-circle"></i> AI Personalization</span>
+            <span><i class="fas fa-check-circle"></i> First Replies</span>
+          </div>
+          <div class="ros-tl-progress"><div class="ros-tl-bar" style="width:75%"></div></div>
         </div>
       </div>
-      <div class="ros-tl-item">
-        <div class="ros-tl-week">Week 4–8</div>
-        <div class="ros-tl-card">
+
+      <!-- Step 3 -->
+      <div class="ros-tl-step">
+        <div class="ros-tl-step-number">03</div>
+        <div class="ros-tl-step-line"></div>
+        <div class="ros-tl-step-card">
+          <div class="ros-tl-step-meta">
+            <span class="ros-tl-phase">Week 4–8</span>
+            <span class="ros-tl-status ros-status-growth"><i class="fas fa-chart-line"></i> Pipeline</span>
+          </div>
           <h4>Pipeline Acceleration</h4>
           <p>Qualified meetings booked, pipeline building, nurture workflows compounding, multi-touch engagement hitting full stride.</p>
-          <div class="ros-tl-tags"><span>Qualified Meetings</span><span>Pipeline Building</span><span>5–15 Meetings/Mo</span><span>Nurture Active</span></div>
+          <div class="ros-tl-checklist">
+            <span><i class="fas fa-check-circle"></i> Qualified Meetings</span>
+            <span><i class="fas fa-check-circle"></i> Pipeline Building</span>
+            <span><i class="fas fa-check-circle"></i> 5–15 Meetings/Mo</span>
+            <span><i class="fas fa-check-circle"></i> Nurture Active</span>
+          </div>
+          <div class="ros-tl-progress"><div class="ros-tl-bar" style="width:50%"></div></div>
         </div>
       </div>
-      <div class="ros-tl-item">
-        <div class="ros-tl-week">Month 4+</div>
-        <div class="ros-tl-card ros-tl-gold">
-          <h4>Compounding Growth</h4>
-          <p>10–30+ meetings per month, compounding nurture effects, improved targeting precision, and referral opportunities.</p>
-          <div class="ros-tl-tags ros-tl-tags-gold"><span>10–30+ Meetings/Mo</span><span>Compounding Nurture</span><span>Improved Targeting</span><span>Referral Engine</span></div>
+
+      <!-- Step 4 -->
+      <div class="ros-tl-step ros-tl-step-gold">
+        <div class="ros-tl-step-number ros-step-num-gold">04</div>
+        <div class="ros-tl-step-card ros-tl-card-gold">
+          <div class="ros-tl-step-meta">
+            <span class="ros-tl-phase" style="color:var(--green);">Month 4+</span>
+            <span class="ros-tl-status ros-status-compound"><i class="fas fa-infinity"></i> Compounding</span>
+          </div>
+          <h4 style="color:var(--green);">Compounding Growth</h4>
+          <p>10–30+ meetings per month, compounding nurture effects, improved targeting precision, and referral opportunities emerging.</p>
+          <div class="ros-tl-checklist ros-checklist-gold">
+            <span><i class="fas fa-star"></i> 10–30+ Meetings/Mo</span>
+            <span><i class="fas fa-star"></i> Compounding Nurture</span>
+            <span><i class="fas fa-star"></i> Improved Targeting</span>
+            <span><i class="fas fa-star"></i> Referral Engine</span>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
 <!-- PRICING -->
-<section class="section" id="pricing">
+<section class="section ros-pricing-section" id="pricing">
   <div class="container">
-    <div class="text-center fade-in" style="margin-bottom:56px;">
-      <span class="section-label">Pricing</span>
+    <div class="text-center fade-in" style="margin-bottom:64px;">
+      <span class="section-label">Investment &amp; Tiers</span>
       <h2 class="section-title">Three Infrastructure Tiers</h2>
-      <p class="section-subtitle">All engagements begin with a revenue infrastructure review to identify the best-fit deployment model.</p>
+      <p class="section-subtitle" style="max-width:580px;margin:0 auto;">All engagements begin with a revenue infrastructure review to identify the best-fit deployment model for your stage and goals.</p>
     </div>
     <div class="ros-pricing-grid fade-in">
 
       <!-- Tier 1 -->
       <div class="ros-price-card">
-        <div class="ros-price-header">
-          <div class="ros-price-tag">Revenue OS™ Foundation</div>
-          <h3>Launch Your Outbound Infrastructure</h3>
-          <p class="ros-price-desc">Ideal for founder-led companies and small B2B teams with little or no existing outbound infrastructure ready to build a repeatable, scalable pipeline engine.</p>
+        <div class="ros-price-tier-label">Revenue OS™ Foundation</div>
+        <div class="ros-price-headline">Launch Your<br>Outbound Infrastructure</div>
+        <p class="ros-price-desc">Ideal for founder-led companies and small B2B teams building their first repeatable, scalable pipeline engine.</p>
+        <div class="ros-price-block">
+          <div class="ros-price-item">
+            <div class="ros-price-big">$7,500</div>
+            <div class="ros-price-meta-text">Infrastructure Deployment<br><span>one-time setup fee</span></div>
+          </div>
+          <div class="ros-price-divider-h"></div>
+          <div class="ros-price-item">
+            <div class="ros-price-big">$3,500<span class="ros-price-mo">/mo</span></div>
+            <div class="ros-price-meta-text">Revenue Operations<br><span>monthly management</span></div>
+          </div>
         </div>
-        <div class="ros-price-amount">
-          <div class="ros-price-row-main"><span class="ros-price-label">Infrastructure Deployment</span><span class="ros-price-val">$7,500<span class="ros-price-suffix"> one-time</span></span></div>
-          <div class="ros-price-row-main"><span class="ros-price-label">Monthly Revenue Operations</span><span class="ros-price-val">$3,500<span class="ros-price-suffix">/mo</span></span></div>
+        <ul class="ros-tier-includes">
+          <li><i class="fas fa-check"></i> CRM Setup &amp; Infrastructure</li>
+          <li><i class="fas fa-check"></i> Email + LinkedIn Outbound</li>
+          <li><i class="fas fa-check"></i> Pipeline Reporting Dashboard</li>
+          <li><i class="fas fa-check"></i> Nurture Workflow Automation</li>
+          <li><i class="fas fa-check"></i> Deliverability Management</li>
+          <li><i class="fas fa-check"></i> Monthly Optimization Reviews</li>
+        </ul>
+        <div class="ros-price-targets">
+          <span><i class="fas fa-user-tie"></i> Founder-led B2B</span>
+          <span><i class="fas fa-chart-bar"></i> &lt;$5M ARR</span>
+          <span><i class="fas fa-clock"></i> Live in 2–3 Wks</span>
         </div>
-        <div class="ros-price-meta">
-          <div class="ros-meta-item"><i class="fas fa-building"></i><span>Founder-led &amp; small B2B teams</span></div>
-          <div class="ros-meta-item"><i class="fas fa-chart-line"></i><span>&lt;$5M ARR</span></div>
-          <div class="ros-meta-item"><i class="fas fa-calendar-alt"></i><span>6-Month Initial Commitment</span></div>
-          <div class="ros-meta-item"><i class="fas fa-rocket"></i><span>Live in 2–3 Weeks</span></div>
-        </div>
-        <a href="https://buy.stripe.com/6oU00ib671gNb3d7d714404" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Start Building Today</a>
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure">Not sure this is right for you? Book a call →</a>
+        <a href="https://buy.stripe.com/6oU00ib671gNb3d7d714404" target="_blank" class="ros-price-cta-btn">Start Building Today <i class="fas fa-arrow-right"></i></a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure">Not sure? Book a free strategy call →</a>
       </div>
 
       <!-- Tier 2 FEATURED -->
       <div class="ros-price-card ros-price-featured">
-        <div class="ros-price-badge">Flagship Offer</div>
-        <div class="ros-price-header">
-          <div class="ros-price-tag">HyperLaunch™ Growth Engine</div>
-          <h3>AI-Powered Pipeline Acceleration</h3>
-          <p class="ros-price-desc">Designed for growth-stage B2B companies actively scaling sales who need predictable pipeline, advanced AI-powered targeting, and a fully managed revenue infrastructure.</p>
+        <div class="ros-flagship-banner">
+          <i class="fas fa-star"></i> Flagship Offer
         </div>
-        <div class="ros-price-amount">
-          <div class="ros-price-row-main"><span class="ros-price-label">Infrastructure Deployment</span><span class="ros-price-val">$15,000<span class="ros-price-suffix"> one-time</span></span></div>
-          <div class="ros-price-row-main"><span class="ros-price-label">Monthly Revenue Operations</span><span class="ros-price-val">$7,500<span class="ros-price-suffix">/mo</span></span></div>
+        <div class="ros-price-tier-label" style="color:var(--green);">HyperLaunch™ Growth Engine</div>
+        <div class="ros-price-headline" style="color:var(--white);">AI-Powered Pipeline<br>Acceleration</div>
+        <p class="ros-price-desc" style="color:rgba(255,255,255,0.6);">For growth-stage B2B companies actively scaling sales who need predictable pipeline and advanced AI-powered targeting.</p>
+        <div class="ros-price-block ros-price-block-dark">
+          <div class="ros-price-item">
+            <div class="ros-price-big" style="color:var(--white);">$15,000</div>
+            <div class="ros-price-meta-text" style="color:rgba(255,255,255,0.5);">Infrastructure Deployment<br><span>one-time setup fee</span></div>
+          </div>
+          <div class="ros-price-divider-h" style="border-color:rgba(255,255,255,0.08);"></div>
+          <div class="ros-price-item">
+            <div class="ros-price-big" style="color:var(--white);">$7,500<span class="ros-price-mo" style="color:rgba(255,255,255,0.5);">/mo</span></div>
+            <div class="ros-price-meta-text" style="color:rgba(255,255,255,0.5);">Revenue Operations<br><span>monthly management</span></div>
+          </div>
         </div>
-        <div class="ros-price-meta">
-          <div class="ros-meta-item"><i class="fas fa-building"></i><span>Growth-stage B2B companies</span></div>
-          <div class="ros-meta-item"><i class="fas fa-chart-line"></i><span>$3M–$25M+ ARR</span></div>
-          <div class="ros-meta-item"><i class="fas fa-calendar-alt"></i><span>6–12 Month Commitment</span></div>
-          <div class="ros-meta-item"><i class="fas fa-rocket"></i><span>Live in 4–6 Weeks</span></div>
+        <ul class="ros-tier-includes ros-tier-includes-dark">
+          <li><i class="fas fa-check"></i> Everything in Foundation</li>
+          <li><i class="fas fa-check"></i> AI-Powered Targeting &amp; Signals</li>
+          <li><i class="fas fa-check"></i> Multi-Channel Outbound</li>
+          <li><i class="fas fa-check"></i> Buyer Intent Tracking</li>
+          <li><i class="fas fa-check"></i> Website Visitor Workflows</li>
+          <li><i class="fas fa-check"></i> Weekly Optimization Cadence</li>
+          <li><i class="fas fa-check"></i> Advanced AI Personalization</li>
+        </ul>
+        <div class="ros-price-targets ros-targets-dark">
+          <span><i class="fas fa-rocket"></i> Growth-Stage B2B</span>
+          <span><i class="fas fa-chart-bar"></i> $3M–$25M ARR</span>
+          <span><i class="fas fa-clock"></i> Live in 4–6 Wks</span>
         </div>
-        <a href="https://buy.stripe.com/3cI14m3DFf7Ddbl0OJ14405" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;background:var(--green);color:#fff;">Accelerate My Pipeline</a>
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure" style="color:rgba(255,255,255,0.5);">Not sure this is right for you? Book a call →</a>
+        <a href="https://buy.stripe.com/3cI14m3DFf7Ddbl0OJ14405" target="_blank" class="ros-price-cta-btn ros-price-cta-gold">Accelerate My Pipeline <i class="fas fa-arrow-right"></i></a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure" style="color:rgba(255,255,255,0.4);">Not sure? Book a free strategy call →</a>
       </div>
 
       <!-- Tier 3 -->
       <div class="ros-price-card">
-        <div class="ros-price-header">
-          <div class="ros-price-tag">Enterprise Revenue Infrastructure™</div>
-          <h3>Full Revenue Operating System</h3>
-          <p class="ros-price-desc">Built for enterprise organizations, PE-backed companies, and multi-team environments requiring full-scale revenue operations, strategic consulting, and white-glove deployment.</p>
+        <div class="ros-price-tier-label">Enterprise Revenue Infrastructure™</div>
+        <div class="ros-price-headline">Full Revenue<br>Operating System</div>
+        <p class="ros-price-desc">For enterprise organizations, PE-backed companies, and multi-team environments requiring full-scale RevOps and strategic consulting.</p>
+        <div class="ros-price-block">
+          <div class="ros-price-item">
+            <div class="ros-price-big">$35,000</div>
+            <div class="ros-price-meta-text">Infrastructure Deployment<br><span>one-time setup fee</span></div>
+          </div>
+          <div class="ros-price-divider-h"></div>
+          <div class="ros-price-item">
+            <div class="ros-price-big">$15,000<span class="ros-price-mo">/mo</span></div>
+            <div class="ros-price-meta-text">Revenue Operations<br><span>monthly management</span></div>
+          </div>
         </div>
-        <div class="ros-price-amount">
-          <div class="ros-price-row-main"><span class="ros-price-label">Infrastructure Deployment</span><span class="ros-price-val">$35,000<span class="ros-price-suffix"> one-time</span></span></div>
-          <div class="ros-price-row-main"><span class="ros-price-label">Monthly Revenue Operations</span><span class="ros-price-val">$15,000<span class="ros-price-suffix">/mo</span></span></div>
+        <ul class="ros-tier-includes">
+          <li><i class="fas fa-check"></i> Everything in HyperLaunch™</li>
+          <li><i class="fas fa-check"></i> Executive-Level Dashboards</li>
+          <li><i class="fas fa-check"></i> Enterprise Workflow Customization</li>
+          <li><i class="fas fa-check"></i> Strategic Revenue Consulting</li>
+          <li><i class="fas fa-check"></i> Multi-Market / Multi-ICP</li>
+          <li><i class="fas fa-check"></i> Embedded Strategic Support</li>
+          <li><i class="fas fa-check"></i> Custom Integrations</li>
+        </ul>
+        <div class="ros-price-targets">
+          <span><i class="fas fa-city"></i> Enterprise &amp; PE</span>
+          <span><i class="fas fa-chart-bar"></i> $25M+ ARR</span>
+          <span><i class="fas fa-clock"></i> Live in 4–8 Wks</span>
         </div>
-        <div class="ros-price-meta">
-          <div class="ros-meta-item"><i class="fas fa-building"></i><span>Enterprise &amp; PE-backed orgs</span></div>
-          <div class="ros-meta-item"><i class="fas fa-chart-line"></i><span>$25M+ ARR</span></div>
-          <div class="ros-meta-item"><i class="fas fa-calendar-alt"></i><span>12-Month Commitment</span></div>
-          <div class="ros-meta-item"><i class="fas fa-rocket"></i><span>Live in 4–8 Weeks</span></div>
-        </div>
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Request Enterprise Consultation</a>
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure">Not sure this is right for you? Book a call →</a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-price-cta-btn">Request Consultation <i class="fas fa-arrow-right"></i></a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure">Not sure? Book a free strategy call →</a>
       </div>
 
     </div>
@@ -1379,114 +1625,449 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
 </section>
 
 <!-- ADD-ONS -->
-<section class="section section-gray">
+<section class="section ros-addons-section">
   <div class="container">
-    <div class="text-center fade-in" style="margin-bottom:48px;">
+    <div class="text-center fade-in" style="margin-bottom:56px;">
       <span class="section-label">Optional Add-Ons</span>
-      <h2 class="section-title">Additional Infrastructure Services</h2>
-      <p class="section-subtitle">Pricing varies based on your specific requirements. All engagements begin with a revenue infrastructure review.</p>
+      <h2 class="section-title" style="color:var(--white);">Additional Infrastructure Services</h2>
+      <p style="color:rgba(255,255,255,0.55);max-width:560px;margin:16px auto 0;">Pricing varies based on your specific requirements. All engagements begin with a revenue infrastructure review to identify the right deployment model.</p>
     </div>
-    <div class="gos-addons-grid fade-in">
-      <div class="gos-addon"><i class="fas fa-search"></i><span>Sales Recruiting Infrastructure</span></div>
-      <div class="gos-addon"><i class="fas fa-chalkboard-teacher"></i><span>Sales Coaching &amp; Accountability</span></div>
-      <div class="gos-addon"><i class="fas fa-database"></i><span>CRM Restructuring</span></div>
-      <div class="gos-addon"><i class="fas fa-chart-pie"></i><span>Advanced Reporting &amp; Forecasting</span></div>
-      <div class="gos-addon"><i class="fas fa-filter"></i><span>Inbound Lead Routing</span></div>
-      <div class="gos-addon"><i class="fas fa-eye"></i><span>AI Visibility &amp; Market Positioning</span></div>
-      <div class="gos-addon"><i class="fas fa-expand-arrows-alt"></i><span>Additional Markets or ICPs</span></div>
-      <div class="gos-addon"><i class="fas fa-calendar-check"></i><span>Appointment Handling Support</span></div>
-      <div class="gos-addon"><i class="fas fa-cogs"></i><span>Enterprise Workflow Customization</span></div>
+    <div class="ros-addons-grid fade-in">
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-search"></i></div>
+        <div class="ros-addon-body">
+          <h5>Sales Recruiting Infrastructure</h5>
+          <p>Hiring workflows, recruiting systems, and onboarding support</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+        <div class="ros-addon-body">
+          <h5>Sales Coaching &amp; Accountability</h5>
+          <p>Team coaching, KPI management, and pipeline accountability</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-database"></i></div>
+        <div class="ros-addon-body">
+          <h5>CRM Restructuring</h5>
+          <p>Advanced CRM cleanup, re-architecture, and migration</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-chart-pie"></i></div>
+        <div class="ros-addon-body">
+          <h5>Advanced Reporting &amp; Forecasting</h5>
+          <p>Executive dashboards and revenue forecasting systems</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-filter"></i></div>
+        <div class="ros-addon-body">
+          <h5>Inbound Lead Routing</h5>
+          <p>Automated inbound lead management and routing systems</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-eye"></i></div>
+        <div class="ros-addon-body">
+          <h5>AI Visibility &amp; Market Positioning</h5>
+          <p>Visibility scoring and positioning assessments</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+        <div class="ros-addon-body">
+          <h5>Additional Markets or ICPs</h5>
+          <p>Expansion into additional verticals or target markets</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="ros-addon-body">
+          <h5>Appointment Handling Support</h5>
+          <p>Qualification and meeting routing assistance</p>
+        </div>
+      </div>
+      <div class="ros-addon-card">
+        <div class="ros-addon-icon"><i class="fas fa-cogs"></i></div>
+        <div class="ros-addon-body">
+          <h5>Enterprise Workflow Customization</h5>
+          <p>Advanced automation and deep integration support</p>
+        </div>
+      </div>
     </div>
+    <p class="text-center" style="color:rgba(255,255,255,0.35);font-size:0.82rem;margin-top:32px;">Pricing varies based on infrastructure complexity, outbound scale, campaign count, and operational support requirements.</p>
   </div>
 </section>
 
 <!-- CLOSING CTA -->
-<section class="cta-section">
-  <div class="container">
-    <h2>Build A Revenue Engine Designed To Scale.</h2>
-    <p>Deploy modern revenue infrastructure built to generate pipeline, improve operational efficiency, and support long-term growth.</p>
-    <p style="margin-top:12px;opacity:0.8;">Book your Revenue Infrastructure Review. We'll map out your pipeline requirements, identify bottlenecks, and show you exactly what it takes to hit your growth targets.</p>
-    <div class="ros-cta-badges">
-      <span><i class="fas fa-check-circle"></i> 6-Month Initial Commitment</span>
-      <span><i class="fas fa-check-circle"></i> Live in 14 Days</span>
-      <span><i class="fas fa-check-circle"></i> Pipeline Reporting Included</span>
-    </div>
-    <div class="cta-row" style="margin-top:32px;">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Revenue Infrastructure Review</a>
-      <a href="#pricing" class="btn btn-secondary btn-lg">See Pricing</a>
+<section class="ros-final-cta">
+  <div class="ros-final-cta-glow"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="ros-final-cta-inner">
+      <div class="ros-final-cta-text">
+        <span class="section-label" style="color:var(--green);">Ready to Scale</span>
+        <h2 style="color:var(--white);font-size:clamp(2rem,4vw,3.2rem);margin:16px 0 20px;">Build A Revenue Engine<br><span class="ros-gold-text">Designed To Scale.</span></h2>
+        <p style="color:rgba(255,255,255,0.6);font-size:1.1rem;line-height:1.75;max-width:580px;">Book your Revenue Infrastructure Review. We'll map out your pipeline requirements, identify bottlenecks, and show you exactly what it takes to hit your growth targets.</p>
+        <div class="ros-final-badges">
+          <span><i class="fas fa-check-circle"></i> Live in 14 Days</span>
+          <span><i class="fas fa-check-circle"></i> 6-Month Commitment</span>
+          <span><i class="fas fa-check-circle"></i> Pipeline Reporting Included</span>
+        </div>
+        <div class="ros-final-cta-btns">
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book Revenue Infrastructure Review</a>
+          <a href="#pricing" class="btn ros-hero-btn-ghost btn-lg">See Pricing</a>
+        </div>
+      </div>
+      <div class="ros-final-cta-card">
+        <div class="ros-review-card">
+          <div class="ros-review-header">
+            <i class="fas fa-clipboard-check"></i>
+            <span>Revenue Infrastructure Review</span>
+          </div>
+          <ul class="ros-review-list">
+            <li><i class="fas fa-check-circle"></i> ICP Analysis &amp; Market Fit Review</li>
+            <li><i class="fas fa-check-circle"></i> Current Stack &amp; Gap Assessment</li>
+            <li><i class="fas fa-check-circle"></i> Pipeline Bottleneck Identification</li>
+            <li><i class="fas fa-check-circle"></i> Custom Infrastructure Roadmap</li>
+            <li><i class="fas fa-check-circle"></i> Recommended Deployment Tier</li>
+            <li><i class="fas fa-check-circle"></i> 60-Day Growth Projection</li>
+          </ul>
+          <div class="ros-review-footer">
+            <span class="ros-review-free">No cost. No obligation.</span>
+            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="padding:12px 24px;font-size:0.9rem;">Book Now</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 ${solDetailStyles()}
 <style>
-/* ── Revenue OS Hero ─────────────────────────────────────────────────────── */
-.ros-hero { min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; background: #0a0a0a url('/static/hero-texture.jpg') center/cover no-repeat; position: relative; padding: 100px 0 80px; }
-.ros-hero::before { content:''; position:absolute; inset:0; background: linear-gradient(135deg,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.60) 100%); }
-.ros-hero-inner { position:relative; z-index:1; max-width:820px; text-align:center; }
-.ros-hero-title { font-size: clamp(2.6rem, 5.5vw, 4rem); font-weight: 800; color: var(--white); line-height: 1.1; margin: 16px 0 24px; }
-.ros-hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.72); max-width: 680px; margin: 0 auto; line-height: 1.7; }
-.ros-trust-bar { display: flex; align-items: center; justify-content: center; gap: 0; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); }
-.ros-stat { text-align:center; padding: 0 36px; }
-.ros-stat-num { display:block; font-size: 1.8rem; font-weight: 800; color: var(--green); line-height: 1.1; }
-.ros-stat-label { display:block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); margin-top: 4px; }
-.ros-stat-divider { width: 1px; height: 48px; background: rgba(255,255,255,0.12); }
-/* ── Platform cards ──────────────────────────────────────────────────────── */
-.ros-platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.ros-platform-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px 24px; transition: all var(--transition); }
-.ros-platform-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: var(--shadow); }
-.ros-card-featured { border-color: var(--green); box-shadow: 0 0 0 1px var(--green); }
-.ros-plat-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.1); display:flex; align-items:center; justify-content:center; color:var(--green); font-size:1.2rem; margin-bottom:12px; }
-.ros-plat-tag { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green); margin-bottom: 6px; }
-.ros-platform-card h4 { font-size: 0.95rem; color: var(--gray-800); margin-bottom: 10px; }
-.ros-platform-card p { font-size: 0.82rem; color: var(--gray-600); line-height: 1.55; margin-bottom: 14px; }
-.ros-plat-list { list-style: none; padding: 0; margin: 0; }
-.ros-plat-list li { font-size: 0.78rem; color: var(--gray-600); padding: 4px 0 4px 16px; position:relative; border-bottom: 1px solid var(--gray-200); }
-.ros-plat-list li:last-child { border-bottom: none; }
-.ros-plat-list li::before { content:'✓'; position:absolute; left:0; color:var(--green); font-weight:700; font-size:0.72rem; }
-/* ── Timeline ────────────────────────────────────────────────────────────── */
-.ros-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.ros-tl-week { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 10px; }
-.ros-tl-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 24px 20px; }
-.ros-tl-gold { border-color: rgba(173,120,5,0.4); background: rgba(173,120,5,0.05); }
-.ros-tl-card h4 { color: var(--white); font-size: 0.95rem; margin-bottom: 8px; }
-.ros-tl-card p { color: rgba(255,255,255,0.55); font-size: 0.8rem; line-height: 1.55; margin-bottom: 14px; }
-.ros-tl-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.ros-tl-tags span { font-size: 0.68rem; font-weight: 700; background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.5); border-radius: 100px; padding: 3px 10px; }
-.ros-tl-tags-gold span { background: rgba(173,120,5,0.12); color: var(--green); }
-/* ── Pricing ─────────────────────────────────────────────────────────────── */
-.ros-pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
-.ros-price-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px 28px; position: relative; }
-.ros-price-featured { border-color: var(--green); box-shadow: 0 0 0 1px var(--green), var(--shadow-lg); background: var(--navy); }
-.ros-price-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--green); color:var(--navy); font-size:0.7rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; padding:4px 16px; border-radius:100px; white-space:nowrap; }
-.ros-price-tag { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 8px; }
-.ros-price-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; color: var(--gray-800); }
-.ros-price-featured h3 { color: var(--white); }
-.ros-price-desc { font-size: 0.82rem; color: var(--gray-600); line-height: 1.55; margin-bottom: 20px; }
-.ros-price-featured .ros-price-desc { color: rgba(255,255,255,0.6); }
-.ros-price-amount { border-top: 1px solid var(--gray-200); padding-top: 16px; margin-bottom: 16px; }
-.ros-price-featured .ros-price-amount { border-color: rgba(255,255,255,0.12); }
-.ros-price-row-main { display: flex; justify-content: space-between; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--gray-200); }
-.ros-price-featured .ros-price-row-main { border-color: rgba(255,255,255,0.08); }
-.ros-price-row-main:last-child { border-bottom: none; }
-.ros-price-label { font-size: 0.78rem; color: var(--gray-400); }
-.ros-price-featured .ros-price-label { color: rgba(255,255,255,0.45); }
-.ros-price-val { font-size: 1.1rem; font-weight: 800; color: var(--gray-800); }
-.ros-price-featured .ros-price-val { color: var(--white); }
-.ros-price-suffix { font-size: 0.72rem; font-weight: 500; color: var(--gray-400); }
-.ros-price-featured .ros-price-suffix { color: rgba(255,255,255,0.4); }
-.ros-price-meta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
-.ros-meta-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--gray-600); }
-.ros-price-featured .ros-meta-item { color: rgba(255,255,255,0.6); }
-.ros-meta-item i { color: var(--green); width: 14px; }
-.ros-not-sure { display:block; text-align:center; font-size:0.75rem; color:var(--gray-400); margin-top:12px; text-decoration:none; }
-.ros-not-sure:hover { color:var(--green); }
-/* ── Compare table section rows ─────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════
+   REVENUE OS — RICH VISUAL DESIGN SYSTEM
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Shared utilities ────────────────────────────────── */
+.ros-gold-text { color: var(--green); }
+.accent { color: var(--green); }
+
+/* ── Hero ────────────────────────────────────────────── */
+.ros-hero {
+  position: relative; overflow: hidden;
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: #050505; padding: 120px 0 80px;
+}
+.ros-hero-grid-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(173,120,5,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(173,120,5,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+}
+.ros-hero-glow {
+  position: absolute; border-radius: 50%;
+  filter: blur(120px); opacity: 0.18; pointer-events: none;
+}
+.ros-glow-1 { width: 600px; height: 600px; background: var(--green); top: -200px; left: 50%; transform: translateX(-50%); }
+.ros-glow-2 { width: 400px; height: 400px; background: #3b82f6; bottom: -100px; right: 10%; }
+.ros-hero-inner {
+  position: relative; z-index: 2; max-width: 900px; text-align: center;
+}
+.ros-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(173,120,5,0.12); border: 1px solid rgba(173,120,5,0.3);
+  color: var(--green); font-size: 0.78rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.12em;
+  padding: 6px 18px; border-radius: 100px; margin-bottom: 28px;
+}
+.ros-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--green);
+  box-shadow: 0 0 8px var(--green); animation: ros-pulse 2s infinite;
+}
+@keyframes ros-pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+.ros-hero-title {
+  font-size: clamp(2.8rem, 6vw, 4.4rem); font-weight: 900; color: var(--white);
+  line-height: 1.08; margin-bottom: 24px; letter-spacing: -0.02em;
+}
+.ros-hero-sub {
+  font-size: 1.15rem; color: rgba(255,255,255,0.62); max-width: 700px;
+  margin: 0 auto 36px; line-height: 1.75;
+}
+.ros-hero-cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+.ros-hero-btn-primary {
+  background: var(--green); color: #0a0a0a; border: none; font-weight: 800;
+  box-shadow: 0 0 40px rgba(173,120,5,0.4);
+}
+.ros-hero-btn-primary:hover { background: var(--green-light); box-shadow: 0 0 60px rgba(173,120,5,0.6); }
+.ros-hero-btn-ghost {
+  background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.85);
+  border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(8px);
+}
+.ros-hero-btn-ghost:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.35); }
+/* Trust bar */
+.ros-trust-bar {
+  display: flex; align-items: center; justify-content: center;
+  border-top: 1px solid rgba(255,255,255,0.08); padding-top: 40px; margin-top: 8px;
+}
+.ros-stat { text-align: center; padding: 0 48px; }
+.ros-stat-num { display: block; font-size: 2rem; font-weight: 900; color: var(--green); line-height: 1.1; }
+.ros-stat-label { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.38); margin-top: 6px; }
+.ros-stat-divider { width: 1px; height: 52px; background: rgba(255,255,255,0.1); flex-shrink: 0; }
+/* Tech pills */
+.ros-tech-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 36px; }
+.ros-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5); font-size: 0.75rem; font-weight: 600;
+  padding: 6px 14px; border-radius: 100px;
+  transition: all 0.2s;
+}
+.ros-pill:hover { border-color: rgba(173,120,5,0.4); color: var(--green); background: rgba(173,120,5,0.06); }
+.ros-pill-gold { background: rgba(173,120,5,0.1); border-color: rgba(173,120,5,0.3); color: var(--green); }
+.ros-pill i { font-size: 0.7rem; }
+
+/* ── Platform Section (tabbed) ───────────────────────── */
+.ros-platform-section { background: #0d0d0d; }
+.ros-tab-nav {
+  display: flex; gap: 4px; flex-wrap: wrap; justify-content: center;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px; padding: 6px; margin-bottom: 32px;
+}
+.ros-tab {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer;
+  font-size: 0.83rem; font-weight: 600; color: rgba(255,255,255,0.45);
+  background: transparent; transition: all 0.2s; white-space: nowrap;
+}
+.ros-tab:hover { color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.06); }
+.ros-tab.active { background: rgba(173,120,5,0.15); color: var(--green); border: 1px solid rgba(173,120,5,0.3); }
+.ros-tab i { font-size: 0.78rem; }
+/* Tab panels */
+.ros-tab-panels { min-height: 420px; }
+.ros-tab-panel { display: none; }
+.ros-tab-panel.active { display: block; }
+.ros-panel-layout {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+}
+.ros-panel-badge {
+  display: inline-block; padding: 4px 14px; border-radius: 100px;
+  font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em;
+  background: rgba(173,120,5,0.12); color: var(--green); border: 1px solid rgba(173,120,5,0.25);
+}
+.ros-feature-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.ros-feature-list li { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.72); font-size: 0.9rem; }
+.ros-feature-list li i { color: var(--green); font-size: 0.85rem; flex-shrink: 0; }
+/* Architecture card */
+.ros-arch-card {
+  background: #111; border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px; overflow: hidden;
+}
+.ros-arch-header {
+  display: flex; align-items: center; gap: 6px;
+  background: rgba(255,255,255,0.04); padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.ros-arch-dot { width: 10px; height: 10px; border-radius: 50%; }
+.ros-arch-dot.green { background: #22c55e; }
+.ros-arch-dot.yellow { background: #eab308; }
+.ros-arch-dot.red { background: #ef4444; }
+.ros-arch-layers { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.ros-arch-layer {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: 8px;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.83rem; color: rgba(255,255,255,0.5);
+}
+.ros-arch-layer i { color: rgba(255,255,255,0.3); width: 16px; text-align: center; }
+.ros-arch-layer span:nth-child(2) { flex: 1; }
+.ros-arch-layer-active { border-color: rgba(34,197,94,0.2); background: rgba(34,197,94,0.04); color: rgba(255,255,255,0.8); }
+.ros-arch-layer-active i { color: #22c55e; }
+.ros-layer-status { font-size: 0.7rem; font-weight: 700; color: #22c55e; background: rgba(34,197,94,0.12); padding: 2px 8px; border-radius: 100px; }
+.ros-status-pending { color: #f59e0b !important; background: rgba(245,158,11,0.12) !important; }
+.ros-arch-footer { padding: 12px 16px; background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.75rem; color: rgba(255,255,255,0.35); display: flex; align-items: center; gap: 8px; }
+/* Signals card */
+.ros-signals-list { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.ros-signal-row { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid rgba(255,255,255,0.06); }
+.ros-signal-row span:nth-child(2) { flex: 1; font-size: 0.83rem; color: rgba(255,255,255,0.65); }
+.ros-sig-badge { font-size: 0.62rem; font-weight: 800; padding: 2px 8px; border-radius: 100px; flex-shrink: 0; }
+.ros-sig-hot { background: rgba(239,68,68,0.15); color: #f87171; }
+.ros-sig-warm { background: rgba(245,158,11,0.15); color: #fbbf24; }
+.ros-sig-new { background: rgba(59,130,246,0.15); color: #60a5fa; }
+.ros-sig-score { font-size: 0.78rem; font-weight: 800; color: var(--green); background: rgba(173,120,5,0.12); padding: 2px 10px; border-radius: 100px; flex-shrink: 0; }
+/* Outbound card */
+.ros-channel-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 16px; }
+.ros-channel-item { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 12px 8px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; font-size: 0.78rem; color: rgba(255,255,255,0.4); }
+.ros-channel-item i { font-size: 1.1rem; }
+.ros-ch-active { border-color: rgba(34,197,94,0.2); color: rgba(255,255,255,0.75); }
+.ros-ch-active i { color: #22c55e; }
+.ros-ch-stat { font-size: 0.68rem; color: var(--green); font-weight: 700; }
+.ros-outbound-stats { display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.06); }
+.ros-ob-stat { flex: 1; text-align: center; padding: 12px 8px; border-right: 1px solid rgba(255,255,255,0.06); }
+.ros-ob-stat:last-child { border-right: none; }
+.ros-ob-num { display: block; font-size: 1.2rem; font-weight: 800; color: var(--green); }
+.ros-ob-stat span:last-child { font-size: 0.68rem; color: rgba(255,255,255,0.4); }
+/* CRM Pipeline card */
+.ros-pipeline-stages { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.ros-stage { display: flex; align-items: center; gap: 10px; }
+.ros-stage-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); width: 90px; flex-shrink: 0; }
+.ros-stage-count { font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.7); width: 28px; text-align: right; flex-shrink: 0; }
+.ros-stage-bar { height: 6px; border-radius: 100px; background: rgba(255,255,255,0.12); transition: width 0.8s ease; }
+/* Calendar card */
+.ros-calendar-preview { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.ros-cal-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 8px; }
+.ros-cal-booked { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.15); }
+.ros-cal-pending { background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.15); }
+.ros-cal-item i { font-size: 0.9rem; flex-shrink: 0; }
+.ros-cal-booked i { color: #22c55e; }
+.ros-cal-pending i { color: #f59e0b; }
+.ros-cal-item div { flex: 1; }
+.ros-cal-item div strong { display: block; font-size: 0.82rem; color: rgba(255,255,255,0.8); margin-bottom: 2px; }
+.ros-cal-item div span { font-size: 0.72rem; color: rgba(255,255,255,0.4); }
+.ros-cal-badge { font-size: 0.65rem; font-weight: 700; padding: 2px 8px; border-radius: 100px; background: rgba(34,197,94,0.15); color: #22c55e; flex-shrink: 0; }
+.ros-badge-pending { background: rgba(245,158,11,0.15) !important; color: #f59e0b !important; }
+/* KPI grid */
+.ros-kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.06); margin: 0; }
+.ros-kpi { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 12px; background: #111; }
+.ros-kpi-val { font-size: 1.5rem; font-weight: 800; margin-bottom: 4px; }
+.ros-kpi-label { font-size: 0.7rem; color: rgba(255,255,255,0.4); text-align: center; }
+
+/* ── Timeline Section ────────────────────────────────── */
+.ros-tl-section { background: #070707; }
+.ros-tl-new { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; position: relative; }
+.ros-tl-new::before {
+  content: ''; position: absolute; top: 36px; left: calc(12.5% + 8px); right: calc(12.5% + 8px);
+  height: 2px; background: linear-gradient(90deg, rgba(34,197,94,0.6), rgba(173,120,5,0.8), rgba(173,120,5,0.3));
+  z-index: 0;
+}
+.ros-tl-step { position: relative; }
+.ros-tl-step-number {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: #111; border: 2px solid rgba(255,255,255,0.12);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem; font-weight: 800; color: rgba(255,255,255,0.4);
+  margin: 0 auto 20px; position: relative; z-index: 1;
+}
+.ros-step-num-gold {
+  background: rgba(173,120,5,0.15) !important;
+  border-color: var(--green) !important;
+  color: var(--green) !important;
+  box-shadow: 0 0 20px rgba(173,120,5,0.3);
+}
+.ros-tl-step-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px; padding: 24px 20px;
+}
+.ros-tl-card-gold {
+  background: rgba(173,120,5,0.06) !important;
+  border-color: rgba(173,120,5,0.3) !important;
+  box-shadow: 0 0 30px rgba(173,120,5,0.08);
+}
+.ros-tl-step-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.ros-tl-phase { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); }
+.ros-tl-status { font-size: 0.65rem; font-weight: 700; padding: 3px 10px; border-radius: 100px; display: inline-flex; align-items: center; gap: 4px; }
+.ros-status-complete { background: rgba(34,197,94,0.12); color: #22c55e; }
+.ros-status-active { background: rgba(59,130,246,0.12); color: #60a5fa; }
+.ros-status-growth { background: rgba(168,85,247,0.12); color: #c084fc; }
+.ros-status-compound { background: rgba(173,120,5,0.15); color: var(--green); }
+.ros-tl-step-card h4 { color: var(--white); font-size: 1rem; margin-bottom: 10px; }
+.ros-tl-step-card p { color: rgba(255,255,255,0.5); font-size: 0.8rem; line-height: 1.6; margin-bottom: 16px; }
+.ros-tl-checklist { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.ros-tl-checklist span { display: inline-flex; align-items: center; gap: 5px; font-size: 0.68rem; font-weight: 600; color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.05); border-radius: 100px; padding: 3px 10px; }
+.ros-tl-checklist span i { color: #22c55e; font-size: 0.62rem; }
+.ros-checklist-gold span { background: rgba(173,120,5,0.1); color: var(--green); }
+.ros-checklist-gold span i { color: var(--green); }
+.ros-tl-progress { height: 3px; background: rgba(255,255,255,0.06); border-radius: 100px; overflow: hidden; }
+.ros-tl-bar { height: 100%; background: linear-gradient(90deg, #22c55e, var(--green)); border-radius: 100px; }
+
+/* ── Pricing Section ─────────────────────────────────── */
+.ros-pricing-section { background: var(--gray-50); }
+.ros-pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: stretch; }
+.ros-price-card {
+  background: var(--white); border: 1.5px solid var(--gray-200);
+  border-radius: 20px; padding: 36px 32px; position: relative;
+  display: flex; flex-direction: column;
+  transition: all 0.3s; box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+.ros-price-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
+.ros-price-featured {
+  background: #0d0d0d; border-color: var(--green);
+  box-shadow: 0 0 0 1px var(--green), 0 24px 64px rgba(173,120,5,0.2);
+}
+.ros-flagship-banner {
+  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+  background: var(--green); color: #0a0a0a; font-size: 0.72rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.12em; padding: 5px 20px;
+  border-radius: 100px; white-space: nowrap;
+  display: flex; align-items: center; gap: 6px;
+}
+.ros-price-tier-label {
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--green); margin-bottom: 10px;
+}
+.ros-price-headline {
+  font-size: 1.35rem; font-weight: 800; color: var(--gray-800);
+  line-height: 1.25; margin-bottom: 12px;
+}
+.ros-price-desc { font-size: 0.83rem; color: var(--gray-600); line-height: 1.6; margin-bottom: 24px; }
+/* Price block */
+.ros-price-block {
+  background: var(--gray-50); border-radius: 12px; padding: 20px;
+  margin-bottom: 24px;
+}
+.ros-price-block-dark { background: rgba(255,255,255,0.05); }
+.ros-price-item { text-align: center; padding: 8px 0; }
+.ros-price-big {
+  font-size: 2rem; font-weight: 900; color: var(--gray-800);
+  letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 4px;
+}
+.ros-price-mo { font-size: 1rem; font-weight: 500; }
+.ros-price-meta-text { font-size: 0.75rem; color: var(--gray-400); line-height: 1.4; }
+.ros-price-meta-text span { font-size: 0.68rem; opacity: 0.7; }
+.ros-price-divider-h { height: 1px; background: var(--gray-200); margin: 8px 0; }
+/* Tier includes list */
+.ros-tier-includes { list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.ros-tier-includes li { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--gray-600); }
+.ros-tier-includes li i { color: var(--green); font-size: 0.78rem; width: 14px; flex-shrink: 0; }
+.ros-tier-includes-dark li { color: rgba(255,255,255,0.65); }
+/* Targets row */
+.ros-price-targets {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;
+}
+.ros-price-targets span {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.72rem; font-weight: 600; color: var(--gray-600);
+  background: var(--gray-100); border-radius: 100px; padding: 4px 12px;
+}
+.ros-price-targets span i { color: var(--green); }
+.ros-targets-dark span { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); }
+/* CTA button */
+.ros-price-cta-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; padding: 15px 24px; border-radius: 10px; border: none;
+  font-size: 0.92rem; font-weight: 700; cursor: pointer; text-decoration: none;
+  background: var(--navy); color: var(--white); transition: all 0.2s;
+  margin-bottom: 12px;
+}
+.ros-price-cta-btn:hover { background: #333; transform: translateY(-2px); }
+.ros-price-cta-gold {
+  background: var(--green) !important; color: #0a0a0a !important;
+  box-shadow: 0 8px 24px rgba(173,120,5,0.35);
+}
+.ros-price-cta-gold:hover { background: var(--green-light) !important; box-shadow: 0 12px 32px rgba(173,120,5,0.5); }
+.ros-not-sure { display: block; text-align: center; font-size: 0.75rem; color: var(--gray-400); text-decoration: none; }
+.ros-not-sure:hover { color: var(--green); }
+
+/* ── Compare table ───────────────────────────────────── */
 .compare-section-row td { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.4); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; padding: 8px 16px; }
 .ros-compare td:nth-child(3) { background: rgba(173,120,5,0.06); }
-/* ── VS Section ──────────────────────────────────────────────────────────── */
-.ros-vs-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: center; max-width: 860px; margin: 0 auto; }
-.ros-vs-col { border-radius: var(--radius-lg); padding: 32px 28px; }
+
+/* ── VS Section ──────────────────────────────────────── */
+.ros-vs-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: center; max-width: 900px; margin: 0 auto; }
+.ros-vs-col { border-radius: 16px; padding: 36px 32px; }
 .ros-vs-bad { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); }
 .ros-vs-good { background: rgba(173,120,5,0.06); border: 1px solid rgba(173,120,5,0.3); }
 .ros-vs-col h5 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; color: rgba(255,255,255,0.4); }
@@ -1496,18 +2077,109 @@ ${solDetailStyles()}
 .ros-vs-good ul li { color: rgba(255,255,255,0.8); border-color: rgba(173,120,5,0.1); }
 .ros-vs-bad ul li i { color: rgba(255,80,80,0.6); }
 .ros-vs-good ul li i { color: var(--green); }
-.ros-vs-total { font-size: 1.1rem; font-weight: 800; color: rgba(255,255,255,0.4); text-align: center; }
-.ros-vs-total-good { color: var(--green); }
-.ros-vs-arrow { display:flex; align-items:center; justify-content:center; font-size:1.8rem; color:var(--green); }
-/* ── CTA badges ──────────────────────────────────────────────────────────── */
-.ros-cta-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:28px; }
-.ros-cta-badges span { font-size:0.82rem; color:rgba(255,255,255,0.6); display:flex; align-items:center; gap:6px; }
-.ros-cta-badges i { color:var(--green); }
-/* ── Responsive ──────────────────────────────────────────────────────────── */
-@media (max-width:1100px) { .ros-platform-grid { grid-template-columns: repeat(2,1fr); } .ros-pricing-grid { grid-template-columns: 1fr; } .ros-timeline { grid-template-columns: repeat(2,1fr); } }
-@media (max-width:800px) { .ros-vs-grid { grid-template-columns:1fr; } .ros-vs-arrow { display:none; } .ros-trust-bar { flex-direction:column; gap:24px; } .ros-stat-divider { display:none; } }
-@media (max-width:640px) { .ros-platform-grid { grid-template-columns:1fr; } .ros-timeline { grid-template-columns:1fr; } }
+.ros-vs-total { font-size: 1.4rem; font-weight: 900; color: rgba(255,255,255,0.35); text-align: center; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; margin-top: 4px; }
+.ros-vs-total-good { color: var(--green); border-color: rgba(173,120,5,0.2); }
+.ros-vs-arrow { display:flex; align-items:center; justify-content:center; font-size:2rem; color:var(--green); }
+
+/* ── Add-ons Section ─────────────────────────────────── */
+.ros-addons-section { background: #0d0d0d; }
+.ros-addons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.ros-addon-card {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px; padding: 20px 18px;
+  transition: all 0.2s;
+}
+.ros-addon-card:hover { border-color: rgba(173,120,5,0.3); background: rgba(173,120,5,0.04); transform: translateY(-2px); }
+.ros-addon-icon {
+  width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+  background: rgba(173,120,5,0.1); color: var(--green);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+}
+.ros-addon-body h5 { font-size: 0.88rem; font-weight: 700; color: rgba(255,255,255,0.8); margin-bottom: 4px; }
+.ros-addon-body p { font-size: 0.78rem; color: rgba(255,255,255,0.4); line-height: 1.5; margin: 0; }
+
+/* ── Final CTA ───────────────────────────────────────── */
+.ros-final-cta {
+  position: relative; overflow: hidden;
+  background: #050505; padding: 120px 0;
+  border-top: 1px solid rgba(173,120,5,0.15);
+}
+.ros-final-cta-glow {
+  position: absolute; width: 800px; height: 500px;
+  background: radial-gradient(ellipse, rgba(173,120,5,0.12) 0%, transparent 70%);
+  top: -100px; left: 50%; transform: translateX(-50%);
+  pointer-events: none;
+}
+.ros-final-cta-inner { display: grid; grid-template-columns: 1fr 420px; gap: 72px; align-items: center; }
+.ros-final-badges { display: flex; flex-wrap: wrap; gap: 16px; margin: 28px 0 32px; }
+.ros-final-badges span { display: inline-flex; align-items: center; gap: 7px; font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+.ros-final-badges i { color: var(--green); }
+.ros-final-cta-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+/* Review card */
+.ros-review-card {
+  background: #111; border: 1px solid rgba(173,120,5,0.25);
+  border-radius: 16px; overflow: hidden;
+  box-shadow: 0 0 60px rgba(173,120,5,0.12);
+}
+.ros-review-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 18px 24px; background: rgba(173,120,5,0.1);
+  border-bottom: 1px solid rgba(173,120,5,0.15);
+  font-size: 0.88rem; font-weight: 700; color: var(--green);
+}
+.ros-review-header i { font-size: 1rem; }
+.ros-review-list { list-style: none; padding: 20px 24px; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.ros-review-list li { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: rgba(255,255,255,0.7); }
+.ros-review-list li i { color: var(--green); font-size: 0.8rem; flex-shrink: 0; }
+.ros-review-footer { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-top: 1px solid rgba(255,255,255,0.06); }
+.ros-review-free { font-size: 0.78rem; color: rgba(255,255,255,0.35); }
+
+/* ── Responsive ──────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .ros-pricing-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+  .ros-final-cta-inner { grid-template-columns: 1fr; gap: 48px; }
+  .ros-final-cta-card { max-width: 480px; }
+}
+@media (max-width: 1024px) {
+  .ros-panel-layout { grid-template-columns: 1fr; gap: 32px; }
+  .ros-tl-new { grid-template-columns: repeat(2, 1fr); }
+  .ros-tl-new::before { display: none; }
+  .ros-addons-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 800px) {
+  .ros-vs-grid { grid-template-columns: 1fr; }
+  .ros-vs-arrow { display: none; }
+  .ros-trust-bar { flex-direction: column; gap: 24px; border-top: 1px solid rgba(255,255,255,0.08); }
+  .ros-stat-divider { display: none; }
+  .ros-stat { padding: 12px 0; }
+  .ros-tab-nav { flex-wrap: wrap; }
+}
+@media (max-width: 640px) {
+  .ros-tl-new { grid-template-columns: 1fr; }
+  .ros-addons-grid { grid-template-columns: 1fr; }
+  .ros-hero-cta-row { flex-direction: column; align-items: center; }
+  .ros-final-cta-btns { flex-direction: column; }
+}
 </style>
+
+<script>
+// Tab switching for platform section
+document.addEventListener('DOMContentLoaded', function() {
+  const tabs = document.querySelectorAll('.ros-tab');
+  const panels = document.querySelectorAll('.ros-tab-panel');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById('tab-' + tab.dataset.tab);
+      if (target) target.classList.add('active');
+    });
+  });
+});
+</script>
 `)
 
 // Managed 1099 Sales Teams
