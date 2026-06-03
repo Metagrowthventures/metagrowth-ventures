@@ -1064,162 +1064,450 @@ ${solDetailStyles()}
 `)
 
 // Revenue OS
-export const revenueOSPage = () => page('Revenue OS™ — Build Your Sales Foundation', `
-<section class="page-hero">
-  <div class="container page-hero-content">
-    <div class="hero-eyebrow">Foundation First</div>
-    <h1 class="hero-title">Revenue OS™<br><span class="accent">Build the Sales Foundation Before You Scale</span></h1>
-    <p class="hero-sub">Revenue OS is the foundational buildout of your complete sales infrastructure — ICP, process, CRM, reporting, messaging, outreach, onboarding, and management rhythm. Built before you add headcount.</p>
-    <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Build My Revenue OS</a>
-      <a href="#what-we-build" class="btn btn-secondary btn-lg">See What We Build</a>
+export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue Infrastructure', `
+
+<!-- HERO -->
+<section class="ros-hero">
+  <div class="container ros-hero-inner">
+    <div class="hero-eyebrow">AI-Powered Revenue Infrastructure</div>
+    <h1 class="ros-hero-title">Stop Guessing.<br><span class="accent">Build a Revenue Machine.</span></h1>
+    <p class="ros-hero-sub">MetaGrowth Revenue OS™ deploys done-for-you outbound infrastructure, AI signal systems, CRM workflows, and managed pipeline generation — so your team closes deals instead of chasing leads.</p>
+    <div class="hero-cta-row" style="justify-content:center;margin-top:32px;">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Revenue Infrastructure Review</a>
+      <a href="#pricing" class="btn btn-secondary btn-lg">See Pricing</a>
+    </div>
+    <div class="ros-trust-bar">
+      <div class="ros-stat"><span class="ros-stat-num">14 Days</span><span class="ros-stat-label">To Full Infrastructure</span></div>
+      <div class="ros-stat-divider"></div>
+      <div class="ros-stat"><span class="ros-stat-num">10–30+</span><span class="ros-stat-label">Meetings/Month</span></div>
+      <div class="ros-stat-divider"></div>
+      <div class="ros-stat"><span class="ros-stat-num">AI-First</span><span class="ros-stat-label">Signal Intelligence</span></div>
     </div>
   </div>
 </section>
 
+<!-- NOT A LEAD GEN AGENCY -->
 <section class="section section-gray">
   <div class="container">
     <div class="text-center fade-in" style="margin-bottom:56px;">
-      <span class="section-label">Why Revenue OS First</span>
-      <h2 class="section-title">You can't scale what isn't built yet.</h2>
-      <p class="section-subtitle">Most companies hire salespeople before they have a repeatable system. That's why reps underperform, turnover is high, and pipeline stays unpredictable. Revenue OS installs the infrastructure first.</p>
+      <span class="section-label">The Platform</span>
+      <h2 class="section-title">Not a Lead Gen Agency.<br>An Operating System.</h2>
+      <p class="section-subtitle">Traditional lead gen agencies hand you contacts. MetaGrowth Revenue OS™ builds the entire revenue engine inside your business — AI-powered targeting, automated outbound sequences, CRM orchestration, pipeline reporting, and managed appointment generation.</p>
+      <p class="section-subtitle" style="margin-top:12px;">The infrastructure lives in our ecosystem — cloneable, template-driven, and built to compound operationally over time.</p>
     </div>
-    <div class="gos-problem-grid fade-in">
-      <div class="gos-problem-card">
-        <div class="gos-prob-icon"><i class="fas fa-crosshairs"></i></div>
-        <h4>No Clear ICP</h4>
-        <p>Reps chase the wrong prospects, messaging doesn't land, and conversion rates stay low.</p>
+    <div class="ros-platform-grid fade-in">
+      <div class="ros-platform-card ros-card-featured">
+        <div class="ros-plat-icon"><i class="fas fa-server"></i></div>
+        <div class="ros-plat-tag">Core Capability</div>
+        <h4>Infrastructure Deployment</h4>
+        <p>Complete CRM buildout, automated workflow installation, email domain configuration, mailbox setup, and deliverability architecture — live in 14 days.</p>
+        <ul class="ros-plat-list">
+          <li>CRM Setup &amp; Configuration</li>
+          <li>Automated Workflow Installation</li>
+          <li>Lead Routing Systems</li>
+          <li>Dashboarding &amp; Reporting</li>
+        </ul>
       </div>
-      <div class="gos-problem-card">
-        <div class="gos-prob-icon"><i class="fas fa-database"></i></div>
-        <h4>CRM Not Trusted</h4>
-        <p>Data is stale or missing. Leadership can't forecast. Decisions are made on gut feel.</p>
+      <div class="ros-platform-card">
+        <div class="ros-plat-icon"><i class="fas fa-robot"></i></div>
+        <h4>AI-Powered Outbound</h4>
+        <p>Buyer signal detection, AI-driven personalization at scale, multi-touch email sequences, and video outreach — all running on autopilot.</p>
+        <ul class="ros-plat-list">
+          <li>Buyer Signal Intelligence</li>
+          <li>AI Personalization Engine</li>
+          <li>Multi-Channel Sequencing</li>
+          <li>Automated Follow-Up</li>
+        </ul>
       </div>
-      <div class="gos-problem-card">
-        <div class="gos-prob-icon"><i class="fas fa-route"></i></div>
-        <h4>No Sales Process</h4>
-        <p>Every rep does it differently. There's no defined pipeline, no stage criteria, no repeatable motion.</p>
+      <div class="ros-platform-card">
+        <div class="ros-plat-icon"><i class="fas fa-funnel-dollar"></i></div>
+        <h4>Pipeline Generation</h4>
+        <p>End-to-end outbound management from ICP targeting to qualified appointment booking and pipeline reporting.</p>
+        <ul class="ros-plat-list">
+          <li>ICP Development</li>
+          <li>Messaging Strategy</li>
+          <li>Campaign Management</li>
+          <li>Appointment Setting</li>
+        </ul>
       </div>
-      <div class="gos-problem-card">
-        <div class="gos-prob-icon"><i class="fas fa-user-graduate"></i></div>
-        <h4>No Onboarding System</h4>
-        <p>New hires ramp slowly. There's no playbook, no training framework, no accountability from day one.</p>
+      <div class="ros-platform-card">
+        <div class="ros-plat-icon"><i class="fas fa-sync-alt"></i></div>
+        <h4>RevOps Management</h4>
+        <p>Ongoing campaign optimization, email deliverability management, AI data enrichment, lead nurture automation, and workflow maintenance.</p>
+        <ul class="ros-plat-list">
+          <li>Deliverability Management</li>
+          <li>AI Data Enrichment</li>
+          <li>Nurture Automation</li>
+          <li>KPI Reporting</li>
+        </ul>
       </div>
-      <div class="gos-problem-card">
-        <div class="gos-prob-icon"><i class="fas fa-tasks"></i></div>
-        <h4>No Accountability Rhythm</h4>
-        <p>Without KPI structure and a management cadence, execution drifts — especially as the team grows.</p>
+      <div class="ros-platform-card">
+        <div class="ros-plat-icon"><i class="fas fa-project-diagram"></i></div>
+        <h4>CRM + Workflow Automation</h4>
+        <p>Team communication integrations, multi-step workflow automation, AI meeting intelligence, and full pipeline visibility.</p>
+        <ul class="ros-plat-list">
+          <li>Team Communication Integrations</li>
+          <li>Automated Workflow Orchestration</li>
+          <li>AI Meeting Intelligence</li>
+          <li>Real-Time Pipeline Visibility</li>
+        </ul>
+      </div>
+      <div class="ros-platform-card">
+        <div class="ros-plat-icon"><i class="fas fa-users-cog"></i></div>
+        <h4>Managed Execution</h4>
+        <p>We don't hand you software and walk away. Our team actively runs your outbound system, manages campaigns, and optimizes performance every month.</p>
+        <ul class="ros-plat-list">
+          <li>Dedicated RevOps Support</li>
+          <li>Monthly Strategy Reviews</li>
+          <li>Performance Optimization</li>
+          <li>Ongoing System Maintenance</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="what-we-build">
+<!-- LAUNCH TIMELINE -->
+<section class="section section-dark">
   <div class="container">
-    <div class="gos-what-grid fade-in">
-      <div class="gos-what-main">
-        <span class="section-label">What Revenue OS Includes</span>
-        <h2 class="section-title">Your Complete Sales Infrastructure — Built and Installed</h2>
-        <p style="font-size:1.05rem;color:var(--gray-600);margin-bottom:28px;">Revenue OS covers every component your sales operation needs to run consistently, scale predictably, and produce measurable results.</p>
-        <div class="includes-grid" style="margin-top:0;">
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-crosshairs"></i></div>
-            <h4>ICP &amp; Offer Positioning</h4>
-            <p>Clear definition of who you sell to, why they buy, and how to position your offer competitively.</p>
-          </div>
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-route"></i></div>
-            <h4>Sales Process &amp; Pipeline Stages</h4>
-            <p>Defined stages with entry/exit criteria so every rep follows the same motion and leadership can forecast.</p>
-          </div>
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-database"></i></div>
-            <h4>CRM Architecture &amp; Dashboards</h4>
-            <p>CRM configured for your process — properties, views, automations, and leadership reporting baked in.</p>
-          </div>
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-envelope-open-text"></i></div>
-            <h4>Outbound Messaging &amp; Sequences</h4>
-            <p>ICP-specific email sequences, LinkedIn messaging frameworks, and call talk tracks that convert.</p>
-          </div>
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-book"></i></div>
-            <h4>Sales Playbooks &amp; Scripts</h4>
-            <p>Documented playbooks covering objection handling, discovery questions, and closing frameworks.</p>
-          </div>
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-user-graduate"></i></div>
-            <h4>Hiring Scorecards &amp; Onboarding</h4>
-            <p>Structured hiring criteria and a 30/60/90 onboarding framework to ramp reps faster.</p>
-          </div>
-          <div class="include-card">
-            <div class="inc-icon"><i class="fas fa-tachometer-alt"></i></div>
-            <h4>KPI Structure &amp; Management Cadence</h4>
-            <p>Activity benchmarks, performance metrics, and a weekly operating rhythm to keep the team accountable.</p>
-          </div>
+    <div class="text-center fade-in" style="margin-bottom:56px;">
+      <span class="section-label">Launch Timeline</span>
+      <h2 style="color:var(--white);">From Zero to Pipeline in 8 Weeks</h2>
+    </div>
+    <div class="ros-timeline fade-in">
+      <div class="ros-tl-item">
+        <div class="ros-tl-week">Week 1–2</div>
+        <div class="ros-tl-card">
+          <h4>Infrastructure Buildout</h4>
+          <p>Ideal customer profiling, CRM deployment, workflow setup, email domain configuration, mailbox warm-up, and campaign development.</p>
+          <div class="ros-tl-tags"><span>CRM Setup</span><span>Domain Config</span><span>Signal Systems</span><span>ICP Refinement</span></div>
         </div>
       </div>
-      <div class="gos-what-side">
-        <div class="side-box">
-          <h4>Engagement Overview</h4>
-          <div class="quick-fact"><span class="qf-label">Best For</span><span>$2M–$40M B2B</span></div>
-          <div class="quick-fact"><span class="qf-label">Outcome</span><span>Full sales infrastructure</span></div>
-          <div class="quick-fact"><span class="qf-label">Delivery</span><span>Built &amp; installed</span></div>
-          <div class="quick-fact"><span class="qf-label">Next Step</span><span>Strategy call</span></div>
-          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Build My Revenue OS</a>
+      <div class="ros-tl-item">
+        <div class="ros-tl-week">Week 2–4</div>
+        <div class="ros-tl-card">
+          <h4>Outbound Activation</h4>
+          <p>Email campaigns live, LinkedIn outreach active, AI personalization running, video outreach launched, and first replies flowing in.</p>
+          <div class="ros-tl-tags"><span>Email Live</span><span>LinkedIn Active</span><span>AI Personalization</span><span>First Replies</span></div>
+        </div>
+      </div>
+      <div class="ros-tl-item">
+        <div class="ros-tl-week">Week 4–8</div>
+        <div class="ros-tl-card">
+          <h4>Pipeline Acceleration</h4>
+          <p>Qualified meetings booked, pipeline building, nurture workflows compounding, multi-touch engagement hitting full stride.</p>
+          <div class="ros-tl-tags"><span>Qualified Meetings</span><span>Pipeline Building</span><span>5–15 Meetings/Mo</span><span>Nurture Active</span></div>
+        </div>
+      </div>
+      <div class="ros-tl-item">
+        <div class="ros-tl-week">Month 4+</div>
+        <div class="ros-tl-card ros-tl-gold">
+          <h4>Compounding Growth</h4>
+          <p>10–30+ meetings per month, compounding nurture effects, improved targeting precision, and referral opportunities.</p>
+          <div class="ros-tl-tags ros-tl-tags-gold"><span>10–30+ Meetings/Mo</span><span>Compounding Nurture</span><span>Improved Targeting</span><span>Referral Engine</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px;">
+      <span class="section-label">Pricing</span>
+      <h2 class="section-title">Three Infrastructure Tiers</h2>
+      <p class="section-subtitle">All engagements begin with a revenue infrastructure review to identify the best-fit deployment model.</p>
+    </div>
+    <div class="ros-pricing-grid fade-in">
+
+      <!-- Tier 1 -->
+      <div class="ros-price-card">
+        <div class="ros-price-header">
+          <div class="ros-price-tag">Revenue OS™ Foundation</div>
+          <h3>Launch Your Outbound Infrastructure</h3>
+          <p class="ros-price-desc">Ideal for founder-led companies and small B2B teams with little or no existing outbound infrastructure ready to build a repeatable, scalable pipeline engine.</p>
+        </div>
+        <div class="ros-price-amount">
+          <div class="ros-price-row-main"><span class="ros-price-label">Infrastructure Deployment</span><span class="ros-price-val">$7,500<span class="ros-price-suffix"> one-time</span></span></div>
+          <div class="ros-price-row-main"><span class="ros-price-label">Monthly Revenue Operations</span><span class="ros-price-val">$3,500<span class="ros-price-suffix">/mo</span></span></div>
+        </div>
+        <div class="ros-price-meta">
+          <div class="ros-meta-item"><i class="fas fa-building"></i><span>Founder-led &amp; small B2B teams</span></div>
+          <div class="ros-meta-item"><i class="fas fa-chart-line"></i><span>&lt;$5M ARR</span></div>
+          <div class="ros-meta-item"><i class="fas fa-calendar-alt"></i><span>6-Month Initial Commitment</span></div>
+          <div class="ros-meta-item"><i class="fas fa-rocket"></i><span>Live in 2–3 Weeks</span></div>
+        </div>
+        <a href="https://buy.stripe.com/6oU00ib671gNb3d7d714404" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Start Building Today</a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure">Not sure this is right for you? Book a call →</a>
+      </div>
+
+      <!-- Tier 2 FEATURED -->
+      <div class="ros-price-card ros-price-featured">
+        <div class="ros-price-badge">Flagship Offer</div>
+        <div class="ros-price-header">
+          <div class="ros-price-tag">HyperLaunch™ Growth Engine</div>
+          <h3>AI-Powered Pipeline Acceleration</h3>
+          <p class="ros-price-desc">Designed for growth-stage B2B companies actively scaling sales who need predictable pipeline, advanced AI-powered targeting, and a fully managed revenue infrastructure.</p>
+        </div>
+        <div class="ros-price-amount">
+          <div class="ros-price-row-main"><span class="ros-price-label">Infrastructure Deployment</span><span class="ros-price-val">$15,000<span class="ros-price-suffix"> one-time</span></span></div>
+          <div class="ros-price-row-main"><span class="ros-price-label">Monthly Revenue Operations</span><span class="ros-price-val">$7,500<span class="ros-price-suffix">/mo</span></span></div>
+        </div>
+        <div class="ros-price-meta">
+          <div class="ros-meta-item"><i class="fas fa-building"></i><span>Growth-stage B2B companies</span></div>
+          <div class="ros-meta-item"><i class="fas fa-chart-line"></i><span>$3M–$25M+ ARR</span></div>
+          <div class="ros-meta-item"><i class="fas fa-calendar-alt"></i><span>6–12 Month Commitment</span></div>
+          <div class="ros-meta-item"><i class="fas fa-rocket"></i><span>Live in 4–6 Weeks</span></div>
+        </div>
+        <a href="https://buy.stripe.com/3cI14m3DFf7Ddbl0OJ14405" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;background:var(--green);color:#fff;">Accelerate My Pipeline</a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure" style="color:rgba(255,255,255,0.5);">Not sure this is right for you? Book a call →</a>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="ros-price-card">
+        <div class="ros-price-header">
+          <div class="ros-price-tag">Enterprise Revenue Infrastructure™</div>
+          <h3>Full Revenue Operating System</h3>
+          <p class="ros-price-desc">Built for enterprise organizations, PE-backed companies, and multi-team environments requiring full-scale revenue operations, strategic consulting, and white-glove deployment.</p>
+        </div>
+        <div class="ros-price-amount">
+          <div class="ros-price-row-main"><span class="ros-price-label">Infrastructure Deployment</span><span class="ros-price-val">$35,000<span class="ros-price-suffix"> one-time</span></span></div>
+          <div class="ros-price-row-main"><span class="ros-price-label">Monthly Revenue Operations</span><span class="ros-price-val">$15,000<span class="ros-price-suffix">/mo</span></span></div>
+        </div>
+        <div class="ros-price-meta">
+          <div class="ros-meta-item"><i class="fas fa-building"></i><span>Enterprise &amp; PE-backed orgs</span></div>
+          <div class="ros-meta-item"><i class="fas fa-chart-line"></i><span>$25M+ ARR</span></div>
+          <div class="ros-meta-item"><i class="fas fa-calendar-alt"></i><span>12-Month Commitment</span></div>
+          <div class="ros-meta-item"><i class="fas fa-rocket"></i><span>Live in 4–8 Weeks</span></div>
+        </div>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Request Enterprise Consultation</a>
+        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="ros-not-sure">Not sure this is right for you? Book a call →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:48px;">
+      <span class="section-label">Feature Comparison</span>
+      <h2 class="section-title">What's included at each tier</h2>
+    </div>
+    <div style="overflow-x:auto;" class="fade-in">
+      <table class="compare-table ros-compare" style="max-width:900px;margin:0 auto;">
+        <thead>
+          <tr>
+            <th>Features</th>
+            <th>Foundation<br><span style="font-weight:400;font-size:0.75rem;color:rgba(255,255,255,0.5);">$7,500 + $3,500/mo</span></th>
+            <th style="background:rgba(173,120,5,0.15);border-top:2px solid var(--green);">HyperLaunch™<br><span style="font-weight:400;font-size:0.75rem;color:var(--green);">$15,000 + $7,500/mo</span></th>
+            <th>Enterprise<br><span style="font-weight:400;font-size:0.75rem;color:rgba(255,255,255,0.5);">$35,000 + $15,000/mo</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="compare-section-row"><td colspan="4">Core Infrastructure</td></tr>
+          <tr><td>CRM Infrastructure</td><td class="yes">✓</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Pipeline Architecture</td><td class="yes">✓</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Reporting Dashboard</td><td class="yes">Included</td><td class="yes" style="background:rgba(173,120,5,0.06);">Advanced</td><td class="yes">Executive-Level</td></tr>
+          <tr><td>Nurture Workflows</td><td class="yes">Included</td><td class="yes" style="background:rgba(173,120,5,0.06);">Advanced Multi-Touch</td><td class="yes">Enterprise Lifecycle</td></tr>
+          <tr class="compare-section-row"><td colspan="4">Outbound Execution</td></tr>
+          <tr><td>Email Outbound</td><td class="yes">✓</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">✓</td></tr>
+          <tr><td>LinkedIn Outreach</td><td class="yes">✓</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Multi-Channel Outbound</td><td class="no">—</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">✓</td></tr>
+          <tr><td>Personalized Outreach Systems</td><td class="no">—</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">Fully Customized</td></tr>
+          <tr><td>Deliverability Management</td><td class="yes">Included</td><td class="yes" style="background:rgba(173,120,5,0.06);">Advanced</td><td class="yes">Enterprise-Level</td></tr>
+          <tr class="compare-section-row"><td colspan="4">AI &amp; Intelligence</td></tr>
+          <tr><td>AI-Powered Targeting</td><td class="no">—</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">Enterprise-Level</td></tr>
+          <tr><td>Buyer Intent &amp; Signal Tracking</td><td class="no">—</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">Advanced</td></tr>
+          <tr><td>Lead Scoring</td><td class="no">—</td><td class="yes" style="background:rgba(173,120,5,0.06);">✓</td><td class="yes">Multi-Layered</td></tr>
+          <tr class="compare-section-row"><td colspan="4">Support &amp; Optimization</td></tr>
+          <tr><td>Monthly Optimization</td><td class="yes">Included</td><td class="yes" style="background:rgba(173,120,5,0.06);">Weekly Cadence</td><td class="yes">Embedded Strategic</td></tr>
+          <tr><td>Strategic Revenue Consulting</td><td class="no">—</td><td class="yes" style="background:rgba(173,120,5,0.06);">Limited</td><td class="yes">✓</td></tr>
+          <tr><td>Multi-Market / Multi-ICP</td><td class="no">—</td><td class="no" style="background:rgba(173,120,5,0.06);">—</td><td class="yes">✓</td></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- VS IN-HOUSE -->
 <section class="section section-dark">
   <div class="container">
     <div class="text-center fade-in" style="margin-bottom:52px;">
-      <span class="section-label">What Comes Next</span>
-      <h2 style="color:var(--white);">Revenue OS is the foundation.<br>Then you scale on top of it.</h2>
+      <span class="section-label">The Real Cost Comparison</span>
+      <h2 style="color:var(--white);">Revenue OS™ vs. Building In-House</h2>
     </div>
-    <div class="gos-stack-grid fade-in">
-      <div class="gos-stack-card" style="border-color:rgba(173,120,5,0.5);">
-        <div class="gos-stack-icon"><i class="fas fa-layer-group"></i></div>
-        <h4>Start Here</h4>
-        <ul><li>Revenue OS™ foundation build</li><li>ICP, process, CRM, messaging</li><li>Onboarding &amp; KPI structure</li></ul>
+    <div class="ros-vs-grid fade-in">
+      <div class="ros-vs-col ros-vs-bad">
+        <h5>Build In-House</h5>
+        <ul>
+          <li><i class="fas fa-times"></i> SDR Salaries: $60–90k each</li>
+          <li><i class="fas fa-times"></i> RevOps Hires: $80–120k</li>
+          <li><i class="fas fa-times"></i> CRM Consultants: $20–50k</li>
+          <li><i class="fas fa-times"></i> Deliverability Setup: $10–30k</li>
+          <li><i class="fas fa-times"></i> Signal Intelligence Software: $800+/mo</li>
+          <li><i class="fas fa-times"></i> Email Sending Platform: $500+/mo</li>
+          <li><i class="fas fa-times"></i> Domains + Mailboxes: $500+/mo</li>
+          <li><i class="fas fa-times"></i> 3–6 Month Ramp Time</li>
+          <li><i class="fas fa-times"></i> Constant Management Overhead</li>
+          <li><i class="fas fa-times"></i> High Hiring Risk</li>
+        </ul>
+        <div class="ros-vs-total">$290,000–$600,000/yr</div>
       </div>
-      <div class="gos-stack-card">
-        <div class="gos-stack-icon"><i class="fas fa-users-cog"></i></div>
-        <h4>Add W2 Headcount</h4>
-        <ul><li>Managed W2 Sales Pods™</li><li>Dedicated employees on your team</li><li>Full recruiting &amp; management</li></ul>
+      <div class="ros-vs-arrow"><i class="fas fa-arrow-right"></i></div>
+      <div class="ros-vs-col ros-vs-good">
+        <h5>MetaGrowth Revenue OS™</h5>
+        <ul>
+          <li><i class="fas fa-check"></i> Done-For-You Infrastructure</li>
+          <li><i class="fas fa-check"></i> AI Systems Deployed in 14 Days</li>
+          <li><i class="fas fa-check"></i> Full CRM + Workflow Suite</li>
+          <li><i class="fas fa-check"></i> Managed Outbound Execution</li>
+          <li><i class="fas fa-check"></i> Signal Intelligence Included</li>
+          <li><i class="fas fa-check"></i> Appointment Generation</li>
+          <li><i class="fas fa-check"></i> Nurture Automation</li>
+          <li><i class="fas fa-check"></i> Faster Time to Pipeline</li>
+          <li><i class="fas fa-check"></i> Lower Operational Burden</li>
+          <li><i class="fas fa-check"></i> No Hiring Risk</li>
+        </ul>
+        <div class="ros-vs-total ros-vs-total-good">$47,000–$135,000/yr</div>
       </div>
-      <div class="gos-stack-card">
-        <div class="gos-stack-icon"><i class="fas fa-percentage"></i></div>
-        <h4>Scale With 1099</h4>
-        <ul><li>Managed 1099 Sales Teams™</li><li>Flexible coverage, lower risk</li><li>Built on your Revenue OS</li></ul>
-      </div>
-      <div class="gos-stack-card">
-        <div class="gos-stack-icon"><i class="fas fa-crown"></i></div>
-        <h4>Add Leadership</h4>
-        <ul><li>Fractional Revenue Leadership™</li><li>VP/CRO-level oversight</li><li>Forecast, coach, hire, own</li></ul>
-      </div>
-      <div class="gos-stack-card">
-        <div class="gos-stack-icon"><i class="fas fa-robot"></i></div>
-        <h4>Automate &amp; Optimize</h4>
-        <ul><li>Growth OS™ platform</li><li>AI-assisted outreach</li><li>Operational oversight</li></ul>
-      </div>
+    </div>
+    <p class="text-center" style="color:var(--green);font-weight:700;margin-top:32px;font-size:1.1rem;">Save $150k–$450k vs. in-house build</p>
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:48px;">
+      <span class="section-label">Optional Add-Ons</span>
+      <h2 class="section-title">Additional Infrastructure Services</h2>
+      <p class="section-subtitle">Pricing varies based on your specific requirements. All engagements begin with a revenue infrastructure review.</p>
+    </div>
+    <div class="gos-addons-grid fade-in">
+      <div class="gos-addon"><i class="fas fa-search"></i><span>Sales Recruiting Infrastructure</span></div>
+      <div class="gos-addon"><i class="fas fa-chalkboard-teacher"></i><span>Sales Coaching &amp; Accountability</span></div>
+      <div class="gos-addon"><i class="fas fa-database"></i><span>CRM Restructuring</span></div>
+      <div class="gos-addon"><i class="fas fa-chart-pie"></i><span>Advanced Reporting &amp; Forecasting</span></div>
+      <div class="gos-addon"><i class="fas fa-filter"></i><span>Inbound Lead Routing</span></div>
+      <div class="gos-addon"><i class="fas fa-eye"></i><span>AI Visibility &amp; Market Positioning</span></div>
+      <div class="gos-addon"><i class="fas fa-expand-arrows-alt"></i><span>Additional Markets or ICPs</span></div>
+      <div class="gos-addon"><i class="fas fa-calendar-check"></i><span>Appointment Handling Support</span></div>
+      <div class="gos-addon"><i class="fas fa-cogs"></i><span>Enterprise Workflow Customization</span></div>
     </div>
   </div>
 </section>
 
+<!-- CLOSING CTA -->
 <section class="cta-section">
   <div class="container">
-    <h2>Build the foundation your revenue engine needs to scale.</h2>
-    <p>Book a strategy call and we'll assess your current infrastructure, identify the gaps, and scope exactly what Revenue OS would build for your business.</p>
-    <div class="cta-row">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Build My Revenue OS</a>
-      <a href="/solutions/managed-sales-pods" class="btn btn-secondary btn-lg">See Managed W2 Sales Pods</a>
+    <h2>Build A Revenue Engine Designed To Scale.</h2>
+    <p>Deploy modern revenue infrastructure built to generate pipeline, improve operational efficiency, and support long-term growth.</p>
+    <p style="margin-top:12px;opacity:0.8;">Book your Revenue Infrastructure Review. We'll map out your pipeline requirements, identify bottlenecks, and show you exactly what it takes to hit your growth targets.</p>
+    <div class="ros-cta-badges">
+      <span><i class="fas fa-check-circle"></i> 6-Month Initial Commitment</span>
+      <span><i class="fas fa-check-circle"></i> Live in 14 Days</span>
+      <span><i class="fas fa-check-circle"></i> Pipeline Reporting Included</span>
+    </div>
+    <div class="cta-row" style="margin-top:32px;">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Revenue Infrastructure Review</a>
+      <a href="#pricing" class="btn btn-secondary btn-lg">See Pricing</a>
     </div>
   </div>
 </section>
+
 ${solDetailStyles()}
+<style>
+/* ── Revenue OS Hero ─────────────────────────────────────────────────────── */
+.ros-hero { min-height: calc(100vh - 72px); display: flex; align-items: center; justify-content: center; background: #0a0a0a url('/static/hero-texture.jpg') center/cover no-repeat; position: relative; padding: 100px 0 80px; }
+.ros-hero::before { content:''; position:absolute; inset:0; background: linear-gradient(135deg,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.60) 100%); }
+.ros-hero-inner { position:relative; z-index:1; max-width:820px; text-align:center; }
+.ros-hero-title { font-size: clamp(2.6rem, 5.5vw, 4rem); font-weight: 800; color: var(--white); line-height: 1.1; margin: 16px 0 24px; }
+.ros-hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.72); max-width: 680px; margin: 0 auto; line-height: 1.7; }
+.ros-trust-bar { display: flex; align-items: center; justify-content: center; gap: 0; margin-top: 48px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.1); }
+.ros-stat { text-align:center; padding: 0 36px; }
+.ros-stat-num { display:block; font-size: 1.8rem; font-weight: 800; color: var(--green); line-height: 1.1; }
+.ros-stat-label { display:block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); margin-top: 4px; }
+.ros-stat-divider { width: 1px; height: 48px; background: rgba(255,255,255,0.12); }
+/* ── Platform cards ──────────────────────────────────────────────────────── */
+.ros-platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ros-platform-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 28px 24px; transition: all var(--transition); }
+.ros-platform-card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: var(--shadow); }
+.ros-card-featured { border-color: var(--green); box-shadow: 0 0 0 1px var(--green); }
+.ros-plat-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.1); display:flex; align-items:center; justify-content:center; color:var(--green); font-size:1.2rem; margin-bottom:12px; }
+.ros-plat-tag { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green); margin-bottom: 6px; }
+.ros-platform-card h4 { font-size: 0.95rem; color: var(--gray-800); margin-bottom: 10px; }
+.ros-platform-card p { font-size: 0.82rem; color: var(--gray-600); line-height: 1.55; margin-bottom: 14px; }
+.ros-plat-list { list-style: none; padding: 0; margin: 0; }
+.ros-plat-list li { font-size: 0.78rem; color: var(--gray-600); padding: 4px 0 4px 16px; position:relative; border-bottom: 1px solid var(--gray-200); }
+.ros-plat-list li:last-child { border-bottom: none; }
+.ros-plat-list li::before { content:'✓'; position:absolute; left:0; color:var(--green); font-weight:700; font-size:0.72rem; }
+/* ── Timeline ────────────────────────────────────────────────────────────── */
+.ros-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.ros-tl-week { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 10px; }
+.ros-tl-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 24px 20px; }
+.ros-tl-gold { border-color: rgba(173,120,5,0.4); background: rgba(173,120,5,0.05); }
+.ros-tl-card h4 { color: var(--white); font-size: 0.95rem; margin-bottom: 8px; }
+.ros-tl-card p { color: rgba(255,255,255,0.55); font-size: 0.8rem; line-height: 1.55; margin-bottom: 14px; }
+.ros-tl-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.ros-tl-tags span { font-size: 0.68rem; font-weight: 700; background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.5); border-radius: 100px; padding: 3px 10px; }
+.ros-tl-tags-gold span { background: rgba(173,120,5,0.12); color: var(--green); }
+/* ── Pricing ─────────────────────────────────────────────────────────────── */
+.ros-pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
+.ros-price-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px 28px; position: relative; }
+.ros-price-featured { border-color: var(--green); box-shadow: 0 0 0 1px var(--green), var(--shadow-lg); background: var(--navy); }
+.ros-price-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--green); color:var(--navy); font-size:0.7rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; padding:4px 16px; border-radius:100px; white-space:nowrap; }
+.ros-price-tag { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 8px; }
+.ros-price-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; color: var(--gray-800); }
+.ros-price-featured h3 { color: var(--white); }
+.ros-price-desc { font-size: 0.82rem; color: var(--gray-600); line-height: 1.55; margin-bottom: 20px; }
+.ros-price-featured .ros-price-desc { color: rgba(255,255,255,0.6); }
+.ros-price-amount { border-top: 1px solid var(--gray-200); padding-top: 16px; margin-bottom: 16px; }
+.ros-price-featured .ros-price-amount { border-color: rgba(255,255,255,0.12); }
+.ros-price-row-main { display: flex; justify-content: space-between; align-items: baseline; padding: 8px 0; border-bottom: 1px solid var(--gray-200); }
+.ros-price-featured .ros-price-row-main { border-color: rgba(255,255,255,0.08); }
+.ros-price-row-main:last-child { border-bottom: none; }
+.ros-price-label { font-size: 0.78rem; color: var(--gray-400); }
+.ros-price-featured .ros-price-label { color: rgba(255,255,255,0.45); }
+.ros-price-val { font-size: 1.1rem; font-weight: 800; color: var(--gray-800); }
+.ros-price-featured .ros-price-val { color: var(--white); }
+.ros-price-suffix { font-size: 0.72rem; font-weight: 500; color: var(--gray-400); }
+.ros-price-featured .ros-price-suffix { color: rgba(255,255,255,0.4); }
+.ros-price-meta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 4px; }
+.ros-meta-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--gray-600); }
+.ros-price-featured .ros-meta-item { color: rgba(255,255,255,0.6); }
+.ros-meta-item i { color: var(--green); width: 14px; }
+.ros-not-sure { display:block; text-align:center; font-size:0.75rem; color:var(--gray-400); margin-top:12px; text-decoration:none; }
+.ros-not-sure:hover { color:var(--green); }
+/* ── Compare table section rows ─────────────────────────────────────────── */
+.compare-section-row td { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.4); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; padding: 8px 16px; }
+.ros-compare td:nth-child(3) { background: rgba(173,120,5,0.06); }
+/* ── VS Section ──────────────────────────────────────────────────────────── */
+.ros-vs-grid { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 0; align-items: center; max-width: 860px; margin: 0 auto; }
+.ros-vs-col { border-radius: var(--radius-lg); padding: 32px 28px; }
+.ros-vs-bad { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); }
+.ros-vs-good { background: rgba(173,120,5,0.06); border: 1px solid rgba(173,120,5,0.3); }
+.ros-vs-col h5 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; color: rgba(255,255,255,0.4); }
+.ros-vs-good h5 { color: var(--green); }
+.ros-vs-col ul { list-style: none; padding: 0; margin: 0 0 20px; }
+.ros-vs-col ul li { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: rgba(255,255,255,0.5); }
+.ros-vs-good ul li { color: rgba(255,255,255,0.8); border-color: rgba(173,120,5,0.1); }
+.ros-vs-bad ul li i { color: rgba(255,80,80,0.6); }
+.ros-vs-good ul li i { color: var(--green); }
+.ros-vs-total { font-size: 1.1rem; font-weight: 800; color: rgba(255,255,255,0.4); text-align: center; }
+.ros-vs-total-good { color: var(--green); }
+.ros-vs-arrow { display:flex; align-items:center; justify-content:center; font-size:1.8rem; color:var(--green); }
+/* ── CTA badges ──────────────────────────────────────────────────────────── */
+.ros-cta-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:28px; }
+.ros-cta-badges span { font-size:0.82rem; color:rgba(255,255,255,0.6); display:flex; align-items:center; gap:6px; }
+.ros-cta-badges i { color:var(--green); }
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width:1100px) { .ros-platform-grid { grid-template-columns: repeat(2,1fr); } .ros-pricing-grid { grid-template-columns: 1fr; } .ros-timeline { grid-template-columns: repeat(2,1fr); } }
+@media (max-width:800px) { .ros-vs-grid { grid-template-columns:1fr; } .ros-vs-arrow { display:none; } .ros-trust-bar { flex-direction:column; gap:24px; } .ros-stat-divider { display:none; } }
+@media (max-width:640px) { .ros-platform-grid { grid-template-columns:1fr; } .ros-timeline { grid-template-columns:1fr; } }
+</style>
 `)
 
 // Managed 1099 Sales Teams
