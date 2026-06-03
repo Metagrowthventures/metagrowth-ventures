@@ -3,14 +3,10 @@ import { assessmentPage } from './pages/assessment'
 import { homePage } from './pages/home'
 import {
   solutionsPage,
-  ceoGrowthLabPage,
-  salesGrowthLabPage,
   hyperlaunchPage,
   managedSalesPodsPage,
   commissionOnlyPage,
-  recruitingPage,
   fractionalCROPage,
-  precisionEngagementsPage,
   growthOSPage,
 } from './pages/solutions'
 import {
@@ -148,14 +144,10 @@ app.get('/assessment', (c) => c.html(assessmentPage()))
 
 // ── Solutions ─────────────────────────────────────────────────────────────────
 app.get('/solutions', (c) => c.html(solutionsPage()))
-app.get('/solutions/ceo-growth-lab', (c) => c.html(ceoGrowthLabPage()))
-app.get('/solutions/sales-growth-lab', (c) => c.html(salesGrowthLabPage()))
 app.get('/solutions/hyperlaunch', (c) => c.html(hyperlaunchPage()))
 app.get('/solutions/managed-sales-pods', (c) => c.html(managedSalesPodsPage()))
 app.get('/solutions/commission-only', (c) => c.html(commissionOnlyPage()))
-app.get('/solutions/recruiting', (c) => c.html(recruitingPage()))
 app.get('/solutions/fractional-cro', (c) => c.html(fractionalCROPage()))
-app.get('/solutions/precision-engagements', (c) => c.html(precisionEngagementsPage()))
 app.get('/solutions/growth-os', (c) => c.html(growthOSPage()))
 
 // ── Secondary pages ───────────────────────────────────────────────────────────

@@ -140,11 +140,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-desc">Targeted playbook, scripts, and outreach cadence to launch fast</div>
               <a href="/solutions/precision-engagements" class="dt-rec-link">Explore Precision Engagements →</a>
             </div>
-            <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-flask"></i> CEO Growth Lab</div>
-              <div class="dt-rec-desc">Strategic clarity, peer network, and quarterly deep dives</div>
-              <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Explore CEO Growth Lab →</a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -165,11 +161,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
-            <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-chart-bar"></i> Sales Growth Lab</div>
-              <div class="dt-rec-desc">Sales OS installation, accountability rhythm, and advisory</div>
-              <a href="/solutions/sales-growth-lab" class="dt-rec-link">Explore Sales Growth Lab →</a>
-            </div>
+
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-rocket"></i> HyperLaunch Sales System</div>
               <div class="dt-rec-desc">Build the infrastructure your team needs to execute consistently</div>
@@ -220,11 +212,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-desc">Scale with 1099 reps supported by full systems and training</div>
               <a href="/solutions/commission-only" class="dt-rec-link">Explore Commission-Only →</a>
             </div>
-            <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-chart-bar"></i> Sales Growth Lab</div>
-              <div class="dt-rec-desc">Structured accountability and sales OS for your leadership</div>
-              <a href="/solutions/sales-growth-lab" class="dt-rec-link">Explore Sales Growth Lab →</a>
-            </div>
+
             <div class="dt-rec-card dt-rec-card--highlight">
               <div class="dt-rec-badge">New Program</div>
               <div class="dt-rec-name"><i class="fas fa-handshake"></i> Rev Share Only Program</div>
@@ -261,11 +249,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-desc">Done-for-you execution layer with full oversight and KPI tracking</div>
               <a href="/solutions/managed-sales-pods" class="dt-rec-link">Explore Managed Sales Pods →</a>
             </div>
-            <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-flask"></i> CEO Growth Lab</div>
-              <div class="dt-rec-desc">Strategic peer network and quarterly deep-dive sessions for CEOs</div>
-              <a href="/solutions/ceo-growth-lab" class="dt-rec-link">Explore CEO Growth Lab →</a>
-            </div>
+
             <div class="dt-rec-card dt-rec-card--highlight">
               <div class="dt-rec-badge">New Program</div>
               <div class="dt-rec-name"><i class="fas fa-handshake"></i> Rev Share Only Program</div>
@@ -288,20 +272,6 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
       <p class="section-subtitle">Whether you need to build infrastructure, install leadership, recruit talent, or run full execution — MetaGrowth has a solution for your stage.</p>
     </div>
     <div class="solutions-grid fade-in">
-      <div class="sol-tile">
-        <div class="sol-icon"><i class="fas fa-flask"></i></div>
-        <div class="sol-tag">For CEOs</div>
-        <h3>CEO Growth Lab</h3>
-        <p>Strategic clarity, peer accountability, and quarterly deep dives for growth-oriented CEOs.</p>
-        <a href="/solutions/ceo-growth-lab" class="sol-link">Explore CEO Growth Lab <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="sol-tile">
-        <div class="sol-icon"><i class="fas fa-chart-bar"></i></div>
-        <div class="sol-tag">For Sales Leaders</div>
-        <h3>Sales Growth Lab</h3>
-        <p>Structured execution, Sales OS installation, and weekly accountability for revenue leaders.</p>
-        <a href="/solutions/sales-growth-lab" class="sol-link">Explore Sales Growth Lab <i class="fas fa-arrow-right"></i></a>
-      </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-rocket"></i></div>
         <div class="sol-tag">Infrastructure Build</div>

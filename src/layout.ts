@@ -10,14 +10,10 @@ export const nav = () => `
         <li class="has-dropdown">
           <a href="/solutions" class="nav-link">Solutions <span class="chevron">&#8964;</span></a>
           <ul class="dropdown">
-            <li><a href="/solutions/ceo-growth-lab">CEO Growth Lab</a></li>
-            <li><a href="/solutions/sales-growth-lab">Sales Growth Lab</a></li>
             <li><a href="/solutions/hyperlaunch">HyperLaunch Sales System</a></li>
             <li><a href="/solutions/managed-sales-pods">Managed Sales Pods</a></li>
             <li><a href="/solutions/commission-only">Commission-Only Infrastructure</a></li>
-            <li><a href="/solutions/recruiting">Recruiting Services</a></li>
             <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
-            <li><a href="/solutions/precision-engagements">Precision Engagements</a></li>
             <li><a href="/solutions/growth-os">Growth OS™</a></li>
           </ul>
         </li>
@@ -56,14 +52,10 @@ export const footer = () => `
       <div class="footer-col">
         <h4>Solutions</h4>
         <ul>
-          <li><a href="/solutions/ceo-growth-lab">CEO Growth Lab</a></li>
-          <li><a href="/solutions/sales-growth-lab">Sales Growth Lab</a></li>
           <li><a href="/solutions/hyperlaunch">HyperLaunch System</a></li>
           <li><a href="/solutions/managed-sales-pods">Managed Sales Pods</a></li>
           <li><a href="/solutions/commission-only">Commission-Only Infra</a></li>
-          <li><a href="/solutions/recruiting">Recruiting Services</a></li>
           <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
-          <li><a href="/solutions/precision-engagements">Precision Engagements</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -643,8 +635,6 @@ const PAGE_DESCRIPTIONS: Record<string, string> = {
   'Resources': 'Free B2B revenue resources from MetaGrowth Ventures — guides, diagnostics, and frameworks for founders and sales leaders building scalable revenue.',
   'Contact': 'Get in touch with MetaGrowth Ventures to discuss your revenue growth challenges and find the right solution for your B2B business.',
   'Solutions': 'MetaGrowth Ventures offers revenue systems, sales recruiting, fractional CRO, commission-only infrastructure, and managed sales pods for B2B companies.',
-  'CEO Growth Lab': 'The CEO Growth Lab by MetaGrowth Ventures gives B2B founders strategic clarity, peer networks, and quarterly deep dives to accelerate revenue growth.',
-  'Sales Growth Lab': 'MetaGrowth Ventures Sales Growth Lab helps B2B sales teams improve outreach, pipeline creation, messaging, and execution discipline.',
   'HyperLaunch Sales System': 'HyperLaunch by MetaGrowth Ventures builds your complete B2B sales infrastructure in 90 days — ICP, process, CRM, messaging, and KPIs.',
   'Managed Sales Pods': 'MetaGrowth Ventures Managed Sales Pods give B2B companies a fully deployed outbound sales team without the overhead of building one internally.',
   'Commission-Only Infrastructure': 'MetaGrowth Ventures Commission-Only Infrastructure lets B2B companies scale sales with performance-based reps and zero base salary risk.',

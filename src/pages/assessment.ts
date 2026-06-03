@@ -1633,7 +1633,6 @@ const outcomes = {
     recs: [
       { icon: 'fa-rocket', name: 'HyperLaunch Sales System', desc: '90-day infrastructure build  -  ICP, process, CRM, messaging, and KPIs installed end-to-end', link: '/solutions/hyperlaunch', primary: true },
       { icon: 'fa-crosshairs', name: 'Precision Engagements', desc: 'Focused intervention to solve a specific bottleneck fast  -  playbook, scripts, or prospecting cadence', link: '/solutions/precision-engagements' },
-      { icon: 'fa-flask', name: 'CEO Growth Lab', desc: 'Strategic clarity, peer network, and quarterly deep dives for founders building toward scale', link: '/solutions/ceo-growth-lab' }
     ],
     ctaBody: "The fastest path forward is a 90-day infrastructure build. Book a call and we'll walk through exactly what needs to be installed first."
   },
@@ -1653,8 +1652,7 @@ const outcomes = {
     pathTitle: 'Install the operating system your team needs to execute.',
     pathBody: 'The solution is not more reps. It is a structured Sales OS  -  clear stages, KPIs, weekly rhythm, and a coaching framework that enforces performance. MetaGrowth installs this system and runs it with you until it holds on its own.',
     recs: [
-      { icon: 'fa-chart-bar', name: 'Sales Growth Lab', desc: 'Sales OS installation, accountability rhythm, weekly advisory, and monthly traction reporting', link: '/solutions/sales-growth-lab', primary: true },
-      { icon: 'fa-rocket', name: 'HyperLaunch Sales System', desc: 'Full infrastructure build  -  process, CRM, messaging, forecasting framework, and KPI dashboards', link: '/solutions/hyperlaunch' },
+      { icon: 'fa-rocket', name: 'HyperLaunch Sales System', primary: true, desc: 'Full infrastructure build  -  process, CRM, messaging, forecasting framework, and KPI dashboards', link: '/solutions/hyperlaunch' },
       { icon: 'fa-search', name: 'Recruiting Services', desc: 'Upgrade your talent density with structured vetting and deep behavioral assessment', link: '/solutions/recruiting' },
       { icon: 'fa-percentage', name: 'Commission-Only Infrastructure', desc: 'Add 1099 reps with zero base risk  -  full systems, training, and oversight included', link: '/solutions/commission-only' },
       { icon: 'fa-cogs', name: 'Managed Sales Pods', desc: 'A fully managed, embedded sales team that executes inside your business', link: '/solutions/managed-sales-pods' }
@@ -1679,7 +1677,6 @@ const outcomes = {
     recs: [
       { icon: 'fa-cogs', name: 'Managed Sales Pods', desc: 'Full-service execution  -  recruiting, onboarding, coaching, KPI enforcement, and weekly oversight', link: '/solutions/managed-sales-pods', primary: true },
       { icon: 'fa-percentage', name: 'Commission-Only Infrastructure', desc: 'Scale without fixed overhead  -  1099 rep infrastructure with full systems, training, and CRM enforcement', link: '/solutions/commission-only' },
-      { icon: 'fa-chart-bar', name: 'Sales Growth Lab', desc: 'Structured accountability and Sales OS for your leadership layer', link: '/solutions/sales-growth-lab' },
       { icon: 'fa-handshake', name: 'Rev Share Only Program', desc: 'Zero upfront cost  -  we embed execution and only get paid when you close revenue', link: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' }
     ],
     ctaBody: "The gap between where you are and where you need to be is an infrastructure problem. Let's diagnose it together on a strategy call."
@@ -1702,7 +1699,6 @@ const outcomes = {
     recs: [
       { icon: 'fa-crown', name: 'Fractional CRO', desc: 'Executive revenue leadership  -  strategy, accountability, hiring roadmap, and performance management without full-time cost', link: '/solutions/fractional-cro', primary: true },
       { icon: 'fa-cogs', name: 'Managed Sales Pods', desc: 'Done-for-you execution layer with full oversight, KPI tracking, and weekly performance management', link: '/solutions/managed-sales-pods' },
-      { icon: 'fa-flask', name: 'CEO Growth Lab', desc: 'Strategic peer network and quarterly deep-dive sessions for CEOs navigating scale-stage complexity', link: '/solutions/ceo-growth-lab' },
       { icon: 'fa-handshake', name: 'Rev Share Only Program', desc: 'Full sales team embedded at scale  -  performance-only model with zero upfront investment', link: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' }
     ],
     ctaBody: "At your stage, the right revenue leadership changes everything. Let's talk about what that looks like for your business."
