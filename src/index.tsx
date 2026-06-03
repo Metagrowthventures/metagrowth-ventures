@@ -12,6 +12,8 @@ import {
   fractionalCROPage,
   precisionEngagementsPage,
   growthOSPage,
+  revenueOSPage,
+  managed1099Page,
 } from './pages/solutions'
 import {
   aboutPage,
@@ -157,6 +159,8 @@ app.get('/solutions/recruiting', (c) => c.html(recruitingPage()))
 app.get('/solutions/fractional-cro', (c) => c.html(fractionalCROPage()))
 app.get('/solutions/precision-engagements', (c) => c.html(precisionEngagementsPage()))
 app.get('/solutions/growth-os', (c) => c.html(growthOSPage()))
+app.get('/solutions/revenue-os', (c) => c.html(revenueOSPage()))
+app.get('/solutions/managed-1099', (c) => c.html(managed1099Page()))
 
 // ── Secondary pages ───────────────────────────────────────────────────────────
 app.get('/about', (c) => c.html(aboutPage()))

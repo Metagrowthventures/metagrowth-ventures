@@ -611,16 +611,16 @@ ${solDetailStyles()}
 </style>
 `)
 
-// Managed Sales Pods
-export const managedSalesPodsPage = () => page('Managed Sales Pods', `
+// Managed W2 Sales Pods
+export const managedSalesPodsPage = () => page('Managed W2 Sales Pods™', `
 <section class="page-hero">
   <div class="container page-hero-content">
-    <div class="hero-eyebrow">Done-For-You</div>
-    <h1 class="hero-title">We Build, Recruit, Coach,<br>and <span class="accent">Manage the Revenue Engine</span></h1>
-    <p class="hero-sub">Full-service sales execution for companies that want results without managing every moving part internally.</p>
+    <div class="hero-eyebrow">Dedicated W2 Sales Team</div>
+    <h1 class="hero-title">We Build, Recruit, Coach,<br>and <span class="accent">Manage Your W2 Sales Team</span></h1>
+    <p class="hero-sub">Full-service W2 sales team buildout for companies that want dedicated employees, accountability, and results without managing every moving part internally.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
-      <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Build My W2 Sales Team</a>
+      <a href="/solutions/revenue-os" class="btn btn-secondary btn-lg">See Revenue OS First</a>
     </div>
   </div>
 </section>
@@ -888,15 +888,15 @@ ${solDetailStyles()}
 `)
 
 // Fractional CRO
-export const fractionalCROPage = () => page('Fractional CRO', `
+export const fractionalCROPage = () => page('Fractional Revenue Leadership™', `
 <section class="page-hero">
   <div class="container page-hero-content">
-    <div class="hero-eyebrow">Executive Leadership</div>
-    <h1 class="hero-title">Executive Revenue Leadership<br><span class="accent">Without Full-Time C-Suite Cost</span></h1>
-    <p class="hero-sub">Strategy, accountability, hiring roadmap, forecasting, and performance management from a revenue leader who takes ownership.</p>
+    <div class="hero-eyebrow">Fractional Revenue Leadership</div>
+    <h1 class="hero-title">Fractional Revenue Leadership<br><span class="accent">Without Full-Time C-Suite Cost</span></h1>
+    <p class="hero-sub">VP of Sales or CRO-level leadership embedded in your business — accountability, forecasting, team coaching, hiring guidance, and a disciplined revenue operating rhythm.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
-      <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Add Revenue Leadership</a>
+      <a href="/solutions/revenue-os" class="btn btn-secondary btn-lg">See Revenue OS First</a>
     </div>
   </div>
 </section>
@@ -1061,6 +1061,294 @@ ${solDetailStyles()}
 @media (max-width: 1100px) { .pe-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .pe-grid { grid-template-columns: 1fr; } }
 </style>
+`)
+
+// Revenue OS
+export const revenueOSPage = () => page('Revenue OS™ — Build Your Sales Foundation', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">Foundation First</div>
+    <h1 class="hero-title">Revenue OS™<br><span class="accent">Build the Sales Foundation Before You Scale</span></h1>
+    <p class="hero-sub">Revenue OS is the foundational buildout of your complete sales infrastructure — ICP, process, CRM, reporting, messaging, outreach, onboarding, and management rhythm. Built before you add headcount.</p>
+    <div class="hero-cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Build My Revenue OS</a>
+      <a href="#what-we-build" class="btn btn-secondary btn-lg">See What We Build</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:56px;">
+      <span class="section-label">Why Revenue OS First</span>
+      <h2 class="section-title">You can't scale what isn't built yet.</h2>
+      <p class="section-subtitle">Most companies hire salespeople before they have a repeatable system. That's why reps underperform, turnover is high, and pipeline stays unpredictable. Revenue OS installs the infrastructure first.</p>
+    </div>
+    <div class="gos-problem-grid fade-in">
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-crosshairs"></i></div>
+        <h4>No Clear ICP</h4>
+        <p>Reps chase the wrong prospects, messaging doesn't land, and conversion rates stay low.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-database"></i></div>
+        <h4>CRM Not Trusted</h4>
+        <p>Data is stale or missing. Leadership can't forecast. Decisions are made on gut feel.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-route"></i></div>
+        <h4>No Sales Process</h4>
+        <p>Every rep does it differently. There's no defined pipeline, no stage criteria, no repeatable motion.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-user-graduate"></i></div>
+        <h4>No Onboarding System</h4>
+        <p>New hires ramp slowly. There's no playbook, no training framework, no accountability from day one.</p>
+      </div>
+      <div class="gos-problem-card">
+        <div class="gos-prob-icon"><i class="fas fa-tasks"></i></div>
+        <h4>No Accountability Rhythm</h4>
+        <p>Without KPI structure and a management cadence, execution drifts — especially as the team grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="what-we-build">
+  <div class="container">
+    <div class="gos-what-grid fade-in">
+      <div class="gos-what-main">
+        <span class="section-label">What Revenue OS Includes</span>
+        <h2 class="section-title">Your Complete Sales Infrastructure — Built and Installed</h2>
+        <p style="font-size:1.05rem;color:var(--gray-600);margin-bottom:28px;">Revenue OS covers every component your sales operation needs to run consistently, scale predictably, and produce measurable results.</p>
+        <div class="includes-grid" style="margin-top:0;">
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-crosshairs"></i></div>
+            <h4>ICP &amp; Offer Positioning</h4>
+            <p>Clear definition of who you sell to, why they buy, and how to position your offer competitively.</p>
+          </div>
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-route"></i></div>
+            <h4>Sales Process &amp; Pipeline Stages</h4>
+            <p>Defined stages with entry/exit criteria so every rep follows the same motion and leadership can forecast.</p>
+          </div>
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-database"></i></div>
+            <h4>CRM Architecture &amp; Dashboards</h4>
+            <p>CRM configured for your process — properties, views, automations, and leadership reporting baked in.</p>
+          </div>
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h4>Outbound Messaging &amp; Sequences</h4>
+            <p>ICP-specific email sequences, LinkedIn messaging frameworks, and call talk tracks that convert.</p>
+          </div>
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-book"></i></div>
+            <h4>Sales Playbooks &amp; Scripts</h4>
+            <p>Documented playbooks covering objection handling, discovery questions, and closing frameworks.</p>
+          </div>
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>Hiring Scorecards &amp; Onboarding</h4>
+            <p>Structured hiring criteria and a 30/60/90 onboarding framework to ramp reps faster.</p>
+          </div>
+          <div class="include-card">
+            <div class="inc-icon"><i class="fas fa-tachometer-alt"></i></div>
+            <h4>KPI Structure &amp; Management Cadence</h4>
+            <p>Activity benchmarks, performance metrics, and a weekly operating rhythm to keep the team accountable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gos-what-side">
+        <div class="side-box">
+          <h4>Engagement Overview</h4>
+          <div class="quick-fact"><span class="qf-label">Best For</span><span>$2M–$40M B2B</span></div>
+          <div class="quick-fact"><span class="qf-label">Outcome</span><span>Full sales infrastructure</span></div>
+          <div class="quick-fact"><span class="qf-label">Delivery</span><span>Built &amp; installed</span></div>
+          <div class="quick-fact"><span class="qf-label">Next Step</span><span>Strategy call</span></div>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Build My Revenue OS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">What Comes Next</span>
+      <h2 style="color:var(--white);">Revenue OS is the foundation.<br>Then you scale on top of it.</h2>
+    </div>
+    <div class="gos-stack-grid fade-in">
+      <div class="gos-stack-card" style="border-color:rgba(173,120,5,0.5);">
+        <div class="gos-stack-icon"><i class="fas fa-layer-group"></i></div>
+        <h4>Start Here</h4>
+        <ul><li>Revenue OS™ foundation build</li><li>ICP, process, CRM, messaging</li><li>Onboarding &amp; KPI structure</li></ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-users-cog"></i></div>
+        <h4>Add W2 Headcount</h4>
+        <ul><li>Managed W2 Sales Pods™</li><li>Dedicated employees on your team</li><li>Full recruiting &amp; management</li></ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-percentage"></i></div>
+        <h4>Scale With 1099</h4>
+        <ul><li>Managed 1099 Sales Teams™</li><li>Flexible coverage, lower risk</li><li>Built on your Revenue OS</li></ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-crown"></i></div>
+        <h4>Add Leadership</h4>
+        <ul><li>Fractional Revenue Leadership™</li><li>VP/CRO-level oversight</li><li>Forecast, coach, hire, own</li></ul>
+      </div>
+      <div class="gos-stack-card">
+        <div class="gos-stack-icon"><i class="fas fa-robot"></i></div>
+        <h4>Automate &amp; Optimize</h4>
+        <ul><li>Growth OS™ platform</li><li>AI-assisted outreach</li><li>Operational oversight</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Build the foundation your revenue engine needs to scale.</h2>
+    <p>Book a strategy call and we'll assess your current infrastructure, identify the gaps, and scope exactly what Revenue OS would build for your business.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Build My Revenue OS</a>
+      <a href="/solutions/managed-sales-pods" class="btn btn-secondary btn-lg">See Managed W2 Sales Pods</a>
+    </div>
+  </div>
+</section>
+${solDetailStyles()}
+`)
+
+// Managed 1099 Sales Teams
+export const managed1099Page = () => page('Managed 1099 Sales Teams™', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">Flexible Sales Coverage</div>
+    <h1 class="hero-title">Managed 1099 Sales Teams™<br><span class="accent">Scale Without the Payroll Risk</span></h1>
+    <p class="hero-sub">MetaGrowth builds and manages a flexible 1099 sales force backed by Revenue OS infrastructure, outreach systems, CRM discipline, and performance management.</p>
+    <div class="hero-cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Explore 1099 Sales Team Buildout</a>
+      <a href="/solutions/revenue-os" class="btn btn-secondary btn-lg">See Revenue OS First</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-gray">
+  <div class="container">
+    <div class="sol-detail-grid fade-in">
+      <div class="sol-detail-main">
+        <span class="section-label">Why 1099 Sales Teams</span>
+        <h2 class="section-title">More market coverage. Lower fixed-cost risk. Real execution.</h2>
+        <p style="font-size:1.05rem;color:var(--gray-600);margin-bottom:24px;">A managed 1099 sales force gives you the ability to expand your sales capacity without adding fixed W2 payroll. It's an ideal model for companies testing new markets, building pipeline fast, or scaling before committing to full-time hires.</p>
+        <ul class="check-list" style="margin-bottom:28px;">
+          <li>Expand sales coverage without fixed salary overhead</li>
+          <li>Test new markets or verticals before committing to W2 hires</li>
+          <li>Generate pipeline faster with a trained, managed team</li>
+          <li>Maintain performance standards through structured oversight</li>
+          <li>Built on your Revenue OS so reps follow your process from day one</li>
+        </ul>
+      </div>
+      <div class="sol-detail-side">
+        <div class="side-box">
+          <h4>Engagement Overview</h4>
+          <div class="quick-fact"><span class="qf-label">Team Type</span><span>1099 Independent Reps</span></div>
+          <div class="quick-fact"><span class="qf-label">Best For</span><span>$2M–$40M B2B</span></div>
+          <div class="quick-fact"><span class="qf-label">Overhead</span><span>No fixed W2 payroll</span></div>
+          <div class="quick-fact"><span class="qf-label">Management</span><span>MetaGrowth oversight</span></div>
+          <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Book a Strategy Call</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">What's Included</span>
+      <h2 class="section-title">Everything needed to build and run your 1099 sales team</h2>
+    </div>
+    <div class="includes-grid fade-in">
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-search"></i></div>
+        <h4>1099 Rep Recruiting</h4>
+        <p>We source, screen, and onboard independent sales reps who fit your product, market, and commission model.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-dollar-sign"></i></div>
+        <h4>Commission Model Support</h4>
+        <p>Commission plan design aligned to your margins, average deal size, and rep performance expectations.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-user-graduate"></i></div>
+        <h4>Sales Onboarding</h4>
+        <p>Structured onboarding so reps are productive quickly — process, messaging, CRM, and expectations.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-layer-group"></i></div>
+        <h4>Growth OS™ Access</h4>
+        <p>Reps operate within your Growth OS infrastructure — outreach systems, CRM workflows, and messaging frameworks.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-bullhorn"></i></div>
+        <h4>Outreach Campaigns</h4>
+        <p>LinkedIn and email outreach campaigns built and managed so reps have active pipeline from the start.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-chart-bar"></i></div>
+        <h4>CRM Tracking &amp; Reporting</h4>
+        <p>All activity tracked inside your CRM with dashboards for leadership visibility into rep performance.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-tasks"></i></div>
+        <h4>Activity &amp; Performance Management</h4>
+        <p>KPI benchmarks, weekly check-ins, and structured accountability to keep rep execution consistent.</p>
+      </div>
+      <div class="include-card">
+        <div class="inc-icon"><i class="fas fa-sync-alt"></i></div>
+        <h4>Ongoing Optimization</h4>
+        <p>Continuous refinement of messaging, targeting, and process based on what's working in the field.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">W2 vs 1099 Comparison</span>
+      <h2 style="color:var(--white);">Which model fits your situation?</h2>
+    </div>
+    <div style="overflow-x:auto;" class="fade-in">
+      <table class="compare-table" style="max-width:800px;margin:0 auto;">
+        <thead><tr><th>Factor</th><th>Managed W2 Sales Pods™</th><th>Managed 1099 Sales Teams™</th></tr></thead>
+        <tbody>
+          <tr><td>Employment Type</td><td class="yes">W2 Employee (on your payroll)</td><td class="yes">1099 Independent Contractor</td></tr>
+          <tr><td>Fixed Payroll Cost</td><td class="no">Yes — base salary + benefits</td><td class="yes">No — commission-based only</td></tr>
+          <tr><td>Speed to Deploy</td><td class="no">4–8 weeks (recruiting + onboarding)</td><td class="yes">2–4 weeks</td></tr>
+          <tr><td>Best For</td><td class="yes">Committed headcount growth</td><td class="yes">Market testing, fast expansion</td></tr>
+          <tr><td>Revenue OS Required</td><td class="yes">Yes (foundation first)</td><td class="yes">Yes (foundation first)</td></tr>
+          <tr><td>MetaGrowth Management</td><td class="yes">Full oversight included</td><td class="yes">Full oversight included</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Build a flexible sales team without the full-time payroll risk.</h2>
+    <p>Book a strategy call and we'll assess whether a 1099 model is the right fit for your current stage, market, and growth goals.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">Explore 1099 Sales Team Buildout</a>
+      <a href="/solutions/managed-sales-pods" class="btn btn-secondary btn-lg">Compare W2 Sales Pods</a>
+    </div>
+  </div>
+</section>
+${solDetailStyles()}
 `)
 
 // Growth OS

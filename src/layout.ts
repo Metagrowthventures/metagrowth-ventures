@@ -7,31 +7,16 @@ export const nav = () => `
     <nav class="main-nav" id="main-nav">
       <ul class="nav-list">
         <li><a href="/" class="nav-link">Home</a></li>
-        <li class="has-dropdown">
-          <a href="/solutions" class="nav-link">Solutions <span class="chevron">&#8964;</span></a>
-          <ul class="dropdown">
-            <li><a href="/solutions/ceo-growth-lab">CEO Growth Lab</a></li>
-            <li><a href="/solutions/sales-growth-lab">Sales Growth Lab</a></li>
-            <li><a href="/solutions/hyperlaunch">HyperLaunch Sales System</a></li>
-            <li><a href="/solutions/managed-sales-pods">Managed Sales Pods</a></li>
-            <li><a href="/solutions/commission-only">Commission-Only Infrastructure</a></li>
-            <li><a href="/solutions/recruiting">Recruiting Services</a></li>
-            <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
-            <li><a href="/solutions/precision-engagements">Precision Engagements</a></li>
-            <li><a href="/solutions/growth-os">Growth OS™</a></li>
-          </ul>
-        </li>
-        <li><a href="/how-we-work" class="nav-link">How We Work</a></li>
+        <li><a href="/solutions/revenue-os" class="nav-link">Revenue OS</a></li>
+        <li><a href="/solutions/managed-sales-pods" class="nav-link">Managed W2 Sales Pods</a></li>
+        <li><a href="/solutions/managed-1099" class="nav-link">Managed 1099 Teams</a></li>
+        <li><a href="/solutions/fractional-cro" class="nav-link">Fractional Revenue Leadership</a></li>
         <li><a href="/case-studies" class="nav-link">Case Studies</a></li>
-        <li><a href="/industries" class="nav-link">Industries</a></li>
         <li><a href="/resources" class="nav-link">Resources</a></li>
-        <li><a href="/about" class="nav-link">About</a></li>
-        <li><a href="/contact" class="nav-link">Contact</a></li>
-        <li><a href="/assessment" class="nav-link" style="color:var(--green);font-weight:700;">Free Assessment</a></li>
       </ul>
     </nav>
     <a href="https://app.metagrowth.ventures" target="_blank" class="btn btn-secondary header-cta-login">Login</a>
-    <a href="/assessment" class="btn btn-primary header-cta" style="background:var(--green);color:var(--navy);">Free Assessment</a>
+    <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary header-cta">Book a Strategy Call</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -54,16 +39,13 @@ export const footer = () => `
     </div>
     <div class="footer-links">
       <div class="footer-col">
-        <h4>Solutions</h4>
+        <h4>Revenue Systems</h4>
         <ul>
-          <li><a href="/solutions/ceo-growth-lab">CEO Growth Lab</a></li>
-          <li><a href="/solutions/sales-growth-lab">Sales Growth Lab</a></li>
-          <li><a href="/solutions/hyperlaunch">HyperLaunch System</a></li>
-          <li><a href="/solutions/managed-sales-pods">Managed Sales Pods</a></li>
-          <li><a href="/solutions/commission-only">Commission-Only Infra</a></li>
-          <li><a href="/solutions/recruiting">Recruiting Services</a></li>
-          <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
-          <li><a href="/solutions/precision-engagements">Precision Engagements</a></li>
+          <li><a href="/solutions/revenue-os">Revenue OS™</a></li>
+          <li><a href="/solutions/managed-sales-pods">Managed W2 Sales Pods™</a></li>
+          <li><a href="/solutions/managed-1099">Managed 1099 Sales Teams™</a></li>
+          <li><a href="/solutions/fractional-cro">Fractional Revenue Leadership™</a></li>
+          <li><a href="/solutions/growth-os">Growth OS™</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -72,7 +54,6 @@ export const footer = () => `
           <li><a href="/about">About</a></li>
           <li><a href="/how-we-work">How We Work</a></li>
           <li><a href="/case-studies">Case Studies</a></li>
-          <li><a href="/industries">Industries</a></li>
           <li><a href="/resources">Resources</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
@@ -81,8 +62,7 @@ export const footer = () => `
         <h4>Get Started</h4>
         <ul>
           <li><a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session">Book a Strategy Call</a></li>
-          <li><a href="/assessment">Take the Assessment</a></li>
-          <li><a href="/resources">Download Ecosystem Guide</a></li>
+          <li><a href="/assessment">Take the Revenue Assessment</a></li>
           <li><a href="/contact">Request a Revenue Review</a></li>
         </ul>
       </div>
