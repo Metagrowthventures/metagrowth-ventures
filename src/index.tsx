@@ -3,7 +3,7 @@ import { assessmentPage } from './pages/assessment'
 import { homePage } from './pages/home'
 import {
   solutionsPage,
-  hyperlaunchPage,
+  revenueOSPage,
   managedSalesPodsPage,
   commissionOnlyPage,
   fractionalCROPage,
@@ -144,7 +144,7 @@ app.get('/assessment', (c) => c.html(assessmentPage()))
 
 // ── Solutions ─────────────────────────────────────────────────────────────────
 app.get('/solutions', (c) => c.html(solutionsPage()))
-app.get('/solutions/hyperlaunch', (c) => c.html(hyperlaunchPage()))
+app.get('/solutions/revenue-os', (c) => c.html(revenueOSPage()))
 app.get('/solutions/managed-sales-pods', (c) => c.html(managedSalesPodsPage()))
 app.get('/solutions/commission-only', (c) => c.html(commissionOnlyPage()))
 app.get('/solutions/fractional-cro', (c) => c.html(fractionalCROPage()))
