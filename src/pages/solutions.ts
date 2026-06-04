@@ -21,6 +21,16 @@ export const solutionsPage = () => page('Solutions', `
       <p class="section-subtitle">Every MetaGrowth engagement is designed to deliver measurable outcomes — not just advice.</p>
     </div>
     <div class="full-sol-grid fade-in">
+      <a href="/solutions/growth-os" class="full-sol-card" style="border-color:rgba(173,120,5,0.35);background:rgba(173,120,5,0.03);">
+        <div class="fsol-icon" style="background:rgba(173,120,5,0.15);"><i class="fas fa-layer-group"></i></div>
+        <div class="fsol-body">
+          <div class="fsol-tag" style="color:var(--green);">Revenue Infrastructure Platform</div>
+          <h3>Growth OS™</h3>
+          <p>Centralized outbound revenue infrastructure — CRM workflows, AI-assisted outreach, pipeline visibility, accountability systems, and revenue operations.</p>
+          <div class="fsol-outcome">Key Outcome: Fully operationalized outbound revenue engine</div>
+        </div>
+        <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
       <a href="/solutions/revenue-os" class="full-sol-card" style="border-color:rgba(173,120,5,0.35);background:rgba(173,120,5,0.03);">
         <div class="fsol-icon" style="background:rgba(173,120,5,0.15);"><i class="fas fa-microchip"></i></div>
         <div class="fsol-body">
@@ -32,11 +42,11 @@ export const solutionsPage = () => page('Solutions', `
         <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
       </a>
       <a href="/solutions/managed-sales-pods" class="full-sol-card">
-        <div class="fsol-icon"><i class="fas fa-cogs"></i></div>
+        <div class="fsol-icon"><i class="fas fa-users"></i></div>
         <div class="fsol-body">
-          <div class="fsol-tag">Done-For-You</div>
-          <h3>Managed Sales Pods</h3>
-          <p>Full-service revenue execution — we recruit, onboard, train, manage, and optimize your sales pod so you can focus on the business.</p>
+          <div class="fsol-tag">W2 Sales Teams</div>
+          <h3>W2 Sales Teams</h3>
+          <p>Full-service revenue execution — we recruit, onboard, train, manage, and optimize your W2 sales team so you can focus on the business.</p>
           <div class="fsol-outcome">Key Outcome: Fully managed revenue engine with KPI enforcement</div>
         </div>
         <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
@@ -44,8 +54,8 @@ export const solutionsPage = () => page('Solutions', `
       <a href="/solutions/commission-only" class="full-sol-card">
         <div class="fsol-icon"><i class="fas fa-percentage"></i></div>
         <div class="fsol-body">
-          <div class="fsol-tag">Performance-Based</div>
-          <h3>Commission-Only Infrastructure</h3>
+          <div class="fsol-tag">1099 Sales Teams</div>
+          <h3>1099 Sales Teams</h3>
           <p>Scale your sales team without fixed salary overhead using a fully supported 1099 rep model with training, CRM, and systems.</p>
           <div class="fsol-outcome">Key Outcome: Scalable revenue without fixed payroll risk</div>
         </div>
@@ -58,16 +68,6 @@ export const solutionsPage = () => page('Solutions', `
           <h3>Fractional CRO</h3>
           <p>Revenue leadership that owns outcomes — strategy, accountability, hiring roadmap, forecasting, and performance management.</p>
           <div class="fsol-outcome">Key Outcome: Executive revenue ownership without full-time cost</div>
-        </div>
-        <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
-      </a>
-      <a href="/solutions/growth-os" class="full-sol-card" style="border-color:rgba(173,120,5,0.35);background:rgba(173,120,5,0.03);">
-        <div class="fsol-icon" style="background:rgba(173,120,5,0.15);"><i class="fas fa-layer-group"></i></div>
-        <div class="fsol-body">
-          <div class="fsol-tag" style="color:var(--green);">Revenue Infrastructure Platform</div>
-          <h3>Growth OS™</h3>
-          <p>Centralized outbound revenue infrastructure — CRM workflows, AI-assisted outreach, pipeline visibility, accountability systems, and revenue operations.</p>
-          <div class="fsol-outcome">Key Outcome: Fully operationalized outbound revenue engine</div>
         </div>
         <div class="fsol-arrow"><i class="fas fa-arrow-right"></i></div>
       </a>

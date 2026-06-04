@@ -10,11 +10,11 @@ export const nav = () => `
         <li class="has-dropdown">
           <a href="/solutions" class="nav-link">Solutions <span class="chevron">&#8964;</span></a>
           <ul class="dropdown">
-            <li><a href="/solutions/revenue-os">Revenue OS™</a></li>
-            <li><a href="/solutions/managed-sales-pods">Managed Sales Pods</a></li>
-            <li><a href="/solutions/commission-only">Commission-Only Infrastructure</a></li>
-            <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
             <li><a href="/solutions/growth-os">Growth OS™</a></li>
+            <li><a href="/solutions/revenue-os">Revenue OS™</a></li>
+            <li><a href="/solutions/managed-sales-pods">W2 Sales Teams</a></li>
+            <li><a href="/solutions/commission-only">1099 Sales Teams</a></li>
+            <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
           </ul>
         </li>
         <li><a href="/how-we-work" class="nav-link">How We Work</a></li>
@@ -52,9 +52,10 @@ export const footer = () => `
       <div class="footer-col">
         <h4>Solutions</h4>
         <ul>
+          <li><a href="/solutions/growth-os">Growth OS™</a></li>
           <li><a href="/solutions/revenue-os">Revenue OS™</a></li>
-          <li><a href="/solutions/managed-sales-pods">Managed Sales Pods</a></li>
-          <li><a href="/solutions/commission-only">Commission-Only Infra</a></li>
+          <li><a href="/solutions/managed-sales-pods">W2 Sales Teams</a></li>
+          <li><a href="/solutions/commission-only">1099 Sales Teams</a></li>
           <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
         </ul>
       </div>
