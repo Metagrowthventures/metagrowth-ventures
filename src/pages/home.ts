@@ -1031,8 +1031,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 </style>
 <link rel="preload" as="image" href="/static/hero-texture.jpg" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/webfonts/fa-solid-900.woff2" crossorigin>
-`
-, `<script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
