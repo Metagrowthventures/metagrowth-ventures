@@ -7,7 +7,7 @@ export const solutionsPage = () => page('Solutions', `
     <h1 class="hero-title">A Complete Revenue <span class="accent">Ecosystem</span></h1>
     <p class="hero-sub">From infrastructure build to full execution — MetaGrowth has the right engagement for your stage, team, and growth goals.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Book a Strategy Call</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
@@ -80,7 +80,7 @@ export const solutionsPage = () => page('Solutions', `
     <h2>Not sure which solution fits?</h2>
     <p>Book a strategy call and we'll help you identify the right engagement for your stage, team, and growth goals — at no cost.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
@@ -125,7 +125,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
     <h1 class="hero-title">We Build, Recruit, Coach,<br>and <span class="accent">Manage the Revenue Engine</span></h1>
     <p class="hero-sub">Full-service sales execution for companies that want results without managing every moving part internally.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -153,7 +153,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
           <div class="quick-fact"><span class="qf-label">Management</span><span>MetaGrowth-owned</span></div>
           <div class="quick-fact"><span class="qf-label">KPIs</span><span>Weekly enforcement</span></div>
           <div class="quick-fact"><span class="qf-label">Contract</span><span>12-month roadmap</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Get Started</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Get Started</a>
         </div>
       </div>
     </div>
@@ -193,7 +193,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
     <h2>Ready for a revenue engine that runs without you?</h2>
     <p>Book a strategy call and we'll scope a Managed Sales Pod deployment for your company's exact situation.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Explore Managed Sales Pods</a>
       <a href="/case-studies" class="btn btn-secondary btn-lg">See Results</a>
     </div>
   </div>
@@ -219,7 +219,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
     <h1 class="hero-title">Scale Without Fixed <span class="accent">Salary Overhead</span></h1>
     <p class="hero-sub">Unlimited 1099 rep infrastructure supported by system build, commission modeling, training, and CRM enforcement.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">See If You Qualify</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">See If You Qualify</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -261,7 +261,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
           <div class="quick-fact"><span class="qf-label">Overhead</span><span>No fixed salary</span></div>
           <div class="quick-fact"><span class="qf-label">Includes</span><span>Full system build</span></div>
           <div class="quick-fact"><span class="qf-label">Training</span><span>MetaGrowth managed</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Check Qualification</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Check Qualification</a>
         </div>
       </div>
     </div>
@@ -299,7 +299,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
     <h2>See if you qualify for commission-only scaling.</h2>
     <p>Not every company is a fit — but for those that are, it's one of the highest-leverage growth models available.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">See If You Qualify</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">See If You Qualify</a>
     </div>
   </div>
 </section>
@@ -314,7 +314,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
     <h1 class="hero-title">Executive Revenue Leadership<br><span class="accent">Without Full-Time C-Suite Cost</span></h1>
     <p class="hero-sub">Strategy, accountability, hiring roadmap, forecasting, and performance management from a revenue leader who takes ownership.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -343,7 +343,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
           <div class="quick-fact"><span class="qf-label">Ownership</span><span>Full revenue function</span></div>
           <div class="quick-fact"><span class="qf-label">Reporting</span><span>Direct to CEO</span></div>
           <div class="quick-fact"><span class="qf-label">Hours</span><span>Defined retainer model</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Talk to a Fractional CRO</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Talk to a Fractional CRO</a>
         </div>
       </div>
     </div>
@@ -389,7 +389,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
     <h2>Close the revenue leadership gap — this week.</h2>
     <p>Book a call with a MetaGrowth Fractional CRO and get an honest assessment of what your revenue function needs to scale.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Talk to a Fractional CRO</a>
     </div>
   </div>
 </section>
@@ -407,7 +407,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
     <p class="gos-hero-sub">Build, manage, and scale outbound sales with centralized systems, CRM workflows, AI-assisted outreach, pipeline visibility, and operational accountability.</p>
     <p class="gos-hero-sub2">Whether you run it internally or want expert oversight, Growth OS™ helps operationalize predictable revenue generation.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Demo</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Demo</a>
       <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
     </div>
   </div>
@@ -491,7 +491,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
           <div class="quick-fact"><span class="qf-label">Best For</span><span>B2B Sales Teams</span></div>
           <div class="quick-fact"><span class="qf-label">Options</span><span>Self-Managed / Managed</span></div>
           <div class="quick-fact"><span class="qf-label">Setup</span><span>Infrastructure + Systems</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Book a Demo</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Book a Demo</a>
         </div>
       </div>
     </div>
@@ -663,7 +663,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
             <a href="https://buy.stripe.com/bJe4gyb672kR2wH8hb14403" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:14px;font-size:0.88rem;">Get Started</a>
           </div>
         </div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;">Explore Self-Managed</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;">Explore Self-Managed</a>
       </div>
 
       <!-- Option 2 -->
@@ -700,7 +700,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
           <h5>Pricing</h5>
           <div class="gos-price-row"><span class="gos-tier">Starting at</span><span class="gos-price">$1,500<span>/mo</span></span></div>
         </div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-gold" style="width:100%;justify-content:center;margin-top:28px;">Book A Strategy Call</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-gold" style="width:100%;justify-content:center;margin-top:28px;">Book A Strategy Call</a>
       </div>
 
     </div>
@@ -829,8 +829,8 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
     <h2>Build A Revenue System That Actually Operates Consistently</h2>
     <p>Growth OS™ helps companies operationalize outbound sales through centralized infrastructure, workflows, accountability systems, and revenue operations.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book A Demo</a>
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-secondary btn-lg">Schedule A Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book A Demo</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">Schedule A Strategy Call</a>
     </div>
     <p class="gos-footer-note">Growth OS™ is built and supported by MetaGrowth Ventures — specialists in outbound revenue systems, sales infrastructure, recruiting, and operational growth systems for B2B companies.</p>
   </div>
@@ -975,7 +975,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
         <div class="ros-stat"><div class="ros-stat-num">AI-First</div><div class="ros-stat-label">Signal Intelligence</div></div>
       </div>
       <div class="hero-cta-row" style="justify-content:center;margin-top:40px;">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Book a Revenue Infrastructure Review</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Book a Revenue Infrastructure Review</a>
         <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
       </div>
     </div>
@@ -1130,7 +1130,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
           <li>Reporting Dashboard</li>
         </ul>
         <div class="ros-price-meta"><span>Best For:</span> &lt;$5M ARR · 6-Month Commitment</div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Start Building Today</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Start Building Today</a>
       </div>
       <div class="ros-price-card ros-price-card-featured">
         <div class="ros-price-badge">Flagship Offer</div>
@@ -1150,7 +1150,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
           <li>Weekly Optimization Cadence</li>
         </ul>
         <div class="ros-price-meta"><span>Best For:</span> $3M–$25M+ ARR · 6–12 Month Commitment</div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Accelerate My Pipeline</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Accelerate My Pipeline</a>
       </div>
       <div class="ros-price-card">
         <div class="ros-price-tag-label">Enterprise Revenue Infrastructure™</div>
@@ -1169,7 +1169,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
           <li>Embedded Strategic Support</li>
         </ul>
         <div class="ros-price-meta"><span>Best For:</span> $25M+ ARR · 12-Month Commitment</div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Request Enterprise Consultation</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Request Enterprise Consultation</a>
       </div>
     </div>
   </div>
@@ -1246,7 +1246,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
     <h2>Build A Revenue Engine Designed To Scale.</h2>
     <p>Book your Revenue Infrastructure Review. We'll map out your pipeline requirements, identify bottlenecks, and show you exactly what it takes to hit your growth targets.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Book a Revenue Infrastructure Review</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Book a Revenue Infrastructure Review</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
     <div class="ros-commitment-badges">

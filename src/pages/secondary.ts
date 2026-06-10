@@ -135,7 +135,7 @@ export const aboutPage = () => page('About', `
     <h2>Ready to work with MetaGrowth?</h2>
     <p>Book a strategy call and let's identify the right engagement for your company's stage and goals.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -284,7 +284,7 @@ export const caseStudiesPage = () => page('Case Studies', `
     <h2>Ready to write your own case study?</h2>
     <p>Book a strategy call and let's identify the right solution to create measurable results for your revenue function.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -347,7 +347,7 @@ export const howWeWorkPage = () => page('How We Work', `
     <h1 class="hero-title">We don't hand over theory.<br>We <span class="accent">install the operating system</span>.</h1>
     <p class="hero-sub">MetaGrowth's deployment model is built around real implementation — not recommendations that gather dust in a shared folder.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">See Which Engagement Fits</a>
     </div>
   </div>
@@ -491,7 +491,7 @@ export const howWeWorkPage = () => page('How We Work', `
     <h2>See which engagement fits your situation.</h2>
     <p>Book a strategy call and we'll walk you through the right deployment model for your company's stage, team, and goals.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -552,7 +552,7 @@ export const industriesPage = () => page('Industries', `
     <h2>Your industry. Our infrastructure.</h2>
     <p>Book a strategy call and let's discuss the specific revenue bottlenecks you're facing — and the right MetaGrowth solution to solve them.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -690,7 +690,7 @@ export const resourcesPage = () => page('Resources', `
     <h2>Want a custom resource for your situation?</h2>
     <p>Book a strategy call and get a personalized revenue architecture recommendation — not a generic template.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
@@ -1471,7 +1471,7 @@ ${nav()}
       <h2>Ready to fix this?</h2>
       <p id="results-cta-body">Book a strategy call and we'll walk through your results together and map the exact path forward.</p>
       <div class="results-cta-btns">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn-next" style="text-decoration:none;"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;"><i class="fas fa-calendar-check"></i> Book a Strategy Call</a>
         <a href="/solutions" class="btn-outline-gold">Explore Solutions <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
@@ -1516,7 +1516,7 @@ animateBar('bar-rs','val-rs',rs);animateBar('bar-pm','val-pm',pm);animateBar('ba
 document.getElementById('results-diagnosis-title').textContent=outcome.diagTitle;document.getElementById('results-diagnosis-body').textContent=outcome.diagBody;
 const gapsList=document.getElementById('results-gaps');gapsList.innerHTML='';outcome.gaps.forEach(gap=>{const li=document.createElement('li');li.textContent=gap;gapsList.appendChild(li);});
 document.getElementById('results-path-title').textContent=outcome.pathTitle;document.getElementById('results-path-body').textContent=outcome.pathBody;
-const recContainer=document.getElementById('results-rec-cards');recContainer.innerHTML='';outcome.recs.forEach(rec=>{const a=document.createElement('a');a.href=rec.link;a.className='rec-path-card';a.innerHTML='<div class="rec-path-icon"><i class="fas '+rec.icon+'"></i></div><div class="rec-path-body"><div class="rec-path-name">'+rec.name+(rec.primary?'<span class="rec-primary-badge">Best Fit</span>':'')+'</div><div class="rec-path-desc">'+rec.desc+'</div></div><div class="rec-path-arrow"><i class="fas fa-arrow-right"></i></div>';recContainer.appendChild(a);});
+const recContainer=document.getElementById('results-rec-cards');recContainer.innerHTML='';outcome.recs.forEach(rec=>{const a=document.createElement('a');a.href=rec.link;if(rec.link.startsWith('http')){a.target='_blank';a.rel='noopener noreferrer';}a.className='rec-path-card';a.innerHTML='<div class="rec-path-icon"><i class="fas '+rec.icon+'"></i></div><div class="rec-path-body"><div class="rec-path-name">'+rec.name+(rec.primary?'<span class="rec-primary-badge">Best Fit</span>':'')+'</div><div class="rec-path-desc">'+rec.desc+'</div></div><div class="rec-path-arrow"><i class="fas fa-arrow-right"></i></div>';recContainer.appendChild(a);});
 document.getElementById('results-cta-body').textContent=outcome.ctaBody;}
 function animateCount(id,from,to,duration){const el=document.getElementById(id);const start=performance.now();function tick(now){const progress=Math.min((now-start)/duration,1);const ease=1-Math.pow(1-progress,3);el.textContent=Math.round(from+(to-from)*ease);if(progress<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);}
 function animateBar(barId,valId,score){setTimeout(()=>{document.getElementById(barId).style.width=score+'%';document.getElementById(valId).textContent=score;},300);}

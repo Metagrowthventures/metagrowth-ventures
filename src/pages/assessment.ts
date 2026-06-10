@@ -1353,7 +1353,7 @@ ${nav()}
       <h2>Ready to fix this?</h2>
       <p id="results-cta-body">Book a strategy call and we'll walk through your results together and map the exact path forward.</p>
       <div class="results-cta-btns">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn-next" style="text-decoration:none;">
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;">
           <i class="fas fa-calendar-check"></i> Book a Strategy Call
         </a>
         <a href="/solutions" class="btn-outline-gold">
@@ -1799,6 +1799,7 @@ function submitAssessment() {
   outcome.recs.forEach(rec => {
     const a = document.createElement('a');
     a.href = rec.link;
+    if (rec.link.startsWith('http')) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
     a.className = 'rec-path-card';
     a.innerHTML =
       '<div class="rec-path-icon"><i class="fas ' + rec.icon + '"></i></div>' +
