@@ -655,6 +655,14 @@ export const page = (title: string, content: string, extraHead = '', description
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title} | MetaGrowth Ventures</title>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14826799015"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-14826799015');
+  </script>
   <meta name="description" content="${metaDesc}">
   <link rel="canonical" href="https://metagrowth.ventures">
   <link rel="icon" type="image/png" href="/static/logo.png">
