@@ -18,7 +18,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         MetaGrowth helps founders, CEOs, and sales leaders install the systems, structure, talent, and leadership needed to scale revenue with more control and less chaos.
       </p>
       <div class="hero-cta-row">
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary hero-cta-btn">
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary hero-cta-btn">
           <i class="fas fa-calendar-check"></i> Book a Strategy Call
         </a>
         <a href="/assessment" class="btn btn-secondary hero-cta-btn">
@@ -126,7 +126,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>No ICP definition or messaging framework</li>
               <li>Unable to delegate or hand off sales</li>
             </ul>
-            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -157,7 +157,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>Weak pipeline visibility and forecasting</li>
               <li>Ramp time too slow, turnover too high</li>
             </ul>
-            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -198,7 +198,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>Coaching is reactive, not structured</li>
               <li>Difficulty hiring and ramping new reps quickly</li>
             </ul>
-            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -217,7 +217,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-badge">New Program</div>
               <div class="dt-rec-name"><i class="fas fa-handshake"></i> Rev Share Only Program</div>
               <div class="dt-rec-desc">Zero upfront cost. We embed a full sales team and only get paid when you close revenue — pure performance alignment.</div>
-              <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="dt-rec-link">Apply to the Program →</a>
+              <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="dt-rec-link">Apply to the Program →</a>
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <li>Need someone to own revenue, not just advise</li>
               <li>Sales team lacks executive direction and accountability</li>
             </ul>
-            <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary">Get My Recommended Path</a>
+            <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary">Get My Recommended Path</a>
           </div>
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
@@ -254,7 +254,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
               <div class="dt-rec-badge">New Program</div>
               <div class="dt-rec-name"><i class="fas fa-handshake"></i> Rev Share Only Program</div>
               <div class="dt-rec-desc">Zero upfront cost. We embed a full sales team and only get paid when you close revenue — pure performance alignment at scale.</div>
-              <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="dt-rec-link">Apply to the Program →</a>
+              <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="dt-rec-link">Apply to the Program →</a>
             </div>
           </div>
         </div>
@@ -644,7 +644,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         </div>
         <div style="font-size:1.05rem;font-weight:700;color:#fff;font-family:Inter,sans-serif;">Request a Revenue Review</div>
         <div style="font-size:0.875rem;color:rgba(255,255,255,0.55);line-height:1.6;flex:1;">Book a strategy call and get a personalized revenue architecture recommendation for your exact situation.</div>
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;padding:12px 20px;background:transparent;color:#ad7805;border:1.5px solid #ad7805;border-radius:999px;font-size:0.875rem;font-weight:700;text-align:center;text-decoration:none;letter-spacing:0.02em;"><i class="fas fa-calendar-check"></i> Book a Call</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:8px;padding:12px 20px;background:transparent;color:#ad7805;border:1.5px solid #ad7805;border-radius:999px;font-size:0.875rem;font-weight:700;text-align:center;text-decoration:none;letter-spacing:0.02em;"><i class="fas fa-calendar-check"></i> Book a Call</a>
       </div>
 
       <!-- Card 3 -->
@@ -667,7 +667,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
     <h2>Let's build revenue the right way.</h2>
     <p>Whether you need a sales operating system, recruiting engine, leadership support, or full execution — we can help you identify the right path and deploy it with discipline.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn btn-primary btn-lg">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn btn-primary btn-lg">
         <i class="fas fa-calendar-check"></i> Book a Strategy Call
       </a>
       <a href="/contact" class="btn btn-secondary btn-lg">Contact MetaGrowth</a>

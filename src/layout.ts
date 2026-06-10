@@ -73,7 +73,7 @@ export const footer = () => `
       <div class="footer-col">
         <h4>Get Started</h4>
         <ul>
-          <li><a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session">Book a Strategy Call</a></li>
+          <li><a href="https://meetings.hubspot.com/josh549/revenue-audit">Book a Strategy Call</a></li>
           <li><a href="/assessment">Take the Assessment</a></li>
           <li><a href="/resources">Download Ecosystem Guide</a></li>
           <li><a href="/contact">Request a Revenue Review</a></li>

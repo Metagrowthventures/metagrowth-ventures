@@ -1353,7 +1353,7 @@ ${nav()}
       <h2>Ready to fix this?</h2>
       <p id="results-cta-body">Book a strategy call and we'll walk through your results together and map the exact path forward.</p>
       <div class="results-cta-btns">
-        <a href="https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session" class="btn-next" style="text-decoration:none;">
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" class="btn-next" style="text-decoration:none;">
           <i class="fas fa-calendar-check"></i> Book a Strategy Call
         </a>
         <a href="/solutions" class="btn-outline-gold">
@@ -1677,7 +1677,7 @@ const outcomes = {
     recs: [
       { icon: 'fa-cogs', name: 'Managed Sales Pods', desc: 'Full-service execution  -  recruiting, onboarding, coaching, KPI enforcement, and weekly oversight', link: '/solutions/managed-sales-pods', primary: true },
       { icon: 'fa-percentage', name: 'Commission-Only Infrastructure', desc: 'Scale without fixed overhead  -  1099 rep infrastructure with full systems, training, and CRM enforcement', link: '/solutions/commission-only' },
-      { icon: 'fa-handshake', name: 'Rev Share Only Program', desc: 'Zero upfront cost  -  we embed execution and only get paid when you close revenue', link: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' }
+      { icon: 'fa-handshake', name: 'Rev Share Only Program', desc: 'Zero upfront cost  -  we embed execution and only get paid when you close revenue', link: 'https://meetings.hubspot.com/josh549/revenue-audit' }
     ],
     ctaBody: "The gap between where you are and where you need to be is an infrastructure problem. Let's diagnose it together on a strategy call."
   },
@@ -1699,7 +1699,7 @@ const outcomes = {
     recs: [
       { icon: 'fa-crown', name: 'Fractional CRO', desc: 'Executive revenue leadership  -  strategy, accountability, hiring roadmap, and performance management without full-time cost', link: '/solutions/fractional-cro', primary: true },
       { icon: 'fa-cogs', name: 'Managed Sales Pods', desc: 'Done-for-you execution layer with full oversight, KPI tracking, and weekly performance management', link: '/solutions/managed-sales-pods' },
-      { icon: 'fa-handshake', name: 'Rev Share Only Program', desc: 'Full sales team embedded at scale  -  performance-only model with zero upfront investment', link: 'https://meetings.hubspot.com/lance-hengst/metagrowht-strategy-session' }
+      { icon: 'fa-handshake', name: 'Rev Share Only Program', desc: 'Full sales team embedded at scale  -  performance-only model with zero upfront investment', link: 'https://meetings.hubspot.com/josh549/revenue-audit' }
     ],
     ctaBody: "At your stage, the right revenue leadership changes everything. Let's talk about what that looks like for your business."
   }
