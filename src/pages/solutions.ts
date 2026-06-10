@@ -114,7 +114,7 @@ export const solutionsPage = () => page('Solutions', `
   .fsol-icon { width: 48px; height: 48px; font-size: 1.1rem; }
 }
 </style>
-`)
+`, '', '', '/solutions')
 
 
 // Managed Sales Pods
@@ -209,7 +209,7 @@ ${solDetailStyles()}
 @media (max-width: 900px) { .roadmap-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .roadmap-grid { grid-template-columns: 1fr; } }
 </style>
-`, serviceSchema('W2 Sales Teams', 'Managed Sales Execution', 'Full-service W2 sales team deployment — we recruit, onboard, train, manage, and optimize your sales pod with full KPI enforcement.', 'https://metagrowth.ventures/solutions/managed-sales-pods', 'B2B Founders, Growth-Stage Companies'))
+`, serviceSchema('W2 Sales Teams', 'Managed Sales Execution', 'Full-service W2 sales team deployment — we recruit, onboard, train, manage, and optimize your sales pod with full KPI enforcement.', 'https://metagrowth.ventures/solutions/managed-sales-pods', 'B2B Founders, Growth-Stage Companies'), '', '/solutions/managed-sales-pods')
 
 // Commission Only
 export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
@@ -304,7 +304,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
   </div>
 </section>
 ${solDetailStyles()}
-`, serviceSchema('1099 Sales Teams', 'Commission-Only Sales Infrastructure', 'Scale your sales team without fixed salary overhead using a fully supported 1099 rep model with training, CRM, and systems.', 'https://metagrowth.ventures/solutions/commission-only', 'B2B Companies, Performance-Focused Sales Organizations'))
+`, serviceSchema('1099 Sales Teams', 'Commission-Only Sales Infrastructure', 'Scale your sales team without fixed salary overhead using a fully supported 1099 rep model with training, CRM, and systems.', 'https://metagrowth.ventures/solutions/commission-only', 'B2B Companies, Performance-Focused Sales Organizations'), '', '/solutions/commission-only')
 
 // Fractional CRO
 export const fractionalCROPage = () => page('Fractional CRO', `
@@ -394,7 +394,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
   </div>
 </section>
 ${solDetailStyles()}
-`, serviceSchema('Fractional CRO', 'Fractional Chief Revenue Officer', 'Revenue leadership that owns outcomes — strategy, accountability, hiring roadmap, forecasting, and performance management without full-time executive cost.', 'https://metagrowth.ventures/solutions/fractional-cro', 'B2B Companies, Founders, CEOs, PE-backed Organizations'))
+`, serviceSchema('Fractional CRO', 'Fractional Chief Revenue Officer', 'Revenue leadership that owns outcomes — strategy, accountability, hiring roadmap, forecasting, and performance management without full-time executive cost.', 'https://metagrowth.ventures/solutions/fractional-cro', 'B2B Companies, Founders, CEOs, PE-backed Organizations'), '', '/solutions/fractional-cro')
 
 // Growth OS
 export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure For Modern Sales Teams', `
@@ -957,7 +957,7 @@ ${solDetailStyles()}
 }
 </style>
 `, serviceSchema('Growth OS™', 'Revenue Infrastructure Platform', 'Centralized outbound revenue infrastructure for B2B sales teams. CRM workflows, AI-assisted outreach, pipeline visibility, accountability systems, and revenue operations.', 'https://metagrowth.ventures/solutions/growth-os', 'B2B Sales Teams, Founders, Revenue Leaders')
-, 'Growth OS™ — centralized outbound revenue infrastructure for B2B sales teams. CRM workflows, AI-assisted outreach, pipeline visibility, and operational accountability.')
+, 'Growth OS™ — centralized outbound revenue infrastructure for B2B sales teams. CRM workflows, AI-assisted outreach, pipeline visibility, and operational accountability.', '/solutions/growth-os')
 
 // Revenue OS
 export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue Infrastructure', `
@@ -1355,7 +1355,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
 }
 </style>
 `, serviceSchema('Revenue OS™', 'AI-Powered Revenue Infrastructure', 'Done-for-you outbound infrastructure, AI signal systems, CRM workflows, and managed pipeline generation — live in 14 days.', 'https://metagrowth.ventures/solutions/revenue-os', 'B2B Companies, Growth-Stage Startups, Enterprise')
-, 'Revenue OS™ — AI-powered revenue infrastructure for B2B companies. Done-for-you outbound, CRM workflows, AI signal systems, and managed pipeline generation. Live in 14 days.')
+, 'Revenue OS™ — AI-powered revenue infrastructure for B2B companies. Done-for-you outbound, CRM workflows, AI signal systems, and managed pipeline generation. Live in 14 days.', '/solutions/revenue-os')
 
 // Schema helper
 function serviceSchema(name: string, serviceType: string, description: string, url: string, audience: string): string {

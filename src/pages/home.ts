@@ -1063,4 +1063,4 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   ]
 }
 </script>`
-, 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.')
+, 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.', '/')

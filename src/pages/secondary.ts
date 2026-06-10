@@ -173,7 +173,7 @@ export const aboutPage = () => page('About', `
 @media (max-width: 1100px) { .about-layout { grid-template-columns: 1fr; } .diff-compare-grid { grid-template-columns: 1fr; } .principles-grid { grid-template-columns: repeat(2, 1fr); } .ecosystem-diagram { flex-direction: column; } .eco-items { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .principles-grid { grid-template-columns: 1fr; } .about-stat-box { grid-template-columns: 1fr; } .about-stat:nth-child(odd) { border-right: none; } }
 </style>
-`)
+`, '', '/about')
 
 // ─── CASE STUDIES ─────────────────────────────────────────────────────────────
 export const caseStudiesPage = () => page('Case Studies', `
@@ -337,7 +337,7 @@ csfBtns.forEach(btn => {
   });
 });
 </script>
-`)
+`, '', '/case-studies')
 
 // ─── HOW WE WORK ──────────────────────────────────────────────────────────────
 export const howWeWorkPage = () => page('How We Work', `
@@ -516,7 +516,7 @@ export const howWeWorkPage = () => page('How We Work', `
 @media (max-width: 900px) { .hww-phase { grid-template-columns: 1fr; gap: 16px; } .hww-num { font-size: 2.5rem; } .expect-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .expect-grid { grid-template-columns: 1fr; } }
 </style>
-`)
+`, '', '/how-we-work')
 
 // ─── INDUSTRIES ───────────────────────────────────────────────────────────────
 export const industriesPage = () => page('Industries', `
@@ -574,7 +574,7 @@ export const industriesPage = () => page('Industries', `
 .ind-service-link:hover { color: var(--green); }
 @media (max-width: 900px) { .ind-body { grid-template-columns: 1fr; gap: 20px; } }
 </style>
-`)
+`, '', '/industries')
 
 // ─── RESOURCES ────────────────────────────────────────────────────────────────
 export const resourcesPage = () => page('Resources', `
@@ -720,7 +720,7 @@ export const resourcesPage = () => page('Resources', `
 @media (max-width: 900px) { .lead-magnets-grid { grid-template-columns: 1fr; } .lm-card.featured { grid-template-columns: 1fr; } .resource-cats { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .resource-cats { grid-template-columns: 1fr; } }
 </style>
-`)
+`, '', '/resources')
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
 export const contactPage = () => page('Contact', `
@@ -929,7 +929,7 @@ if (form) {
 @media (max-width: 1100px) { .contact-layout { grid-template-columns: 1fr; } .contact-info-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; } .contact-proof-box { grid-template-columns: repeat(3, 1fr); } .cp-metric { border-bottom: none; border-right: 1px solid rgba(255,255,255,0.08); } .cp-metric:last-child { border-right: none; } }
 @media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } .contact-info-col { grid-template-columns: 1fr; } .contact-proof-box { grid-template-columns: 1fr; } .cp-metric { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; } .cp-metric:last-child { border-bottom: none !important; } }
 </style>
-`)
+`, '', '/contact')
 
 // Helpers
 function industryCard(icon: string, name: string, bottleneckLabel: string, bottleneck: string, fitLabel: string, fit: string, solutions: string[]) {

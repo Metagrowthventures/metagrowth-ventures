@@ -646,15 +646,19 @@ const PAGE_DESCRIPTIONS: Record<string, string> = {
   'Assessment': 'Take the MetaGrowth Revenue Assessment — a free diagnostic that reveals your biggest revenue growth opportunity in under 5 minutes.',
 }
 
-export const page = (title: string, content: string, extraHead = '', description = '', preloadImage = '') => {
+export const page = (title: string, content: string, extraHead = '', description = '', preloadImage = '', canonicalPath = '') => {
   const metaDesc = description || PAGE_DESCRIPTIONS[title] || 'MetaGrowth Ventures — Revenue Infrastructure &amp; Executive Growth Firm. We build systems, install accountability, and deploy talent for B2B companies ready to scale.'
+  const base = 'https://metagrowth.ventures'
+  const canonicalUrl = canonicalPath ? `${base}${canonicalPath}` : base
+  const ogImage = `${base}/static/og-image.png`
+  const fullTitle = `${title} | MetaGrowth Ventures`
   return `
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${title} | MetaGrowth Ventures</title>
+  <title>${fullTitle}</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9EY6ZN6M9F"></script>
   <script>
@@ -664,7 +668,24 @@ export const page = (title: string, content: string, extraHead = '', description
     gtag('config', 'G-9EY6ZN6M9F');
   </script>
   <meta name="description" content="${metaDesc}">
-  <link rel="canonical" href="https://metagrowth.ventures">
+  <link rel="canonical" href="${canonicalUrl}">
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${canonicalUrl}">
+  <meta property="og:site_name" content="MetaGrowth Ventures">
+  <meta property="og:title" content="${fullTitle}">
+  <meta property="og:description" content="${metaDesc}">
+  <meta property="og:image" content="${ogImage}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MetaGrowth Ventures — Revenue Infrastructure & Executive Growth Firm">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@metagrowth">
+  <meta name="twitter:title" content="${fullTitle}">
+  <meta name="twitter:description" content="${metaDesc}">
+  <meta name="twitter:image" content="${ogImage}">
   <link rel="icon" type="image/png" href="/static/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
