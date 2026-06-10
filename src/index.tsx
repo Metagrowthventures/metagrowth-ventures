@@ -159,4 +159,61 @@ app.get('/resources', (c) => c.html(resourcesPage()))
 app.get('/contact', (c) => c.html(contactPage()))
 app.get('/revenue-system-audit', (c) => c.html(revenueSystemAuditPage()))
 
+// ── Sitemap ───────────────────────────────────────────────────────────────────
+app.get('/sitemap.xml', (c) => {
+  const base = 'https://metagrowth.ventures'
+  const today = new Date().toISOString().split('T')[0]
+
+  const urls = [
+    // Core pages — highest priority
+    { loc: '/',                              priority: '1.0', changefreq: 'weekly'  },
+    { loc: '/solutions',                     priority: '0.9', changefreq: 'weekly'  },
+    // Solution pages
+    { loc: '/solutions/growth-os',           priority: '0.9', changefreq: 'weekly'  },
+    { loc: '/solutions/revenue-os',          priority: '0.9', changefreq: 'weekly'  },
+    { loc: '/solutions/managed-sales-pods',  priority: '0.8', changefreq: 'monthly' },
+    { loc: '/solutions/commission-only',     priority: '0.8', changefreq: 'monthly' },
+    { loc: '/solutions/fractional-cro',      priority: '0.8', changefreq: 'monthly' },
+    // Secondary pages
+    { loc: '/about',                         priority: '0.7', changefreq: 'monthly' },
+    { loc: '/how-we-work',                   priority: '0.7', changefreq: 'monthly' },
+    { loc: '/case-studies',                  priority: '0.7', changefreq: 'weekly'  },
+    { loc: '/industries',                    priority: '0.7', changefreq: 'monthly' },
+    { loc: '/resources',                     priority: '0.6', changefreq: 'weekly'  },
+    { loc: '/contact',                       priority: '0.8', changefreq: 'monthly' },
+    { loc: '/assessment',                    priority: '0.8', changefreq: 'monthly' },
+    { loc: '/revenue-system-audit',          priority: '0.7', changefreq: 'monthly' },
+  ]
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+${urls.map(u => `  <url>
+    <loc>${base}${u.loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${u.changefreq}</changefreq>
+    <priority>${u.priority}</priority>
+  </url>`).join('\n')}
+</urlset>`
+
+  return c.text(xml, 200, { 'Content-Type': 'application/xml; charset=utf-8' })
+})
+
+// ── Robots.txt ────────────────────────────────────────────────────────────────
+app.get('/robots.txt', (c) => {
+  const txt = `User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://metagrowth.ventures/sitemap.xml
+
+# Block non-public paths
+Disallow: /api/
+Disallow: /_worker.js
+`
+  return c.text(txt, 200, { 'Content-Type': 'text/plain' })
+})
+
 export default app
