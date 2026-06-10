@@ -131,14 +131,14 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
           <div class="dt-result-right">
             <div class="dt-rec-label">Recommended Solutions</div>
             <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-rocket"></i> HyperLaunch Sales System</div>
-              <div class="dt-rec-desc">90-day infrastructure build — ICP, process, CRM, messaging, KPIs</div>
-              <a href="/solutions/hyperlaunch" class="dt-rec-link">Explore HyperLaunch →</a>
+              <div class="dt-rec-name"><i class="fas fa-chart-line"></i> Growth OS™</div>
+              <div class="dt-rec-desc">Centralized outbound infrastructure — CRM, messaging, pipeline, and accountability installed end-to-end</div>
+              <a href="/solutions/growth-os" class="dt-rec-link">Explore Growth OS™ →</a>
             </div>
             <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-crosshairs"></i> Precision Engagements</div>
-              <div class="dt-rec-desc">Targeted playbook, scripts, and outreach cadence to launch fast</div>
-              <a href="/solutions/precision-engagements" class="dt-rec-link">Explore Precision Engagements →</a>
+              <div class="dt-rec-name"><i class="fas fa-brain"></i> Revenue OS™</div>
+              <div class="dt-rec-desc">AI-powered revenue infrastructure — live in 14 days with managed pipeline generation</div>
+              <a href="/solutions/revenue-os" class="dt-rec-link">Explore Revenue OS™ →</a>
             </div>
 
           </div>
@@ -163,9 +163,9 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
             <div class="dt-rec-label">Recommended Solutions</div>
 
             <div class="dt-rec-card">
-              <div class="dt-rec-name"><i class="fas fa-rocket"></i> HyperLaunch Sales System</div>
+              <div class="dt-rec-name"><i class="fas fa-chart-line"></i> Growth OS™</div>
               <div class="dt-rec-desc">Build the infrastructure your team needs to execute consistently</div>
-              <a href="/solutions/hyperlaunch" class="dt-rec-link">Explore HyperLaunch →</a>
+              <a href="/solutions/growth-os" class="dt-rec-link">Explore Growth OS™ →</a>
             </div>
             <div class="dt-rec-card">
               <div class="dt-rec-name"><i class="fas fa-search"></i> Recruiting Services</div>
@@ -273,11 +273,11 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
     </div>
     <div class="solutions-grid fade-in">
       <div class="sol-tile">
-        <div class="sol-icon"><i class="fas fa-rocket"></i></div>
+        <div class="sol-icon"><i class="fas fa-chart-line"></i></div>
         <div class="sol-tag">Infrastructure Build</div>
-        <h3>HyperLaunch Sales System</h3>
-        <p>90-day build of your complete sales operating system — process, CRM, KPIs, messaging, and onboarding.</p>
-        <a href="/solutions/hyperlaunch" class="sol-link">Explore HyperLaunch <i class="fas fa-arrow-right"></i></a>
+        <h3>Growth OS™</h3>
+        <p>Centralized outbound revenue infrastructure — CRM, AI-assisted outreach, pipeline visibility, and accountability systems.</p>
+        <a href="/solutions/growth-os" class="sol-link">Explore Growth OS™ <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
         <div class="sol-icon"><i class="fas fa-cogs"></i></div>
@@ -308,11 +308,11 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         <a href="/solutions/fractional-cro" class="sol-link">Explore Fractional CRO <i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="sol-tile">
-        <div class="sol-icon"><i class="fas fa-crosshairs"></i></div>
-        <div class="sol-tag">Targeted Projects</div>
-        <h3>Precision Engagements</h3>
-        <p>Focused interventions for specific bottlenecks — playbooks, comp plans, CRM audits, and outreach sequences.</p>
-        <a href="/solutions/precision-engagements" class="sol-link">Explore Precision Engagements <i class="fas fa-arrow-right"></i></a>
+        <div class="sol-icon"><i class="fas fa-brain"></i></div>
+        <div class="sol-tag">AI-Powered</div>
+        <h3>Revenue OS™</h3>
+        <p>Done-for-you outbound infrastructure with AI signal systems, CRM workflows, and managed pipeline generation — live in 14 days.</p>
+        <a href="/solutions/revenue-os" class="sol-link">Explore Revenue OS™ <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
     <div class="text-center" style="margin-top:52px;">

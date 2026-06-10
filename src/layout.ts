@@ -44,7 +44,7 @@ export const footer = () => `
       </a>
       <p class="footer-tagline">Revenue Infrastructure &amp; Executive Growth Firm</p>
       <p class="footer-statement">Building systems. Installing accountability. Deploying talent.</p>
-      <a href="https://linkedin.com" target="_blank" class="footer-linkedin" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/company/metagrowth-ventures" target="_blank" class="footer-linkedin" aria-label="LinkedIn">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
     </div>
@@ -80,6 +80,10 @@ export const footer = () => `
         </ul>
       </div>
     </div>
+  </div>
+  <div class="footer-ecosystem">
+    <span class="footer-ecosystem-label">Part of the MetaGrowth Ecosystem</span>
+    <a href="https://metagrowthrevenueos.com" target="_blank" rel="noopener noreferrer" class="footer-ecosystem-link">metagrowthrevenueos.com <i class="fas fa-external-link-alt"></i></a>
   </div>
   <div class="footer-bottom">
     <p>&copy; ${new Date().getFullYear()} MetaGrowth Ventures. All rights reserved.</p>
@@ -403,6 +407,11 @@ export const globalStyles = () => `
   .footer-col ul li a { color: rgba(255,255,255,0.5); font-size: 0.875rem;
     transition: color var(--transition); }
   .footer-col ul li a:hover { color: var(--green); }
+  .footer-ecosystem { background: rgba(255,255,255,0.04); border-top: 1px solid rgba(255,255,255,0.08); padding: 14px 40px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .footer-ecosystem-label { color: rgba(255,255,255,0.35); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+  .footer-ecosystem-link { color: var(--green); font-size: 0.82rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 6px; }
+  .footer-ecosystem-link:hover { text-decoration: underline; }
+  .footer-ecosystem-link i { font-size: 0.7rem; }
   .footer-bottom {
     max-width: var(--max-w); margin: 0 auto; padding: 28px 24px;
     border-top: 1px solid rgba(255,255,255,0.08);
@@ -713,6 +722,7 @@ export const page = (title: string, content: string, extraHead = '', description
       "https://metagrowthrevenueos.com",
       "https://www.linkedin.com/company/metagrowth-ventures"
     ],
+    "subOrganization": { "@type": "Organization", "name": "Revenue OS by MetaGrowth", "url": "https://metagrowthrevenueos.com" },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "MetaGrowth Solutions",

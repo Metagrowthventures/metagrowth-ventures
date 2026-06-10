@@ -1631,8 +1631,8 @@ const outcomes = {
     pathTitle: 'Build the infrastructure first.',
     pathBody: 'Before hiring, before scaling outreach  -  you need a system. MetaGrowth will architect the process, define the ICP, configure the CRM, build the messaging, and install the KPI framework that lets you grow beyond yourself.',
     recs: [
-      { icon: 'fa-rocket', name: 'HyperLaunch Sales System', desc: '90-day infrastructure build  -  ICP, process, CRM, messaging, and KPIs installed end-to-end', link: '/solutions/hyperlaunch', primary: true },
-      { icon: 'fa-crosshairs', name: 'Precision Engagements', desc: 'Focused intervention to solve a specific bottleneck fast  -  playbook, scripts, or prospecting cadence', link: '/solutions/precision-engagements' },
+      { icon: 'fa-chart-line', name: 'Growth OS™', desc: 'Centralized outbound infrastructure — CRM, messaging, pipeline, and accountability installed end-to-end', link: '/solutions/growth-os', primary: true },
+      { icon: 'fa-brain', name: 'Revenue OS™', desc: 'AI-powered revenue infrastructure — live in 14 days with managed pipeline generation', link: '/solutions/revenue-os' },
     ],
     ctaBody: "The fastest path forward is a 90-day infrastructure build. Book a call and we'll walk through exactly what needs to be installed first."
   },
@@ -1652,7 +1652,7 @@ const outcomes = {
     pathTitle: 'Install the operating system your team needs to execute.',
     pathBody: 'The solution is not more reps. It is a structured Sales OS  -  clear stages, KPIs, weekly rhythm, and a coaching framework that enforces performance. MetaGrowth installs this system and runs it with you until it holds on its own.',
     recs: [
-      { icon: 'fa-rocket', name: 'HyperLaunch Sales System', primary: true, desc: 'Full infrastructure build  -  process, CRM, messaging, forecasting framework, and KPI dashboards', link: '/solutions/hyperlaunch' },
+      { icon: 'fa-chart-line', name: 'Growth OS™', primary: true, desc: 'Full infrastructure build — CRM, messaging, forecasting framework, and KPI dashboards installed and running', link: '/solutions/growth-os' },
       { icon: 'fa-search', name: 'Recruiting Services', desc: 'Upgrade your talent density with structured vetting and deep behavioral assessment', link: '/solutions/recruiting' },
       { icon: 'fa-percentage', name: 'Commission-Only Infrastructure', desc: 'Add 1099 reps with zero base risk  -  full systems, training, and oversight included', link: '/solutions/commission-only' },
       { icon: 'fa-cogs', name: 'Managed Sales Pods', desc: 'A fully managed, embedded sales team that executes inside your business', link: '/solutions/managed-sales-pods' }
