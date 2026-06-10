@@ -1031,4 +1031,36 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
 </style>
 <link rel="preload" as="image" href="/static/hero-texture.jpg" fetchpriority="high">
 <link rel="preload" as="font" type="font/woff2" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/webfonts/fa-solid-900.woff2" crossorigin>
-`, 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.')
+`
+, `<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MetaGrowth Ventures",
+  "url": "https://metagrowth.ventures",
+  "description": "Revenue Infrastructure & Executive Growth Firm for B2B companies.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://metagrowth.ventures/solutions?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "MetaGrowth Ventures",
+  "url": "https://metagrowth.ventures",
+  "logo": "https://metagrowth.ventures/static/logo.png",
+  "description": "Revenue Infrastructure & Executive Growth Firm. We build systems, install accountability, and deploy sales talent for B2B companies ready to scale predictably.",
+  "email": "sales@metagrowth.ventures",
+  "areaServed": "US",
+  "priceRange": "$$$$",
+  "sameAs": [
+    "https://metagrowthrevenueos.com",
+    "https://www.linkedin.com/company/metagrowth-ventures"
+  ]
+}
+</script>`
+, 'MetaGrowth Ventures builds revenue systems, installs accountability, and deploys sales talent for B2B companies ready to scale predictably.')

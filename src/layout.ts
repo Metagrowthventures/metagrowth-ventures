@@ -676,6 +676,35 @@ export const page = (title: string, content: string, extraHead = '', description
   ${preloadImage ? `<link rel="preload" as="image" href="${preloadImage}" fetchpriority="high">` : ''}
   ${globalStyles()}
   ${extraHead}
+  <!-- Organization Schema — tells Google all MetaGrowth properties belong to one brand -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MetaGrowth Ventures",
+    "url": "https://metagrowth.ventures",
+    "logo": "https://metagrowth.ventures/static/logo.png",
+    "description": "Revenue Infrastructure & Executive Growth Firm. We build systems, install accountability, and deploy sales talent for B2B companies ready to scale predictably.",
+    "email": "sales@metagrowth.ventures",
+    "areaServed": "US",
+    "knowsAbout": ["Revenue Operations", "Sales Infrastructure", "Outbound Sales", "CRM Implementation", "Sales Recruiting", "Fractional CRO"],
+    "sameAs": [
+      "https://metagrowthrevenueos.com",
+      "https://www.linkedin.com/company/metagrowth-ventures"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "MetaGrowth Solutions",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Growth OS™", "url": "https://metagrowth.ventures/solutions/growth-os" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Revenue OS™", "url": "https://metagrowth.ventures/solutions/revenue-os" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "W2 Sales Teams", "url": "https://metagrowth.ventures/solutions/managed-sales-pods" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "1099 Sales Teams", "url": "https://metagrowth.ventures/solutions/commission-only" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fractional CRO", "url": "https://metagrowth.ventures/solutions/fractional-cro" } }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
   ${nav()}
