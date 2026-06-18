@@ -724,131 +724,193 @@ export const resourcesPage = () => page('Resources', `
 
 // ─── CONTACT ──────────────────────────────────────────────────────────────────
 export const contactPage = () => page('Contact', `
-<section class="page-hero" style="padding-bottom:60px;">
-  <div class="container page-hero-content">
+
+<!-- SECTION 1: HERO -->
+<section class="ct-hero">
+  <div class="container ct-hero-inner">
     <div class="hero-eyebrow">Get In Touch</div>
-    <h1 class="hero-title">Let's identify your <span class="accent">revenue growth path</span></h1>
-    <p class="hero-sub">Whether you're ready to book a call, have a specific question, or want to explore the right engagement for your company — we'd love to hear from you.</p>
+    <h1 class="hero-title">Let's Talk About <span class="accent">Growth</span></h1>
+    <p class="ct-hero-sub">Whether you're evaluating sales leadership, building a revenue engine, improving outbound performance, or simply exploring whether MetaGrowth is the right fit, we're happy to help.</p>
+    <div class="ct-hero-ctas">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"><i class="fas fa-calendar-check"></i> Book a Strategy Session</a>
+      <a href="/assessment" class="btn btn-secondary btn-lg"><i class="fas fa-chart-line"></i> Take the Revenue Audit</a>
+    </div>
+    <div class="ct-trust-bar">
+      <div class="ct-trust-item"><i class="fas fa-check-circle"></i> $100M+ Pipeline Generated</div>
+      <div class="ct-trust-item"><i class="fas fa-check-circle"></i> 75,000+ Sales Conversations</div>
+      <div class="ct-trust-item"><i class="fas fa-check-circle"></i> 54 Clients Supported</div>
+      <div class="ct-trust-item"><i class="fas fa-check-circle"></i> MetaGrowth 10X Pipeline Promise™</div>
+    </div>
   </div>
 </section>
 
+<!-- SECTION 2: CHOOSE YOUR PATH -->
 <section class="section">
   <div class="container">
-    <div class="contact-layout fade-in">
-      <div class="contact-form-col">
-        <div id="book">
-          <span class="section-label">Book a Strategy Call</span>
-          <h2 style="margin-bottom:8px;">Talk to the MetaGrowth team</h2>
-          <p style="color:var(--gray-600);margin-bottom:36px;">Fill out the form below and a member of the MetaGrowth team will reach out within one business day to schedule your strategy call.</p>
-        </div>
-        <form class="contact-form" id="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name *</label>
-              <input type="text" name="first_name" placeholder="John" required>
-            </div>
-            <div class="form-group">
-              <label>Last Name *</label>
-              <input type="text" name="last_name" placeholder="Smith" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Work Email *</label>
-            <input type="email" name="email" placeholder="john@company.com" required>
-          </div>
-          <div class="form-group">
-            <label>Company *</label>
-            <input type="text" name="company" placeholder="Acme Inc." required>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Current Annual Revenue</label>
-              <select name="revenue">
-                <option value="">Select range</option>
-                <option>Under $1M</option>
-                <option>$1M – $3M</option>
-                <option>$3M – $10M</option>
-                <option>$10M – $40M</option>
-                <option>$40M+</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Team Size</label>
-              <select name="team_size">
-                <option value="">Select size</option>
-                <option>Just me (founder)</option>
-                <option>2–5 people</option>
-                <option>6–20 people</option>
-                <option>21–100 people</option>
-                <option>100+ people</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Which solution interests you most?</label>
-            <select name="solution">
-              <option value="">Select a solution</option>
-              <option>Growth OS™</option>
-              <option>Revenue OS™</option>
-              <option>Managed Sales Pods</option>
-              <option>Commission-Only Infrastructure</option>
-              <option>Recruiting Services</option>
-              <option>Fractional CRO</option>
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">Choose Your Path</span>
+      <h2 class="section-title">How Would You Like To Engage?</h2>
+    </div>
+    <div class="ct-path-grid fade-in">
+      <div class="ct-path-card">
+        <div class="ct-path-icon"><i class="fas fa-calendar-check"></i></div>
+        <h3>Book a Strategy Session</h3>
+        <p>Meet directly with a MetaGrowth advisor to discuss your goals, challenges, and opportunities.</p>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">Schedule My Session</a>
+      </div>
+      <div class="ct-path-card ct-path-card--featured">
+        <div class="ct-path-badge">Most Popular</div>
+        <div class="ct-path-icon"><i class="fas fa-search-dollar"></i></div>
+        <h3>Take the Revenue Audit</h3>
+        <p>Receive a customized assessment designed to identify growth bottlenecks, pipeline leaks, and revenue opportunities.</p>
+        <a href="/assessment" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">Start My Revenue Audit</a>
+      </div>
+      <div class="ct-path-card">
+        <div class="ct-path-icon"><i class="fas fa-comment-dots"></i></div>
+        <h3>Ask A Question</h3>
+        <p>Need information about pricing, partnerships, recruiting, or services? Contact us directly.</p>
+        <a href="#contact-form-section" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Send A Message</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-              <option>Not sure — need guidance</option>
-            </select>
+<!-- SECTION 3: CONTACT INFO + FORM -->
+<section class="section section-gray" id="contact-form-section">
+  <div class="container">
+    <div class="ct-info-form-grid fade-in">
+
+      <!-- LEFT: Contact Info -->
+      <div class="ct-info-col">
+        <span class="section-label">Direct Contact</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:32px;">Contact MetaGrowth</h2>
+        <div class="ct-contact-card">
+          <div class="ct-contact-avatar"><i class="fas fa-user-tie"></i></div>
+          <div>
+            <div class="ct-contact-name">Josh Hirsch</div>
+            <div class="ct-contact-title">CEO, MetaGrowth Ventures</div>
+          </div>
+        </div>
+        <div class="ct-contact-details">
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="ct-contact-label">Phone</div>
+              <a href="tel:+19706766226" class="ct-contact-value">(970) 676-6226</a>
+            </div>
+          </div>
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="ct-contact-label">Email</div>
+              <a href="mailto:josh@metagrowth.ventures" class="ct-contact-value">josh@metagrowth.ventures</a>
+            </div>
+          </div>
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="ct-contact-label">Office</div>
+              <span class="ct-contact-value">Fort Collins, Colorado</span>
+            </div>
+          </div>
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="ct-contact-label">Business Hours</div>
+              <span class="ct-contact-value">Monday–Friday<br>8:00 AM – 5:00 PM Mountain Time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Simple Form -->
+      <div class="ct-form-col">
+        <span class="section-label">Send A Message</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:32px;">Send Us A Message</h2>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" name="name" placeholder="Your full name" required>
           </div>
           <div class="form-group">
-            <label>Briefly describe your biggest revenue challenge</label>
-            <textarea name="challenge" rows="4" placeholder="Tell us what's blocking your revenue growth — founder-led sales, inconsistent pipeline, hiring struggles, etc."></textarea>
+            <label>Email *</label>
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea name="message" rows="6" placeholder="Tell us what you're working on or what questions you have..." required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
-            <i class="fas fa-calendar-check"></i> Request a Strategy Call
+            <i class="fas fa-paper-plane"></i> Send Message
           </button>
-          <p style="font-size:0.8rem;color:var(--gray-400);text-align:center;margin-top:12px;">We'll respond within 1 business day.</p>
-          <div id="form-error" style="display:none;background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.3);border-radius:var(--radius);padding:14px 18px;text-align:center;color:#dc2626;font-size:0.9rem;">
-            <i class="fas fa-exclamation-circle"></i> Something went wrong — please try again or email us directly at <a href="mailto:sales@metagrowth.ventures" style="color:#dc2626;font-weight:600;">sales@metagrowth.ventures</a>
+          <p style="font-size:0.82rem;color:var(--gray-400);text-align:center;margin-top:12px;">Most inquiries receive a response within one business day.</p>
+          <div id="form-error" style="display:none;background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.3);border-radius:var(--radius);padding:14px 18px;text-align:center;color:#dc2626;font-size:0.9rem;margin-top:12px;">
+            <i class="fas fa-exclamation-circle"></i> Something went wrong — please try again or email <a href="mailto:josh@metagrowth.ventures" style="color:#dc2626;font-weight:600;">josh@metagrowth.ventures</a>
           </div>
         </form>
         <div id="form-success" style="display:none;background:rgba(173,120,5,0.08);border:1px solid rgba(173,120,5,0.3);border-radius:var(--radius-lg);padding:36px;text-align:center;margin-top:24px;">
           <i class="fas fa-check-circle" style="color:var(--green);font-size:2.5rem;margin-bottom:16px;display:block;"></i>
-          <h3 style="color:var(--navy);margin-bottom:10px;">Thank you! We'll be in touch soon.</h3>
-          <p style="color:var(--gray-600);">A MetaGrowth team member will reach out within 1 business day to schedule your strategy call.</p>
+          <h3 style="color:var(--navy);margin-bottom:10px;">Message received!</h3>
+          <p style="color:var(--gray-600);">We'll respond within one business day.</p>
         </div>
       </div>
-      <div class="contact-info-col">
-        <div class="contact-info-box">
-          <h4>What to expect on your strategy call</h4>
-          <ul class="check-list" style="margin-top:16px;margin-bottom:32px;">
-            <li>30–45 minutes with a MetaGrowth advisor</li>
-            <li>Honest assessment of your current revenue infrastructure</li>
-            <li>Identification of your top 2–3 growth bottlenecks</li>
-            <li>Recommended solution path based on your stage</li>
-            <li>No pressure. No generic pitch.</li>
-          </ul>
-          <div class="divider"></div>
-          <h4 style="margin-top:0;">Other ways to engage</h4>
-          <div class="other-engagements">
-            <a href="/assessment" class="oe-item">
-              <div class="oe-icon"><i class="fas fa-sitemap"></i></div>
-              <div><strong>Take the Assessment</strong><span>Find your recommended solution in 2 minutes</span></div>
-            </a>
-            <a href="/resources" class="oe-item">
-              <div class="oe-icon"><i class="fas fa-download"></i></div>
-              <div><strong>Download the Ecosystem Guide</strong><span>Understand every MetaGrowth solution</span></div>
-            </a>
-            <a href="/case-studies" class="oe-item">
-              <div class="oe-icon"><i class="fas fa-chart-bar"></i></div>
-              <div><strong>Review Case Studies</strong><span>See real results from real clients</span></div>
-            </a>
-          </div>
-        </div>
-        <div class="contact-proof-box">
-          <div class="cp-metric"><span class="cp-num">$100M+</span><span class="cp-label">Pipeline Generated</span></div>
-          <div class="cp-metric"><span class="cp-num">$16M+</span><span class="cp-label">Revenue Added</span></div>
-          <div class="cp-metric"><span class="cp-num">320+</span><span class="cp-label">Clients Added</span></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: WHAT HAPPENS NEXT -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">The Process</span>
+      <h2 class="section-title">What Happens Next?</h2>
+    </div>
+    <div class="ct-next-steps fade-in">
+      <div class="ct-next-step">
+        <div class="ct-next-num">1</div>
+        <div class="ct-next-body">
+          <h4>We review your inquiry.</h4>
+          <p>Every message is read by a real person on the MetaGrowth team — not filtered through an automated system.</p>
         </div>
       </div>
+      <div class="ct-next-connector"></div>
+      <div class="ct-next-step">
+        <div class="ct-next-num">2</div>
+        <div class="ct-next-body">
+          <h4>We determine the best fit.</h4>
+          <p>We'll identify whether a conversation, a revenue audit, or a specific resource is the right next step for your situation.</p>
+        </div>
+      </div>
+      <div class="ct-next-connector"></div>
+      <div class="ct-next-step">
+        <div class="ct-next-num">3</div>
+        <div class="ct-next-body">
+          <h4>We schedule a strategy session.</h4>
+          <p>If appropriate, we'll set up a call to discuss your goals and provide tailored recommendations for your business.</p>
+        </div>
+      </div>
+      <div class="ct-next-connector"></div>
+      <div class="ct-next-step">
+        <div class="ct-next-num">4</div>
+        <div class="ct-next-body">
+          <h4>We'll tell you if we're not the right fit.</h4>
+          <p>We'd rather point you in the right direction than waste your time. If MetaGrowth isn't the best solution, we'll say so.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: FINAL CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="section-label" style="color:var(--green);display:block;margin-bottom:16px;">Not Sure Where To Start?</span>
+    <h2>Start with a Revenue Audit.</h2>
+    <p>In less than 3 minutes, we'll help identify your biggest revenue bottlenecks and provide recommendations tailored to your business.</p>
+    <div class="cta-row">
+      <a href="/assessment" class="btn btn-primary btn-lg"><i class="fas fa-search-dollar"></i> Get My Revenue Audit</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg"><i class="fas fa-calendar-check"></i> Book A Strategy Session</a>
     </div>
   </div>
 </section>
@@ -862,73 +924,90 @@ const errorMsg = document.getElementById('form-error');
 if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-
-    // Button loading state
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    }
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...'; }
     if (errorMsg) errorMsg.style.display = 'none';
-
-    // Gather form data
     const data = {};
     new FormData(form).forEach((val, key) => { data[key] = val; });
-
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
+      const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
       if (res.ok) {
         form.style.display = 'none';
         success.style.display = 'block';
         success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        throw new Error('Server error');
-      }
+      } else { throw new Error('Server error'); }
     } catch (err) {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="fas fa-calendar-check"></i> Request a Strategy Call';
-      }
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message'; }
       if (errorMsg) errorMsg.style.display = 'block';
     }
   });
 }
+
+// Smooth scroll for "Send A Message" path card
+document.querySelectorAll('a[href="#contact-form-section"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
 </script>
 
 <style>
-.contact-layout { display: grid; grid-template-columns: 1fr 380px; gap: 64px; align-items: start; }
+/* ── Hero ── */
+.ct-hero { background: var(--navy); padding: 100px 0 72px; text-align: center; }
+.ct-hero-inner { max-width: 820px; margin: 0 auto; }
+.ct-hero .hero-eyebrow { color: var(--green); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
+.ct-hero .hero-title { color: var(--white); font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 20px; }
+.ct-hero-sub { color: rgba(255,255,255,0.65); font-size: 1.1rem; line-height: 1.75; max-width: 680px; margin: 0 auto 36px; }
+.ct-hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+.ct-trust-bar { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08); }
+.ct-trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: rgba(255,255,255,0.55); font-weight: 500; }
+.ct-trust-item i { color: var(--green); font-size: 0.8rem; }
+
+/* ── Choose Your Path ── */
+.ct-path-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ct-path-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px 28px; display: flex; flex-direction: column; gap: 14px; position: relative; transition: all var(--transition); }
+.ct-path-card:hover { border-color: var(--green); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.ct-path-card--featured { border-color: var(--green); background: linear-gradient(135deg, rgba(173,120,5,0.05) 0%, var(--white) 100%); }
+.ct-path-badge { position: absolute; top: -12px; left: 24px; background: var(--green); color: var(--gray-800); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 100px; }
+.ct-path-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.4rem; }
+.ct-path-card h3 { font-size: 1.15rem; color: var(--gray-800); margin: 0; }
+.ct-path-card p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; flex: 1; margin: 0; }
+
+/* ── Contact Info + Form ── */
+.ct-info-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+.ct-contact-card { display: flex; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 28px; }
+.ct-contact-avatar { width: 52px; height: 52px; border-radius: 50%; background: rgba(173,120,5,0.12); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; flex-shrink: 0; }
+.ct-contact-name { font-weight: 700; color: var(--gray-800); font-size: 1rem; }
+.ct-contact-title { font-size: 0.82rem; color: var(--gray-400); margin-top: 2px; }
+.ct-contact-details { display: flex; flex-direction: column; gap: 20px; }
+.ct-contact-item { display: flex; align-items: flex-start; gap: 16px; }
+.ct-contact-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 0.95rem; flex-shrink: 0; margin-top: 2px; }
+.ct-contact-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gray-400); margin-bottom: 4px; }
+.ct-contact-value { font-size: 0.95rem; color: var(--gray-700); text-decoration: none; line-height: 1.5; }
+a.ct-contact-value:hover { color: var(--green); }
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .form-group { display: flex; flex-direction: column; gap: 6px; }
 .form-group label { font-size: 0.875rem; font-weight: 600; color: var(--gray-800); }
-.form-group input, .form-group select, .form-group textarea {
+.form-group input, .form-group textarea {
   border: 1px solid var(--gray-200); border-radius: var(--radius);
   padding: 12px 16px; font-size: 0.95rem; font-family: var(--font-body);
   color: var(--gray-800); background: var(--white);
   transition: border-color var(--transition); outline: none;
 }
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(173,120,5,0.12); }
-.form-group textarea { resize: vertical; min-height: 100px; }
-.contact-info-box { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 20px; }
-.contact-info-box h4 { color: var(--gray-800); margin-bottom: 4px; }
-.other-engagements { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
-.oe-item { display: flex; align-items: center; gap: 14px; padding: 14px; border: 1px solid var(--gray-200); border-radius: var(--radius); background: var(--white); transition: all var(--transition); }
-.oe-item:hover { border-color: var(--green); }
-.oe-icon { width: 40px; height: 40px; border-radius: 8px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1rem; flex-shrink: 0; }
-.oe-item div { display: flex; flex-direction: column; gap: 2px; }
-.oe-item strong { font-size: 0.875rem; color: var(--gray-800); }
-.oe-item span { font-size: 0.78rem; color: var(--gray-400); }
-.contact-proof-box { background: var(--navy); border-radius: var(--radius-lg); padding: 28px; display: grid; grid-template-columns: 1fr; gap: 0; }
-.cp-metric { padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: center; }
-.cp-metric:last-child { border-bottom: none; }
-.cp-num { display: block; font-size: 2rem; font-weight: 800; color: var(--green); line-height: 1; margin-bottom: 4px; }
-.cp-label { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
-@media (max-width: 1100px) { .contact-layout { grid-template-columns: 1fr; } .contact-info-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; } .contact-proof-box { grid-template-columns: repeat(3, 1fr); } .cp-metric { border-bottom: none; border-right: 1px solid rgba(255,255,255,0.08); } .cp-metric:last-child { border-right: none; } }
-@media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } .contact-info-col { grid-template-columns: 1fr; } .contact-proof-box { grid-template-columns: 1fr; } .cp-metric { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; } .cp-metric:last-child { border-bottom: none !important; } }
+.form-group input:focus, .form-group textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(173,120,5,0.12); }
+.form-group textarea { resize: vertical; min-height: 140px; }
+
+/* ── What Happens Next ── */
+.ct-next-steps { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; }
+.ct-next-step { display: flex; gap: 24px; align-items: flex-start; }
+.ct-next-num { width: 48px; height: 48px; border-radius: 50%; background: var(--green); color: var(--gray-800); font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.ct-next-body h4 { color: var(--gray-800); font-size: 1.05rem; margin-bottom: 6px; }
+.ct-next-body p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.65; margin: 0; }
+.ct-next-connector { width: 1px; background: var(--gray-200); height: 32px; margin: 6px 0 6px 23px; }
+
+/* ── Responsive ── */
+@media (max-width: 1000px) { .ct-path-grid { grid-template-columns: 1fr; } .ct-info-form-grid { grid-template-columns: 1fr; gap: 48px; } }
+@media (max-width: 640px) { .ct-hero { padding: 72px 0 52px; } .ct-trust-bar { gap: 16px; } .ct-hero-ctas { flex-direction: column; align-items: center; } }
 </style>
 `, '', '/contact')
 
