@@ -769,7 +769,7 @@ export const contactPage = () => page('Contact', `
         <div class="ct-path-icon"><i class="fas fa-comment-dots"></i></div>
         <h3>Ask A Question</h3>
         <p>Need information about pricing, partnerships, recruiting, or services? Contact us directly.</p>
-        <a href="#contact-form-section" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;">Send A Message</a>
+        <button onclick="if(window.Tawk_API&&typeof window.Tawk_API.maximize==='function'){window.Tawk_API.maximize();}" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;cursor:pointer;border:none;">Chat With Us</button>
       </div>
     </div>
   </div>

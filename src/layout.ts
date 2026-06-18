@@ -742,6 +742,43 @@ export const page = (title: string, content: string, extraHead = '', description
   ${content}
   ${footer()}
   ${globalScript()}
+
+  <!-- Floating Chat CTA -->
+  <div id="chat-float-cta" style="position:fixed;bottom:100px;right:24px;z-index:9998;display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+    <div id="chat-float-label" style="background:var(--navy,#0d1526);color:#fff;font-size:0.78rem;font-weight:600;padding:6px 14px;border-radius:100px;border:1px solid rgba(173,120,5,0.4);white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.25);cursor:pointer;transition:opacity 0.3s;">Ask a Question</div>
+  </div>
+  <style>
+    #chat-float-cta { animation: chatFadeIn 1s ease 2s both; }
+    @keyframes chatFadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    @media (max-width:640px) { #chat-float-cta { bottom:80px; right:16px; } }
+  </style>
+  <script>
+    // Open Tawk chat when floating label is clicked
+    document.getElementById('chat-float-label').addEventListener('click', function() {
+      if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
+        window.Tawk_API.maximize();
+      }
+    });
+    // Hide floating label once chat widget is visible/open
+    if (window.Tawk_API) {
+      window.Tawk_API.onLoad = function() {
+        window.Tawk_API.hideWidget();
+      };
+    }
+  </script>
+
+  <!-- Tawk.to Live Chat -->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6a346361d0dd3e1d406c67c3/1jrea8dlf';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
 </body>
 </html>
 `
