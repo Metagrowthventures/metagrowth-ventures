@@ -80,6 +80,34 @@ export const assessmentPage = () => `<!DOCTYPE html>
     }
     .assess-benefit i { color: var(--green); font-size: 0.9rem; }
 
+    /* ── What You'll Receive ── */
+    .assess-wyr {
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 40px 24px;
+    }
+    .assess-wyr-inner {
+      max-width: 820px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr auto 1fr; gap: 40px; align-items: start;
+    }
+    .assess-wyr-heading {
+      font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--green);
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 18px;
+    }
+    .assess-wyr-list { display: flex; flex-direction: column; gap: 11px; list-style: none; padding: 0; margin: 0; }
+    .assess-wyr-list li { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+    .assess-wyr-list li i { font-size: 0.75rem; color: var(--green); flex-shrink: 0; }
+    .assess-wyr-divider { width: 1px; background: rgba(255,255,255,0.08); align-self: stretch; }
+    .assess-wyr-time { margin-top: 20px; font-size: 0.82rem; color: rgba(255,255,255,0.45); display: flex; align-items: center; gap: 8px; }
+    .assess-wyr-time i { color: var(--green); }
+    .assess-wyr-time strong { color: rgba(255,255,255,0.7); }
+    @media (max-width: 640px) {
+      .assess-wyr-inner { grid-template-columns: 1fr; gap: 28px; }
+      .assess-wyr-divider { width: 100%; height: 1px; }
+    }
+
     /* ── Assessment shell ── */
     .assess-shell {
       max-width: 780px; margin: 0 auto;
@@ -570,6 +598,32 @@ ${nav()}
     <div class="assess-benefit"><i class="fas fa-check-circle"></i> Identification of your biggest bottleneck</div>
     <div class="assess-benefit"><i class="fas fa-check-circle"></i> Recommended growth path</div>
     <div class="assess-benefit"><i class="fas fa-check-circle"></i> Strategic next steps — no sales pressure</div>
+  </div>
+</div>
+
+<!-- WHAT YOU'LL RECEIVE -->
+<div class="assess-wyr">
+  <div class="assess-wyr-inner">
+    <div class="assess-wyr-col">
+      <div class="assess-wyr-heading"><i class="fas fa-clipboard-list"></i> In less than 3 minutes, we'll evaluate:</div>
+      <ul class="assess-wyr-list">
+        <li><i class="fas fa-check"></i> Pipeline generation effectiveness</li>
+        <li><i class="fas fa-check"></i> Lead conversion bottlenecks</li>
+        <li><i class="fas fa-check"></i> Sales process maturity</li>
+        <li><i class="fas fa-check"></i> Team structure and accountability</li>
+        <li><i class="fas fa-check"></i> Revenue forecasting accuracy</li>
+      </ul>
+    </div>
+    <div class="assess-wyr-divider"></div>
+    <div class="assess-wyr-col">
+      <div class="assess-wyr-heading"><i class="fas fa-gift"></i> Then we'll provide:</div>
+      <ul class="assess-wyr-list">
+        <li><i class="fas fa-star"></i> Your Revenue Engine Score</li>
+        <li><i class="fas fa-star"></i> Top 3 Growth Constraints</li>
+        <li><i class="fas fa-star"></i> Recommended Next Steps</li>
+      </ul>
+      <div class="assess-wyr-time"><i class="fas fa-clock"></i> Estimated completion time: <strong>3 minutes</strong></div>
+    </div>
   </div>
 </div>
 
