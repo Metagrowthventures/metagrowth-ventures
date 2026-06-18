@@ -765,11 +765,11 @@ export const contactPage = () => page('Contact', `
         <p>Receive a customized assessment designed to identify growth bottlenecks, pipeline leaks, and revenue opportunities.</p>
         <a href="/assessment" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">Start My Revenue Audit</a>
       </div>
-      <div class="ct-path-card">
+      <div class="ct-path-card" id="open-chat-card" style="cursor:pointer;" onclick="openTawkChat()">
         <div class="ct-path-icon"><i class="fas fa-comment-dots"></i></div>
         <h3>Ask A Question</h3>
         <p>Need information about pricing, partnerships, recruiting, or services? Contact us directly.</p>
-        <button onclick="if(window.Tawk_API&&typeof window.Tawk_API.maximize==='function'){window.Tawk_API.maximize();}" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;cursor:pointer;border:none;">Chat With Us</button>
+        <div class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;pointer-events:none;">Chat With Us <i class="fas fa-arrow-right" style="margin-left:6px;"></i></div>
       </div>
     </div>
   </div>

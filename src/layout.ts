@@ -753,23 +753,13 @@ export const page = (title: string, content: string, extraHead = '', description
     @media (max-width:640px) { #chat-float-cta { bottom:80px; right:16px; } }
   </style>
   <script>
-    // Open Tawk chat when floating label is clicked
-    document.getElementById('chat-float-label').addEventListener('click', function() {
-      if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
-        window.Tawk_API.maximize();
-      }
-    });
-    // Hide floating label once chat widget is visible/open
-    if (window.Tawk_API) {
-      window.Tawk_API.onLoad = function() {
-        window.Tawk_API.hideWidget();
-      };
-    }
+    document.getElementById('chat-float-label').addEventListener('click', function() { openTawkChat(); });
   </script>
 
   <!-- Tawk.to Live Chat -->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  Tawk_API.onLoad = function() { Tawk_API.hideWidget(); };
   (function(){
   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
   s1.async=true;
@@ -778,6 +768,26 @@ export const page = (title: string, content: string, extraHead = '', description
   s1.setAttribute('crossorigin','*');
   s0.parentNode.insertBefore(s1,s0);
   })();
+  </script>
+  <script>
+  function openTawkChat() {
+    if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
+      window.Tawk_API.showWidget();
+      window.Tawk_API.maximize();
+    } else {
+      // Tawk not loaded yet — wait and retry
+      var attempts = 0;
+      var interval = setInterval(function() {
+        attempts++;
+        if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
+          clearInterval(interval);
+          window.Tawk_API.showWidget();
+          window.Tawk_API.maximize();
+        }
+        if (attempts > 20) clearInterval(interval);
+      }, 300);
+    }
+  }
   </script>
 </body>
 </html>
