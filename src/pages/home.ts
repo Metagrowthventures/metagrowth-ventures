@@ -28,7 +28,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
       <div class="hero-trust-bar">
         <div class="hero-trust-item"><i class="fas fa-check-circle"></i> $100M+ Pipeline Generated</div>
         <div class="hero-trust-item"><i class="fas fa-check-circle"></i> 75,000+ Sales Conversations</div>
-        <div class="hero-trust-item"><i class="fas fa-check-circle"></i> 54 Client Engagements</div>
+        <div class="hero-trust-item"><i class="fas fa-check-circle"></i> Over 146 Client Engagements</div>
         <div class="hero-trust-item"><i class="fas fa-check-circle"></i> MetaGrowth 10X Pipeline Promise™</div>
       </div>
     </div>
