@@ -12,7 +12,7 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         <span>Revenue Infrastructure &amp; Executive Growth Firm</span>
       </div>
       <h1 class="hero-title">
-        The Only Revenue Growth Partner<br>Willing To <span class="accent">Earn Their Fees Twice</span>
+        The Only Revenue Growth Partner Willing To <span class="accent">Earn Their Fees Twice</span>
       </h1>
       <p class="hero-sub">
         If we don't generate qualified pipeline worth 10x your monthly investment or closed revenue exceeding your investment, we'll continue working at no management fee until we do.*

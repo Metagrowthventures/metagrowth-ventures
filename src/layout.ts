@@ -337,7 +337,7 @@ export const globalStyles = () => `
     font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.1em; margin-bottom: 24px;
   }
-  .hero-title { color: var(--white); margin-bottom: 22px; }
+  .hero-title { color: var(--white); margin-bottom: 22px; max-width: 820px; }
   .hero-title .accent { color: var(--green); }
   .hero-sub { font-size: 1.2rem; color: rgba(255,255,255,0.72); max-width: 600px; margin-bottom: 40px; }
   .hero-cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
