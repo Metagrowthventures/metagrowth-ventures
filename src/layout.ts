@@ -9,12 +9,28 @@ export const nav = () => `
         <li><a href="/" class="nav-link">Home</a></li>
         <li class="has-dropdown">
           <a href="/solutions" class="nav-link">Solutions <span class="chevron">&#8964;</span></a>
-          <ul class="dropdown">
-            <li><a href="/solutions/growth-os">Growth OS™</a></li>
-            <li><a href="/solutions/revenue-os">Revenue OS™</a></li>
-            <li><a href="/solutions/managed-sales-pods">W2 Sales Teams</a></li>
-            <li><a href="/solutions/commission-only">1099 Sales Teams</a></li>
-            <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
+          <ul class="dropdown dropdown-rich">
+            <li><a href="/solutions/growth-os" class="dropdown-rich-item">
+              <span class="dri-icon"><i class="fas fa-chart-line"></i></span>
+              <span class="dri-body"><span class="dri-title">Generate Pipeline</span><span class="dri-desc">Outbound campaigns, prospecting systems, and lead generation.</span></span>
+            </a></li>
+            <li><a href="/solutions/managed-sales-pods" class="dropdown-rich-item">
+              <span class="dri-icon"><i class="fas fa-users"></i></span>
+              <span class="dri-body"><span class="dri-title">Build a Sales Team</span><span class="dri-desc">Recruiting, onboarding, management, coaching, and accountability.</span></span>
+            </a></li>
+            <li><a href="/solutions/revenue-os" class="dropdown-rich-item">
+              <span class="dri-icon"><i class="fas fa-cogs"></i></span>
+              <span class="dri-body"><span class="dri-title">Scale Revenue</span><span class="dri-desc">Revenue operations, forecasting, reporting, leadership, and process optimization.</span></span>
+            </a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="/solutions/commission-only" class="dropdown-rich-item">
+              <span class="dri-icon"><i class="fas fa-percentage"></i></span>
+              <span class="dri-body"><span class="dri-title">Commission-Only Sales Team</span><span class="dri-desc">Performance-based sales teams for qualified businesses.</span></span>
+            </a></li>
+            <li><a href="/solutions/fractional-cro" class="dropdown-rich-item">
+              <span class="dri-icon"><i class="fas fa-crown"></i></span>
+              <span class="dri-body"><span class="dri-title">Fractional CRO</span><span class="dri-desc">Executive revenue leadership without the full-time cost.</span></span>
+            </a></li>
           </ul>
         </li>
         <li><a href="/how-we-work" class="nav-link">How We Work</a></li>
@@ -52,10 +68,10 @@ export const footer = () => `
       <div class="footer-col">
         <h4>Solutions</h4>
         <ul>
-          <li><a href="/solutions/growth-os">Growth OS™</a></li>
-          <li><a href="/solutions/revenue-os">Revenue OS™</a></li>
-          <li><a href="/solutions/managed-sales-pods">W2 Sales Teams</a></li>
-          <li><a href="/solutions/commission-only">1099 Sales Teams</a></li>
+          <li><a href="/solutions/growth-os">Generate Pipeline</a></li>
+          <li><a href="/solutions/managed-sales-pods">Build a Sales Team</a></li>
+          <li><a href="/solutions/revenue-os">Scale Revenue</a></li>
+          <li><a href="/solutions/commission-only">Commission-Only Sales Team</a></li>
           <li><a href="/solutions/fractional-cro">Fractional CRO</a></li>
         </ul>
       </div>
@@ -303,6 +319,16 @@ export const globalStyles = () => `
     transition: all var(--transition); font-weight: 500;
   }
   .dropdown li a:hover { background: rgba(173,120,5,0.12); color: var(--green); }
+  /* Rich dropdown */
+  .dropdown-rich { min-width: 340px; padding: 10px; }
+  .dropdown-rich-item { display: flex !important; align-items: flex-start; gap: 14px; padding: 12px 14px !important; border-radius: var(--radius) !important; }
+  .dropdown-rich-item:hover { background: rgba(173,120,5,0.10) !important; }
+  .dri-icon { width: 36px; height: 36px; border-radius: 8px; background: rgba(173,120,5,0.15); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
+  .dri-body { display: flex; flex-direction: column; gap: 3px; }
+  .dri-title { color: var(--white); font-size: 0.875rem; font-weight: 600; line-height: 1.3; }
+  .dri-desc { color: rgba(255,255,255,0.45); font-size: 0.78rem; line-height: 1.45; font-weight: 400; }
+  .dropdown-rich-item:hover .dri-title { color: var(--green); }
+  .dropdown-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 8px 4px; }
   .header-cta { display: none; flex-shrink: 0; white-space: nowrap; font-size: 0.83rem; font-weight: 600; padding: 10px 20px; }
   .header-cta-login { display: none; flex-shrink: 0; white-space: nowrap; font-size: 0.83rem; font-weight: 600; padding: 10px 18px; border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.75); }
   .header-cta-login:hover { border-color: var(--green); color: var(--green); }
@@ -436,6 +462,8 @@ export const globalStyles = () => `
       border: none; background: rgba(255,255,255,0.04);
       margin: 4px 0 8px 12px; padding: 8px;
     }
+    .dropdown-rich { min-width: unset; }
+    .dri-desc { display: none; }
     .footer-inner { grid-template-columns: 1fr; gap: 40px; }
     .footer-links { grid-template-columns: repeat(2, 1fr); }
     .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
