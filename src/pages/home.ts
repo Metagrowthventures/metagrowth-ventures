@@ -12,35 +12,24 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
         <span>Revenue Infrastructure &amp; Executive Growth Firm</span>
       </div>
       <h1 class="hero-title">
-        Build a <span class="accent">Predictable</span><br>Revenue Engine
+        The Only Revenue Growth Partner<br>Willing To <span class="accent">Earn Their Fees Twice</span>
       </h1>
       <p class="hero-sub">
-        MetaGrowth helps founders, CEOs, and sales leaders install the systems, structure, talent, and leadership needed to scale revenue with more control and less chaos.
+        If we don't generate qualified pipeline worth 10x your monthly investment or closed revenue exceeding your investment, we'll continue working at no management fee until we do.*
       </p>
       <div class="hero-cta-row">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary hero-cta-btn">
-          <i class="fas fa-calendar-check"></i> Book a Strategy Call
+        <a href="/assessment" class="btn btn-primary hero-cta-btn">
+          <i class="fas fa-search-dollar"></i> Get My Revenue Audit
         </a>
-        <a href="/assessment" class="btn btn-secondary hero-cta-btn">
-          Take Your Revenue Assessment
-        </a>
-        <a href="/solutions" class="btn btn-secondary hero-cta-btn">
-          Explore Solutions
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary hero-cta-btn">
+          <i class="fas fa-calendar-check"></i> Book A Strategy Session
         </a>
       </div>
-      <div class="hero-bullets">
-        <div class="bullet-item"><span class="bullet-dot"></span>Revenue Architecture</div>
-        <span class="bullet-divider">|</span>
-        <div class="bullet-item"><span class="bullet-dot"></span>Talent Acquisition</div>
-        <span class="bullet-divider">|</span>
-        <div class="bullet-item"><span class="bullet-dot"></span>Sales Execution</div>
-        <span class="bullet-divider">|</span>
-        <div class="bullet-item"><span class="bullet-dot"></span>Executive Leadership</div>
-      </div>
-      <div class="hero-proof-bar">
-        <div class="proof-item"><span class="proof-dot"></span><span class="proof-text">Trusted by growth-oriented B2B companies</span></div>
-        <div class="proof-item"><span class="proof-dot"></span><span class="proof-text">Built sales infrastructure across multiple industries</span></div>
-        <div class="proof-item"><span class="proof-dot"></span><span class="proof-text">Flexible support from system build to full execution</span></div>
+      <div class="hero-trust-bar">
+        <div class="hero-trust-item"><i class="fas fa-check-circle"></i> $100M+ Pipeline Generated</div>
+        <div class="hero-trust-item"><i class="fas fa-check-circle"></i> 75,000+ Sales Conversations</div>
+        <div class="hero-trust-item"><i class="fas fa-check-circle"></i> 54 Client Engagements</div>
+        <div class="hero-trust-item"><i class="fas fa-check-circle"></i> MetaGrowth 10X Pipeline Promise™</div>
       </div>
     </div>
   </div>
@@ -709,20 +698,16 @@ export const homePage = () => page('Build a Predictable Revenue Engine', `
   pointer-events: none;
 }
 .hero-content { position: relative; z-index: 2; max-width: 780px; }
-.hero-bullets {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 28px;
-  padding: 14px 20px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: var(--radius);
-  width: fit-content;
+.hero-trust-bar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 28px; margin-top: 36px;
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
-.bullet-item {
+.hero-trust-item {
   display: flex; align-items: center; gap: 8px;
-  color: rgba(255,255,255,0.7); font-size: 0.88rem; font-weight: 500;
+  color: rgba(255,255,255,0.55); font-size: 0.85rem; font-weight: 500;
 }
-.bullet-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; flex-shrink: 0; }
-.bullet-divider { color: rgba(255,255,255,0.15); font-size: 0.85rem; line-height: 1; }
+.hero-trust-item i { color: var(--green); font-size: 0.78rem; }
 
 /* Pain grid */
 .pain-grid {
