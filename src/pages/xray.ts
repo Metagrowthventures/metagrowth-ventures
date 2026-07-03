@@ -480,7 +480,7 @@ export const growthEngineXRayPage = () => `<!DOCTYPE html>
       </a>
       <div class="xr-nav-actions">
         <a href="https://meetings.hubspot.com/josh549/growth-engine-xray-learn-more?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dxray" target="_blank" rel="noopener" class="nav-talk-btn"
-           onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Not Sure? Talk to Us'})">
+           onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Not Sure? Talk to Us',transport_type:'beacon'})">
           <i class="fas fa-comments"></i> Not Sure? Talk to Us
         </a>
         <a href="#pricing" class="nav-cta-btn">
@@ -514,7 +514,7 @@ export const growthEngineXRayPage = () => `<!DOCTYPE html>
           Get My Growth Engine X-Ray <i class="fas fa-arrow-right"></i>
         </a>
         <a href="https://meetings.hubspot.com/josh549/growth-engine-xray-learn-more?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dxray" target="_blank" rel="noopener" class="btn-talk btn-lg"
-           onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Not Sure? Talk to Our Team'})">
+           onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Not Sure? Talk to Our Team',transport_type:'beacon'})">
           <i class="fas fa-comments"></i> Not sure? Talk to our team
         </a>
       </div>

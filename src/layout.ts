@@ -248,7 +248,7 @@ export const footer = () => `
       <div class="footer-col">
         <h4>Get Started</h4>
         <ul>
-          <li><a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})">Book a Strategy Call</a></li>
+          <li><a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})">Book a Strategy Call</a></li>
           <li><a href="/assessment">Take the Assessment</a></li>
           <li><a href="/resources">Download Ecosystem Guide</a></li>
           <li><a href="/contact">Request a Revenue Review</a></li>

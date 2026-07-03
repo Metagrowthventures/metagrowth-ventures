@@ -538,7 +538,7 @@ ${buildSprite()}
       <div class="frc-footer-links">
         <a href="https://metagrowth.ventures">Homepage</a>
         <a href="https://metagrowth.ventures/assessment">Revenue Assessment</a>
-        <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dmeet_with_josh" target="_blank" rel="noopener" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Call'})">Book a Call</a>
+        <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dmeet_with_josh" target="_blank" rel="noopener" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Call',transport_type:'beacon'})">Book a Call</a>
       </div>
       <div class="frc-footer-note">
         This page is private. Not indexed. By invitation only.

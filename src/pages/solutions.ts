@@ -7,7 +7,7 @@ export const solutionsPage = () => page('Solutions', `
     <h1 class="hero-title">A Complete Revenue <span class="accent">Ecosystem</span></h1>
     <p class="hero-sub">From infrastructure build to full execution — MetaGrowth has the right engagement for your stage, team, and growth goals.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})">Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})">Book a Strategy Call</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
@@ -80,7 +80,7 @@ export const solutionsPage = () => page('Solutions', `
     <h2>Not sure which solution fits?</h2>
     <p>Book a strategy call and we'll help you identify the right engagement for your stage, team, and growth goals — at no cost.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book a Strategy Call</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
@@ -125,7 +125,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
     <h1 class="hero-title">We Build, Recruit, Coach,<br>and <span class="accent">Manage the Revenue Engine</span></h1>
     <p class="hero-sub">Full-service sales execution for companies that want results without managing every moving part internally.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Explore Managed Sales Pods'})">Explore Managed Sales Pods</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Explore Managed Sales Pods',transport_type:'beacon'})">Explore Managed Sales Pods</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -153,7 +153,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
           <div class="quick-fact"><span class="qf-label">Management</span><span>MetaGrowth-owned</span></div>
           <div class="quick-fact"><span class="qf-label">KPIs</span><span>Weekly enforcement</span></div>
           <div class="quick-fact"><span class="qf-label">Contract</span><span>12-month roadmap</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Get Started'})">Get Started</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Get Started',transport_type:'beacon'})">Get Started</a>
         </div>
       </div>
     </div>
@@ -209,7 +209,7 @@ export const managedSalesPodsPage = () => page('Managed Sales Pods', `
     <h2>Ready for a revenue engine that runs without you?</h2>
     <p>Book a strategy call and we'll scope a Managed Sales Pod deployment for your company's exact situation.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Explore Managed Sales Pods'})">Explore Managed Sales Pods</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Explore Managed Sales Pods',transport_type:'beacon'})">Explore Managed Sales Pods</a>
       <a href="/case-studies" class="btn btn-secondary btn-lg">See Results</a>
     </div>
   </div>
@@ -235,7 +235,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
     <h1 class="hero-title">Scale Without Fixed <span class="accent">Salary Overhead</span></h1>
     <p class="hero-sub">Unlimited 1099 rep infrastructure supported by system build, commission modeling, training, and CRM enforcement.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'See If You Qualify'})">See If You Qualify</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'See If You Qualify',transport_type:'beacon'})">See If You Qualify</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -277,7 +277,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
           <div class="quick-fact"><span class="qf-label">Overhead</span><span>No fixed salary</span></div>
           <div class="quick-fact"><span class="qf-label">Includes</span><span>Full system build</span></div>
           <div class="quick-fact"><span class="qf-label">Training</span><span>MetaGrowth managed</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Check Qualification'})">Check Qualification</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Check Qualification',transport_type:'beacon'})">Check Qualification</a>
         </div>
       </div>
     </div>
@@ -331,7 +331,7 @@ export const commissionOnlyPage = () => page('Commission-Only Infrastructure', `
     <h2>See if you qualify for commission-only scaling.</h2>
     <p>Not every company is a fit — but for those that are, it's one of the highest-leverage growth models available.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'See If You Qualify'})">See If You Qualify</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'See If You Qualify',transport_type:'beacon'})">See If You Qualify</a>
     </div>
   </div>
 </section>
@@ -346,7 +346,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
     <h1 class="hero-title">Executive Revenue Leadership<br><span class="accent">Without Full-Time C-Suite Cost</span></h1>
     <p class="hero-sub">Strategy, accountability, hiring roadmap, forecasting, and performance management from a revenue leader who takes ownership.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Talk to a Fractional CRO'})">Talk to a Fractional CRO</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Talk to a Fractional CRO',transport_type:'beacon'})">Talk to a Fractional CRO</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Compare Solutions</a>
     </div>
   </div>
@@ -375,7 +375,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
           <div class="quick-fact"><span class="qf-label">Ownership</span><span>Full revenue function</span></div>
           <div class="quick-fact"><span class="qf-label">Reporting</span><span>Direct to CEO</span></div>
           <div class="quick-fact"><span class="qf-label">Hours</span><span>Defined retainer model</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Talk to a Fractional CRO'})">Talk to a Fractional CRO</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Talk to a Fractional CRO',transport_type:'beacon'})">Talk to a Fractional CRO</a>
         </div>
       </div>
     </div>
@@ -421,7 +421,7 @@ export const fractionalCROPage = () => page('Fractional CRO', `
     <h2>Close the revenue leadership gap — this week.</h2>
     <p>Book a call with a MetaGrowth Fractional CRO and get an honest assessment of what your revenue function needs to scale.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Talk to a Fractional CRO'})">Talk to a Fractional CRO</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Talk to a Fractional CRO',transport_type:'beacon'})">Talk to a Fractional CRO</a>
     </div>
   </div>
 </section>
@@ -439,7 +439,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
     <div class="gos-powered-label">Powered by <strong>Growth OS™</strong></div>
     <p class="gos-hero-sub">Build, manage, and scale outbound sales with centralized systems, CRM workflows, AI-assisted outreach, pipeline visibility, and operational accountability — whether you run it internally or want expert oversight.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book a Strategy Call</a>
       <a href="#how-it-works" class="btn btn-secondary btn-lg">See How It Works</a>
     </div>
   </div>
@@ -523,7 +523,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
           <div class="quick-fact"><span class="qf-label">Best For</span><span>B2B Sales Teams</span></div>
           <div class="quick-fact"><span class="qf-label">Options</span><span>Self-Managed / Managed</span></div>
           <div class="quick-fact"><span class="qf-label">Setup</span><span>Infrastructure + Systems</span></div>
-          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Demo'})">Book a Demo</a>
+          <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Demo',transport_type:'beacon'})">Book a Demo</a>
         </div>
       </div>
     </div>
@@ -695,7 +695,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
             <a href="https://buy.stripe.com/bJe4gyb672kR2wH8hb14403" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:14px;font-size:0.88rem;">Get Started</a>
           </div>
         </div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Explore Self-Managed'})">Explore Self-Managed</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Explore Self-Managed',transport_type:'beacon'})">Explore Self-Managed</a>
       </div>
 
       <!-- Option 2 -->
@@ -732,7 +732,7 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
           <h5>Pricing</h5>
           <div class="gos-price-row"><span class="gos-tier">Starting at</span><span class="gos-price">$1,500<span>/mo</span></span></div>
         </div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-gold" style="width:100%;justify-content:center;margin-top:28px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Strategy Call'})">Book A Strategy Call</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-gold" style="width:100%;justify-content:center;margin-top:28px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Strategy Call',transport_type:'beacon'})">Book A Strategy Call</a>
       </div>
 
     </div>
@@ -861,8 +861,8 @@ export const growthOSPage = () => page('Growth OS™ — Revenue Infrastructure 
     <h2>Build A Revenue System That Actually Operates Consistently</h2>
     <p>Growth OS™ helps companies operationalize outbound sales through centralized infrastructure, workflows, accountability systems, and revenue operations.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Demo'})"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book A Demo</a>
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Schedule A Strategy Call'})">Schedule A Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Demo',transport_type:'beacon'})"><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book A Demo</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Schedule A Strategy Call',transport_type:'beacon'})">Schedule A Strategy Call</a>
     </div>
     <p class="gos-footer-note">Growth OS™ is built and supported by MetaGrowth Ventures — specialists in outbound revenue systems, sales infrastructure, recruiting, and operational growth systems for B2B companies.</p>
   </div>
@@ -1010,7 +1010,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
         <div class="ros-stat"><div class="ros-stat-num">AI-First</div><div class="ros-stat-label">Signal Intelligence</div></div>
       </div>
       <div class="hero-cta-row" style="justify-content:center;margin-top:40px;">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Revenue Infrastructure Review'})">Book a Revenue Infrastructure Review</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Revenue Infrastructure Review',transport_type:'beacon'})">Book a Revenue Infrastructure Review</a>
         <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
       </div>
     </div>
@@ -1165,7 +1165,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
           <li>Reporting Dashboard</li>
         </ul>
         <div class="ros-price-meta"><span>Best For:</span> &lt;$5M ARR · 6-Month Commitment</div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Start Building Today'})">Start Building Today</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Start Building Today',transport_type:'beacon'})">Start Building Today</a>
       </div>
       <div class="ros-price-card ros-price-card-featured">
         <div class="ros-price-badge">Flagship Offer</div>
@@ -1185,7 +1185,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
           <li>Weekly Optimization Cadence</li>
         </ul>
         <div class="ros-price-meta"><span>Best For:</span> $3M–$25M+ ARR · 6–12 Month Commitment</div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Accelerate My Pipeline'})">Accelerate My Pipeline</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Accelerate My Pipeline',transport_type:'beacon'})">Accelerate My Pipeline</a>
       </div>
       <div class="ros-price-card">
         <div class="ros-price-tag-label">Enterprise Revenue Infrastructure™</div>
@@ -1204,7 +1204,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
           <li>Embedded Strategic Support</li>
         </ul>
         <div class="ros-price-meta"><span>Best For:</span> $25M+ ARR · 12-Month Commitment</div>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Request Enterprise Consultation'})">Request Enterprise Consultation</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Request Enterprise Consultation',transport_type:'beacon'})">Request Enterprise Consultation</a>
       </div>
     </div>
   </div>
@@ -1281,7 +1281,7 @@ export const revenueOSPage = () => page('Revenue OS™ — AI-Powered Revenue In
     <h2>Build A Revenue Engine Designed To Scale.</h2>
     <p>Book your Revenue Infrastructure Review. We'll map out your pipeline requirements, identify bottlenecks, and show you exactly what it takes to hit your growth targets.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Revenue Infrastructure Review'})">Book a Revenue Infrastructure Review</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Revenue Infrastructure Review',transport_type:'beacon'})">Book a Revenue Infrastructure Review</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
     <div class="ros-commitment-badges">

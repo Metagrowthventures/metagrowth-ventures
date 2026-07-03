@@ -1520,7 +1520,7 @@ ${nav()}
       <h2>Ready to fix this?</h2>
       <p id="results-cta-body">Book a strategy call and we'll walk through your results together and map the exact path forward.</p>
       <div class="results-cta-btns">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})">
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})">
           <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 1V0h-2v1H6V0H4v1H0v15h16V1h-4zm2 13H2V6h12v8zm0-10H2V3h2v1h2V3h4v1h2V3h2v1zm-4.5 7l-2.5-2.5-1 1 3.5 3.5 5-5-1-1z"/></svg> Book a Strategy Call
         </a>
         <a id="xray-handoff-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-gold"

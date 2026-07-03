@@ -136,7 +136,7 @@ export const aboutPage = () => page('About', `
     <h2>Ready to work with MetaGrowth?</h2>
     <p>Book a strategy call and let's identify the right engagement for your company's stage and goals.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -286,7 +286,7 @@ export const caseStudiesPage = () => page('Case Studies', `
     <h2>Ready to write your own case study?</h2>
     <p>Book a strategy call and let's identify the right solution to create measurable results for your revenue function.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -349,7 +349,7 @@ export const howWeWorkPage = () => page('How We Work', `
     <h1 class="hero-title">We don't hand over theory.<br>We <span class="accent">install the operating system</span>.</h1>
     <p class="hero-sub">MetaGrowth's deployment model is built around real implementation — not recommendations that gather dust in a shared folder.</p>
     <div class="hero-cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})">Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})">Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">See Which Engagement Fits</a>
     </div>
   </div>
@@ -542,7 +542,7 @@ export const howWeWorkPage = () => page('How We Work', `
     <h2>See which engagement fits your situation.</h2>
     <p>Book a strategy call and we'll walk you through the right deployment model for your company's stage, team, and goals.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -654,7 +654,7 @@ export const industriesPage = () => page('Industries', `
     <h2>Your industry. Our infrastructure.</h2>
     <p>Book a strategy call and let's discuss the specific revenue bottlenecks you're facing — and the right MetaGrowth solution to solve them.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
       <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
     </div>
   </div>
@@ -792,7 +792,7 @@ export const resourcesPage = () => page('Resources', `
     <h2>Want a custom resource for your situation?</h2>
     <p>Book a strategy call and get a personalized revenue architecture recommendation — not a generic template.</p>
     <div class="cta-row">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
       <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
     </div>
   </div>
@@ -834,7 +834,7 @@ export const contactPage = () => page('Contact', `
     <h1 class="hero-title">Let's Talk About <span class="accent">Growth</span></h1>
     <p class="ct-hero-sub">Whether you're evaluating sales leadership, building a revenue engine, improving outbound performance, or simply exploring whether MetaGrowth is the right fit, we're happy to help.</p>
     <div class="ct-hero-ctas">
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Session'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Session</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Session',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Session</a>
       <a href="/assessment" class="btn btn-secondary btn-lg"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si4" xlink:href="#si4"/></svg> Take the Revenue Audit</a>
     </div>
     <div class="ct-trust-bar">
@@ -858,7 +858,7 @@ export const contactPage = () => page('Contact', `
         <div class="ct-path-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg></div>
         <h3>Book a Strategy Session</h3>
         <p>Meet directly with a MetaGrowth advisor to discuss your goals, challenges, and opportunities.</p>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Schedule My Session'})">Schedule My Session</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Schedule My Session',transport_type:'beacon'})">Schedule My Session</a>
       </div>
       <div class="ct-path-card ct-path-card--featured">
         <div class="ct-path-badge">Most Popular</div>
@@ -1012,7 +1012,7 @@ export const contactPage = () => page('Contact', `
     <p>In less than 3 minutes, we'll help identify your biggest revenue bottlenecks and provide recommendations tailored to your business.</p>
     <div class="cta-row">
       <a href="/assessment" class="btn btn-primary btn-lg"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg> Get My Revenue Audit</a>
-      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Strategy Session'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book A Strategy Session</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Strategy Session',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book A Strategy Session</a>
     </div>
   </div>
 </section>
@@ -1759,7 +1759,7 @@ ${nav()}
       <h2>Ready to fix this?</h2>
       <p id="results-cta-body">Book a strategy call and we'll walk through your results together and map the exact path forward.</p>
       <div class="results-cta-btns">
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
         <a href="/solutions" class="btn-outline-gold">Explore Solutions <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></a>
       </div>
     </div>
@@ -1806,7 +1806,7 @@ const gapsList=document.getElementById('results-gaps');gapsList.innerHTML='';out
 document.getElementById('results-path-title').textContent=outcome.pathTitle;document.getElementById('results-path-body').textContent=outcome.pathBody;
 const REC_ICONS={'fa-chart-line':'<path d="M16 3.5l-5 5-3-3-5 5L1.4 9 8 2.5l3 3L14.6 2 16 3.5zM0 14h16v2H0z"/>','fa-brain':'<path d="M12.3 2.5A3.5 3.5 0 009 0a3.5 3.5 0 00-3.3 2.3A3 3 0 002 5c0 .5.1 1 .3 1.4A3.5 3.5 0 000 9.5 3.5 3.5 0 003.5 13 3 3 0 006 15.8V16h4v-.2A3 3 0 0012.5 13a3.5 3.5 0 003.5-3.5 3.5 3.5 0 00-2.3-3.3c.2-.5.3-1 .3-1.5a3 3 0 00-1.7-2.7z"/>','fa-cogs':'<path d="M6.3 0L6 1.7a5 5 0 00-1.4.8L3 2l-1.7 3 1.3 1.1A5.1 5.1 0 002.5 8c0 .3 0 .6.1.9L1.3 10l1.7 3 1.6-.5c.4.3.9.6 1.4.8l.3 1.7h3.4l.3-1.7a5 5 0 001.4-.8l1.6.5 1.7-3-1.3-1.1c.1-.3.1-.6.1-.9s0-.6-.1-.9L14.7 7 13 4l-1.6.5A5 5 0 0010 3.7l-.3-1.7H6.3zM8 10.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>','fa-crown':'<path d="M0 5l3.5 8h9L16 5l-4 3-4-6-4 6L0 5zm3.5 10h9v2h-9z"/>','fa-handshake':'<path d="M11 6H9.5L7 8.5 4.5 6H3L0 9v4h2v-3l1 1H5v2h6v-2h2l1-1v3h2V9l-3-3zM7 5h2l2-2H5L7 5z"/>','fa-percentage':'<path d="M2.5 0A2.5 2.5 0 000 2.5 2.5 2.5 0 002.5 5 2.5 2.5 0 005 2.5 2.5 2.5 0 002.5 0zM14 0L0 16h2L16 0h-2zm-.5 11A2.5 2.5 0 0011 13.5a2.5 2.5 0 002.5 2.5A2.5 2.5 0 0016 13.5 2.5 2.5 0 0013.5 11z"/>','fa-search':'<path d="M15.7 14.3l-4-4a6 6 0 10-1.4 1.4l4 4 1.4-1.4zM6 10a4 4 0 110-8 4 4 0 010 8z"/>'};
 function recSvg(name){var p=REC_ICONS[name]||'<path d="M8 0a8 8 0 100 16A8 8 0 008 0z"/>';return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;">'+p+'</svg>';}
-const recContainer=document.getElementById('results-rec-cards');recContainer.innerHTML='';outcome.recs.forEach(rec=>{const a=document.createElement('a');a.href=rec.link;if(rec.link.startsWith('http')){a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('onclick',"if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})");}a.className='rec-path-card';a.innerHTML='<div class="rec-path-icon">'+recSvg(rec.icon)+'</div><div class="rec-path-body"><div class="rec-path-name">'+rec.name+(rec.primary?'<span class="rec-primary-badge">Best Fit</span>':'')+'</div><div class="rec-path-desc">'+rec.desc+'</div></div><div class="rec-path-arrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></div>';recContainer.appendChild(a);});
+const recContainer=document.getElementById('results-rec-cards');recContainer.innerHTML='';outcome.recs.forEach(rec=>{const a=document.createElement('a');a.href=rec.link;if(rec.link.startsWith('http')){a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('onclick',"if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call',transport_type:'beacon'})");}a.className='rec-path-card';a.innerHTML='<div class="rec-path-icon">'+recSvg(rec.icon)+'</div><div class="rec-path-body"><div class="rec-path-name">'+rec.name+(rec.primary?'<span class="rec-primary-badge">Best Fit</span>':'')+'</div><div class="rec-path-desc">'+rec.desc+'</div></div><div class="rec-path-arrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></div>';recContainer.appendChild(a);});
 document.getElementById('results-cta-body').textContent=outcome.ctaBody;}
 function animateCount(id,from,to,duration){const el=document.getElementById(id);const start=performance.now();function tick(now){const progress=Math.min((now-start)/duration,1);const ease=1-Math.pow(1-progress,3);el.textContent=Math.round(from+(to-from)*ease);if(progress<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);}
 function animateBar(barId,valId,score){setTimeout(()=>{document.getElementById(barId).style.width=score+'%';document.getElementById(valId).textContent=score;},300);}
