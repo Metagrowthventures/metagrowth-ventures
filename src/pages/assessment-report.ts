@@ -400,13 +400,13 @@ ${nav()}
 
             <!-- Left column -->
             <div class="rpt-rx-left">
-              <div class="rpt-rx-eyebrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si87" xlink:href="#si87"/></svg> Your Recommended Next Step</div>
-              <h2 class="rpt-rx-title">Your Revenue Engine Doesn't Need More Advice.<br>It Needs Infrastructure.</h2>
-              <p class="rpt-rx-body">Based on your assessment, the fastest path forward is a complimentary Revenue Review — a focused 30-minute session where we map exactly what's broken and what to do first.</p>
+              <div id="rx-eyebrow" class="rpt-rx-eyebrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si87" xlink:href="#si87"/></svg> Your Recommended Next Step</div>
+              <h2 id="rx-title" class="rpt-rx-title">Your Revenue Engine Doesn't Need More Advice.<br>It Needs Infrastructure.</h2>
+              <p id="rx-body" class="rpt-rx-body">Based on your assessment, the fastest path forward is a complimentary Revenue Review — a focused 30-minute session where we map exactly what's broken and what to do first.</p>
 
               <div class="rpt-rx-review-list">
-                <div class="rpt-rx-review-label"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si43" xlink:href="#si43"/></svg> We'll Review Together:</div>
-                <ul class="rpt-rx-bullets">
+                <div id="rx-list-label" class="rpt-rx-review-label"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si43" xlink:href="#si43"/></svg> We'll Review Together:</div>
+                <ul id="rx-bullets" class="rpt-rx-bullets">
                   <li><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si16" xlink:href="#si16"/></svg> Your full score breakdown by dimension</li>
                   <li><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si16" xlink:href="#si16"/></svg> Revenue bottlenecks and root causes</li>
                   <li><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si16" xlink:href="#si16"/></svg> Leadership and accountability gaps</li>
@@ -416,22 +416,22 @@ ${nav()}
                 </ul>
               </div>
 
-              <div class="rpt-rx-actions">
-                <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report" target="_blank" rel="noopener" class="rpt-rx-cta-primary" onclick="mgcTrack('discuss_report_click','Book Revenue Review','section_1_rx');mgcTrack('calendar_open','Book Revenue Review','section_1_rx');">
+              <div class="rpt-rx-actions" id="rx-actions">
+                <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report" target="_blank" rel="noopener" id="rx-cta-primary" class="rpt-rx-cta-primary" onclick="mgcTrack('discuss_report_click','Book Revenue Review','section_1_rx');mgcTrack('calendar_open','Book Revenue Review','section_1_rx');">
                   <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg>
-                  <span>BOOK REVENUE REVIEW</span>
+                  <span id="rx-cta-label">BOOK REVENUE REVIEW</span>
                   <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg>
                 </a>
-                <a href="/command-center" class="rpt-rx-cta-secondary" onclick="mgcTrack('discuss_report_click','Explore Command Center','section_1_rx');">
-                  <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si10" xlink:href="#si10"/></svg> Explore the Command Center™
+                <a href="/command-center" id="rx-cta-secondary" class="rpt-rx-cta-secondary" onclick="mgcTrack('discuss_report_click','Explore Command Center','section_1_rx');">
+                  <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si10" xlink:href="#si10"/></svg> <span id="rx-cta-secondary-label">Explore the Command Center™</span>
                 </a>
               </div>
 
-              <div class="rpt-rx-meta-row">
-                <span class="rpt-rx-meta-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 30 minutes</span>
-                <span class="rpt-rx-meta-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si17" xlink:href="#si17"/></svg> Zoom or phone</span>
-                <span class="rpt-rx-meta-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg> No obligation</span>
-                <span class="rpt-rx-avail"><span class="rpt-rx-avail-dot"></span> Revenue Strategy Team Available</span>
+              <div id="rx-meta-row" class="rpt-rx-meta-row">
+                <span class="rpt-rx-meta-item" id="rx-meta-1"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> <span>30 minutes</span></span>
+                <span class="rpt-rx-meta-item" id="rx-meta-2"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si17" xlink:href="#si17"/></svg> <span>Zoom or phone</span></span>
+                <span class="rpt-rx-meta-item" id="rx-meta-3"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg> <span>No obligation</span></span>
+                <span class="rpt-rx-avail"><span class="rpt-rx-avail-dot"></span> <span id="rx-avail-label">Revenue Strategy Team Available</span></span>
               </div>
             </div>
 
@@ -678,11 +678,11 @@ ${nav()}
 
         </div>
 
-        <!-- Mid-page Revenue Review CTA #2 -->
+        <!-- Mid-page CTA #2 — segmented by score -->
         <div class="rpt-formula-cta-block">
-          <p class="rpt-formula-cta-copy">Ready to move from assessment to action?</p>
-          <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report" target="_blank" rel="noopener" class="btn btn-primary btn-lg" onclick="mgcTrack('discuss_report_click','Book Revenue Review','section_5_formula');mgcTrack('calendar_open','Book Revenue Review','section_5_formula');">
-            <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> BOOK REVENUE REVIEW
+          <p id="formula-cta-copy" class="rpt-formula-cta-copy">Ready to move from assessment to action?</p>
+          <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report" target="_blank" rel="noopener" id="formula-cta-btn" class="btn btn-primary btn-lg" onclick="mgcTrack('discuss_report_click','Book Revenue Review','section_5_formula');mgcTrack('calendar_open','Book Revenue Review','section_5_formula');">
+            <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> <span id="formula-cta-label">BOOK REVENUE REVIEW</span>
           </a>
         </div>
 
@@ -910,31 +910,31 @@ ${nav()}
       <div class="container">
         <div class="rpt-final-inner">
 
-          <div class="rpt-final-eyebrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> 10X Pipeline Promise™</div>
-          <h2 class="rpt-final-title">You Now Know Where The Bottlenecks Are.</h2>
-          <h2 class="rpt-final-title-sub">The Question Is What You Do Next.</h2>
+          <div id="final-eyebrow" class="rpt-final-eyebrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> 10X Pipeline Promise™</div>
+          <h2 id="final-title" class="rpt-final-title">You Now Know Where The Bottlenecks Are.</h2>
+          <h2 id="final-title-sub" class="rpt-final-title-sub">The Question Is What You Do Next.</h2>
 
-          <div class="rpt-final-copy-block">
+          <div id="final-copy-block" class="rpt-final-copy-block">
             <p>Most companies never identify their revenue constraints.</p>
             <p>You just did.</p>
             <p>Let's determine the fastest path to fixing them.</p>
           </div>
 
           <div class="rpt-final-ctas">
-            <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report" target="_blank" rel="noopener" class="rpt-final-btn-primary" onclick="mgcTrack('discuss_report_click','Book Revenue Review','section_7_final');mgcTrack('calendar_open','Book Revenue Review','section_7_final');">
+            <a href="https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report" target="_blank" rel="noopener" id="final-cta-primary" class="rpt-final-btn-primary" onclick="mgcTrack('discuss_report_click','Book Revenue Review','section_7_final');mgcTrack('calendar_open','Book Revenue Review','section_7_final');">
               <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg>
-              <span>BOOK REVENUE REVIEW</span>
+              <span id="final-cta-label">BOOK REVENUE REVIEW</span>
               <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg>
             </a>
-            <a href="/" class="rpt-final-btn-secondary">
-              <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si90" xlink:href="#si90"/></svg> Return to Homepage
+            <a href="/" id="final-cta-secondary" class="rpt-final-btn-secondary">
+              <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si90" xlink:href="#si90"/></svg> <span id="final-cta-secondary-label">Return to Homepage</span>
             </a>
           </div>
 
-          <div class="rpt-final-meta">
-            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 30 minutes</span>
-            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg> No obligation</span>
-            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> 10X Pipeline Promise™</span>
+          <div id="final-meta" class="rpt-final-meta">
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> <span id="final-meta-1">30 minutes</span></span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg> <span id="final-meta-2">No obligation</span></span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> <span id="final-meta-3">10X Pipeline Promise™</span></span>
           </div>
 
         </div>
@@ -2563,6 +2563,130 @@ function mgcTrack(event, label, location) {
       }, 600);
     });
   }
+
+  // -- Score-segmented CTA content ------------------------------------------
+  // Band:  0–50  → "review"  → Book Revenue Review (30-min booking call)
+  //        51–100 → "xray"   → Revenue Engine X-Ray (deep analysis offer)
+  (function segmentCTAs(score) {
+    var isXray = score > 50;
+    var REVIEW_URL = 'https://meetings.hubspot.com/josh549/meet-with-josh?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Dassessment_report';
+    var XRAY_URL   = 'https://growthenginexray.com/?score=' + score + '&utm_source=assessment_report&utm_medium=report&utm_campaign=score_segment';
+
+    if (!isXray) return; // ≤50: leave default "review" HTML content in place
+
+    // ---- SECTION 3 — Recommended Next Step --------------------------------
+    var rxTitle = document.getElementById('rx-title');
+    if (rxTitle) rxTitle.innerHTML = 'Your Score Shows Gaps \u2014 But the Deeper Question Is <em>Why</em>.';
+
+    var rxBody = document.getElementById('rx-body');
+    if (rxBody) rxBody.textContent = 'Based on your score, the highest-leverage next step is a Revenue Engine X-Ray \u2014 a customized deep-dive performed by our team that identifies the specific bottlenecks limiting your growth and maps the exact sequence to fix them.';
+
+    var rxListLabel = document.getElementById('rx-list-label');
+    if (rxListLabel) rxListLabel.innerHTML = '<svg class="si" fill="currentColor" aria-hidden="true"><use href="#si43" xlink:href="#si43"/></svg> What the X-Ray Covers:';
+
+    var rxBullets = document.getElementById('rx-bullets');
+    if (rxBullets) rxBullets.innerHTML = [
+      'A forensic review of your full score breakdown by dimension',
+      'Root-cause analysis of your highest-impact revenue bottlenecks',
+      'Pipeline generation and conversion constraint mapping',
+      'Leadership, accountability, and hiring gap identification',
+      'A sequenced implementation roadmap built for your stage',
+      'Delivered within 5\u20137 business days by a senior advisor'
+    ].map(function(t) {
+      return '<li><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si16" xlink:href="#si16"/></svg> ' + t + '</li>';
+    }).join('');
+
+    // Primary CTA → X-Ray
+    var rxPrimary = document.getElementById('rx-cta-primary');
+    if (rxPrimary) {
+      rxPrimary.setAttribute('href', XRAY_URL);
+      rxPrimary.setAttribute('target', '_blank');
+      rxPrimary.setAttribute('rel', 'noopener noreferrer');
+      rxPrimary.setAttribute('onclick', "mgcTrack('discuss_report_click','Get Revenue Engine X-Ray','section_1_rx');mgcTrack('xray_cta_click','Get Revenue Engine X-Ray','section_1_rx');mgcTrack('calendar_open','Get Revenue Engine X-Ray','section_1_rx');");
+    }
+    var rxCtaLabel = document.getElementById('rx-cta-label');
+    if (rxCtaLabel) rxCtaLabel.textContent = 'GET MY REVENUE ENGINE X-RAY';
+
+    // Secondary CTA → fallback to Revenue Review call
+    var rxSecondary = document.getElementById('rx-cta-secondary');
+    if (rxSecondary) {
+      rxSecondary.setAttribute('href', REVIEW_URL);
+      rxSecondary.setAttribute('target', '_blank');
+      rxSecondary.setAttribute('rel', 'noopener noreferrer');
+      rxSecondary.setAttribute('onclick', "mgcTrack('calendar_open','Book Revenue Review Instead','section_1_rx');");
+    }
+    var rxSecondaryLabel = document.getElementById('rx-cta-secondary-label');
+    if (rxSecondaryLabel) rxSecondaryLabel.textContent = 'Prefer to talk first? Book a Revenue Review \u2192';
+
+    // Meta row
+    var rx1 = document.getElementById('rx-meta-1');
+    if (rx1) { var s1 = rx1.querySelector('span'); if (s1) s1.textContent = '5\u20137 day turnaround'; }
+    var rx2 = document.getElementById('rx-meta-2');
+    if (rx2) { var s2 = rx2.querySelector('span'); if (s2) s2.textContent = 'Senior advisor-led'; }
+    var rx3 = document.getElementById('rx-meta-3');
+    if (rx3) { var s3 = rx3.querySelector('span'); if (s3) s3.textContent = 'Complimentary for qualified businesses'; }
+    var rxAvail = document.getElementById('rx-avail-label');
+    if (rxAvail) rxAvail.textContent = 'X-Ray Team Available Now';
+
+    // ---- SECTION 5 — Mid-page formula CTA ----------------------------------
+    var formulaCopy = document.getElementById('formula-cta-copy');
+    if (formulaCopy) formulaCopy.textContent = 'Ready to go deeper than the assessment?';
+
+    var formulaBtn = document.getElementById('formula-cta-btn');
+    if (formulaBtn) {
+      formulaBtn.setAttribute('href', XRAY_URL);
+      formulaBtn.setAttribute('target', '_blank');
+      formulaBtn.setAttribute('rel', 'noopener noreferrer');
+      formulaBtn.setAttribute('onclick', "mgcTrack('discuss_report_click','Get Revenue Engine X-Ray','section_5_formula');mgcTrack('xray_cta_click','Get Revenue Engine X-Ray','section_5_formula');mgcTrack('calendar_open','Get Revenue Engine X-Ray','section_5_formula');");
+    }
+    var formulaLabel = document.getElementById('formula-cta-label');
+    if (formulaLabel) formulaLabel.textContent = 'GET MY REVENUE ENGINE X-RAY';
+
+    // ---- SECTION 7 — Final CTA ---------------------------------------------
+    var finalTitle = document.getElementById('final-title');
+    if (finalTitle) finalTitle.textContent = 'Your Score Reveals the Gap. The X-Ray Reveals the Cause.';
+
+    var finalSub = document.getElementById('final-title-sub');
+    if (finalSub) finalSub.textContent = 'Go deeper \u2014 get a custom analysis built around your business.';
+
+    var finalCopy = document.getElementById('final-copy-block');
+    if (finalCopy) finalCopy.innerHTML =
+      '<p>Most companies never identify their revenue constraints.</p>' +
+      '<p>You just did.</p>' +
+      '<p>Now let\u2019s find out exactly why they exist \u2014 and build the roadmap to fix them.</p>';
+
+    // Primary CTA → X-Ray
+    var finalPrimary = document.getElementById('final-cta-primary');
+    if (finalPrimary) {
+      finalPrimary.setAttribute('href', XRAY_URL);
+      finalPrimary.setAttribute('target', '_blank');
+      finalPrimary.setAttribute('rel', 'noopener noreferrer');
+      finalPrimary.setAttribute('onclick', "mgcTrack('discuss_report_click','Get Revenue Engine X-Ray','section_7_final');mgcTrack('xray_cta_click','Get Revenue Engine X-Ray','section_7_final');mgcTrack('calendar_open','Get Revenue Engine X-Ray','section_7_final');");
+    }
+    var finalCtaLabel = document.getElementById('final-cta-label');
+    if (finalCtaLabel) finalCtaLabel.textContent = 'GET MY REVENUE ENGINE X-RAY';
+
+    // Secondary CTA → fallback Revenue Review
+    var finalSecondary = document.getElementById('final-cta-secondary');
+    if (finalSecondary) {
+      finalSecondary.setAttribute('href', REVIEW_URL);
+      finalSecondary.setAttribute('target', '_blank');
+      finalSecondary.setAttribute('rel', 'noopener noreferrer');
+      finalSecondary.setAttribute('onclick', "mgcTrack('calendar_open','Book Revenue Review Instead','section_7_final');");
+    }
+    var finalSecLabel = document.getElementById('final-cta-secondary-label');
+    if (finalSecLabel) finalSecLabel.textContent = 'Prefer a call first? Book a Revenue Review \u2192';
+
+    // Meta row
+    var fm1 = document.getElementById('final-meta-1');
+    if (fm1) fm1.textContent = '5\u20137 day turnaround';
+    var fm2 = document.getElementById('final-meta-2');
+    if (fm2) fm2.textContent = 'Senior advisor-led';
+    var fm3 = document.getElementById('final-meta-3');
+    if (fm3) fm3.textContent = 'Complimentary for qualified businesses';
+
+  })(_reportScore);
+  // -------------------------------------------------------------------------
 
   // -- Populate hidden legacy elements (keep JS integrity) ------------------
   const diagTitle = document.getElementById('rpt-diag-title');
