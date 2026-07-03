@@ -580,11 +580,7 @@ export const commandCenterPage = () => page('MetaGrowth Command Center™ | Reve
           <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M9.4 8.6A3.4 3.4 0 005.5 2a3.4 3.4 0 00-1 6.6v.4h1v-.4A3.4 3.4 0 009.4 8.6zM5 6.5v.5H4v-.5c-.6-.2-1-.6-1-1.2h1c0 .2.2.4.5.4s.5-.1.5-.3c0-.2-.2-.3-.7-.5-.7-.2-1.3-.5-1.3-1.2 0-.5.4-1 1-1.1V2h1v.6c.6.2 1 .6 1 1.2H5c0-.2-.2-.4-.5-.4s-.5.1-.5.3c0 .2.2.3.7.5.7.2 1.3.5 1.3 1.2 0 .5-.4 1-1 1.1zm8.3 5.8l-3.3-3.3a5.5 5.5 0 10-1.1 1.1l3.3 3.3 1.1-1.1z"/></svg> Take Revenue Assessment
         </a>
       </div>
-      <div class="cc-final-meta">
-        <span><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M8 0a8 8 0 100 16A8 8 0 008 0zm0 14a6 6 0 110-12 6 6 0 010 12zm.5-9H7v5l4.3 2.5.7-1.2-3.5-2V5z"/></svg> 30-minute session</span>
-        <span><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M12 6V4a4 4 0 00-8 0v2H2v10h12V6h-2zM6 4a2 2 0 014 0v2H6V4zm3 7.73V13H7v-1.27a2 2 0 111 .01V13z" fill-rule="evenodd"/></svg> No obligation</span>
-        <span><svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;"><path d="M8 0L1 3v5c0 4.55 2.97 8.42 7 9 4.03-.58 7-4.45 7-9V3L8 0zm-1 11.5l-3-3 1.06-1.06L7 9.38l4.44-4.44 1.06 1.06z"/></svg> 10X Pipeline Promise™</span>
-      </div>
+
     </div>
   </div>
 </section>

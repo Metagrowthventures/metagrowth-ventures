@@ -259,8 +259,7 @@ ${nav()}
 
         <!-- Footer trust note -->
         <p class="ndf-footer-note">
-          All Revenue Reviews are conducted personally by Josh.<br>
-          30 minutes · No pitch · No obligation.
+          All Revenue Reviews are conducted personally by Josh.
         </p>
 
       </div>
@@ -427,12 +426,7 @@ ${nav()}
                 </a>
               </div>
 
-              <div id="rx-meta-row" class="rpt-rx-meta-row">
-                <span class="rpt-rx-meta-item" id="rx-meta-1"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> <span>30 minutes</span></span>
-                <span class="rpt-rx-meta-item" id="rx-meta-2"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si17" xlink:href="#si17"/></svg> <span>Zoom or phone</span></span>
-                <span class="rpt-rx-meta-item" id="rx-meta-3"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg> <span>No obligation</span></span>
-                <span class="rpt-rx-avail"><span class="rpt-rx-avail-dot"></span> <span id="rx-avail-label">Revenue Strategy Team Available</span></span>
-              </div>
+
             </div>
 
             <!-- Right column — score recap -->
@@ -910,7 +904,6 @@ ${nav()}
       <div class="container">
         <div class="rpt-final-inner">
 
-          <div id="final-eyebrow" class="rpt-final-eyebrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> 10X Pipeline Promise™</div>
           <h2 id="final-title" class="rpt-final-title">You Now Know Where The Bottlenecks Are.</h2>
           <h2 id="final-title-sub" class="rpt-final-title-sub">The Question Is What You Do Next.</h2>
 
@@ -931,11 +924,7 @@ ${nav()}
             </a>
           </div>
 
-          <div id="final-meta" class="rpt-final-meta">
-            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> <span id="final-meta-1">30 minutes</span></span>
-            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg> <span id="final-meta-2">No obligation</span></span>
-            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> <span id="final-meta-3">10X Pipeline Promise™</span></span>
-          </div>
+
 
         </div>
       </div>
@@ -958,80 +947,7 @@ ${nav()}
 
 
 
-<!-- --- REVENUE ENGINE X-RAY POPUP ------------------------------------------- -->
-<div id="mgc-xray-overlay" class="mgc-xray-overlay" role="dialog" aria-modal="true" aria-labelledby="mgc-xray-headline" aria-hidden="true">
-  <div class="mgc-xray-popup">
-    <!-- Close button -->
-    <button class="mgc-xray-close" id="mgc-xray-close" aria-label="Close">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
-    </button>
 
-    <!-- Left column -->
-    <div class="mgc-xray-left">
-      <div class="mgc-xray-eyebrow">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        Revenue Engine X-Ray™
-      </div>
-
-      <h2 class="mgc-xray-headline" id="mgc-xray-headline">Your Score Is Only Part Of The Story</h2>
-      <p class="mgc-xray-subheadline">Most companies never discover the specific bottlenecks actually limiting growth.</p>
-
-      <p class="mgc-xray-intro">Your Revenue Assessment identified symptoms. The Revenue Engine X-Ray™ identifies causes.</p>
-
-      <p class="mgc-xray-body-copy">While the assessment provides a high-level diagnosis, the Revenue Engine X-Ray is a customized executive analysis performed by our team. We review:</p>
-
-      <ul class="mgc-xray-checklist">
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Pipeline Health</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Conversion Rates</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Sales Process</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Recruiting &amp; Hiring Strategy</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Revenue Infrastructure</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Accountability Systems</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Technology Stack</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Lead Generation Process</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Team Structure</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Missed Revenue Opportunities</li>
-        <li><span class="mgc-xray-check-icon" aria-hidden="true">✓</span> Revenue Leaks</li>
-      </ul>
-
-      <p class="mgc-xray-closing">Then we provide a prioritized action plan tailored specifically to your business. This is not another automated report — it is a customized growth analysis designed to uncover the exact constraints preventing your company from scaling.</p>
-    </div>
-
-    <!-- Right column -->
-    <div class="mgc-xray-right">
-
-      <!-- Social proof -->
-      <div class="mgc-xray-social-proof">
-        <div class="mgc-xray-sp-stars" aria-label="Five stars">★★★★★</div>
-        <p class="mgc-xray-sp-text">MetaGrowth has helped organizations generate more than <strong>$110M in pipeline</strong>, improve sales execution, hire stronger sales talent, and build scalable revenue systems.</p>
-      </div>
-
-      <!-- Guarantee -->
-      <div class="mgc-xray-guarantee">
-        <div class="mgc-xray-guarantee-badge">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-        </div>
-        <div class="mgc-xray-guarantee-text">
-          <div class="mgc-xray-guarantee-title">100% Risk-Free</div>
-          <div class="mgc-xray-guarantee-body">If you do not find the Revenue Engine X-Ray valuable within 3 business days of receiving it, we will refund your investment in full. No questions asked.</div>
-        </div>
-      </div>
-
-      <!-- Primary CTA -->
-      <a href="https://growthenginexray.com" class="mgc-xray-cta-primary" id="mgc-xray-cta-primary">
-        Get My Revenue Engine X-Ray™
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-
-      <!-- Secondary CTA -->
-      <button class="mgc-xray-cta-secondary" id="mgc-xray-cta-secondary">
-        Continue Reading My Report
-      </button>
-
-      <p class="mgc-xray-fine-print">Personalized executive analysis. Typically delivered within 2–3 business days.</p>
-    </div>
-  </div>
-</div>
 
 <!-- ---------------------------------------------------------------------------- -->
 <!-- STYLES                                                                      -->
@@ -1976,178 +1892,6 @@ body { background: var(--rpt-bg); }
 }
 </style>
 
-/* --- X-RAY POPUP --------------------------------------------------------- */
-.mgc-xray-overlay {
-  position: fixed; inset: 0; z-index: 10000;
-  background: rgba(0,0,0,0.82);
-  backdrop-filter: blur(4px);
-  display: flex; align-items: center; justify-content: center;
-  padding: 20px;
-  opacity: 0; visibility: hidden;
-  transition: opacity 0.35s ease, visibility 0.35s ease;
-}
-.mgc-xray-overlay.open {
-  opacity: 1; visibility: visible;
-}
-.mgc-xray-popup {
-  background: #0E0F14;
-  border: 1px solid rgba(173,120,5,0.3);
-  border-radius: 20px;
-  box-shadow: 0 32px 100px rgba(0,0,0,0.75), 0 0 0 1px rgba(173,120,5,0.08);
-  max-width: 900px; width: 100%;
-  max-height: 90vh; overflow-y: auto;
-  display: grid; grid-template-columns: 1fr 340px;
-  position: relative;
-  transform: translateY(24px) scale(0.97);
-  transition: transform 0.35s cubic-bezier(0.22,1,0.36,1);
-  scrollbar-width: thin; scrollbar-color: rgba(173,120,5,0.2) transparent;
-}
-.mgc-xray-overlay.open .mgc-xray-popup {
-  transform: translateY(0) scale(1);
-}
-.mgc-xray-close {
-  position: absolute; top: 18px; right: 18px;
-  width: 36px; height: 36px; border-radius: 8px;
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
-  color: rgba(255,255,255,0.4); cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.2s; z-index: 2;
-}
-.mgc-xray-close:hover { background: rgba(255,255,255,0.12); color: #fff; }
-
-/* Left column */
-.mgc-xray-left {
-  padding: 52px 44px 48px;
-  border-right: 1px solid rgba(173,120,5,0.15);
-}
-.mgc-xray-eyebrow {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(173,120,5,0.1); border: 1px solid rgba(173,120,5,0.28);
-  color: #c9920e; border-radius: 100px;
-  padding: 6px 14px; font-size: 0.72rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 22px;
-}
-.mgc-xray-headline {
-  font-size: 1.75rem; font-weight: 900; color: #fff;
-  line-height: 1.2; margin: 0 0 14px; letter-spacing: -0.02em;
-}
-.mgc-xray-subheadline {
-  font-size: 1.02rem; color: rgba(255,255,255,0.55);
-  line-height: 1.6; margin: 0 0 20px; font-weight: 400;
-}
-.mgc-xray-intro {
-  font-size: 0.95rem; color: rgba(255,255,255,0.8);
-  line-height: 1.65; margin: 0 0 8px; font-weight: 500;
-}
-.mgc-xray-body-copy {
-  font-size: 0.88rem; color: rgba(255,255,255,0.5);
-  line-height: 1.65; margin: 0 0 18px;
-}
-.mgc-xray-checklist {
-  list-style: none; padding: 0; margin: 0 0 20px;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 9px 16px;
-}
-.mgc-xray-checklist li {
-  display: flex; align-items: center; gap: 9px;
-  font-size: 0.84rem; color: rgba(255,255,255,0.72); font-weight: 500;
-}
-.mgc-xray-check-icon {
-  flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%;
-  background: rgba(173,120,5,0.15); border: 1px solid rgba(173,120,5,0.35);
-  display: flex; align-items: center; justify-content: center;
-  color: #c9920e; font-size: 0.65rem; font-weight: 900;
-  line-height: 1;
-}
-.mgc-xray-closing {
-  font-size: 0.85rem; color: rgba(255,255,255,0.42);
-  line-height: 1.7; margin: 0; font-style: italic;
-}
-
-/* Right column */
-.mgc-xray-right {
-  padding: 52px 36px 48px;
-  display: flex; flex-direction: column; gap: 24px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 0 20px 20px 0;
-}
-.mgc-xray-social-proof {
-  background: rgba(173,120,5,0.06); border: 1px solid rgba(173,120,5,0.15);
-  border-radius: 12px; padding: 20px 22px;
-}
-.mgc-xray-sp-stars {
-  color: #c9920e; font-size: 1rem; letter-spacing: 2px; margin-bottom: 10px;
-}
-.mgc-xray-sp-text {
-  font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.65; margin: 0;
-}
-.mgc-xray-sp-text strong { color: rgba(255,255,255,0.8); }
-.mgc-xray-guarantee {
-  display: flex; align-items: flex-start; gap: 14px;
-  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 12px; padding: 18px 20px;
-}
-.mgc-xray-guarantee-badge {
-  flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px;
-  background: rgba(173,120,5,0.12); border: 1px solid rgba(173,120,5,0.28);
-  display: flex; align-items: center; justify-content: center;
-  color: #c9920e;
-}
-.mgc-xray-guarantee-title {
-  font-size: 0.88rem; font-weight: 800; color: #fff; margin-bottom: 6px;
-  letter-spacing: 0.02em;
-}
-.mgc-xray-guarantee-body {
-  font-size: 0.78rem; color: rgba(255,255,255,0.48); line-height: 1.65;
-}
-.mgc-xray-cta-primary {
-  display: flex; align-items: center; justify-content: center; gap: 10px;
-  background: linear-gradient(135deg, #c9920e, #ad7805);
-  color: #000; font-weight: 800; font-size: 0.95rem;
-  letter-spacing: 0.01em; text-decoration: none;
-  padding: 18px 24px; border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(173,120,5,0.5), 0 0 0 1px rgba(173,120,5,0.4);
-  transition: all 0.22s ease; text-align: center;
-  font-family: var(--font-body);
-}
-.mgc-xray-cta-primary:hover {
-  background: linear-gradient(135deg, #d9a21e, #c08a06);
-  box-shadow: 0 12px 40px rgba(173,120,5,0.65);
-  transform: translateY(-2px);
-  color: #000;
-}
-.mgc-xray-cta-secondary {
-  width: 100%; background: none; border: 1px solid rgba(255,255,255,0.12);
-  color: rgba(255,255,255,0.45); font-size: 0.85rem; font-weight: 500;
-  padding: 14px 20px; border-radius: 10px; cursor: pointer;
-  transition: all 0.2s; font-family: var(--font-body);
-  letter-spacing: 0.01em;
-}
-.mgc-xray-cta-secondary:hover {
-  background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.7);
-  border-color: rgba(255,255,255,0.22);
-}
-.mgc-xray-fine-print {
-  font-size: 0.72rem; color: rgba(255,255,255,0.25);
-  text-align: center; margin: 0; line-height: 1.5;
-}
-
-/* Popup responsive */
-@media (max-width: 820px) {
-  .mgc-xray-popup { grid-template-columns: 1fr; max-height: none; }
-  .mgc-xray-left { padding: 44px 32px 32px; border-right: none; border-bottom: 1px solid rgba(173,120,5,0.15); }
-  .mgc-xray-right { padding: 32px 32px 44px; border-radius: 0 0 20px 20px; }
-  .mgc-xray-checklist { grid-template-columns: 1fr; }
-  .mgc-xray-headline { font-size: 1.45rem; }
-}
-@media (max-width: 540px) {
-  .mgc-xray-overlay { padding: 12px; align-items: flex-end; }
-  .mgc-xray-popup { border-radius: 20px 20px 14px 14px; }
-  .mgc-xray-left { padding: 36px 22px 24px; }
-  .mgc-xray-right { padding: 24px 22px 36px; }
-  .mgc-xray-headline { font-size: 1.25rem; }
-  .mgc-xray-subheadline { font-size: 0.9rem; }
-}
-
 <!-- ------------------------------------------------------------------------ -->
 <!-- JAVASCRIPT                                                               -->
 <!-- ------------------------------------------------------------------------ -->
@@ -2618,16 +2362,6 @@ function mgcTrack(event, label, location) {
     var rxSecondaryLabel = document.getElementById('rx-cta-secondary-label');
     if (rxSecondaryLabel) rxSecondaryLabel.textContent = 'Prefer to talk first? Book a Revenue Review \u2192';
 
-    // Meta row
-    var rx1 = document.getElementById('rx-meta-1');
-    if (rx1) { var s1 = rx1.querySelector('span'); if (s1) s1.textContent = '5\u20137 day turnaround'; }
-    var rx2 = document.getElementById('rx-meta-2');
-    if (rx2) { var s2 = rx2.querySelector('span'); if (s2) s2.textContent = 'Senior advisor-led'; }
-    var rx3 = document.getElementById('rx-meta-3');
-    if (rx3) { var s3 = rx3.querySelector('span'); if (s3) s3.textContent = 'Complimentary for qualified businesses'; }
-    var rxAvail = document.getElementById('rx-avail-label');
-    if (rxAvail) rxAvail.textContent = 'X-Ray Team Available Now';
-
     // ---- SECTION 5 — Mid-page formula CTA ----------------------------------
     var formulaCopy = document.getElementById('formula-cta-copy');
     if (formulaCopy) formulaCopy.textContent = 'Ready to go deeper than the assessment?';
@@ -2677,14 +2411,6 @@ function mgcTrack(event, label, location) {
     var finalSecLabel = document.getElementById('final-cta-secondary-label');
     if (finalSecLabel) finalSecLabel.textContent = 'Prefer a call first? Book a Revenue Review \u2192';
 
-    // Meta row
-    var fm1 = document.getElementById('final-meta-1');
-    if (fm1) fm1.textContent = '5\u20137 day turnaround';
-    var fm2 = document.getElementById('final-meta-2');
-    if (fm2) fm2.textContent = 'Senior advisor-led';
-    var fm3 = document.getElementById('final-meta-3');
-    if (fm3) fm3.textContent = 'Complimentary for qualified businesses';
-
   })(_reportScore);
   // -------------------------------------------------------------------------
 
@@ -2727,183 +2453,29 @@ function bnToggle(header) {
   toggle.classList.toggle('open', !isOpen);
 }
 
-// -----------------------------------------------------------------------------
-// REVENUE ENGINE X-RAY POPUP
-//
-// Triggers:
-//   1. User scrolls 35% down the page
-//   2. User spends 30 seconds on the page
-//   (whichever fires first)
-//
-// Cooldown: 30-day cookie 'mgc_xp_seen'
-// Suppress: sessionStorage 'mgc_xray_submitted' (already requested X-Ray)
-// GA4 events: xray_popup_view, xray_popup_click, xray_popup_close
-// -----------------------------------------------------------------------------
+// -- Scroll depth tracking (GA4) --------------------------------------------
 (function() {
-  var XRAY_COOKIE     = 'mgc_xp_seen';
-  var XRAY_SUBMIT_KEY = 'mgc_xray_submitted';
-  var XRAY_VIEW_KEY   = 'mgc_ga4_xpv';   // dedup: popup view event
-  var POPUP_DAYS      = 30;
-
-  var overlay  = document.getElementById('mgc-xray-overlay');
-  var closeBtn = document.getElementById('mgc-xray-close');
-  var ctaPrim  = document.getElementById('mgc-xray-cta-primary');
-  var ctaSec   = document.getElementById('mgc-xray-cta-secondary');
-
-  if (!overlay) return; // safety
-
-  // -- Cookie helpers ---------------------------------------------------------
-  function setCookie(name, value, days) {
-    var d = new Date();
-    d.setTime(d.getTime() + days * 24 * 60 * 60 * 1000);
-    document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
-  }
-  function getCookie(name) {
-    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-    return match ? match[2] : null;
-  }
-
-  // -- Should we suppress the popup? -----------------------------------------
-  function shouldSuppress() {
-    if (getCookie(XRAY_COOKIE)) return true;            // shown in last 30 days
-    if (sessionStorage.getItem(XRAY_SUBMIT_KEY)) return true; // already submitted
-    return false;
-  }
-
-  // -- Show popup -------------------------------------------------------------
-  var popupShown = false;
-  function showXrayPopup() {
-    if (popupShown) return;
-    if (shouldSuppress()) return;
-    popupShown = true;
-    overlay.setAttribute('aria-hidden', 'false');
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    setCookie(XRAY_COOKIE, '1', POPUP_DAYS);
-    // GA4: xray_popup_view (dedup)
-    if (!sessionStorage.getItem(XRAY_VIEW_KEY)) {
-      sessionStorage.setItem(XRAY_VIEW_KEY, '1');
-      mgcTrack('xray_popup_view', 'X-Ray Popup', 'popup');
-    }
-  }
-
-  // -- Close popup ------------------------------------------------------------
-  function closeXrayPopup(source) {
-    overlay.classList.remove('open');
-    overlay.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    mgcTrack('xray_popup_close', 'Close Popup — ' + (source || 'unknown'), 'popup');
-  }
-
-  // -- Trigger 1: 30-second timer ---------------------------------------------
-  var timerFired = false;
-  var timerHandle = setTimeout(function() {
-    if (!timerFired) {
-      timerFired = true;
-      showXrayPopup();
-    }
-  }, 30000);
-
-  // -- Trigger 2: 35% scroll depth --------------------------------------------
-  // (also tracks 50% and 75% for GA4 scroll depth events)
-  var scrollFired35 = false;
-  var scrollFired50 = false;
-  var scrollFired75 = false;
-  var SCROLL35_KEY  = 'mgc_ga4_s35';
-  var SCROLL50_KEY  = 'mgc_ga4_s50';
-  var SCROLL75_KEY  = 'mgc_ga4_s75';
-
+  var scrollFired35 = false, scrollFired50 = false, scrollFired75 = false;
+  var SCROLL35_KEY = 'mgc_ga4_s35', SCROLL50_KEY = 'mgc_ga4_s50', SCROLL75_KEY = 'mgc_ga4_s75';
   function onScroll() {
-    var scrollTop  = window.scrollY || document.documentElement.scrollTop;
-    var docHeight  = document.documentElement.scrollHeight - window.innerHeight;
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
     if (docHeight <= 0) return;
     var pct = (scrollTop / docHeight) * 100;
-
     if (!scrollFired35 && pct >= 35) {
       scrollFired35 = true;
-      // Popup trigger
-      if (!popupShown) {
-        clearTimeout(timerHandle);
-        showXrayPopup();
-      }
-      // GA4 scroll event
-      if (!sessionStorage.getItem(SCROLL35_KEY)) {
-        sessionStorage.setItem(SCROLL35_KEY, '1');
-        mgcTrack('report_scroll_35', 'Scroll 35%', 'report_scroll');
-      }
+      if (!sessionStorage.getItem(SCROLL35_KEY)) { sessionStorage.setItem(SCROLL35_KEY, '1'); mgcTrack('report_scroll_35', 'Scroll 35%', 'report_scroll'); }
     }
     if (!scrollFired50 && pct >= 50) {
       scrollFired50 = true;
-      if (!sessionStorage.getItem(SCROLL50_KEY)) {
-        sessionStorage.setItem(SCROLL50_KEY, '1');
-        mgcTrack('report_scroll_50', 'Scroll 50%', 'report_scroll');
-      }
+      if (!sessionStorage.getItem(SCROLL50_KEY)) { sessionStorage.setItem(SCROLL50_KEY, '1'); mgcTrack('report_scroll_50', 'Scroll 50%', 'report_scroll'); }
     }
     if (!scrollFired75 && pct >= 75) {
       scrollFired75 = true;
-      if (!sessionStorage.getItem(SCROLL75_KEY)) {
-        sessionStorage.setItem(SCROLL75_KEY, '1');
-        mgcTrack('report_scroll_75', 'Scroll 75%', 'report_scroll');
-      }
+      if (!sessionStorage.getItem(SCROLL75_KEY)) { sessionStorage.setItem(SCROLL75_KEY, '1'); mgcTrack('report_scroll_75', 'Scroll 75%', 'report_scroll'); }
     }
   }
-
   window.addEventListener('scroll', onScroll, { passive: true });
-
-  // -- Event listeners --------------------------------------------------------
-  // Close button
-  if (closeBtn) closeBtn.addEventListener('click', function() { closeXrayPopup('close_btn'); });
-
-  // Secondary CTA — "Continue Reading"
-  if (ctaSec) ctaSec.addEventListener('click', function() { closeXrayPopup('continue_reading'); });
-
-  // Primary CTA — X-Ray link
-  if (ctaPrim) {
-    ctaPrim.addEventListener('click', function(e) {
-      mgcTrack('xray_popup_click', 'Get My Revenue Engine X-Ray™', 'popup');
-      // -- GA4: xray_request ----------------------------------------------------------
-      // Fires when the user clicks the primary CTA on the X-Ray popup.
-      // The click navigates to growthenginexray.com (external). We fire before
-      // navigation using transport_type:'beacon' so the hit isn't lost.
-      // Dedup key 'mgc_ga4_xsub' prevents double-fire if user clicks twice.
-      (function() {
-        try {
-          var _xsubKey = 'mgc_ga4_xsub';
-          if (sessionStorage.getItem(_xsubKey)) return;
-          sessionStorage.setItem(_xsubKey, '1');
-          if (typeof gtag !== 'function') return;
-          console.log('[MGC GA4] Firing xray_request — score=' + _mgcScore);
-          gtag('event', 'xray_request', {
-            page_location:  window.location.href,
-            page_title:     document.title,
-            cta_label:      'Get My Revenue Engine X-Ray™',
-            report_section: 'popup',
-            score:          _mgcScore,
-            stage:          _mgcStage,
-            utm_source:     _mgcUtmSrc,
-            utm_medium:     _mgcUtmMed,
-            utm_campaign:   _mgcUtmCamp,
-            landing_page:   _mgcLandPage,
-            transport_type: 'beacon'
-          });
-        } catch(e) { console.error('[MGC GA4] Error firing xray_request:', e); }
-      })();
-      sessionStorage.setItem(XRAY_SUBMIT_KEY, '1'); // suppress future popups
-    });
-  }
-
-  // Overlay backdrop click
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) closeXrayPopup('backdrop');
-  });
-
-  // Escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && overlay.classList.contains('open')) {
-      closeXrayPopup('escape_key');
-    }
-  });
-
 })();
 
 </script>
