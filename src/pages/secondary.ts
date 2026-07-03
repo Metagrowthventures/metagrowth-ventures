@@ -690,27 +690,49 @@ export const resourcesPage = () => page('Resources', `
 
 <section class="section">
   <div class="container">
-    <div class="text-center fade-in" style="margin-bottom:60px;">
-      <span class="section-label">Lead Magnets</span>
-      <h2 class="section-title">Start with these essential resources</h2>
+
+    <!-- PRIMARY CTA: Revenue Assessment — single dominant action -->
+    <div class="res-assessment-hero fade-in">
+      <div class="res-ah-badge">Start Here</div>
+      <div class="res-ah-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg></div>
+      <div class="res-ah-body">
+        <h2 class="res-ah-title">Revenue Assessment</h2>
+        <p class="res-ah-sub">The fastest way to understand exactly what&rsquo;s holding your revenue back. Answer 20 questions. Get a personalized score, stage diagnosis, and specific recommendations — in under 3 minutes.</p>
+        <div class="res-ah-details">
+          <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 3 minutes</span>
+          <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si72" xlink:href="#si72"/></svg> Instant results</span>
+          <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg> Personalized score &amp; action plan</span>
+        </div>
+      </div>
+      <div class="res-ah-cta-wrap">
+        <a href="/assessment" class="btn btn-primary btn-lg res-ah-cta">Take the Revenue Assessment &rarr;</a>
+        <p class="res-ah-microcopy">Free &bull; No sales call required &bull; Results in under 3 minutes</p>
+      </div>
+    </div>
+
+    <!-- SECONDARY: Supporting resources -->
+    <div class="text-center fade-in" style="margin:64px 0 36px;">
+      <span class="section-label">Supporting Resources</span>
+      <h3 class="section-title" style="font-size:1.5rem;">Additional tools &amp; frameworks</h3>
+      <p class="section-subtitle" style="font-size:0.95rem;">Reference material to help you understand your revenue infrastructure gaps in more depth.</p>
     </div>
     <div class="lead-magnets-grid fade-in">
       <div class="lm-card featured" style="margin-top:0;">
-        <div class="lm-badge">New</div>
+        <div class="lm-badge">Diagnostic</div>
         <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg></div>
         <div>
           <h3>Revenue System Audit™</h3>
-          <p>Identify where revenue is leaking inside your sales process. Most businesses assume stalled growth is a lead problem — this diagnostic reveals where opportunities are slipping, which parts of your sales process are underperforming, and what those gaps may be costing each month.</p>
+          <p>Identify where revenue is leaking inside your sales process. Reveals where opportunities are slipping, which parts of your sales process are underperforming, and what those gaps may be costing each month.</p>
           <div class="lm-details">
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 5–7 min</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si71" xlink:href="#si71"/></svg> Executive Diagnostic</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si72" xlink:href="#si72"/></svg> Mobile-friendly</span>
           </div>
         </div>
-        <a href="/revenue-system-audit" class="btn btn-primary">Run the Audit</a>
+        <a href="/revenue-system-audit" class="btn btn-secondary">Run the Audit</a>
       </div>
       <div class="lm-card featured">
-        <div class="lm-badge">New</div>
+        <div class="lm-badge">PDF Framework</div>
         <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si11" xlink:href="#si11"/></svg></div>
         <div>
           <h3>Sales Team Performance Diagnostic</h3>
@@ -721,49 +743,49 @@ export const resourcesPage = () => page('Resources', `
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si73" xlink:href="#si73"/></svg> Scored Diagnostic</span>
           </div>
         </div>
-        <a href="/static/sales-team-diagnostic.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/sales-team-diagnostic.pdf" data-pdf-name="Sales Team Performance Diagnostic">Download Free</a>
+        <a href="/static/sales-team-diagnostic.pdf" class="btn btn-secondary" data-pdf-gate data-pdf-url="/static/sales-team-diagnostic.pdf" data-pdf-name="Sales Team Performance Diagnostic">Download Free</a>
       </div>
       <div class="lm-card featured" style="margin-top:0;">
-        <div class="lm-badge">Free Guide</div>
+        <div class="lm-badge">PDF Guide</div>
         <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si42" xlink:href="#si42"/></svg></div>
         <div>
-          <h3>The Founder's Growth Guide</h3>
-          <p>How MetaGrowth thinks about scaling revenue systems — and where most businesses break. Covers the founder bottleneck, pipeline problems, sales process gaps, the recruiting trap, data blind spots, and what actually scales. Essential reading for any B2B founder serious about building a predictable revenue engine.</p>
+          <h3>The Founder&rsquo;s Growth Guide</h3>
+          <p>How MetaGrowth thinks about scaling revenue systems — and where most businesses break. Covers the founder bottleneck, pipeline problems, sales process gaps, the recruiting trap, data blind spots, and what actually scales.</p>
           <div class="lm-details">
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Guide</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 30 min read</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si43" xlink:href="#si43"/></svg> 10 Sections</span>
           </div>
         </div>
-        <a href="/static/founders-growth-guide.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/founders-growth-guide.pdf" data-pdf-name="The Founder's Growth Guide">Download Free</a>
+        <a href="/static/founders-growth-guide.pdf" class="btn btn-secondary" data-pdf-gate data-pdf-url="/static/founders-growth-guide.pdf" data-pdf-name="The Founder's Growth Guide">Download Free</a>
       </div>
       <div class="lm-card featured" style="margin-top:0;">
-        <div class="lm-badge">Free Guide</div>
+        <div class="lm-badge">PDF Guide</div>
         <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si74" xlink:href="#si74"/></svg></div>
         <div>
-          <h3>The Revenue System Blueprint™</h3>
-          <p>A high-level executive framework mapping the 7 stages every B2B company must master to build a predictable, scalable, and defensible revenue engine. Covers Market & ICP Clarity, Messaging, Pipeline Generation, Qualification, Execution, Pipeline Management, and Optimization.</p>
+          <h3>The Revenue System Blueprint&trade;</h3>
+          <p>A high-level executive framework mapping the 7 stages every B2B company must master to build a predictable, scalable, and defensible revenue engine. Covers ICP Clarity, Messaging, Pipeline Generation, Qualification, Execution, and Optimization.</p>
           <div class="lm-details">
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Guide</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 20 min read</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si31" xlink:href="#si31"/></svg> 7-Stage Framework</span>
           </div>
         </div>
-        <a href="/static/revenue-system-blueprint.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/revenue-system-blueprint.pdf" data-pdf-name="The Revenue System Blueprint™">Download Free</a>
+        <a href="/static/revenue-system-blueprint.pdf" class="btn btn-secondary" data-pdf-gate data-pdf-url="/static/revenue-system-blueprint.pdf" data-pdf-name="The Revenue System Blueprint™">Download Free</a>
       </div>
       <div class="lm-card featured" style="margin-top:0;">
-        <div class="lm-badge">Free Guide</div>
+        <div class="lm-badge">PDF Guide</div>
         <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si14" xlink:href="#si14"/></svg></div>
         <div>
           <h3>2026 B2B Team AI Stack Guide</h3>
-          <p>An executive-level framework for identifying which AI tools actually belong in a B2B revenue stack — and in what order to implement them. Covers internal Q&A, workflow automation, customer service bots, revenue intelligence, CRM-native agents, ROI modeling, and a practical implementation roadmap.</p>
+          <p>An executive-level framework for identifying which AI tools actually belong in a B2B revenue stack — and in what order to implement them. Covers workflow automation, revenue intelligence, CRM-native agents, ROI modeling, and a practical implementation roadmap.</p>
           <div class="lm-details">
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Guide</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 25 min read</span>
             <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si31" xlink:href="#si31"/></svg> 5-Layer Framework</span>
           </div>
         </div>
-        <a href="/static/ai-stack-guide-2026.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/ai-stack-guide-2026.pdf" data-pdf-name="2026 B2B Team AI Stack Guide">Download Free</a>
+        <a href="/static/ai-stack-guide-2026.pdf" class="btn btn-secondary" data-pdf-gate data-pdf-url="/static/ai-stack-guide-2026.pdf" data-pdf-name="2026 B2B Team AI Stack Guide">Download Free</a>
       </div>
 
     </div>
@@ -799,6 +821,62 @@ export const resourcesPage = () => page('Resources', `
 </section>
 
 <style>
+/* ---- Resources page: Assessment hero block ---- */
+.res-assessment-hero {
+  background: linear-gradient(135deg, rgba(173,120,5,0.08) 0%, rgba(173,120,5,0.03) 100%);
+  border: 2px solid rgba(173,120,5,0.4);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px 48px;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0;
+}
+.res-ah-badge {
+  position: absolute; top: -14px; left: 32px;
+  background: var(--green); color: var(--gray-900);
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.12em; padding: 5px 16px; border-radius: 100px;
+}
+.res-ah-icon {
+  display: none; /* decorative — hide on desktop to keep layout clean */
+}
+.res-ah-body { grid-column: 1; }
+.res-ah-title {
+  font-size: 1.9rem; font-weight: 800; color: var(--gray-800);
+  margin-bottom: 12px; letter-spacing: -0.02em;
+}
+.res-ah-sub {
+  font-size: 1rem; color: var(--gray-600); margin-bottom: 20px;
+  max-width: 600px; line-height: 1.65;
+}
+.res-ah-details {
+  display: flex; gap: 20px; flex-wrap: wrap;
+}
+.res-ah-details span {
+  font-size: 0.82rem; color: var(--gray-500);
+  display: flex; align-items: center; gap: 6px; font-weight: 500;
+}
+.res-ah-cta-wrap {
+  grid-column: 2; text-align: center; flex-shrink: 0;
+}
+.res-ah-cta {
+  white-space: nowrap; display: block; margin-bottom: 10px;
+}
+.res-ah-microcopy {
+  font-size: 0.75rem; color: var(--gray-400); font-weight: 500;
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .res-assessment-hero {
+    grid-template-columns: 1fr; padding: 40px 28px;
+  }
+  .res-ah-cta-wrap { grid-column: 1; }
+  .res-ah-cta { width: 100%; justify-content: center; }
+}
+/* ---- Lead magnets grid ---- */
 .lead-magnets-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .lm-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: all var(--transition); }
 .lm-card:hover { border-color: var(--green); box-shadow: var(--shadow-lg); transform: translateY(-4px); }

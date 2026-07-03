@@ -202,6 +202,15 @@ export const assessmentPage = () => `<!DOCTYPE html>
       from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
     }
+    @keyframes dot-pulse {
+      0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+      40%           { opacity: 1;   transform: scale(1); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    #mgc-calc-screen { animation: fadeInUp 0.4s ease both; }
 
     .step-header { margin-bottom: 32px; }
     .step-category {
@@ -287,6 +296,7 @@ export const assessmentPage = () => `<!DOCTYPE html>
       color: rgba(255,255,255,0.7); margin-bottom: 8px;
     }
     .field-label .req { color: var(--green); margin-left: 2px; }
+    .field-label .field-optional { color: rgba(255,255,255,0.35); font-weight: 400; font-size: 0.8em; margin-left: 4px; }
     .field-input {
       width: 100%; padding: 13px 16px;
       background: rgba(255,255,255,0.04);
@@ -1426,7 +1436,7 @@ ${nav()}
         <input type="email" class="field-input" id="q-email" placeholder="you@company.com" autocomplete="email">
       </div>
       <div class="field-group">
-        <label class="field-label">Phone <span class="req">*</span></label>
+        <label class="field-label">Phone <span class="field-optional">(optional)</span></label>
         <input type="tel" class="field-input" id="q-phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
       </div>
     </div>
@@ -1714,8 +1724,8 @@ function validateStep(step) {
     const ln = document.getElementById('q-last-name').value.trim();
     const co = document.getElementById('q-company').value.trim();
     const em = document.getElementById('q-email').value.trim();
-    const ph = document.getElementById('q-phone').value.trim();
-    if (!fn || !ln || !co || !em || !ph) {
+    // ph is optional — not included in required field check
+    if (!fn || !ln || !co || !em) {
       document.getElementById('val-7').classList.add('show');
       return false;
     }
@@ -1773,6 +1783,72 @@ function validateStep(step) {
 // -------------------------------------------------------------
 function nextStep(from) {
   if (!validateStep(from)) return;
+
+  // -- Calculating transition: show momentum between step 6 and step 7 --------
+  // After the final content step, display a brief animated "scoring" state so
+  // users see value (score being computed) before the contact form appears.
+  if (from === 6) {
+    document.getElementById('step-' + from).classList.remove('active');
+    updateProgress(7);
+    window.scrollTo({ top: document.getElementById('assessment-anchor').offsetTop - 80, behavior: 'smooth' });
+
+    // Build a score-bar row HTML string and schedule its animation
+    function mgcCalcBar(label, delay) {
+      var id = 'mgcb-' + label.replace(/[^a-z]/gi,'');
+      setTimeout(function() {
+        var bar = document.getElementById(id);
+        if (bar) bar.style.width = (42 + Math.floor(Math.random() * 52)) + '%';
+      }, delay + 300);
+      return '<div style="margin-bottom:14px;">'
+        + '<div style="display:flex;justify-content:space-between;margin-bottom:5px;">'
+        + '<span style="font-size:0.78rem;color:rgba(255,255,255,0.55);font-weight:600;">' + label + '</span>'
+        + '</div>'
+        + '<div style="height:6px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden;">'
+        + '<div id="' + id + '" style="height:100%;width:0%;background:linear-gradient(90deg,#ad7805,#d4960a);border-radius:3px;transition:width 0.75s cubic-bezier(0.4,0,0.2,1);"></div>'
+        + '</div></div>';
+    }
+
+    // Inject the calculating screen into the assessment container
+    var calcId = 'mgc-calc-screen';
+    var formWrap = document.getElementById('assessment-anchor');
+    if (!document.getElementById(calcId) && formWrap) {
+      var div = document.createElement('div');
+      div.id = calcId;
+      div.style.cssText = 'text-align:center;padding:72px 24px 80px;';
+      div.innerHTML = ''
+        + '<div style="width:80px;height:80px;border-radius:50%;background:rgba(173,120,5,0.12);border:2px solid rgba(173,120,5,0.35);display:flex;align-items:center;justify-content:center;margin:0 auto 28px;font-size:2rem;color:#ad7805;">'
+        + '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="width:1em;height:1em;fill:currentColor;"><path d="M0 16V0h2v14h2V6h2v8h2V3h2v11h2V8h2v6h2V1h-2V0h2v16z" fill-rule="evenodd"/></svg>'
+        + '</div>'
+        + '<h2 style="color:#fff;font-size:1.5rem;font-weight:800;margin-bottom:10px;letter-spacing:-0.01em;">Calculating Your Score&hellip;</h2>'
+        + '<p style="color:rgba(255,255,255,0.45);font-size:0.95rem;margin-bottom:36px;max-width:380px;margin-left:auto;margin-right:auto;">Analyzing your responses across 5 revenue dimensions.</p>'
+        + '<div style="max-width:360px;margin:0 auto 36px;text-align:left;">'
+        + mgcCalcBar('Revenue Stage', 0)
+        + mgcCalcBar('Pipeline Maturity', 150)
+        + mgcCalcBar('Sales Infrastructure', 300)
+        + mgcCalcBar('Talent &amp; Team', 450)
+        + mgcCalcBar('Leadership &amp; Execution', 600)
+        + '</div>'
+        + '<div style="display:flex;gap:8px;justify-content:center;">'
+        + '<div style="width:9px;height:9px;border-radius:50%;background:#ad7805;animation:dot-pulse 1.2s ease-in-out infinite;"></div>'
+        + '<div style="width:9px;height:9px;border-radius:50%;background:#ad7805;animation:dot-pulse 1.2s ease-in-out 0.2s infinite;"></div>'
+        + '<div style="width:9px;height:9px;border-radius:50%;background:#ad7805;animation:dot-pulse 1.2s ease-in-out 0.4s infinite;"></div>'
+        + '</div>';
+      formWrap.appendChild(div);
+    }
+
+    // After 2s remove the calculating screen and show the contact form
+    setTimeout(function() {
+      var calc = document.getElementById(calcId);
+      if (calc) { calc.style.transition = 'opacity 0.3s'; calc.style.opacity = '0'; setTimeout(function(){ if(calc.parentNode) calc.parentNode.removeChild(calc); }, 300); }
+      currentStep = 7;
+      document.getElementById('step-7').classList.add('active');
+      window.scrollTo({ top: document.getElementById('assessment-anchor').offsetTop - 80, behavior: 'smooth' });
+    }, 2000);
+
+    return;
+  }
+  // --------------------------------------------------------------------------
+
   document.getElementById('step-' + from).classList.remove('active');
   currentStep = from + 1;
   document.getElementById('step-' + currentStep).classList.add('active');

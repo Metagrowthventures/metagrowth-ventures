@@ -33,14 +33,9 @@ export const homePage = () => page('Build a Predictable B2B Revenue Engine', `
            onclick="mgcHomeTrack('hero_cta_click','Take the Revenue Assessment','hero');">
           Take the Revenue Assessment &rarr;
         </a>
-        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit"
-           target="_blank" rel="noopener noreferrer"
-           class="btn btn-secondary hero-cta-secondary"
-           onclick="mgcHomeTrack('revenue_review_click','Book a Revenue Review','hero');mgcHomeTrack('calendar_open','Book a Revenue Review','hero');">
-          Already Know What&rsquo;s Broken? Book a Review
-        </a>
       </div>
       <p class="hero-cta-microcopy">Free &nbsp;&bull;&nbsp; 3 Minutes &nbsp;&bull;&nbsp; Personalized Score &amp; Action Plan &nbsp;&bull;&nbsp; No Sales Call Required</p>
+      <p class="hero-cta-secondary-link">Already know what&rsquo;s broken? <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="hero-book-link" onclick="mgcHomeTrack('revenue_review_click','Book a Revenue Review','hero');mgcHomeTrack('calendar_open','Book a Revenue Review','hero');">Book a Revenue Review &rarr;</a></p>
 
       <div class="hero-trust-bar">
         <div class="hero-trust-item">&#10003; $110M+ Pipeline Created</div>
@@ -798,11 +793,22 @@ export const homePage = () => page('Build a Predictable B2B Revenue Engine', `
   padding: 17px 32px; font-size: 1.05rem; font-weight: 800;
   letter-spacing: 0.01em; white-space: nowrap;
 }
-.hero-cta-secondary {
-  padding: 15px 28px; font-size: 0.97rem; white-space: nowrap;
-}
 @media (max-width: 640px) {
-  .hero-cta-primary, .hero-cta-secondary { width: 100%; justify-content: center; }
+  .hero-cta-primary { width: 100%; justify-content: center; }
+}
+.hero-cta-secondary-link {
+  font-size: 0.82rem; color: rgba(255,255,255,0.45);
+  font-weight: 500; margin: 4px 0 0;
+}
+.hero-book-link {
+  color: rgba(255,255,255,0.65); text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,0.25);
+  text-underline-offset: 3px;
+  transition: color 0.18s, text-decoration-color 0.18s;
+}
+.hero-book-link:hover {
+  color: rgba(255,255,255,0.9);
+  text-decoration-color: rgba(255,255,255,0.6);
 }
 .hero-cta-microcopy {
   font-size: 0.78rem; color: rgba(255,255,255,0.4);
