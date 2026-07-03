@@ -1546,6 +1546,10 @@ export const homePage = () => page('Build a Predictable B2B Revenue Engine', `
       cta_label:     label || '',
       page_section:  location || ''
     };
+    // Use beacon transport for calendar_open so the hit isn't lost on navigation
+    if (eventName === 'calendar_open') {
+      params.transport_type = 'beacon';
+    }
     if (typeof gtag !== 'undefined') {
       gtag('event', eventName, params);
     } else {
