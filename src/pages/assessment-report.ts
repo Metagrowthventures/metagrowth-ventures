@@ -2210,94 +2210,38 @@ function mgcTrack(event, label, location) {
     utm_source:     _mgcUtmSrc,
     utm_medium:     _mgcUtmMed,
     utm_campaign:   _mgcUtmCamp,
-    landing_page:   _mgcLandPage
+    landing_page:   _mgcLandPage,
+    // Use beacon transport for calendar_open so the hit isn't lost on navigation
+    transport_type: event === 'calendar_open' ? 'beacon' : undefined
   });
 }
 
 // -----------------------------------------------------------------------------
-// meeting_booked — HubSpot postMessage listener
+// meeting_booked — GA4 event is now fired exclusively on /meeting-confirmed.
 //
-// HubSpot embeds post messages to the parent window when a meeting is booked.
-// We listen for two signals:
-//   1. window.postMessage from the HubSpot meetings iframe (primary)
-//   2. URL query param ?meeting_booked=1 on return navigation (fallback)
-//      — used when HubSpot opens as a new tab and redirects back
+// All HubSpot CTAs use ?redirectUrl=.../meeting-confirmed?meeting_booked=1
+// so confirmed bookings always land on /meeting-confirmed where the GA4 event
+// fires once with full UTM context and deduplication.
 //
-// Dedup key: 'mgc_ga4_mb' — prevents double-firing if the user lands on
-//   this page twice after a single booking (e.g. back button after redirect).
-//
-// HubSpot postMessage event spec (as of 2024):
-//   { meetingBookSucceeded: true, ... }  (legacy format)
-//   { type: 'hsFormCallback', eventName: 'onFormSubmit', ... }  (form embed variant)
-//   Meetings iframe fires: { message: 'outboundLink', link: '...' } on slot click
-//   and: { message: 'meetingBooked' } on confirmed booking — this is the one.
+// The postMessage listener and URL-param GA4 firing that previously lived here
+// have been removed (2025-07) to prevent double-firing. The NDF banner and
+// report-page toast UI are preserved below for UX continuity.
 // -----------------------------------------------------------------------------
-var MGC_MB_KEY = 'mgc_ga4_mb';
 
-function _fireMeetingBooked(source) {
-  if (sessionStorage.getItem(MGC_MB_KEY)) {
-    console.log('[MGC GA4] meeting_booked already fired this session — skipping duplicate.');
-    return;
-  }
-  sessionStorage.setItem(MGC_MB_KEY, '1');
-  console.log('[MGC GA4] Firing meeting_booked | source:', source);
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'meeting_booked', {
-      page_location:  window.location.href,
-      page_title:     document.title,
-      booking_source: source,
-      transport_type: 'beacon',
-      event_callback: function() {
-        console.log('[MGC GA4] meeting_booked confirmed sent to GA4.');
-      }
-    });
-  }
-}
-
-// Primary: postMessage from HubSpot meetings iframe
-window.addEventListener('message', function(e) {
-  if (!e.data || typeof e.data !== 'object') return;
-  var d = e.data;
-
-  // HubSpot Meetings embed — all confirmed signals:
-  // Format A: { meetingBookSucceeded: true }
-  if (d.meetingBookSucceeded === true) {
-    _fireMeetingBooked('hubspot_postmessage_A');
-    return;
-  }
-  // Format B: { type: 'hsFormCallback', eventName: 'onFormSubmit' }
-  if (d.type === 'hsFormCallback' && d.eventName === 'onFormSubmit') {
-    _fireMeetingBooked('hubspot_postmessage_B');
-    return;
-  }
-  // Format C (Meetings embed 2023+): { message: 'meetingBooked' }
-  if (d.message === 'meetingBooked') {
-    _fireMeetingBooked('hubspot_postmessage_C');
-    return;
-  }
-  // Format D (HubSpot JS API): { type: 'hsCallsToActionCompleted', ... }
-  if (d.type === 'hsCallsToActionCompleted') {
-    _fireMeetingBooked('hubspot_postmessage_D');
-    return;
-  }
-});
-
-// Fallback: URL param ?meeting_booked=1 (for new-tab HubSpot flows that redirect back)
-// Also shows the booking confirmation banner if the report session data is gone.
+// NDF banner: show confirmation if user somehow lands back here with ?meeting_booked=1
+// (no GA4 event — that already fired on /meeting-confirmed)
 (function() {
   try {
     var params = new URLSearchParams(window.location.search);
     if (params.get('meeting_booked') === '1') {
-      _fireMeetingBooked('url_param_return');
       // Show confirmation banner on the NDF screen (if report data is unavailable)
       var banner = document.getElementById('ndf-booked-banner');
       var headline = document.getElementById('ndf-headline');
       if (banner) banner.style.display = 'block';
       if (headline) headline.textContent = 'Your Meeting Is Confirmed.';
-      // Clean the URL without reloading (removes ?meeting_booked=1 from address bar)
+      // Clean the URL without reloading
       try {
-        var clean = window.location.pathname;
-        window.history.replaceState({}, document.title, clean);
+        window.history.replaceState({}, document.title, window.location.pathname);
       } catch(e2) {}
     }
   } catch(e) {}
@@ -2793,7 +2737,7 @@ function bnToggle(header) {
   if (ctaPrim) {
     ctaPrim.addEventListener('click', function(e) {
       mgcTrack('xray_popup_click', 'Get My Revenue Engine X-Ray™', 'popup');
-      // -- GA4: xray_submit ----------------------------------------------------------
+      // -- GA4: xray_request ----------------------------------------------------------
       // Fires when the user clicks the primary CTA on the X-Ray popup.
       // The click navigates to growthenginexray.com (external). We fire before
       // navigation using transport_type:'beacon' so the hit isn't lost.
@@ -2804,8 +2748,8 @@ function bnToggle(header) {
           if (sessionStorage.getItem(_xsubKey)) return;
           sessionStorage.setItem(_xsubKey, '1');
           if (typeof gtag !== 'function') return;
-          console.log('[MGC GA4] Firing xray_submit — score=' + _mgcScore);
-          gtag('event', 'xray_submit', {
+          console.log('[MGC GA4] Firing xray_request — score=' + _mgcScore);
+          gtag('event', 'xray_request', {
             page_location:  window.location.href,
             page_title:     document.title,
             cta_label:      'Get My Revenue Engine X-Ray™',
@@ -2818,7 +2762,7 @@ function bnToggle(header) {
             landing_page:   _mgcLandPage,
             transport_type: 'beacon'
           });
-        } catch(e) { console.error('[MGC GA4] Error firing xray_submit:', e); }
+        } catch(e) { console.error('[MGC GA4] Error firing xray_request:', e); }
       })();
       sessionStorage.setItem(XRAY_SUBMIT_KEY, '1'); // suppress future popups
     });
