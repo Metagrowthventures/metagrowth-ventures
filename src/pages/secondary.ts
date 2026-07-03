@@ -1,0 +1,1826 @@
+import { page, nav, footer, globalStyles } from '../layout'
+import { icon as svgIcon, buildSprite } from '../icons'
+
+// --- ABOUT -------------------------------------------------------------------
+export const aboutPage = () => page('About', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">About MetaGrowth Ventures</div>
+    <h1 class="hero-title">Revenue infrastructure built for companies <span class="accent">ready to scale</span></h1>
+    <p class="hero-sub">MetaGrowth Ventures helps B2B companies install the systems, leadership, and execution discipline needed to grow with more predictability.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="about-layout fade-in">
+      <div class="about-main">
+        <span class="section-label">Our Philosophy</span>
+        <h2 class="section-title">We don't hand over theory.<br>We <span class="green">install what works</span>.</h2>
+        <p style="font-size:1.1rem;color:var(--gray-600);margin-bottom:24px;">MetaGrowth was founded on a simple but frustrated belief: most B2B companies struggling to grow are not short on strategy. They are short on infrastructure. The process isn't documented. The CRM isn't used. The team isn't accountable. The forecast is a guess.</p>
+        <p style="color:var(--gray-600);margin-bottom:24px;">Traditional consultants diagnose the problem and hand you a report. Agencies run campaigns without touching the underlying sales system. Recruiters place people into broken environments and wonder why they don't perform.</p>
+        <p style="color:var(--gray-600);margin-bottom:36px;">MetaGrowth does something different. We build the system. We install the accountability. We deploy the talent. And we measure success in revenue — not deliverables.</p>
+        <div class="accent-bar"></div>
+        <h3 style="margin-bottom:16px;">Why MetaGrowth Exists</h3>
+        <p style="color:var(--gray-600);">We exist because founders deserve to exit founder-led sales. Because sales leaders deserve real infrastructure, not just goals. Because companies ready to scale shouldn't have to choose between half-measures and overhead they can't afford. MetaGrowth is the revenue partner that builds, deploys, and leads — without the full-time cost.</p>
+      </div>
+      <div class="about-side">
+        <div class="about-stat-box">
+          <div class="about-stat"><span class="as-num">$110M+</span><span class="as-label">Pipeline Created</span></div>
+          <div class="about-stat"><span class="as-num">21K+</span><span class="as-label">Prospecting Outreaches</span></div>
+          <div class="about-stat"><span class="as-num">$24M+</span><span class="as-label">Revenue Produced</span></div>
+          <div class="about-stat"><span class="as-num">1,320+</span><span class="as-label">Clients Added</span></div>
+          <div class="about-stat"><span class="as-num">8</span><span class="as-label">Solution Offerings</span></div>
+          <div class="about-stat"><span class="as-num">Multiple</span><span class="as-label">Industries Served</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">What Makes Us Different</span>
+      <h2 style="color:var(--white);margin-bottom:16px;">Not consultants. Not an agency. Not a recruiter.</h2>
+      <p style="color:rgba(255,255,255,0.65);max-width:620px;margin:0 auto 56px;font-size:1.05rem;">MetaGrowth sits at the intersection of revenue strategy, sales infrastructure, talent acquisition, and execution — all under one roof, all tied to one outcome: predictable revenue growth.</p>
+    </div>
+    <div class="diff-compare-grid fade-in">
+      <div class="diff-compare-card">
+        <div class="dcc-label not-us">Traditional Consultants</div>
+        <ul>
+          <li>✗ Strategy decks and frameworks</li>
+          <li>✗ Advice without implementation</li>
+          <li>✗ No accountability for outcomes</li>
+          <li>✗ Expensive retainers, limited execution</li>
+        </ul>
+      </div>
+      <div class="diff-compare-card highlight-card">
+        <div class="dcc-label us">MetaGrowth Ventures</div>
+        <ul>
+          <li>✓ Strategy + full deployment</li>
+          <li>✓ Systems installed, not just described</li>
+          <li>✓ Owned by outcome metrics</li>
+          <li>✓ Talent acquisition included</li>
+          <li>✓ Execution leadership embedded</li>
+          <li>✓ Flexible engagement models</li>
+        </ul>
+      </div>
+      <div class="diff-compare-card">
+        <div class="dcc-label not-us">Traditional Agencies</div>
+        <ul>
+          <li>✗ Marketing-first, sales-second</li>
+          <li>✗ Activities without pipeline accountability</li>
+          <li>✗ Siloed from sales infrastructure</li>
+          <li>✗ Revenue attribution is unclear</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">Core Principles</span>
+      <h2 class="section-title">Four principles behind every engagement</h2>
+    </div>
+    <div class="principles-grid fade-in">
+      <div class="principle-card">
+        <div class="pr-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si61" xlink:href="#si61"/></svg></div>
+        <h3>Clarity</h3>
+        <p>Every engagement starts with clear diagnosis. We don't assume we know the problem — we uncover it through structured discovery before prescribing any solution.</p>
+      </div>
+      <div class="principle-card">
+        <div class="pr-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si62" xlink:href="#si62"/></svg></div>
+        <h3>Discipline</h3>
+        <p>Revenue systems require consistent execution. We install the rhythms, cadences, and reporting structures that make discipline the default — not the exception.</p>
+      </div>
+      <div class="principle-card">
+        <div class="pr-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg></div>
+        <h3>Accountability</h3>
+        <p>We are accountable to outcomes, not activities. If the infrastructure we build doesn't produce results, we diagnose and adjust until it does.</p>
+      </div>
+      <div class="principle-card">
+        <div class="pr-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si4" xlink:href="#si4"/></svg></div>
+        <h3>Measurable Outcomes</h3>
+        <p>Everything we deploy is tied to a measurable KPI — pipeline, revenue, conversion, hiring velocity, or forecast accuracy. We don't do work that can't be measured.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">The MetaGrowth Ecosystem</span>
+      <h2 class="section-title">Strategy, infrastructure, talent, and execution — connected</h2>
+      <p class="section-subtitle">Every MetaGrowth solution connects to the same revenue ecosystem. Whether you engage at the strategy level or the full execution level, the components reinforce each other.</p>
+    </div>
+    <div class="ecosystem-diagram fade-in">
+      <div class="eco-center">Revenue<br>Ecosystem</div>
+      <div class="eco-items">
+        <div class="eco-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si63" xlink:href="#si63"/></svg><span>Revenue Strategy</span></div>
+        <div class="eco-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si31" xlink:href="#si31"/></svg><span>Sales Infrastructure</span></div>
+        <div class="eco-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si21" xlink:href="#si21"/></svg><span>Talent Acquisition</span></div>
+        <div class="eco-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si23" xlink:href="#si23"/></svg><span>Executive Leadership</span></div>
+        <div class="eco-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si13" xlink:href="#si13"/></svg><span>Sales Execution</span></div>
+        <div class="eco-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si11" xlink:href="#si11"/></svg><span>Accountability &amp; KPIs</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to work with MetaGrowth?</h2>
+    <p>Book a strategy call and let's identify the right engagement for your company's stage and goals.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes fa-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.about-layout { display: grid; grid-template-columns: 1fr 340px; gap: 64px; align-items: start; }
+.about-stat-box { background: var(--navy); border-radius: var(--radius-lg); padding: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.about-stat { padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.about-stat:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.06); }
+.as-num { display: block; font-size: 1.8rem; font-weight: 800; color: var(--green); line-height: 1; margin-bottom: 6px; }
+.as-label { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.08em; }
+.diff-compare-grid { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 24px; }
+.diff-compare-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 32px; }
+.diff-compare-card.highlight-card { background: rgba(173,120,5,0.08); border-color: rgba(173,120,5,0.3); }
+.dcc-label { font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
+.dcc-label.not-us { color: rgba(255,255,255,0.4); }
+.dcc-label.us { color: var(--green); }
+.diff-compare-card ul { display: flex; flex-direction: column; gap: 10px; }
+.diff-compare-card ul li { font-size: 0.875rem; color: rgba(255,255,255,0.55); }
+.diff-compare-card.highlight-card ul li { color: rgba(255,255,255,0.8); }
+.principles-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 52px; }
+.principle-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px 26px; transition: all var(--transition); }
+.principle-card:hover { border-color: var(--green); transform: translateY(-4px); box-shadow: var(--shadow); }
+.pr-icon { width: 52px; height: 52px; border-radius: 12px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; margin-bottom: 18px; }
+.principle-card h3 { font-size: 1.1rem; color: var(--gray-800); margin-bottom: 10px; }
+.principle-card p { font-size: 0.875rem; color: var(--gray-600); }
+.ecosystem-diagram { display: flex; align-items: center; gap: 48px; margin-top: 56px; justify-content: center; }
+.eco-center { width: 160px; height: 160px; border-radius: 50%; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 800; font-size: 1rem; line-height: 1.3; flex-shrink: 0; border: 4px solid var(--green); }
+.eco-items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.eco-item { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; transition: all var(--transition); }
+.eco-item:hover { border-color: var(--green); }
+.eco-item i { color: var(--green); font-size: 1.3rem; }
+.eco-item span { font-size: 0.85rem; font-weight: 600; color: var(--gray-800); }
+@media (max-width: 1100px) { .about-layout { grid-template-columns: 1fr; } .diff-compare-grid { grid-template-columns: 1fr; } .principles-grid { grid-template-columns: repeat(2, 1fr); } .ecosystem-diagram { flex-direction: column; } .eco-items { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .principles-grid { grid-template-columns: 1fr; } .about-stat-box { grid-template-columns: 1fr; } .about-stat:nth-child(odd) { border-right: none; } }
+</style>
+`, '', '', '', '/about')
+
+// --- CASE STUDIES -------------------------------------------------------------
+export const caseStudiesPage = () => page('Case Studies', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">Case Studies</div>
+    <h1 class="hero-title">Real growth comes from <span class="accent">installed systems</span>, not isolated tactics</h1>
+    <p class="hero-sub">Explore how MetaGrowth has helped B2B companies diagnose infrastructure gaps and deploy solutions that move the revenue needle.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cs-filters fade-in">
+      <button class="csf-btn active" data-filter="all">All Case Studies</button>
+      <button class="csf-btn" data-filter="infrastructure">Infrastructure Build</button>
+      <button class="csf-btn" data-filter="leadership">Leadership</button>
+      <button class="csf-btn" data-filter="commission">Commission-Only</button>
+    </div>
+
+    <!-- Azul Arc -->
+    <div class="cs-full-card fade-in" id="azul-arc">
+      <div class="csf-header">
+        <div class="csf-meta">
+          <div class="csf-industry">Technology &middot; Professional Services</div>
+          <div class="csf-tags"><span class="tag">Growth OS™</span> <span class="tag">Sales OS</span> <span class="tag">Prospecting</span></div>
+        </div>
+        <div class="csf-badge">infrastructure</div>
+      </div>
+      <div class="csf-body">
+        <div class="csf-left">
+          <h2>Azul Arc</h2>
+          <div class="csf-section"><h4>The Challenge</h4><p>Azul Arc lacked a structured prospecting engine and sales direction. Revenue was entirely founder-dependent with no repeatable process, no CRM discipline, and no defined ICP. Every deal required the founder's direct involvement and the pipeline was essentially invisible.</p></div>
+          <div class="csf-section"><h4>The Solution</h4><p>MetaGrowth deployed a complete sales operating system — defining the ICP, building the prospecting infrastructure, configuring CRM, installing outreach sequences, and launching a leveraged prospecting support function that generated pipeline at scale.</p></div>
+          <div class="csf-section"><h4>Services Deployed</h4><div class="pill-row"><span class="pill">Sales OS Build</span><span class="pill">Prospecting Infrastructure</span><span class="pill">CRM Configuration</span><span class="pill">Outreach Sequences</span></div></div>
+        </div>
+        <div class="csf-right">
+          <div class="csf-results-box">
+            <div class="csf-result-label">Results</div>
+            <div class="big-metric"><span class="bm-num">$100M+</span><span class="bm-label">Pipeline Generated</span></div>
+            <div class="big-metric"><span class="bm-num">75,000+</span><span class="bm-label">Prospecting Outreaches Executed</span></div>
+            <div class="big-metric"><span class="bm-num">11,000+</span><span class="bm-label">Booked Meetings</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakeasy -->
+    <div class="cs-full-card fade-in" id="speakeasy">
+      <div class="csf-header">
+        <div class="csf-meta">
+          <div class="csf-industry">Events &middot; Professional Development</div>
+          <div class="csf-tags"><span class="tag">Fractional Leadership</span> <span class="tag">Recruiting</span> <span class="tag">Coaching</span></div>
+        </div>
+        <div class="csf-badge">leadership</div>
+      </div>
+      <div class="csf-body">
+        <div class="csf-left">
+          <h2>Speakeasy</h2>
+          <div class="csf-section"><h4>The Challenge</h4><p>Speakeasy needed sales leadership and accountability infrastructure without the cost and risk of a full-time executive hire. The sales team had capacity but lacked direction, coaching, and a performance management system that created real accountability.</p></div>
+          <div class="csf-section"><h4>The Solution</h4><p>MetaGrowth deployed custom leadership oversight including structured coaching sessions, a recruiting engagement to upgrade team talent, and a strategic advisory layer that gave leadership the visibility and clarity needed to make better revenue decisions.</p></div>
+          <div class="csf-section"><h4>Services Deployed</h4><div class="pill-row"><span class="pill">Leadership Oversight</span><span class="pill">Team Coaching</span><span class="pill">Recruiting</span><span class="pill">Revenue Strategy</span></div></div>
+        </div>
+        <div class="csf-right">
+          <div class="csf-results-box">
+            <div class="csf-result-label">Results</div>
+            <div class="outcome-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Strategic oversight installed with clear revenue cadence</div>
+            <div class="outcome-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Talent upgrade through structured recruiting and vetting</div>
+            <div class="outcome-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Accountability framework with weekly performance visibility</div>
+            <div class="outcome-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Sales team direction and motivation significantly improved</div>
+            <div class="outcome-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Leadership gained reliable forecast and pipeline visibility</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Private Client -->
+    <div class="cs-full-card fade-in" id="private">
+      <div class="csf-header">
+        <div class="csf-meta">
+          <div class="csf-industry">B2B Services &middot; Private Client</div>
+          <div class="csf-tags"><span class="tag">Commission-Only</span> <span class="tag">Automation</span> <span class="tag">Multi-Channel</span></div>
+        </div>
+        <div class="csf-badge">commission</div>
+      </div>
+      <div class="csf-body">
+        <div class="csf-left">
+          <h2>Private Client</h2>
+          <div class="csf-section"><h4>The Challenge</h4><p>This client needed a scalable outreach and sales strategy without adding fixed salary overhead or building an internal sales team. They had a proven service offering but lacked the infrastructure to create consistent, scalable new business development.</p></div>
+          <div class="csf-section"><h4>The Solution</h4><p>MetaGrowth deployed a commission-only infrastructure model — building the system, designing the commission structure, recruiting and training 1099 reps, and layering in automation and multi-channel outreach to amplify reach without adding overhead.</p></div>
+          <div class="csf-section"><h4>Services Deployed</h4><div class="pill-row"><span class="pill">Commission-Only Infrastructure</span><span class="pill">System Build</span><span class="pill">1099 Recruiting</span><span class="pill">Outreach Automation</span></div></div>
+        </div>
+        <div class="csf-right">
+          <div class="csf-results-box">
+            <div class="csf-result-label">Results</div>
+            <div class="big-metric"><span class="bm-num">$16M+</span><span class="bm-label">Revenue Added</span></div>
+            <div class="big-metric"><span class="bm-num">320+</span><span class="bm-label">Clients Added</span></div>
+            <div class="big-metric"><span class="bm-num">75,000+</span><span class="bm-label">Prospecting Outreaches</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to write your own case study?</h2>
+    <p>Book a strategy call and let's identify the right solution to create measurable results for your revenue function.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.cs-filters { display: flex; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
+.csf-btn { background: var(--gray-100); border: 1px solid var(--gray-200); border-radius: 100px; padding: 10px 22px; font-size: 0.875rem; font-weight: 600; color: var(--gray-600); cursor: pointer; transition: all var(--transition); }
+.csf-btn.active, .csf-btn:hover { background: var(--navy); color: var(--white); border-color: var(--gray-800); }
+.cs-full-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); margin-bottom: 32px; overflow: hidden; transition: all var(--transition); }
+.cs-full-card:hover { border-color: var(--green); box-shadow: var(--shadow-lg); }
+.csf-header { display: flex; align-items: center; justify-content: space-between; padding: 24px 36px; background: var(--gray-50); border-bottom: 1px solid var(--gray-200); }
+.csf-industry { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); font-weight: 700; margin-bottom: 8px; }
+.csf-tags { display: flex; gap: 8px; }
+.csf-badge { background: var(--navy); color: var(--white); font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 14px; border-radius: 100px; }
+.csf-body { display: grid; grid-template-columns: 1fr 380px; gap: 0; }
+.csf-left { padding: 40px 36px; }
+.csf-left h2 { font-size: 2rem; color: var(--gray-800); margin-bottom: 28px; }
+.csf-section { margin-bottom: 24px; }
+.csf-section h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); font-weight: 700; margin-bottom: 8px; }
+.csf-section p { color: var(--gray-600); font-size: 0.95rem; line-height: 1.7; }
+.csf-right { background: var(--navy); padding: 40px 32px; }
+.csf-results-box { }
+.csf-result-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green); font-weight: 700; margin-bottom: 28px; }
+.big-metric { margin-bottom: 28px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.big-metric:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.bm-num { display: block; font-size: 2.5rem; font-weight: 800; color: var(--green); line-height: 1; margin-bottom: 6px; }
+.bm-label { font-size: 0.875rem; color: rgba(255,255,255,0.55); }
+.outcome-item { display: flex; align-items: flex-start; gap: 12px; color: rgba(255,255,255,0.7); font-size: 0.9rem; margin-bottom: 16px; line-height: 1.5; }
+.outcome-item i { color: var(--green); flex-shrink: 0; margin-top: 2px; }
+@media (max-width: 900px) { .csf-body { grid-template-columns: 1fr; } .csf-right { padding: 32px 36px; } }
+@media (max-width: 640px) { .csf-left { padding: 28px 24px; } .csf-header { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px 24px; } }
+</style>
+<script>
+const csfBtns = document.querySelectorAll('.csf-btn');
+const csfCards = document.querySelectorAll('.cs-full-card');
+csfBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    csfBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    csfCards.forEach(card => {
+      const badge = card.querySelector('.csf-badge');
+      if (filter === 'all' || badge?.textContent?.trim() === filter) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+`, '', '', '', '/case-studies')
+
+// --- HOW WE WORK --------------------------------------------------------------
+export const howWeWorkPage = () => page('How We Work', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">How We Work</div>
+    <h1 class="hero-title">We don't hand over theory.<br>We <span class="accent">install the operating system</span>.</h1>
+    <p class="hero-sub">MetaGrowth's deployment model is built around real implementation — not recommendations that gather dust in a shared folder.</p>
+    <div class="hero-cta-row">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})">Book a Strategy Call</a>
+      <a href="/solutions" class="btn btn-secondary btn-lg">See Which Engagement Fits</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:72px;">
+      <span class="section-label">Our Process</span>
+      <h2 class="section-title">Six phases of revenue infrastructure deployment</h2>
+      <p class="section-subtitle">Every MetaGrowth engagement follows a proven deployment framework — tailored to your stage, adjusted to your goals, and anchored to measurable outcomes.</p>
+    </div>
+    <div class="hww-phases fade-in">
+      <div class="hww-phase">
+        <div class="hww-num">01</div>
+        <div class="hww-content">
+          <div class="hww-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si20" xlink:href="#si20"/></svg></div>
+          <h3>Discovery &amp; Diagnosis</h3>
+          <p>We start with a structured diagnostic — not assumptions. We map your current revenue motion, identify infrastructure gaps, assess team performance, and document the bottlenecks that are blocking growth.</p>
+          <div class="hww-details">
+            <div class="hww-detail-item">Current state revenue assessment</div>
+            <div class="hww-detail-item">Sales infrastructure gap analysis</div>
+            <div class="hww-detail-item">Team performance review</div>
+            <div class="hww-detail-item">CRM and pipeline audit</div>
+            <div class="hww-detail-item">Revenue goal alignment</div>
+          </div>
+        </div>
+      </div>
+      <div class="hww-phase">
+        <div class="hww-num">02</div>
+        <div class="hww-content">
+          <div class="hww-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si64" xlink:href="#si64"/></svg></div>
+          <h3>Revenue Architecture</h3>
+          <p>Based on discovery, we design the right revenue infrastructure for your stage. This includes ICP definition, sales process design, compensation modeling, and technology selection — all before anything is built.</p>
+          <div class="hww-details">
+            <div class="hww-detail-item">ICP and segment definition</div>
+            <div class="hww-detail-item">Sales process architecture</div>
+            <div class="hww-detail-item">Compensation and incentive design</div>
+            <div class="hww-detail-item">Technology and CRM selection</div>
+            <div class="hww-detail-item">KPI framework design</div>
+          </div>
+        </div>
+      </div>
+      <div class="hww-phase">
+        <div class="hww-num">03</div>
+        <div class="hww-content">
+          <div class="hww-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si5" xlink:href="#si5"/></svg></div>
+          <h3>Recruiting &amp; Talent Deployment</h3>
+          <p>If your engagement includes talent acquisition, we launch a structured recruiting process — behavioral assessments, deep vetting, structured interviews, and finalist presentation — to find producers, not just candidates.</p>
+          <div class="hww-details">
+            <div class="hww-detail-item">Role definition and scorecard</div>
+            <div class="hww-detail-item">Sourcing and outreach</div>
+            <div class="hww-detail-item">Behavioral assessment screening</div>
+            <div class="hww-detail-item">Structured interview process</div>
+            <div class="hww-detail-item">Finalist package and placement</div>
+          </div>
+          <div style="display:flex;gap:32px;margin-top:20px;flex-wrap:wrap;">
+            <div style="text-align:center;"><div style="font-size:1.4rem;font-weight:800;color:var(--green);">1,000+</div><div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.5);margin-top:4px;">Salespeople Enrolled</div></div>
+            <div style="text-align:center;"><div style="font-size:1.4rem;font-weight:800;color:var(--green);">70,000+</div><div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.5);margin-top:4px;">Applicants Reviewed</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="hww-phase">
+        <div class="hww-num">04</div>
+        <div class="hww-content">
+          <div class="hww-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si65" xlink:href="#si65"/></svg></div>
+          <h3>Training &amp; Coaching System</h3>
+          <p>We build and run the training systems that ramp new hires faster and keep existing reps improving consistently — product knowledge, sales process certification, call coaching, and ongoing skill development.</p>
+          <div class="hww-details">
+            <div class="hww-detail-item">Onboarding program development</div>
+            <div class="hww-detail-item">Sales process certification</div>
+            <div class="hww-detail-item">Call coaching and feedback</div>
+            <div class="hww-detail-item">Rep development roadmaps</div>
+            <div class="hww-detail-item">Manager coaching frameworks</div>
+          </div>
+        </div>
+      </div>
+      <div class="hww-phase">
+        <div class="hww-num">05</div>
+        <div class="hww-content">
+          <div class="hww-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si4" xlink:href="#si4"/></svg></div>
+          <h3>Accountability &amp; Forecasting</h3>
+          <p>We install the operating rhythm that keeps your team accountable and your leadership informed — weekly pipeline reviews, activity tracking, forecast discipline, and performance management.</p>
+          <div class="hww-details">
+            <div class="hww-detail-item">Weekly pipeline review cadence</div>
+            <div class="hww-detail-item">KPI tracking and dashboards</div>
+            <div class="hww-detail-item">Stage-weighted forecast model</div>
+            <div class="hww-detail-item">Rep performance management</div>
+            <div class="hww-detail-item">Monthly traction reporting</div>
+          </div>
+        </div>
+      </div>
+      <div class="hww-phase">
+        <div class="hww-num">06</div>
+        <div class="hww-content">
+          <div class="hww-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si66" xlink:href="#si66"/></svg></div>
+          <h3>Ongoing Optimization</h3>
+          <p>Revenue infrastructure isn't a one-time build — it needs continuous refinement. We monitor, adjust, and improve based on real performance data so your system gets better over time.</p>
+          <div class="hww-details">
+            <div class="hww-detail-item">Monthly performance review</div>
+            <div class="hww-detail-item">Message and sequence optimization</div>
+            <div class="hww-detail-item">Process refinement based on data</div>
+            <div class="hww-detail-item">Quarterly strategic recalibration</div>
+            <div class="hww-detail-item">Growth planning for next phase</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="text-center fade-in">
+      <span class="section-label">What Clients Should Expect</span>
+      <h2 style="color:var(--white);margin-bottom:48px;">What working with MetaGrowth actually looks like</h2>
+    </div>
+    <div class="expect-grid fade-in">
+      <div class="expect-card">
+        <div class="exp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si67" xlink:href="#si67"/></svg></div>
+        <h4>Level of Involvement</h4>
+        <p>You'll be involved at key decision points — discovery, architecture review, candidate selection, and monthly strategy. Day-to-day execution is handled by MetaGrowth.</p>
+      </div>
+      <div class="expect-card">
+        <div class="exp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si41" xlink:href="#si41"/></svg></div>
+        <h4>Communication Cadence</h4>
+        <p>Weekly status updates (async or live), monthly reporting, and quarterly strategy reviews. You always know what's happening and why.</p>
+      </div>
+      <div class="expect-card">
+        <div class="exp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si68" xlink:href="#si68"/></svg></div>
+        <h4>Decision Points</h4>
+        <p>We present options and recommendations at major milestones — not just updates. You stay in control of direction; we handle execution.</p>
+      </div>
+      <div class="expect-card">
+        <div class="exp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si69" xlink:href="#si69"/></svg></div>
+        <h4>Reporting Structure</h4>
+        <p>Monthly performance reports tied to agreed KPIs — pipeline, activity, conversion, revenue, and hiring. No vanity metrics, only what moves the needle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- --- 10X PIPELINE PROMISE ---------------------------------------- -->
+<section class="section promise-section" id="promise">
+  <div class="container">
+    <div class="promise-inner">
+      <div class="promise-badge"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg> Performance Guarantee</div>
+      <h2 class="promise-title">The 10X Pipeline Promise™</h2>
+      <p class="promise-sub">MetaGrowth is the only revenue firm that backs its work with a performance-based guarantee. We don't just deploy systems — we stand behind results.</p>
+
+      <div class="promise-box">
+        <div class="promise-box-inner">
+          <div class="promise-shield"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si7" xlink:href="#si7"/></svg></div>
+          <div class="promise-box-body">
+            <h3>Our Commitment To You</h3>
+            <p>If we don't generate qualified pipeline worth <strong>10x your investment</strong> — or help you recover your investment through closed revenue — we will continue working at <strong>no management fee</strong> until we do.</p>
+            <p class="promise-asterisk">*Applies to qualifying engagements. Terms defined in your engagement agreement.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="promise-pillars">
+        <div class="promise-pillar">
+          <div class="pp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si70" xlink:href="#si70"/></svg></div>
+          <h4>Qualified Pipeline</h4>
+          <p>We generate real meetings with real buyers — not vanity metrics. Every appointment is booked against your defined ICP.</p>
+        </div>
+        <div class="promise-pillar">
+          <div class="pp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si4" xlink:href="#si4"/></svg></div>
+          <h4>10X Your Investment</h4>
+          <p>The benchmark is clear. We're not done until the pipeline value we create is worth 10x what you paid — measured in real opportunities.</p>
+        </div>
+        <div class="promise-pillar">
+          <div class="pp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si30" xlink:href="#si30"/></svg></div>
+          <h4>No Fee Until We Deliver</h4>
+          <p>If we fall short, we keep working. No management fee. No excuses. Skin in the game is how we operate — not just how we pitch.</p>
+        </div>
+        <div class="promise-pillar">
+          <div class="pp-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si9" xlink:href="#si9"/></svg></div>
+          <h4>Built Into Every Engagement</h4>
+          <p>The 10X Pipeline Promise™ is not a marketing claim. It's written into the engagement agreement every client signs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>See which engagement fits your situation.</h2>
+    <p>Book a strategy call and we'll walk you through the right deployment model for your company's stage, team, and goals.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.hww-phases { display: flex; flex-direction: column; gap: 0; }
+.hww-phase { display: grid; grid-template-columns: 80px 1fr; gap: 40px; align-items: start; padding: 56px 0; border-bottom: 1px solid var(--gray-200); }
+.hww-phase:last-child { border-bottom: none; }
+.hww-num { font-size: 4rem; font-weight: 900; color: rgba(173,120,5,0.12); line-height: 1; text-align: center; padding-top: 8px; }
+.hww-icon { width: 52px; height: 52px; border-radius: 12px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; margin-bottom: 16px; }
+.hww-content h3 { font-size: 1.4rem; color: var(--gray-800); margin-bottom: 12px; }
+.hww-content > p { color: var(--gray-600); font-size: 1rem; margin-bottom: 20px; line-height: 1.7; }
+.hww-details { display: flex; flex-wrap: wrap; gap: 10px; }
+.hww-detail-item { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 100px; padding: 6px 16px; font-size: 0.82rem; color: var(--gray-600); font-weight: 500; }
+.expect-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.expect-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 28px 24px; transition: all var(--transition); }
+.expect-card:hover { border-color: var(--green); }
+.exp-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.2rem; margin-bottom: 16px; }
+.expect-card h4 { color: var(--white); margin-bottom: 10px; }
+.expect-card p { color: rgba(255,255,255,0.55); font-size: 0.875rem; }
+@media (max-width: 900px) { .hww-phase { grid-template-columns: 1fr; gap: 16px; } .hww-num { font-size: 2.5rem; } .expect-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .expect-grid { grid-template-columns: 1fr; } }
+
+/* 10X Promise section */
+.promise-section { background: var(--gray-50); border-top: 1px solid var(--gray-200); }
+.promise-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+.promise-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(173,120,5,0.10); border: 1px solid rgba(173,120,5,0.28);
+  color: var(--green); padding: 6px 18px; border-radius: 100px;
+  font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.1em; margin-bottom: 20px;
+}
+.promise-title { font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gray-800); margin-bottom: 16px; }
+.promise-sub { font-size: 1.1rem; color: var(--gray-600); max-width: 680px; margin: 0 auto 40px; line-height: 1.7; }
+.promise-box {
+  background: var(--navy); border-radius: 16px;
+  padding: 2px; margin-bottom: 48px;
+  background: linear-gradient(135deg, rgba(173,120,5,0.6), rgba(173,120,5,0.15) 50%, rgba(173,120,5,0.6));
+}
+.promise-box-inner {
+  background: var(--navy); border-radius: 14px;
+  padding: 40px 48px; display: flex; align-items: flex-start; gap: 28px; text-align: left;
+}
+.promise-shield {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: rgba(173,120,5,0.15); border: 1px solid rgba(173,120,5,0.3);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--green); font-size: 1.5rem; flex-shrink: 0;
+}
+.promise-box-body h3 { color: var(--white); font-size: 1.2rem; margin-bottom: 12px; }
+.promise-box-body p { color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.75; margin-bottom: 8px; }
+.promise-box-body strong { color: var(--green); }
+.promise-asterisk { font-size: 0.8rem !important; color: rgba(255,255,255,0.35) !important; margin-top: 8px; }
+.promise-pillars {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: left;
+}
+.promise-pillar {
+  background: var(--white); border: 1px solid var(--gray-200);
+  border-radius: 14px; padding: 28px 24px;
+  transition: all 0.2s;
+}
+.promise-pillar:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: 0 8px 32px rgba(173,120,5,0.12); }
+.pp-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: rgba(173,120,5,0.10); display: flex;
+  align-items: center; justify-content: center;
+  color: var(--green); font-size: 1.1rem; margin-bottom: 16px;
+}
+.promise-pillar h4 { color: var(--gray-800); font-size: 0.975rem; margin-bottom: 10px; }
+.promise-pillar p { color: var(--gray-600); font-size: 0.875rem; line-height: 1.6; }
+@media (max-width: 900px) { .promise-pillars { grid-template-columns: repeat(2, 1fr); } .promise-box-inner { flex-direction: column; gap: 20px; padding: 28px 24px; } }
+@media (max-width: 500px) { .promise-pillars { grid-template-columns: 1fr; } }
+</style>
+`, '', '', '', '/how-we-work')
+
+// --- INDUSTRIES ---------------------------------------------------------------
+export const industriesPage = () => page('Industries', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">Industries</div>
+    <h1 class="hero-title">Revenue systems built for complex <span class="accent">B2B growth environments</span></h1>
+    <p class="hero-sub">MetaGrowth works across industries — because revenue infrastructure problems are not industry-specific. The systems, accountability, and talent challenges are universal.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:60px;">
+      <span class="section-label">Industries We Serve</span>
+      <h2 class="section-title">Flexible enough for any B2B environment</h2>
+      <p class="section-subtitle">We don't specialize in one industry — we specialize in revenue infrastructure. These are the B2B environments where we deploy most frequently.</p>
+    </div>
+    <div class="industries-list fade-in">
+      ${industryCard('fas fa-laptop-code', 'Software / SaaS', 'The Bottleneck', 'Long sales cycles, demo-heavy processes, and high customer acquisition costs without a repeatable GTM motion.', 'Why MetaGrowth Fits', 'We build the outbound engine, install CRM discipline, and create the coaching cadence that SaaS teams need to grow predictably.', ['Growth OS™', 'Fractional CRO', 'Managed Sales Pods'])}
+      ${industryCard('fas fa-briefcase', 'Consulting &amp; Coaching', 'The Bottleneck', 'Founder-dependent rainmaking, no scalable outreach, and an inability to transition from referral-only growth.', 'Why MetaGrowth Fits', 'We build the outbound infrastructure, define the ICP, and install the systems that let consulting firms scale without the founder.', ['Growth OS™', 'Fractional CRO', 'Revenue OS™'])}
+      ${industryCard('fas fa-handshake', 'Professional Services', 'The Bottleneck', 'Relationship-based selling with no structured prospecting, inconsistent pipeline, and no CRM accountability.', 'Why MetaGrowth Fits', 'We install systematic prospecting, build pipeline discipline, and create the accountability rhythm that professional service firms are typically missing.', ['Growth OS™', 'Managed Sales Pods', 'W2 Sales Teams'])}
+      ${industryCard('fas fa-industry', 'Manufacturing', 'The Bottleneck', 'Field-heavy, rep-dependent sales with no inside sales infrastructure and limited digital outreach capability.', 'Why MetaGrowth Fits', 'We build the inside sales layer, create CRM and pipeline visibility, and install outreach systems that complement your field sales motion.', ['Growth OS™', '1099 Sales Teams', 'W2 Sales Teams'])}
+      ${industryCard('fas fa-cogs', 'Technical Services', 'The Bottleneck', 'Complex technical solutions that are difficult to sell without a strong process, ICP clarity, and effective messaging.', 'Why MetaGrowth Fits', 'We translate technical value into compelling sales narratives, build the outreach infrastructure, and install the process that gets technical sellers to quota.', ['Growth OS™', 'Revenue OS™', 'Fractional CRO'])}
+      ${industryCard('fas fa-paint-brush', 'Agency &amp; Service Firms', 'The Bottleneck', 'New business development is inconsistent, referral-dependent, and usually falls to leadership who has too many other priorities.', 'Why MetaGrowth Fits', 'We build the prospecting engine, install a repeatable new business process, and in many cases run a commission-only model that generates pipeline without fixed cost.', ['1099 Sales Teams', 'Growth OS™', 'Revenue OS™'])}
+      ${industryCard('fas fa-rocket', 'Growth-Stage B2B', 'The Bottleneck', 'Revenue is real but inconsistent. Infrastructure is cracking under growth pressure. Leadership is stretched thin and can\'t build systems while running the business.', 'Why MetaGrowth Fits', 'MetaGrowth is built for this exact stage — we bring executive leadership, system infrastructure, and talent acquisition under one roof so growth-stage companies can scale without guessing.', ['Fractional CRO', 'Managed Sales Pods', 'Growth OS™'])}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Your industry. Our infrastructure.</h2>
+    <p>Book a strategy call and let's discuss the specific revenue bottlenecks you're facing — and the right MetaGrowth solution to solve them.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="/solutions" class="btn btn-secondary btn-lg">Explore Solutions</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.industries-list { display: flex; flex-direction: column; gap: 24px; }
+.industry-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 40px; transition: all var(--transition); }
+.industry-card:hover { border-color: var(--green); box-shadow: var(--shadow-lg); }
+.ind-header { display: flex; align-items: center; gap: 20px; margin-bottom: 28px; }
+.ind-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.4rem; flex-shrink: 0; }
+.ind-header h3 { font-size: 1.3rem; color: var(--gray-800); }
+.ind-body { display: grid; grid-template-columns: 1fr 1fr 260px; gap: 32px; }
+.ind-section h5 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); font-weight: 700; margin-bottom: 8px; }
+.ind-section p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.6; }
+.ind-services { display: flex; flex-direction: column; gap: 8px; }
+.ind-service-link { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; font-weight: 600; color: var(--gray-800); transition: color var(--transition); }
+.ind-service-link::before { content: '→'; color: var(--green); }
+.ind-service-link:hover { color: var(--green); }
+@media (max-width: 900px) { .ind-body { grid-template-columns: 1fr; gap: 20px; } }
+</style>
+`, '', '', '', '/industries')
+
+// --- RESOURCES ----------------------------------------------------------------
+export const resourcesPage = () => page('Resources', `
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="hero-eyebrow">Resources</div>
+    <h1 class="hero-title">Revenue growth starts with <span class="accent">the right frameworks</span></h1>
+    <p class="hero-sub">Guides, templates, and tools built to help founders, CEOs, and sales leaders diagnose infrastructure gaps and build scalable revenue systems.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:60px;">
+      <span class="section-label">Lead Magnets</span>
+      <h2 class="section-title">Start with these essential resources</h2>
+    </div>
+    <div class="lead-magnets-grid fade-in">
+      <div class="lm-card featured" style="margin-top:0;">
+        <div class="lm-badge">New</div>
+        <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg></div>
+        <div>
+          <h3>Revenue System Audit™</h3>
+          <p>Identify where revenue is leaking inside your sales process. Most businesses assume stalled growth is a lead problem — this diagnostic reveals where opportunities are slipping, which parts of your sales process are underperforming, and what those gaps may be costing each month.</p>
+          <div class="lm-details">
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 5–7 min</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si71" xlink:href="#si71"/></svg> Executive Diagnostic</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si72" xlink:href="#si72"/></svg> Mobile-friendly</span>
+          </div>
+        </div>
+        <a href="/revenue-system-audit" class="btn btn-primary">Run the Audit</a>
+      </div>
+      <div class="lm-card featured">
+        <div class="lm-badge">New</div>
+        <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si11" xlink:href="#si11"/></svg></div>
+        <div>
+          <h3>Sales Team Performance Diagnostic</h3>
+          <p>An execution review framework for founders and revenue leaders. Score your sales team across outreach, pipeline creation, messaging, and process discipline — identify structural constraints and get clear recommendations to fix them.</p>
+          <div class="lm-details">
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Framework</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 15 min audit</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si73" xlink:href="#si73"/></svg> Scored Diagnostic</span>
+          </div>
+        </div>
+        <a href="/static/sales-team-diagnostic.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/sales-team-diagnostic.pdf" data-pdf-name="Sales Team Performance Diagnostic">Download Free</a>
+      </div>
+      <div class="lm-card featured" style="margin-top:0;">
+        <div class="lm-badge">Free Guide</div>
+        <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si42" xlink:href="#si42"/></svg></div>
+        <div>
+          <h3>The Founder's Growth Guide</h3>
+          <p>How MetaGrowth thinks about scaling revenue systems — and where most businesses break. Covers the founder bottleneck, pipeline problems, sales process gaps, the recruiting trap, data blind spots, and what actually scales. Essential reading for any B2B founder serious about building a predictable revenue engine.</p>
+          <div class="lm-details">
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Guide</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 30 min read</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si43" xlink:href="#si43"/></svg> 10 Sections</span>
+          </div>
+        </div>
+        <a href="/static/founders-growth-guide.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/founders-growth-guide.pdf" data-pdf-name="The Founder's Growth Guide">Download Free</a>
+      </div>
+      <div class="lm-card featured" style="margin-top:0;">
+        <div class="lm-badge">Free Guide</div>
+        <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si74" xlink:href="#si74"/></svg></div>
+        <div>
+          <h3>The Revenue System Blueprint™</h3>
+          <p>A high-level executive framework mapping the 7 stages every B2B company must master to build a predictable, scalable, and defensible revenue engine. Covers Market & ICP Clarity, Messaging, Pipeline Generation, Qualification, Execution, Pipeline Management, and Optimization.</p>
+          <div class="lm-details">
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Guide</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 20 min read</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si31" xlink:href="#si31"/></svg> 7-Stage Framework</span>
+          </div>
+        </div>
+        <a href="/static/revenue-system-blueprint.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/revenue-system-blueprint.pdf" data-pdf-name="The Revenue System Blueprint™">Download Free</a>
+      </div>
+      <div class="lm-card featured" style="margin-top:0;">
+        <div class="lm-badge">Free Guide</div>
+        <div class="lm-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si14" xlink:href="#si14"/></svg></div>
+        <div>
+          <h3>2026 B2B Team AI Stack Guide</h3>
+          <p>An executive-level framework for identifying which AI tools actually belong in a B2B revenue stack — and in what order to implement them. Covers internal Q&A, workflow automation, customer service bots, revenue intelligence, CRM-native agents, ROI modeling, and a practical implementation roadmap.</p>
+          <div class="lm-details">
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si24" xlink:href="#si24"/></svg> PDF Guide</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg> 25 min read</span>
+            <span><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si31" xlink:href="#si31"/></svg> 5-Layer Framework</span>
+          </div>
+        </div>
+        <a href="/static/ai-stack-guide-2026.pdf" class="btn btn-primary" data-pdf-gate data-pdf-url="/static/ai-stack-guide-2026.pdf" data-pdf-name="2026 B2B Team AI Stack Guide">Download Free</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section section-gray">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">Content Library</span>
+      <h2 class="section-title">Revenue growth knowledge base</h2>
+    </div>
+    <div class="resource-cats fade-in">
+      ${resourceCat('fas fa-layer-group', 'Sales Operating System', ['Building a repeatable sales process', 'CRM configuration best practices', 'KPI framework setup', 'Pipeline stage design'])}
+      ${resourceCat('fas fa-search', 'Recruiting &amp; Hiring', ['Interview scorecard templates', 'Behavioral assessment overview', 'SDR vs AE hiring differences', 'Onboarding 30/60/90 frameworks'])}
+      ${resourceCat('fas fa-dollar-sign', 'Compensation Design', ['Commission plan structures', 'Draw vs at-risk models', 'Accelerator and kicker design', 'Margin-safe comp planning'])}
+      ${resourceCat('fas fa-database', 'CRM &amp; KPIs', ['CRM selection guide', 'Pipeline velocity tracking', 'Leading vs lagging indicators', 'Forecast accuracy methods'])}
+      ${resourceCat('fas fa-comment-dots', 'Outreach &amp; Messaging', ['Cold email frameworks', 'LinkedIn outreach sequences', 'Call script templates', 'Objection handling guides'])}
+      ${resourceCat('fas fa-chart-line', 'Revenue Growth', ['Stage-based growth strategy', 'From $1M to $10M playbook', 'Founder-to-CEO sales transition', 'Scaling without overhead'])}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Want a custom resource for your situation?</h2>
+    <p>Book a strategy call and get a personalized revenue architecture recommendation — not a generic template.</p>
+    <div class="cta-row">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+      <a href="/assessment" class="btn btn-secondary btn-lg">Take the Assessment</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.lead-magnets-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.lm-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: all var(--transition); }
+.lm-card:hover { border-color: var(--green); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.lm-card.featured { border-color: var(--green); background: linear-gradient(135deg, rgba(173,120,5,0.04) 0%, var(--white) 100%); display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 32px; }
+.lm-badge { position: absolute; top: -12px; left: 24px; background: var(--green); color: var(--gray-800); font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 100px; }
+.lm-icon { width: 64px; height: 64px; border-radius: 16px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.6rem; flex-shrink: 0; }
+.lm-card.featured .lm-icon { width: 80px; height: 80px; font-size: 2rem; }
+.lm-card h3 { font-size: 1.2rem; color: var(--gray-800); margin-bottom: 10px; margin-top: 16px; }
+.lm-card.featured h3 { margin-top: 0; }
+.lm-card p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 16px; }
+.lm-details { display: flex; gap: 16px; margin-bottom: 20px; }
+.lm-details span { font-size: 0.8rem; color: var(--gray-400); display: flex; align-items: center; gap: 6px; }
+.resource-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.res-cat { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 32px 28px; transition: all var(--transition); }
+.res-cat:hover { border-color: var(--green); box-shadow: var(--shadow); }
+.res-cat-icon { width: 48px; height: 48px; border-radius: 10px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.2rem; margin-bottom: 16px; }
+.res-cat h4 { color: var(--gray-800); margin-bottom: 16px; }
+.res-cat ul { display: flex; flex-direction: column; gap: 8px; }
+.res-cat ul li { font-size: 0.875rem; color: var(--gray-600); padding-left: 14px; position: relative; }
+.res-cat ul li::before { content: '–'; position: absolute; left: 0; color: var(--green); font-weight: 700; }
+@media (max-width: 900px) { .lead-magnets-grid { grid-template-columns: 1fr; } .lm-card.featured { grid-template-columns: 1fr; } .resource-cats { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .resource-cats { grid-template-columns: 1fr; } }
+</style>
+`, '', '', '', '/resources')
+
+// --- CONTACT ------------------------------------------------------------------
+export const contactPage = () => page('Contact', `
+
+<!-- SECTION 1: HERO -->
+<section class="ct-hero">
+  <div class="container ct-hero-inner">
+    <div class="hero-eyebrow">Get In Touch</div>
+    <h1 class="hero-title">Let's Talk About <span class="accent">Growth</span></h1>
+    <p class="ct-hero-sub">Whether you're evaluating sales leadership, building a revenue engine, improving outbound performance, or simply exploring whether MetaGrowth is the right fit, we're happy to help.</p>
+    <div class="ct-hero-ctas">
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Session'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Session</a>
+      <a href="/assessment" class="btn btn-secondary btn-lg"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si4" xlink:href="#si4"/></svg> Take the Revenue Audit</a>
+    </div>
+    <div class="ct-trust-bar">
+      <div class="ct-trust-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> $110M+ Pipeline Created</div>
+      <div class="ct-trust-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> 75,000+ Sales Conversations</div>
+      <div class="ct-trust-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> 1,320+ Clients Added</div>
+      <div class="ct-trust-item"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> MetaGrowth 10X Pipeline Promise™</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: CHOOSE YOUR PATH -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">Choose Your Path</span>
+      <h2 class="section-title">How Would You Like To Engage?</h2>
+    </div>
+    <div class="ct-path-grid fade-in">
+      <div class="ct-path-card">
+        <div class="ct-path-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg></div>
+        <h3>Book a Strategy Session</h3>
+        <p>Meet directly with a MetaGrowth advisor to discuss your goals, challenges, and opportunities.</p>
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Schedule My Session'})">Schedule My Session</a>
+      </div>
+      <div class="ct-path-card ct-path-card--featured">
+        <div class="ct-path-badge">Most Popular</div>
+        <div class="ct-path-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg></div>
+        <h3>Take the Revenue Audit</h3>
+        <p>Receive a customized assessment designed to identify growth bottlenecks, pipeline leaks, and revenue opportunities.</p>
+        <a href="/assessment" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:auto;">Start My Revenue Audit</a>
+      </div>
+      <a class="ct-path-card" href="mailto:josh@metagrowth.ventures" style="text-decoration:none;cursor:pointer;">
+        <div class="ct-path-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si75" xlink:href="#si75"/></svg></div>
+        <h3>Ask Our Founder Directly</h3>
+        <p>Have a question about fit, pricing, or strategy? Josh reads every message and responds personally.</p>
+        <div class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:auto;pointer-events:none;">Email Josh Directly <svg class="si" fill="currentColor" aria-hidden="true" style="margin-left:6px"><use href="#si1" xlink:href="#si1"/></svg></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: CONTACT INFO + FORM -->
+<section class="section section-gray" id="contact-form-section">
+  <div class="container">
+    <div class="ct-info-form-grid fade-in">
+
+      <!-- LEFT: Contact Info -->
+      <div class="ct-info-col">
+        <span class="section-label">Direct Contact</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:32px;">Contact MetaGrowth</h2>
+        <div class="ct-contact-card">
+          <div class="ct-contact-avatar"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si28" xlink:href="#si28"/></svg></div>
+          <div>
+            <div class="ct-contact-name">Josh Hirsch</div>
+            <div class="ct-contact-title">CEO, MetaGrowth Ventures</div>
+          </div>
+        </div>
+        <div class="ct-contact-details">
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si76" xlink:href="#si76"/></svg></div>
+            <div>
+              <div class="ct-contact-label">Phone</div>
+              <a href="tel:+19706766226" class="ct-contact-value">(970) 676-6226</a>
+            </div>
+          </div>
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si77" xlink:href="#si77"/></svg></div>
+            <div>
+              <div class="ct-contact-label">Email</div>
+              <a href="mailto:josh@metagrowth.ventures" class="ct-contact-value">josh@metagrowth.ventures</a>
+            </div>
+          </div>
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si18" xlink:href="#si18"/></svg></div>
+            <div>
+              <div class="ct-contact-label">Office</div>
+              <span class="ct-contact-value">Fort Collins, Colorado</span>
+            </div>
+          </div>
+          <div class="ct-contact-item">
+            <div class="ct-contact-icon"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si8" xlink:href="#si8"/></svg></div>
+            <div>
+              <div class="ct-contact-label">Business Hours</div>
+              <span class="ct-contact-value">Monday–Friday<br>8:00 AM – 5:00 PM Mountain Time</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Simple Form -->
+      <div class="ct-form-col">
+        <span class="section-label">Send A Message</span>
+        <h2 class="section-title" style="font-size:2rem;margin-bottom:32px;">Send Us A Message</h2>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label>Name *</label>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea name="message" rows="6" placeholder="Tell us what you're working on or what questions you have..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+            <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si25" xlink:href="#si25"/></svg> Send Message
+          </button>
+          <p style="font-size:0.82rem;color:var(--gray-400);text-align:center;margin-top:12px;">Most inquiries receive a response within one business day.</p>
+          <div id="form-error" style="display:none;background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.3);border-radius:var(--radius);padding:14px 18px;text-align:center;color:#dc2626;font-size:0.9rem;margin-top:12px;">
+            <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si78" xlink:href="#si78"/></svg> Something went wrong — please try again or email <a href="mailto:josh@metagrowth.ventures" style="color:#dc2626;font-weight:600;">josh@metagrowth.ventures</a>
+          </div>
+        </form>
+        <div id="form-success" style="display:none;background:rgba(173,120,5,0.08);border:1px solid rgba(173,120,5,0.3);border-radius:var(--radius-lg);padding:36px;text-align:center;margin-top:24px;">
+          <svg class="si" fill="currentColor" aria-hidden="true" style="color:var(--green);font-size:2.5rem;margin-bottom:16px;display:block"><use href="#si2" xlink:href="#si2"/></svg>
+          <h3 style="color:var(--navy);margin-bottom:10px;">Message received!</h3>
+          <p style="color:var(--gray-600);">We'll respond within one business day.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: WHAT HAPPENS NEXT -->
+<section class="section">
+  <div class="container">
+    <div class="text-center fade-in" style="margin-bottom:52px;">
+      <span class="section-label">The Process</span>
+      <h2 class="section-title">What Happens Next?</h2>
+    </div>
+    <div class="ct-next-steps fade-in">
+      <div class="ct-next-step">
+        <div class="ct-next-num">1</div>
+        <div class="ct-next-body">
+          <h4>We review your inquiry.</h4>
+          <p>Every message is read by a real person on the MetaGrowth team — not filtered through an automated system.</p>
+        </div>
+      </div>
+      <div class="ct-next-connector"></div>
+      <div class="ct-next-step">
+        <div class="ct-next-num">2</div>
+        <div class="ct-next-body">
+          <h4>We determine the best fit.</h4>
+          <p>We'll identify whether a conversation, a revenue audit, or a specific resource is the right next step for your situation.</p>
+        </div>
+      </div>
+      <div class="ct-next-connector"></div>
+      <div class="ct-next-step">
+        <div class="ct-next-num">3</div>
+        <div class="ct-next-body">
+          <h4>We schedule a strategy session.</h4>
+          <p>If appropriate, we'll set up a call to discuss your goals and provide tailored recommendations for your business.</p>
+        </div>
+      </div>
+      <div class="ct-next-connector"></div>
+      <div class="ct-next-step">
+        <div class="ct-next-num">4</div>
+        <div class="ct-next-body">
+          <h4>We'll tell you if we're not the right fit.</h4>
+          <p>We'd rather point you in the right direction than waste your time. If MetaGrowth isn't the best solution, we'll say so.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: FINAL CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="section-label" style="color:var(--green);display:block;margin-bottom:16px;">Not Sure Where To Start?</span>
+    <h2>Start with a Revenue Audit.</h2>
+    <p>In less than 3 minutes, we'll help identify your biggest revenue bottlenecks and provide recommendations tailored to your business.</p>
+    <div class="cta-row">
+      <a href="/assessment" class="btn btn-primary btn-lg"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si6" xlink:href="#si6"/></svg> Get My Revenue Audit</a>
+      <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book A Strategy Session'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book A Strategy Session</a>
+    </div>
+  </div>
+</section>
+
+<!-- Tawk.to embedded chat (contact page) -->
+<div id='tawk_6a346361d0dd3e1d406c67c3'></div>
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.embedded='tawk_6a346361d0dd3e1d406c67c3';
+
+// -- GA4 Tawk callbacks (contact page embedded instance) ----------------------
+// Mirror of layout.ts callbacks — same events, same params, same dedup keys
+// so GA4 sees one unified stream regardless of which embed fires.
+function _tawkGA4Contact(eventName) {
+  try {
+    if (typeof gtag !== 'function') return;
+    var _u = {};
+    try { _u = JSON.parse(sessionStorage.getItem('mgc_utm') || '{}'); } catch(e) {}
+    var params = {
+      page_location: window.location.href,
+      page_title:    document.title,
+      utm_source:    _u.utm_source   || '',
+      utm_medium:    _u.utm_medium   || '',
+      utm_campaign:  _u.utm_campaign || '',
+      landing_page:  _u.landing_page || ''
+    };
+    console.log('[MGC GA4] Firing', eventName, params);
+    gtag('event', eventName, params);
+  } catch(e) { console.error('[MGC GA4] Error firing', eventName, e); }
+}
+
+// chat_widget_open: visitor opens the embedded widget — deduped per session
+Tawk_API.onChatMaximized = function() {
+  try {
+    var _key = 'mgc_ga4_chat_open';
+    if (sessionStorage.getItem(_key)) return;
+    sessionStorage.setItem(_key, '1');
+    _tawkGA4Contact('chat_widget_open');
+  } catch(e) {}
+};
+
+// chat_started: visitor sent their first message
+Tawk_API.onChatStarted = function() {
+  _tawkGA4Contact('chat_started');
+};
+
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a346361d0dd3e1d406c67c3/1jrtg44fu';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);})();
+</script>
+
+<script>
+function openTawkChat() {
+  var el = document.getElementById('tawk_6a346361d0dd3e1d406c67c3');
+  if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+  if (window.Tawk_API && typeof window.Tawk_API.maximize === 'function') {
+    window.Tawk_API.maximize();
+  }
+}
+// Wire up the chat card click
+var chatCard = document.getElementById('open-chat-card');
+if (chatCard) {
+  chatCard.setAttribute('onclick', '');
+  chatCard.addEventListener('click', openTawkChat);
+}
+
+const form = document.getElementById('contact-form');
+const success = document.getElementById('form-success');
+const submitBtn = form ? form.querySelector('button[type="submit"]') : null;
+const errorMsg = document.getElementById('form-error');
+
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.innerHTML = '<svg class="si" fill="currentColor" aria-hidden="true" style="animation:fa-spin 1s linear infinite;"><use href="#si44" xlink:href="#si44"/></svg> Sending...'; }
+    if (errorMsg) errorMsg.style.display = 'none';
+    const data = {};
+    new FormData(form).forEach((val, key) => { data[key] = val; });
+    try {
+      const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (typeof gtag !== 'undefined') gtag('event', 'contact_form_submit', {
+          page_location: window.location.href,
+          page_title: document.title,
+          form_id: 'contact-form'
+        });
+      } else { throw new Error('Server error'); }
+    } catch (err) {
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.innerHTML = '<svg class="si" fill="currentColor" aria-hidden="true"><use href="#si25" xlink:href="#si25"/></svg> Send Message'; }
+      if (errorMsg) errorMsg.style.display = 'block';
+    }
+  });
+}
+
+// Smooth scroll for "Send A Message" path card
+document.querySelectorAll('a[href="#contact-form-section"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+<style>
+/* -- Hero -- */
+.ct-hero { background: var(--navy); padding: 100px 0 72px; text-align: center; }
+.ct-hero-inner { max-width: 820px; margin: 0 auto; }
+.ct-hero .hero-eyebrow { color: var(--green); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
+.ct-hero .hero-title { color: var(--white); font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 20px; }
+.ct-hero-sub { color: rgba(255,255,255,0.65); font-size: 1.1rem; line-height: 1.75; max-width: 680px; margin: 0 auto 36px; }
+.ct-hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+.ct-trust-bar { display: flex; gap: 28px; justify-content: center; flex-wrap: wrap; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08); }
+.ct-trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: rgba(255,255,255,0.55); font-weight: 500; }
+.ct-trust-item i { color: var(--green); font-size: 0.8rem; }
+
+/* -- Choose Your Path -- */
+.ct-path-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ct-path-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px 28px; display: flex; flex-direction: column; gap: 14px; position: relative; transition: all var(--transition); }
+.ct-path-card:hover { border-color: var(--green); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+.ct-path-card--featured { border-color: var(--green); background: linear-gradient(135deg, rgba(173,120,5,0.05) 0%, var(--white) 100%); }
+.ct-path-badge { position: absolute; top: -12px; left: 24px; background: var(--green); color: var(--gray-800); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 14px; border-radius: 100px; }
+.ct-path-icon { width: 56px; height: 56px; border-radius: 14px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.4rem; }
+.ct-path-card h3 { font-size: 1.15rem; color: var(--gray-800); margin: 0; }
+.ct-path-card p { font-size: 0.9rem; color: var(--gray-600); line-height: 1.65; flex: 1; margin: 0; }
+
+/* -- Contact Info + Form -- */
+.ct-info-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+.ct-contact-card { display: flex; align-items: center; gap: 16px; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 28px; }
+.ct-contact-avatar { width: 52px; height: 52px; border-radius: 50%; background: rgba(173,120,5,0.12); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 1.3rem; flex-shrink: 0; }
+.ct-contact-name { font-weight: 700; color: var(--gray-800); font-size: 1rem; }
+.ct-contact-title { font-size: 0.82rem; color: var(--gray-400); margin-top: 2px; }
+.ct-contact-details { display: flex; flex-direction: column; gap: 20px; }
+.ct-contact-item { display: flex; align-items: flex-start; gap: 16px; }
+.ct-contact-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(173,120,5,0.10); display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 0.95rem; flex-shrink: 0; margin-top: 2px; }
+.ct-contact-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--gray-400); margin-bottom: 4px; }
+.ct-contact-value { font-size: 0.95rem; color: var(--gray-700); text-decoration: none; line-height: 1.5; }
+a.ct-contact-value:hover { color: var(--green); }
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.875rem; font-weight: 600; color: var(--gray-800); }
+.form-group input, .form-group textarea {
+  border: 1px solid var(--gray-200); border-radius: var(--radius);
+  padding: 12px 16px; font-size: 0.95rem; font-family: var(--font-body);
+  color: var(--gray-800); background: var(--white);
+  transition: border-color var(--transition); outline: none;
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(173,120,5,0.12); }
+.form-group textarea { resize: vertical; min-height: 140px; }
+
+/* -- What Happens Next -- */
+.ct-next-steps { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; }
+.ct-next-step { display: flex; gap: 24px; align-items: flex-start; }
+.ct-next-num { width: 48px; height: 48px; border-radius: 50%; background: var(--green); color: var(--gray-800); font-size: 1.1rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.ct-next-body h4 { color: var(--gray-800); font-size: 1.05rem; margin-bottom: 6px; }
+.ct-next-body p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.65; margin: 0; }
+.ct-next-connector { width: 1px; background: var(--gray-200); height: 32px; margin: 6px 0 6px 23px; }
+
+/* -- Tawk embedded chat -- */
+#tawk_6a346361d0dd3e1d406c67c3 {
+  width: 100%; max-width: 780px; margin: 0 auto 64px;
+  border-radius: var(--radius-lg); overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  min-height: 460px;
+}
+/* -- Responsive -- */
+@media (max-width: 1000px) { .ct-path-grid { grid-template-columns: 1fr; } .ct-info-form-grid { grid-template-columns: 1fr; gap: 48px; } }
+@media (max-width: 640px) { .ct-hero { padding: 72px 0 52px; } .ct-trust-bar { gap: 16px; } .ct-hero-ctas { flex-direction: column; align-items: center; } }
+</style>
+`, '', '', '', '/contact')
+
+// Helpers
+function industryCard(iconCls: string, name: string, bottleneckLabel: string, bottleneck: string, fitLabel: string, fit: string, solutions: string[]) {
+  const iconName = iconCls.replace(/^fa[bs]\s+fa-/, '');
+  return `<div class="industry-card">
+    <div class="ind-header"><div class="ind-icon">${svgIcon(iconName)}</div><h3>${name}</h3></div>
+    <div class="ind-body">
+      <div class="ind-section"><h5>${bottleneckLabel}</h5><p>${bottleneck}</p></div>
+      <div class="ind-section"><h5>${fitLabel}</h5><p>${fit}</p></div>
+      <div class="ind-services"><h5>Recommended Solutions</h5>${solutions.map(s => `<a href="/solutions" class="ind-service-link">${s}</a>`).join('')}</div>
+    </div>
+  </div>`
+}
+
+// --- REVENUE SYSTEM AUDIT -----------------------------------------------------
+export const revenueSystemAuditPage = () => `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revenue System Audit™ | MetaGrowth Ventures</title>
+  <meta name="description" content="Identify where revenue is leaking inside your sales process. 5-7 minute executive diagnostic.">
+  <link rel="canonical" href="https://metagrowth.ventures/revenue-system-audit">
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metagrowth.ventures/revenue-system-audit">
+  <meta property="og:site_name" content="MetaGrowth Ventures">
+  <meta property="og:title" content="Revenue System Audit™ | MetaGrowth Ventures">
+  <meta property="og:description" content="Identify where revenue is leaking inside your sales process. 5-7 minute executive diagnostic.">
+  <meta property="og:image" content="https://metagrowth.ventures/static/og-image.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="MetaGrowth Ventures — Revenue Infrastructure & Executive Growth Firm">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@metagrowth">
+  <meta name="twitter:title" content="Revenue System Audit™ | MetaGrowth Ventures">
+  <meta name="twitter:description" content="Identify where revenue is leaking inside your sales process. 5-7 minute executive diagnostic.">
+  <meta name="twitter:image" content="https://metagrowth.ventures/static/og-image.webp">
+  <link rel="icon" type="image/png" href="/static/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"></noscript>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xbls14o22c");
+  </script>
+  ${globalStyles()}
+  <style>
+    body { background: var(--navy); color: var(--white); padding-top: 68px; }
+
+    /* -- Intro section -- */
+    .rsa-intro-section {
+      padding: 72px 24px 48px;
+      background: linear-gradient(180deg, #0A0A0A 0%, var(--navy) 100%);
+      border-bottom: 1px solid rgba(173,120,5,0.12);
+      position: relative;
+      overflow: hidden;
+    }
+    .rsa-intro-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 800px 400px at 50% 0%, rgba(173,120,5,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .rsa-intro-container { max-width: 1120px; margin: 0 auto; position: relative; }
+    .rsa-intro-eyebrow {
+      display: inline-flex; align-items: center;
+      padding: 6px 16px; border-radius: 999px;
+      border: 1px solid rgba(173,120,5,0.3);
+      color: var(--green); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 24px;
+    }
+    .rsa-intro-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.9fr);
+      gap: 48px; align-items: start;
+    }
+    .rsa-intro-heading {
+      margin: 0 0 16px;
+      color: var(--white);
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 800; line-height: 1.05; letter-spacing: -0.04em;
+    }
+    .rsa-intro-heading span { color: var(--green); }
+    .rsa-intro-subhead {
+      margin: 0 0 20px; color: rgba(255,255,255,0.75);
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      font-weight: 500; line-height: 1.5;
+    }
+    .rsa-intro-text {
+      margin: 0; color: rgba(255,255,255,0.55);
+      font-size: 1rem; line-height: 1.8;
+    }
+    .rsa-intro-text + .rsa-intro-text { margin-top: 14px; }
+    .rsa-intro-actions {
+      display: flex; align-items: center; gap: 16px;
+      flex-wrap: wrap; margin-top: 32px;
+    }
+    .rsa-intro-meta {
+      color: rgba(255,255,255,0.35); font-size: 0.85rem;
+    }
+    .rsa-intro-panel {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(173,120,5,0.2);
+      border-radius: 20px; padding: 28px;
+    }
+    .rsa-intro-panel-title {
+      margin: 0 0 16px; color: var(--green);
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+    }
+    .rsa-intro-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    .rsa-intro-list li {
+      position: relative; padding-left: 20px;
+      color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.6;
+    }
+    .rsa-intro-list li::before {
+      content: ''; position: absolute; left: 0; top: 9px;
+      width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+    }
+    @media (max-width: 900px) {
+      .rsa-intro-grid { grid-template-columns: 1fr; gap: 28px; }
+    }
+    @media (max-width: 640px) {
+      .rsa-intro-section { padding: 48px 16px 36px; }
+      .rsa-intro-heading { font-size: 2rem; }
+    }
+
+    /* -- Assessment styles (same as /assessment) -- */
+    .assess-benefits {
+      background: var(--navy-mid);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 28px 24px;
+    }
+    .assess-benefits-inner {
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: center;
+      gap: 36px; flex-wrap: wrap;
+    }
+    .assess-benefit {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.88rem; color: rgba(255,255,255,0.7); font-weight: 500;
+    }
+    .assess-benefit i { color: var(--green); }
+    .assess-shell { max-width: 780px; margin: 0 auto; padding: 56px 24px 80px; }
+    .progress-wrap { margin-bottom: 40px; }
+    .progress-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .progress-label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
+    .progress-step-count { font-size: 0.8rem; color: rgba(255,255,255,0.35); }
+    .progress-track { height: 4px; background: rgba(255,255,255,0.08); border-radius: 4px; overflow: hidden; }
+    .progress-fill { height: 100%; background: var(--green); border-radius: 4px; transition: width 0.4s ease; }
+    .progress-steps { display: flex; gap: 6px; margin-top: 14px; }
+    .progress-dot { flex: 1; height: 3px; border-radius: 3px; background: rgba(255,255,255,0.1); transition: background 0.3s ease; }
+    .progress-dot.done { background: var(--green); }
+    .progress-dot.active { background: rgba(173,120,5,0.5); }
+    .assess-step { display: none; }
+    .assess-step.active { display: block; animation: stepIn 0.3s ease; }
+    @keyframes stepIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .step-header { margin-bottom: 32px; }
+    .step-category { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
+    .step-header h2 { font-size: clamp(1.4rem, 3vw, 2rem); color: var(--white); line-height: 1.25; }
+    .step-header p { font-size: 0.95rem; color: rgba(255,255,255,0.5); margin-top: 8px; }
+    .question-block { margin-bottom: 32px; }
+    .question-label { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 14px; line-height: 1.4; }
+    .question-label span { display: inline-block; width: 22px; height: 22px; background: rgba(173,120,5,0.15); border: 1px solid rgba(173,120,5,0.3); border-radius: 50%; font-size: 0.72rem; font-weight: 700; color: var(--green); text-align: center; line-height: 22px; margin-right: 8px; }
+    .options-grid { display: grid; gap: 10px; }
+    .options-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+    .option-card { display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); cursor: pointer; transition: all 0.2s ease; position: relative; }
+    .option-card:hover { border-color: rgba(173,120,5,0.4); background: rgba(173,120,5,0.05); }
+    .option-card.selected { border-color: var(--green); background: rgba(173,120,5,0.1); }
+    .option-card input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+    .option-radio { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); flex-shrink: 0; margin-top: 2px; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; }
+    .option-card.selected .option-radio { border-color: var(--green); background: var(--green); }
+    .option-card.selected .option-radio::after { content: ''; width: 6px; height: 6px; background: var(--navy); border-radius: 50%; }
+    .option-text { flex: 1; }
+    .option-title { font-size: 0.92rem; font-weight: 600; color: var(--white); line-height: 1.3; }
+    .option-sub { font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-top: 2px; line-height: 1.4; }
+    .field-group { margin-bottom: 20px; }
+    .field-label { display: block; font-size: 0.85rem; font-weight: 600; color: rgba(255,255,255,0.7); margin-bottom: 8px; }
+    .field-label .req { color: var(--green); margin-left: 2px; }
+    .field-input { width: 100%; padding: 13px 16px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius); color: var(--white); font-size: 0.95rem; font-family: inherit; transition: border-color 0.2s ease; }
+    .field-input:focus { outline: none; border-color: var(--green); background: rgba(173,120,5,0.05); }
+    .field-input::placeholder { color: rgba(255,255,255,0.25); }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .checkbox-grid { display: grid; gap: 10px; }
+    .checkbox-card { display: flex; align-items: center; gap: 14px; padding: 14px 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius); cursor: pointer; transition: all 0.2s ease; }
+    .checkbox-card:hover { border-color: rgba(173,120,5,0.4); }
+    .checkbox-card.selected { border-color: var(--green); background: rgba(173,120,5,0.08); }
+    .checkbox-card input { display: none; }
+    .checkbox-box { width: 18px; height: 18px; border-radius: 4px; border: 2px solid rgba(255,255,255,0.2); flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; }
+    .checkbox-card.selected .checkbox-box { background: var(--green); border-color: var(--green); }
+    .checkbox-card.selected .checkbox-box::after { content: '✓'; font-size: 11px; color: var(--navy); font-weight: 800; }
+    .checkbox-text { font-size: 0.92rem; font-weight: 500; color: var(--white); }
+    .step-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 40px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.07); }
+    .btn-back { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius); background: transparent; border: 1px solid rgba(255,255,255,0.12); color: rgba(255,255,255,0.6); font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: all 0.2s ease; font-family: inherit; }
+    .btn-back:hover { border-color: rgba(255,255,255,0.3); color: var(--white); }
+    .btn-next { display: inline-flex; align-items: center; gap: 10px; padding: 14px 32px; border-radius: var(--radius); background: var(--green); color: var(--navy); font-size: 0.95rem; font-weight: 700; cursor: pointer; border: none; font-family: inherit; transition: all 0.2s ease; text-decoration: none; }
+    .btn-next:hover { background: var(--green-light); transform: translateY(-1px); }
+    .btn-submit { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; border-radius: var(--radius); background: var(--green); color: var(--navy); font-size: 1rem; font-weight: 800; cursor: pointer; border: none; font-family: inherit; transition: all 0.2s ease; }
+    .btn-submit:hover { background: var(--green-light); transform: translateY(-2px); }
+    .validation-msg { font-size: 0.8rem; color: #e05c5c; margin-top: 8px; display: none; }
+    .validation-msg.show { display: block; }
+    #results-panel { display: none; }
+    #results-panel.show { display: block; animation: stepIn 0.5s ease; }
+    .results-score-ring { display: flex; flex-direction: column; align-items: center; margin-bottom: 48px; padding: 48px 24px; background: var(--navy-mid); border: 1px solid rgba(173,120,5,0.15); border-radius: var(--radius-lg); text-align: center; }
+    .score-ring-wrap { position: relative; width: 160px; height: 160px; margin-bottom: 24px; }
+    .score-ring-svg { transform: rotate(-90deg); }
+    .score-ring-bg { fill: none; stroke: rgba(255,255,255,0.07); stroke-width: 10; }
+    .score-ring-fill { fill: none; stroke: var(--green); stroke-width: 10; stroke-linecap: round; stroke-dasharray: 440; stroke-dashoffset: 440; transition: stroke-dashoffset 1.2s cubic-bezier(0.4,0,0.2,1); }
+    .score-ring-inner { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .score-number { font-size: 2.8rem; font-weight: 900; color: var(--white); line-height: 1; }
+    .score-label-sm { font-size: 0.75rem; color: rgba(255,255,255,0.4); letter-spacing: 0.08em; text-transform: uppercase; }
+    .results-stage-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; border-radius: 20px; background: rgba(173,120,5,0.12); border: 1px solid rgba(173,120,5,0.3); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--green); margin-bottom: 16px; }
+    .results-stage-title { font-size: clamp(1.5rem, 3vw, 2rem); color: var(--white); font-weight: 800; margin-bottom: 12px; }
+    .results-stage-sub { font-size: 0.95rem; color: rgba(255,255,255,0.55); max-width: 520px; margin: 0 auto; }
+    .score-breakdown { background: var(--navy-light); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 28px; }
+    .score-breakdown h3 { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 20px; }
+    .score-bar-row { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .score-bar-label { font-size: 0.82rem; font-weight: 600; color: rgba(255,255,255,0.7); width: 160px; flex-shrink: 0; }
+    .score-bar-track { flex: 1; height: 6px; background: rgba(255,255,255,0.07); border-radius: 6px; overflow: hidden; }
+    .score-bar-fill { height: 100%; border-radius: 6px; background: var(--green); transition: width 1s ease 0.3s; }
+    .score-bar-val { font-size: 0.8rem; font-weight: 700; color: var(--green); width: 32px; text-align: right; flex-shrink: 0; }
+    .results-section { background: var(--navy-light); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; }
+    .results-section-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
+    .results-section h3 { font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+    .results-section p { font-size: 0.95rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
+    .gaps-list { list-style: none; margin-top: 14px; }
+    .gaps-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: rgba(255,255,255,0.65); padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .gaps-list li:last-child { border-bottom: none; }
+    .gaps-list li::before { content: '⚠'; font-size: 0.8rem; color: #e09a3a; flex-shrink: 0; margin-top: 2px; }
+    .rec-path-grid { display: grid; gap: 12px; margin-top: 14px; }
+    .rec-path-card { display: flex; align-items: flex-start; gap: 16px; padding: 18px; background: rgba(173,120,5,0.05); border: 1px solid rgba(173,120,5,0.2); border-radius: var(--radius); transition: all 0.2s ease; text-decoration: none; }
+    .rec-path-card:hover { border-color: var(--green); background: rgba(173,120,5,0.1); transform: translateX(4px); }
+    .rec-path-icon { width: 36px; height: 36px; border-radius: var(--radius); background: rgba(173,120,5,0.15); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .rec-path-icon i { color: var(--green); font-size: 0.9rem; }
+    .rec-path-body { flex: 1; }
+    .rec-path-name { font-size: 0.95rem; font-weight: 700; color: var(--white); margin-bottom: 3px; }
+    .rec-path-desc { font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.4; }
+    .rec-path-arrow { color: var(--green); font-size: 0.85rem; margin-top: 4px; }
+    .rec-primary-badge { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--green); color: var(--navy); padding: 2px 7px; border-radius: 4px; margin-left: 8px; vertical-align: middle; }
+    .results-cta-block { text-align: center; padding: 48px 32px; background: linear-gradient(135deg, #0A0A0A 0%, #1a1410 100%); border: 1px solid rgba(173,120,5,0.2); border-radius: var(--radius-lg); margin-top: 32px; }
+    .results-cta-block h2 { color: var(--white); font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 12px; }
+    .results-cta-block p { color: rgba(255,255,255,0.55); max-width: 480px; margin: 0 auto 28px; font-size: 0.95rem; }
+    .results-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-outline-gold { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: var(--radius); border: 1px solid rgba(173,120,5,0.4); color: var(--green); font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; background: transparent; font-family: inherit; text-decoration: none; }
+    .btn-outline-gold:hover { background: rgba(173,120,5,0.08); border-color: var(--green); }
+    .btn-restart { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; color: rgba(255,255,255,0.3); background: none; border: none; cursor: pointer; font-family: inherit; margin-top: 20px; transition: color 0.2s ease; }
+    .btn-restart:hover { color: rgba(255,255,255,0.6); }
+    .proof-strip { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 28px 24px; }
+    .proof-strip-inner { max-width: 900px; margin: 0 auto; display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .proof-metric { text-align: center; }
+    .proof-metric strong { display: block; font-size: 1.6rem; font-weight: 900; color: var(--green); line-height: 1; }
+    .proof-metric span { font-size: 0.75rem; color: rgba(255,255,255,0.35); letter-spacing: 0.05em; margin-top: 4px; display: block; }
+    @media (max-width: 640px) {
+      .field-row { grid-template-columns: 1fr; }
+      .options-grid.cols-2 { grid-template-columns: 1fr; }
+      .step-nav { flex-direction: column-reverse; gap: 12px; }
+      .btn-back, .btn-next, .btn-submit { width: 100%; justify-content: center; }
+      .score-bar-label { width: 110px; font-size: 0.75rem; }
+      .results-cta-btns { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+${buildSprite()}
+${nav()}
+
+<!-- INTRO SECTION -->
+<section class="rsa-intro-section">
+  <div class="rsa-intro-container">
+    <div class="rsa-intro-eyebrow"><svg class="si" fill="currentColor" aria-hidden="true" style="margin-right:6px"><use href="#si6" xlink:href="#si6"/></svg> MetaGrowth Ventures</div>
+    <div class="rsa-intro-grid">
+      <div>
+        <h1 class="rsa-intro-heading">Revenue System<br><span>Audit™</span></h1>
+        <p class="rsa-intro-subhead">Identify where revenue is leaking inside your sales process.</p>
+        <p class="rsa-intro-text">Most businesses assume stalled growth is a lead problem. In reality, revenue is often being lost inside the system long before more leads, more marketing, or more headcount will solve it.</p>
+        <p class="rsa-intro-text">This assessment helps you identify where opportunities are slipping, which parts of the sales process are underperforming, and what those gaps may be costing the business each month.</p>
+        <div class="rsa-intro-actions">
+          <button class="btn-next" onclick="document.getElementById('assessment-anchor').scrollIntoView({behavior:'smooth',block:'start'})">
+            Run the Revenue System Audit <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si45" xlink:href="#si45"/></svg>
+          </button>
+          <div class="rsa-intro-meta">5–7 minutes &nbsp;·&nbsp; Executive diagnostic &nbsp;·&nbsp; Mobile-friendly</div>
+        </div>
+      </div>
+      <div class="rsa-intro-panel">
+        <div class="rsa-intro-panel-title">What this assesses</div>
+        <ul class="rsa-intro-list">
+          <li>Lead flow consistency</li>
+          <li>Conversion performance</li>
+          <li>Sales cycle efficiency</li>
+          <li>Follow-up discipline</li>
+          <li>CRM and process integrity</li>
+          <li>Team execution and accountability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS STRIP -->
+<div class="assess-benefits">
+  <div class="assess-benefits-inner">
+    <div class="assess-benefit"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Clear diagnosis of your sales system</div>
+    <div class="assess-benefit"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Identification of your biggest bottleneck</div>
+    <div class="assess-benefit"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Recommended growth path</div>
+    <div class="assess-benefit"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si2" xlink:href="#si2"/></svg> Strategic next steps — no sales pressure</div>
+  </div>
+</div>
+
+<!-- ASSESSMENT SHELL -->
+<div class="assess-shell" id="assessment-anchor">
+  <div class="progress-wrap" id="progress-wrap">
+    <div class="progress-meta">
+      <span class="progress-label" id="progress-label">Company Profile</span>
+      <span class="progress-step-count" id="progress-count">Step 1 of 6</span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:16.66%"></div></div>
+    <div class="progress-steps" id="progress-dots"></div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div class="assess-step active" id="step-1">
+    <div class="step-header">
+      <div class="step-category">Section 1 of 6 — Company Profile</div>
+      <h2>Let's start with the basics</h2>
+      <p>This helps us calibrate your results to your actual situation.</p>
+    </div>
+    <div class="field-row">
+      <div class="field-group"><label class="field-label">First Name <span class="req">*</span></label><input type="text" class="field-input" id="q-first-name" placeholder="Your first name"></div>
+      <div class="field-group"><label class="field-label">Last Name <span class="req">*</span></label><input type="text" class="field-input" id="q-last-name" placeholder="Your last name"></div>
+    </div>
+    <div class="field-row">
+      <div class="field-group"><label class="field-label">Company Name <span class="req">*</span></label><input type="text" class="field-input" id="q-company" placeholder="Your company"></div>
+      <div class="field-group"><label class="field-label">Your Role <span class="req">*</span></label><input type="text" class="field-input" id="q-role" placeholder="CEO, VP Sales, Founder…"></div>
+    </div>
+    <div class="field-group"><label class="field-label">Email <span class="req">*</span></label><input type="email" class="field-input" id="q-email" placeholder="you@company.com"></div>
+    <div class="question-block" style="margin-top:28px;">
+      <div class="question-label"><span>1</span> What is your current annual revenue?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="rs"><input type="radio" name="rs" value="10"><div class="option-radio"></div><div class="option-text"><div class="option-title">Under $1M</div><div class="option-sub">Pre-revenue or early-stage</div></div></label>
+        <label class="option-card" data-group="rs"><input type="radio" name="rs" value="25"><div class="option-radio"></div><div class="option-text"><div class="option-title">$1M – $3M</div><div class="option-sub">Early traction, growing team</div></div></label>
+        <label class="option-card" data-group="rs"><input type="radio" name="rs" value="60"><div class="option-radio"></div><div class="option-text"><div class="option-title">$3M – $10M</div><div class="option-sub">Established, scaling challenges</div></div></label>
+        <label class="option-card" data-group="rs"><input type="radio" name="rs" value="90"><div class="option-radio"></div><div class="option-text"><div class="option-title">$10M – $40M+</div><div class="option-sub">Scale-stage, leadership complexity</div></div></label>
+      </div>
+    </div>
+    <div class="validation-msg" id="val-1">Please fill out all required fields and select your revenue range.</div>
+    <div class="step-nav"><div></div><button class="btn-next" onclick="nextStep(1)">Continue <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></button></div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="assess-step" id="step-2">
+    <div class="step-header">
+      <div class="step-category">Section 2 of 6 — Pipeline Maturity</div>
+      <h2>How predictable is your pipeline?</h2>
+      <p>Pipeline visibility is often the first signal of infrastructure health.</p>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>2</span> How would you describe your current pipeline?</div>
+      <div class="options-grid">
+        <label class="option-card" data-group="pm"><input type="radio" name="pm" value="10"><div class="option-radio"></div><div class="option-text"><div class="option-title">Inconsistent — feast or famine</div><div class="option-sub">Revenue varies wildly month to month</div></div></label>
+        <label class="option-card" data-group="pm"><input type="radio" name="pm" value="40"><div class="option-radio"></div><div class="option-text"><div class="option-title">Somewhat consistent</div><div class="option-sub">Some months are strong but I can't reliably predict the next 90 days</div></div></label>
+        <label class="option-card" data-group="pm"><input type="radio" name="pm" value="70"><div class="option-radio"></div><div class="option-text"><div class="option-title">Mostly predictable</div><div class="option-sub">I have a reasonable sense of what's coming but forecasting isn't airtight</div></div></label>
+        <label class="option-card" data-group="pm"><input type="radio" name="pm" value="90"><div class="option-radio"></div><div class="option-text"><div class="option-title">Highly predictable</div><div class="option-sub">Strong pipeline visibility and disciplined stage-by-stage forecasting</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>3</span> How do most new clients come in today?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="pipeline-source"><input type="radio" name="pipeline-source" value="referral"><div class="option-radio"></div><div class="option-text"><div class="option-title">Referrals only</div></div></label>
+        <label class="option-card" data-group="pipeline-source"><input type="radio" name="pipeline-source" value="outbound"><div class="option-radio"></div><div class="option-text"><div class="option-title">Outbound prospecting</div></div></label>
+        <label class="option-card" data-group="pipeline-source"><input type="radio" name="pipeline-source" value="inbound"><div class="option-radio"></div><div class="option-text"><div class="option-title">Inbound / marketing</div></div></label>
+        <label class="option-card" data-group="pipeline-source"><input type="radio" name="pipeline-source" value="mixed"><div class="option-radio"></div><div class="option-text"><div class="option-title">Mix of channels</div></div></label>
+      </div>
+    </div>
+    <div class="validation-msg" id="val-2">Please answer both questions before continuing.</div>
+    <div class="step-nav"><button class="btn-back" onclick="prevStep(2)"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si15" xlink:href="#si15"/></svg> Back</button><button class="btn-next" onclick="nextStep(2)">Continue <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></button></div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div class="assess-step" id="step-3">
+    <div class="step-header">
+      <div class="step-category">Section 3 of 6 — Sales Infrastructure</div>
+      <h2>What's under the hood of your sales operation?</h2>
+      <p>Infrastructure gaps are the most common — and most fixable — root cause of inconsistent growth.</p>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>4</span> How would you describe your current sales process?</div>
+      <div class="options-grid">
+        <label class="option-card" data-group="si"><input type="radio" name="si" value="10"><div class="option-radio"></div><div class="option-text"><div class="option-title">No defined process</div><div class="option-sub">Every deal is handled differently</div></div></label>
+        <label class="option-card" data-group="si"><input type="radio" name="si" value="35"><div class="option-radio"></div><div class="option-text"><div class="option-title">Informal / partially documented</div><div class="option-sub">Some steps are understood but no written playbook</div></div></label>
+        <label class="option-card" data-group="si"><input type="radio" name="si" value="65"><div class="option-radio"></div><div class="option-text"><div class="option-title">Documented but inconsistently followed</div><div class="option-sub">A process exists but reps don't consistently follow it</div></div></label>
+        <label class="option-card" data-group="si"><input type="radio" name="si" value="90"><div class="option-radio"></div><div class="option-text"><div class="option-title">Fully defined and enforced</div><div class="option-sub">Clear stages, KPIs, and accountability built into CRM</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>5</span> How is your CRM currently used?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="crm"><input type="radio" name="crm" value="none"><div class="option-radio"></div><div class="option-text"><div class="option-title">We don't use one</div></div></label>
+        <label class="option-card" data-group="crm"><input type="radio" name="crm" value="basic"><div class="option-radio"></div><div class="option-text"><div class="option-title">Basic contact storage only</div></div></label>
+        <label class="option-card" data-group="crm"><input type="radio" name="crm" value="partial"><div class="option-radio"></div><div class="option-text"><div class="option-title">Some reps use it, some don't</div></div></label>
+        <label class="option-card" data-group="crm"><input type="radio" name="crm" value="full"><div class="option-radio"></div><div class="option-text"><div class="option-title">Full pipeline tracking + reporting</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>6</span> Do you have defined KPIs and rep accountability metrics?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="kpi"><input type="radio" name="kpi" value="none"><div class="option-radio"></div><div class="option-text"><div class="option-title">No — we track revenue only</div></div></label>
+        <label class="option-card" data-group="kpi"><input type="radio" name="kpi" value="informal"><div class="option-radio"></div><div class="option-text"><div class="option-title">Informal targets exist</div></div></label>
+        <label class="option-card" data-group="kpi"><input type="radio" name="kpi" value="partial"><div class="option-radio"></div><div class="option-text"><div class="option-title">Some KPIs, inconsistently reviewed</div></div></label>
+        <label class="option-card" data-group="kpi"><input type="radio" name="kpi" value="full"><div class="option-radio"></div><div class="option-text"><div class="option-title">Full KPI dashboard, reviewed weekly</div></div></label>
+      </div>
+    </div>
+    <div class="validation-msg" id="val-3">Please answer all questions in this section.</div>
+    <div class="step-nav"><button class="btn-back" onclick="prevStep(3)"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si15" xlink:href="#si15"/></svg> Back</button><button class="btn-next" onclick="nextStep(3)">Continue <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></button></div>
+  </div>
+
+  <!-- STEP 4 -->
+  <div class="assess-step" id="step-4">
+    <div class="step-header">
+      <div class="step-category">Section 4 of 6 — Talent &amp; Team</div>
+      <h2>Tell us about your sales team</h2>
+      <p>Talent density and hiring quality directly determine your execution ceiling.</p>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>7</span> How many dedicated salespeople do you currently have?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="team-size"><input type="radio" name="team-size" value="0"><div class="option-radio"></div><div class="option-text"><div class="option-title">None — it's just me</div><div class="option-sub">Founder-led sales</div></div></label>
+        <label class="option-card" data-group="team-size"><input type="radio" name="team-size" value="1-3"><div class="option-radio"></div><div class="option-text"><div class="option-title">1–3 reps</div><div class="option-sub">Small early team</div></div></label>
+        <label class="option-card" data-group="team-size"><input type="radio" name="team-size" value="4-10"><div class="option-radio"></div><div class="option-text"><div class="option-title">4–10 reps</div><div class="option-sub">Growing team</div></div></label>
+        <label class="option-card" data-group="team-size"><input type="radio" name="team-size" value="10+"><div class="option-radio"></div><div class="option-text"><div class="option-title">10+ reps</div><div class="option-sub">Established team</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>8</span> How would you rate your overall sales hiring success?</div>
+      <div class="options-grid">
+        <label class="option-card" data-group="tt"><input type="radio" name="tt" value="10"><div class="option-radio"></div><div class="option-text"><div class="option-title">Mostly failed hires</div><div class="option-sub">High turnover, underperforming reps, expensive mistakes</div></div></label>
+        <label class="option-card" data-group="tt"><input type="radio" name="tt" value="40"><div class="option-radio"></div><div class="option-text"><div class="option-title">Mixed results</div><div class="option-sub">Some good hires, some bad — inconsistent vetting</div></div></label>
+        <label class="option-card" data-group="tt"><input type="radio" name="tt" value="65"><div class="option-radio"></div><div class="option-text"><div class="option-title">Mostly solid hires</div><div class="option-sub">More hits than misses but ramp could be stronger</div></div></label>
+        <label class="option-card" data-group="tt"><input type="radio" name="tt" value="90"><div class="option-radio"></div><div class="option-text"><div class="option-title">Strong hiring track record</div><div class="option-sub">Structured vetting, fast ramp, high retention</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>9</span> Are you currently trying to hire salespeople or planning to in the next 90 days?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="hiring-flag"><input type="radio" name="hiring-flag" value="yes-now"><div class="option-radio"></div><div class="option-text"><div class="option-title">Yes — actively hiring now</div></div></label>
+        <label class="option-card" data-group="hiring-flag"><input type="radio" name="hiring-flag" value="yes-soon"><div class="option-radio"></div><div class="option-text"><div class="option-title">Yes — planning in next 90 days</div></div></label>
+        <label class="option-card" data-group="hiring-flag"><input type="radio" name="hiring-flag" value="maybe"><div class="option-radio"></div><div class="option-text"><div class="option-title">Maybe — depends on results</div></div></label>
+        <label class="option-card" data-group="hiring-flag"><input type="radio" name="hiring-flag" value="no"><div class="option-radio"></div><div class="option-text"><div class="option-title">No — not right now</div></div></label>
+      </div>
+    </div>
+    <div class="validation-msg" id="val-4">Please answer all questions in this section.</div>
+    <div class="step-nav"><button class="btn-back" onclick="prevStep(4)"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si15" xlink:href="#si15"/></svg> Back</button><button class="btn-next" onclick="nextStep(4)">Continue <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></button></div>
+  </div>
+
+  <!-- STEP 5 -->
+  <div class="assess-step" id="step-5">
+    <div class="step-header">
+      <div class="step-category">Section 5 of 6 — Leadership &amp; Execution</div>
+      <h2>Who owns revenue in your business?</h2>
+      <p>Leadership structure is the single biggest driver of forecast accuracy and execution quality.</p>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>10</span> Who currently leads your sales effort?</div>
+      <div class="options-grid">
+        <label class="option-card" data-group="le"><input type="radio" name="le" value="15"><div class="option-radio"></div><div class="option-text"><div class="option-title">Founder / CEO — it's mostly me</div><div class="option-sub">Revenue depends on my personal relationships and involvement</div></div></label>
+        <label class="option-card" data-group="le"><input type="radio" name="le" value="40"><div class="option-radio"></div><div class="option-text"><div class="option-title">Shared between founders and a few reps</div><div class="option-sub">No single owner — accountability is distributed and fuzzy</div></div></label>
+        <label class="option-card" data-group="le"><input type="radio" name="le" value="65"><div class="option-radio"></div><div class="option-text"><div class="option-title">Sales manager or team lead</div><div class="option-sub">Someone manages but lacks VP/CRO-level strategic authority</div></div></label>
+        <label class="option-card" data-group="le"><input type="radio" name="le" value="90"><div class="option-radio"></div><div class="option-text"><div class="option-title">VP of Sales or CRO</div><div class="option-sub">Dedicated revenue executive with full ownership</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>11</span> How often does your team meet for structured sales reviews?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="cadence"><input type="radio" name="cadence" value="never"><div class="option-radio"></div><div class="option-text"><div class="option-title">Rarely or never</div></div></label>
+        <label class="option-card" data-group="cadence"><input type="radio" name="cadence" value="monthly"><div class="option-radio"></div><div class="option-text"><div class="option-title">Monthly</div></div></label>
+        <label class="option-card" data-group="cadence"><input type="radio" name="cadence" value="weekly"><div class="option-radio"></div><div class="option-text"><div class="option-title">Weekly</div></div></label>
+        <label class="option-card" data-group="cadence"><input type="radio" name="cadence" value="daily"><div class="option-radio"></div><div class="option-text"><div class="option-title">Daily / multiple times a week</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>12</span> Do you feel bandwidth constraints are limiting growth?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="bandwidth-flag"><input type="radio" name="bandwidth-flag" value="yes-major"><div class="option-radio"></div><div class="option-text"><div class="option-title">Yes — major bandwidth constraint</div><div class="option-sub">We need execution support urgently</div></div></label>
+        <label class="option-card" data-group="bandwidth-flag"><input type="radio" name="bandwidth-flag" value="yes-some"><div class="option-radio"></div><div class="option-text"><div class="option-title">Somewhat — stretched thin</div><div class="option-sub">Managing but not sustainable</div></div></label>
+        <label class="option-card" data-group="bandwidth-flag"><input type="radio" name="bandwidth-flag" value="no"><div class="option-radio"></div><div class="option-text"><div class="option-title">No — capacity isn't the issue</div><div class="option-sub">The issue is quality, not volume</div></div></label>
+        <label class="option-card" data-group="bandwidth-flag"><input type="radio" name="bandwidth-flag" value="unsure"><div class="option-radio"></div><div class="option-text"><div class="option-title">Not sure — hard to tell</div></div></label>
+      </div>
+    </div>
+    <div class="validation-msg" id="val-5">Please answer all questions in this section.</div>
+    <div class="step-nav"><button class="btn-back" onclick="prevStep(5)"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si15" xlink:href="#si15"/></svg> Back</button><button class="btn-next" onclick="nextStep(5)">Continue <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></button></div>
+  </div>
+
+  <!-- STEP 6 -->
+  <div class="assess-step" id="step-6">
+    <div class="step-header">
+      <div class="step-category">Section 6 of 6 — Goals &amp; Priorities</div>
+      <h2>What does success look like for you?</h2>
+      <p>Tell us what you're trying to fix and we'll match you to the right path.</p>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>13</span> What is your primary growth goal over the next 12 months?</div>
+      <div class="options-grid">
+        <label class="option-card" data-group="goal"><input type="radio" name="goal" value="pipeline"><div class="option-radio"></div><div class="option-text"><div class="option-title">Build a reliable, predictable pipeline</div><div class="option-sub">Stop relying on referrals and word of mouth</div></div></label>
+        <label class="option-card" data-group="goal"><input type="radio" name="goal" value="system"><div class="option-radio"></div><div class="option-text"><div class="option-title">Install a proper sales operating system</div><div class="option-sub">Process, CRM, KPIs, forecasting, accountability</div></div></label>
+        <label class="option-card" data-group="goal"><input type="radio" name="goal" value="team"><div class="option-radio"></div><div class="option-text"><div class="option-title">Build and scale the right sales team</div><div class="option-sub">Hire better, ramp faster, retain longer</div></div></label>
+        <label class="option-card" data-group="goal"><input type="radio" name="goal" value="leadership"><div class="option-radio"></div><div class="option-text"><div class="option-title">Install revenue leadership</div><div class="option-sub">Someone who owns outcomes, not just reports on them</div></div></label>
+        <label class="option-card" data-group="goal"><input type="radio" name="goal" value="execution"><div class="option-radio"></div><div class="option-text"><div class="option-title">Outsource or augment execution</div><div class="option-sub">Done-for-you sales motion without building everything internally</div></div></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>14</span> What is your biggest obstacle to growth right now? <em style="color:rgba(255,255,255,0.3);font-weight:400;font-style:normal;">(select all that apply)</em></div>
+      <div class="checkbox-grid">
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="no-process"><div class="checkbox-box"></div><span class="checkbox-text">No repeatable sales process or playbook</span></label>
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="bad-hires"><div class="checkbox-box"></div><span class="checkbox-text">Failed or underperforming sales hires</span></label>
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="founder-dep"><div class="checkbox-box"></div><span class="checkbox-text">Revenue depends too heavily on me (founder dependency)</span></label>
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="no-pipeline"><div class="checkbox-box"></div><span class="checkbox-text">Inconsistent pipeline — can't forecast revenue</span></label>
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="no-leadership"><div class="checkbox-box"></div><span class="checkbox-text">No dedicated sales leadership or accountability structure</span></label>
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="bandwidth"><div class="checkbox-box"></div><span class="checkbox-text">Not enough bandwidth to execute consistently</span></label>
+        <label class="checkbox-card"><input type="checkbox" name="obstacles" value="crm-mess"><div class="checkbox-box"></div><span class="checkbox-text">CRM and reporting not set up or being used</span></label>
+      </div>
+    </div>
+    <div class="question-block">
+      <div class="question-label"><span>15</span> How quickly are you looking to make a change?</div>
+      <div class="options-grid cols-2">
+        <label class="option-card" data-group="urgency"><input type="radio" name="urgency" value="now"><div class="option-radio"></div><div class="option-text"><div class="option-title">Now — this is urgent</div></div></label>
+        <label class="option-card" data-group="urgency"><input type="radio" name="urgency" value="90days"><div class="option-radio"></div><div class="option-text"><div class="option-title">Within the next 90 days</div></div></label>
+        <label class="option-card" data-group="urgency"><input type="radio" name="urgency" value="planning"><div class="option-radio"></div><div class="option-text"><div class="option-title">Planning for next quarter</div></div></label>
+        <label class="option-card" data-group="urgency"><input type="radio" name="urgency" value="exploring"><div class="option-radio"></div><div class="option-text"><div class="option-title">Exploring options right now</div></div></label>
+      </div>
+    </div>
+    <div class="validation-msg" id="val-6">Please answer all required questions.</div>
+    <div class="step-nav"><button class="btn-back" onclick="prevStep(6)"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si15" xlink:href="#si15"/></svg> Back</button><button class="btn-submit" onclick="submitAssessment()"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si11" xlink:href="#si11"/></svg> Get My Results</button></div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="results-panel">
+    <div class="results-score-ring">
+      <div class="score-ring-wrap">
+        <svg class="score-ring-svg" width="160" height="160" viewBox="0 0 160 160">
+          <circle class="score-ring-bg" cx="80" cy="80" r="70"/>
+          <circle class="score-ring-fill" id="score-ring-fill" cx="80" cy="80" r="70"/>
+        </svg>
+        <div class="score-ring-inner"><div class="score-number" id="score-display">0</div><div class="score-label-sm">out of 100</div></div>
+      </div>
+      <div class="results-stage-badge" id="results-badge"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si18" xlink:href="#si18"/></svg> Calculating…</div>
+      <div class="results-stage-title" id="results-stage-title">–</div>
+      <div class="results-stage-sub" id="results-stage-sub">–</div>
+    </div>
+    <div class="score-breakdown">
+      <h3>Score Breakdown by Category</h3>
+      <div class="score-bar-row"><div class="score-bar-label">Revenue Stage</div><div class="score-bar-track"><div class="score-bar-fill" id="bar-rs" style="width:0%"></div></div><div class="score-bar-val" id="val-rs">–</div></div>
+      <div class="score-bar-row"><div class="score-bar-label">Pipeline Maturity</div><div class="score-bar-track"><div class="score-bar-fill" id="bar-pm" style="width:0%"></div></div><div class="score-bar-val" id="val-pm">–</div></div>
+      <div class="score-bar-row"><div class="score-bar-label">Sales Infrastructure</div><div class="score-bar-track"><div class="score-bar-fill" id="bar-si" style="width:0%"></div></div><div class="score-bar-val" id="val-si">–</div></div>
+      <div class="score-bar-row"><div class="score-bar-label">Talent &amp; Team</div><div class="score-bar-track"><div class="score-bar-fill" id="bar-tt" style="width:0%"></div></div><div class="score-bar-val" id="val-tt">–</div></div>
+      <div class="score-bar-row"><div class="score-bar-label">Leadership &amp; Execution</div><div class="score-bar-track"><div class="score-bar-fill" id="bar-le" style="width:0%"></div></div><div class="score-bar-val" id="val-le">–</div></div>
+    </div>
+    <div class="results-section"><div class="results-section-label">Your Diagnosis</div><h3 id="results-diagnosis-title">–</h3><p id="results-diagnosis-body">–</p></div>
+    <div class="results-section"><div class="results-section-label">Key Gaps Identified</div><ul class="gaps-list" id="results-gaps"></ul></div>
+    <div class="results-section"><div class="results-section-label">Your Recommended Growth Path</div><h3 style="margin-bottom:6px;" id="results-path-title">–</h3><p style="margin-bottom:16px;" id="results-path-body">–</p><div class="rec-path-grid" id="results-rec-cards"></div></div>
+    <div class="results-cta-block">
+      <h2>Ready to fix this?</h2>
+      <p id="results-cta-body">Book a strategy call and we'll walk through your results together and map the exact path forward.</p>
+      <div class="results-cta-btns">
+        <a href="https://meetings.hubspot.com/josh549/revenue-audit?redirectUrl=https%3A%2F%2Fmetagrowth.ventures%2Fmeeting-confirmed%3Fmeeting_booked%3D1%26source%3Drevenue_audit" target="_blank" rel="noopener noreferrer" class="btn-next" style="text-decoration:none;" onclick="if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si3" xlink:href="#si3"/></svg> Book a Strategy Call</a>
+        <a href="/solutions" class="btn-outline-gold">Explore Solutions <svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></a>
+      </div>
+    </div>
+    <div style="text-align:center;"><button class="btn-restart" onclick="restartAssessment()"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si79" xlink:href="#si79"/></svg> Retake the Assessment</button></div>
+  </div>
+</div>
+
+<div class="proof-strip">
+  <div class="proof-strip-inner">
+    <div class="proof-metric"><strong>$110M+</strong><span>Pipeline Created</span></div>
+    <div class="proof-metric"><strong>14,500+</strong><span>Meetings Booked</span></div>
+    <div class="proof-metric"><strong>1,320+</strong><span>Clients Added</span></div>
+    <div class="proof-metric"><strong>75,000+</strong><span>Outreaches</span></div>
+    <div class="proof-metric"><strong>$24M+</strong><span>Revenue Produced</span></div>
+  </div>
+</div>
+
+${footer()}
+
+<script>
+let currentStep=1;const totalSteps=6;const stepLabels=['Company Profile','Pipeline Maturity','Sales Infrastructure','Talent & Team','Leadership & Execution','Goals & Priorities'];
+document.addEventListener('DOMContentLoaded',()=>{buildProgressDots();updateProgress(1);initOptionCards();initCheckboxCards();});
+function buildProgressDots(){const c=document.getElementById('progress-dots');c.innerHTML='';for(let i=1;i<=totalSteps;i++){const d=document.createElement('div');d.className='progress-dot';d.id='dot-'+i;c.appendChild(d);}}
+function updateProgress(step){const pct=(step/totalSteps)*100;document.getElementById('progress-fill').style.width=pct+'%';document.getElementById('progress-label').textContent=stepLabels[step-1];document.getElementById('progress-count').textContent='Step '+step+' of '+totalSteps;for(let i=1;i<=totalSteps;i++){const d=document.getElementById('dot-'+i);d.className='progress-dot'+(i<step?' done':i===step?' active':'');}}
+function initOptionCards(){document.querySelectorAll('.option-card input[type="radio"]').forEach(r=>{r.addEventListener('change',()=>{document.querySelectorAll('.option-card input[name="'+r.name+'"]').forEach(x=>x.closest('.option-card').classList.remove('selected'));r.closest('.option-card').classList.add('selected');});});document.querySelectorAll('.option-card').forEach(card=>{card.addEventListener('click',(e)=>{const r=card.querySelector('input[type="radio"]');if(!r||e.target===r)return;r.checked=true;r.dispatchEvent(new Event('change',{bubbles:true}));});});}
+function initCheckboxCards(){document.querySelectorAll('.checkbox-card input[type="checkbox"]').forEach(cb=>{cb.addEventListener('change',()=>{cb.closest('.checkbox-card').classList.toggle('selected',cb.checked);});});document.querySelectorAll('.checkbox-card').forEach(card=>{card.addEventListener('click',(e)=>{const cb=card.querySelector('input[type="checkbox"]');if(!cb||e.target===cb)return;cb.checked=!cb.checked;cb.dispatchEvent(new Event('change',{bubbles:true}));});});}
+function validateStep(step){if(step===1){const fn=document.getElementById('q-first-name').value.trim(),ln=document.getElementById('q-last-name').value.trim(),co=document.getElementById('q-company').value.trim(),ro=document.getElementById('q-role').value.trim(),em=document.getElementById('q-email').value.trim(),rs=document.querySelector('input[name="rs"]:checked');if(!fn||!ln||!co||!ro||!em||!rs){document.getElementById('val-1').classList.add('show');return false;}document.getElementById('val-1').classList.remove('show');return true;}if(step===2){const pm=document.querySelector('input[name="pm"]:checked'),ps=document.querySelector('input[name="pipeline-source"]:checked');if(!pm||!ps){document.getElementById('val-2').classList.add('show');return false;}document.getElementById('val-2').classList.remove('show');return true;}if(step===3){const si=document.querySelector('input[name="si"]:checked'),crm=document.querySelector('input[name="crm"]:checked'),kpi=document.querySelector('input[name="kpi"]:checked');if(!si||!crm||!kpi){document.getElementById('val-3').classList.add('show');return false;}document.getElementById('val-3').classList.remove('show');return true;}if(step===4){const ts=document.querySelector('input[name="team-size"]:checked'),tt=document.querySelector('input[name="tt"]:checked'),hf=document.querySelector('input[name="hiring-flag"]:checked');if(!ts||!tt||!hf){document.getElementById('val-4').classList.add('show');return false;}document.getElementById('val-4').classList.remove('show');return true;}if(step===5){const le=document.querySelector('input[name="le"]:checked'),ca=document.querySelector('input[name="cadence"]:checked'),bw=document.querySelector('input[name="bandwidth-flag"]:checked');if(!le||!ca||!bw){document.getElementById('val-5').classList.add('show');return false;}document.getElementById('val-5').classList.remove('show');return true;}if(step===6){const goal=document.querySelector('input[name="goal"]:checked'),urg=document.querySelector('input[name="urgency"]:checked');if(!goal||!urg){document.getElementById('val-6').classList.add('show');return false;}document.getElementById('val-6').classList.remove('show');return true;}return true;}
+function nextStep(from){if(!validateStep(from))return;document.getElementById('step-'+from).classList.remove('active');currentStep=from+1;document.getElementById('step-'+currentStep).classList.add('active');updateProgress(currentStep);window.scrollTo({top:document.getElementById('assessment-anchor').offsetTop-80,behavior:'smooth'});}
+function prevStep(from){document.getElementById('step-'+from).classList.remove('active');currentStep=from-1;document.getElementById('step-'+currentStep).classList.add('active');updateProgress(currentStep);window.scrollTo({top:document.getElementById('assessment-anchor').offsetTop-80,behavior:'smooth'});}
+function getScore(name){const el=document.querySelector('input[name="'+name+'"]:checked');return el?parseInt(el.value)||0:0;}
+function getVal(name){const el=document.querySelector('input[name="'+name+'"]:checked');return el?el.value:'';}
+function getChecked(name){return Array.from(document.querySelectorAll('input[name="'+name+'"]:checked')).map(el=>el.value);}
+function calculateScore(){const rs=getScore('rs'),pm=getScore('pm'),si=getScore('si'),tt=getScore('tt'),le=getScore('le');const weighted=(rs*0.15)+(pm*0.20)+(si*0.25)+(tt*0.20)+(le*0.20);const final=Math.round(weighted);const hiringFlag=getVal('hiring-flag'),bandwidthFlag=getVal('bandwidth-flag'),obstacles=getChecked('obstacles'),goal=getVal('goal');const hiringOverride=['yes-now','yes-soon'].includes(hiringFlag)||obstacles.includes('bad-hires');const bandwidthOverride=['yes-major','yes-some'].includes(bandwidthFlag)||obstacles.includes('bandwidth');return{final,rs,pm,si,tt,le,hiringOverride,bandwidthOverride,goal,obstacles};}
+const outcomes={stage0:{badge:'Stage: Founder-Led / No Infrastructure',title:'Revenue is entirely dependent on you',sub:'No system exists beneath the sales effort. Growth means working more hours — not smarter infrastructure.',diagTitle:'Founder Dependency Bottleneck',diagBody:'Your revenue engine is running on personal relationships and raw hustle. That is not a scalable system — it is a ceiling. Every dollar of growth requires more of your time, and the business cannot operate, hire into, or forecast without you at the center of every deal.',gaps:['No repeatable sales process or playbook — every deal is ad hoc','No CRM discipline or pipeline visibility','ICP and messaging are undefined or inconsistent','Cannot delegate or transition any part of the sales motion','Revenue stalls when your capacity does'],pathTitle:'Build the infrastructure first.',pathBody:'Before hiring, before scaling outreach — you need a system. MetaGrowth will architect the process, define the ICP, configure the CRM, build the messaging, and install the KPI framework.',recs:[{icon:'fa-chart-line',name:'Growth OS™',desc:'Centralized outbound infrastructure — CRM, messaging, pipeline, and accountability installed end-to-end',link:'/solutions/growth-os',primary:true},{icon:'fa-brain',name:'Revenue OS™',desc:'AI-powered revenue infrastructure — live in 14 days with managed pipeline generation',link:'/solutions/revenue-os'}],ctaBody:"The fastest path forward is a 90-day infrastructure build. Book a call and we'll walk through exactly what needs to be installed first."},stage1:{badge:'Stage: Early Team / Inconsistent Execution',title:"The team exists. The system doesn't.",sub:'You have reps but performance is uneven, accountability is loose, and forecasting is more hope than data.',diagTitle:'Execution Without Infrastructure',diagBody:"You've made the first hires, but the system beneath them is not strong enough to produce consistent output. The reps are not the problem — the missing operating system is.",gaps:['No enforced sales process — reps operate by instinct','Pipeline stages are unclear or not consistently updated','Ramp time is too slow and early turnover is high','No defined accountability rhythm or performance metrics','Forecasting is guesswork at best'],pathTitle:'Install the operating system your team needs to execute.',pathBody:'The solution is not more reps. It is a structured Sales OS — clear stages, KPIs, weekly rhythm, and a coaching framework that enforces performance.',recs:[{icon:'fa-chart-line',name:'Growth OS™',desc:'Full infrastructure build — CRM, messaging, forecasting framework, and KPI dashboards installed and running',link:'/solutions/growth-os'},{icon:'fa-search',name:'Recruiting Services',desc:'Upgrade your talent density with structured vetting and deep behavioral assessment',link:'/solutions/managed-sales-pods'},{icon:'fa-percentage',name:'Commission-Only Infrastructure',desc:'Add 1099 reps with zero base risk — full systems, training, and oversight included',link:'/solutions/commission-only'},{icon:'fa-cogs',name:'Managed Sales Pods',desc:'A fully managed, embedded sales team that executes inside your business',link:'/solutions/managed-sales-pods'}],ctaBody:"Inconsistent performance is a system problem, not a people problem. Let's walk through your specific situation on a strategy call."},stage2:{badge:'Stage: System Gaps / Underperformance',title:'Real revenue, but the cracks are showing.',sub:'Growth is real but infrastructure is not keeping pace. System gaps are creating execution drag at every level.',diagTitle:'Infrastructure Falling Behind Growth',diagBody:'You have revenue and a real team, but the infrastructure beneath them is not scaling with the business. CRM adoption is spotty. Coaching is reactive. Forecasting is unreliable.',gaps:['CRM not consistently used or properly configured for forecasting','Coaching is reactive, not systematic','New rep ramp time is too long and inconsistent','No reliable forecast discipline or pipeline stage enforcement','Leadership bandwidth is stretched across execution and strategy'],pathTitle:'Upgrade the infrastructure. Stabilize execution.',pathBody:'You need a full revenue operating system — not advice, not another strategy deck. MetaGrowth deploys the system, enforces the cadence, and installs the leadership rhythm.',recs:[{icon:'fa-cogs',name:'Managed Sales Pods',desc:'Full-service execution — recruiting, onboarding, coaching, KPI enforcement, and weekly oversight',link:'/solutions/managed-sales-pods',primary:true},{icon:'fa-percentage',name:'Commission-Only Infrastructure',desc:'Scale without fixed overhead — 1099 rep infrastructure with full systems and CRM enforcement',link:'/solutions/commission-only'},{icon:'fa-handshake',name:'Rev Share Only Program',desc:'Zero upfront cost — we embed execution and only get paid when you close revenue',link:'https://meetings.hubspot.com/josh549/revenue-audit'}],ctaBody:"The gap between where you are and where you need to be is an infrastructure problem. Let's diagnose it together on a strategy call."},stage3:{badge:'Stage: Scaling / Leadership Gap',title:'At scale — but leadership complexity is limiting upside.',sub:"The revenue is there. The execution is not keeping pace because there's no one truly owning it at the revenue leadership level.",diagTitle:'Leadership Ceiling at Scale',diagBody:'You have built something real. But at this stage, the constraint is not tactics — it is revenue leadership. Someone needs to own forecast accuracy, drive the performance culture, and hold the entire revenue function accountable.',gaps:['No dedicated revenue executive who truly owns outcomes','Forecast accuracy degrades as deal volume grows','Sales leadership is managing activity, not leading strategy','VP or CRO turnover is disrupting execution rhythm','Team performance is uneven without clear ownership at the top'],pathTitle:'Install executive-level revenue ownership.',pathBody:'The highest-leverage move at your stage is not more reps or more technology — it is getting the right revenue leadership in place.',recs:[{icon:'fa-crown',name:'Fractional CRO',desc:'Executive revenue leadership — strategy, accountability, hiring roadmap, and performance management',link:'/solutions/fractional-cro',primary:true},{icon:'fa-cogs',name:'Managed Sales Pods',desc:'Done-for-you execution layer with full oversight, KPI tracking, and weekly performance management',link:'/solutions/managed-sales-pods'},{icon:'fa-handshake',name:'Rev Share Only Program',desc:'Full sales team embedded at scale — performance-only model with zero upfront investment',link:'https://meetings.hubspot.com/josh549/revenue-audit'}],ctaBody:"At your stage, the right revenue leadership changes everything. Let's talk about what that looks like for your business."}};
+const recruitingRec={icon:'fa-search',name:'Recruiting Services',desc:'Structured screening, deep vetting, and behavioral assessment to identify producers',link:'/solutions/managed-sales-pods',primary:true};
+const podsRec={icon:'fa-cogs',name:'Managed Sales Pods',desc:'A fully managed, embedded sales team — MetaGrowth recruits, onboards, coaches, and manages the entire function',link:'/solutions/managed-sales-pods',primary:true};
+function submitAssessment(){if(!validateStep(6))return;const{final,rs,pm,si,tt,le,hiringOverride,bandwidthOverride}=calculateScore();let outcome;if(final<=30)outcome={...outcomes.stage0};else if(final<=50)outcome={...outcomes.stage1};else if(final<=70)outcome={...outcomes.stage2};else outcome={...outcomes.stage3};outcome.recs=outcome.recs.map(r=>({...r}));if(hiringOverride){if(!outcome.recs.find(r=>r.name===recruitingRec.name))outcome.recs.unshift({...recruitingRec});else outcome.recs.find(r=>r.name===recruitingRec.name).primary=true;outcome.recs.forEach((r,i)=>{if(i>0)r.primary=false;});}if(bandwidthOverride&&!hiringOverride){if(!outcome.recs.find(r=>r.name===podsRec.name))outcome.recs.unshift({...podsRec});else outcome.recs.find(r=>r.name===podsRec.name).primary=true;outcome.recs.forEach((r,i)=>{if(i>0)r.primary=false;});}
+document.getElementById('progress-wrap').style.display='none';for(let i=1;i<=6;i++)document.getElementById('step-'+i).style.display='none';const panel=document.getElementById('results-panel');panel.classList.add('show');window.scrollTo({top:document.getElementById('assessment-anchor').offsetTop-80,behavior:'smooth'});
+const circumference=2*Math.PI*70;const offset=circumference-(final/100)*circumference;setTimeout(()=>{document.getElementById('score-ring-fill').style.strokeDashoffset=offset;},200);animateCount('score-display',0,final,1000);
+document.getElementById('results-badge').innerHTML='<svg class="si" fill="currentColor" aria-hidden="true"><use href="#si18" xlink:href="#si18"/></svg> '+outcome.badge;document.getElementById('results-stage-title').textContent=outcome.title;document.getElementById('results-stage-sub').textContent=outcome.sub;
+animateBar('bar-rs','val-rs',rs);animateBar('bar-pm','val-pm',pm);animateBar('bar-si','val-si',si);animateBar('bar-tt','val-tt',tt);animateBar('bar-le','val-le',le);
+document.getElementById('results-diagnosis-title').textContent=outcome.diagTitle;document.getElementById('results-diagnosis-body').textContent=outcome.diagBody;
+const gapsList=document.getElementById('results-gaps');gapsList.innerHTML='';outcome.gaps.forEach(gap=>{const li=document.createElement('li');li.textContent=gap;gapsList.appendChild(li);});
+document.getElementById('results-path-title').textContent=outcome.pathTitle;document.getElementById('results-path-body').textContent=outcome.pathBody;
+const REC_ICONS={'fa-chart-line':'<path d="M16 3.5l-5 5-3-3-5 5L1.4 9 8 2.5l3 3L14.6 2 16 3.5zM0 14h16v2H0z"/>','fa-brain':'<path d="M12.3 2.5A3.5 3.5 0 009 0a3.5 3.5 0 00-3.3 2.3A3 3 0 002 5c0 .5.1 1 .3 1.4A3.5 3.5 0 000 9.5 3.5 3.5 0 003.5 13 3 3 0 006 15.8V16h4v-.2A3 3 0 0012.5 13a3.5 3.5 0 003.5-3.5 3.5 3.5 0 00-2.3-3.3c.2-.5.3-1 .3-1.5a3 3 0 00-1.7-2.7z"/>','fa-cogs':'<path d="M6.3 0L6 1.7a5 5 0 00-1.4.8L3 2l-1.7 3 1.3 1.1A5.1 5.1 0 002.5 8c0 .3 0 .6.1.9L1.3 10l1.7 3 1.6-.5c.4.3.9.6 1.4.8l.3 1.7h3.4l.3-1.7a5 5 0 001.4-.8l1.6.5 1.7-3-1.3-1.1c.1-.3.1-.6.1-.9s0-.6-.1-.9L14.7 7 13 4l-1.6.5A5 5 0 0010 3.7l-.3-1.7H6.3zM8 10.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>','fa-crown':'<path d="M0 5l3.5 8h9L16 5l-4 3-4-6-4 6L0 5zm3.5 10h9v2h-9z"/>','fa-handshake':'<path d="M11 6H9.5L7 8.5 4.5 6H3L0 9v4h2v-3l1 1H5v2h6v-2h2l1-1v3h2V9l-3-3zM7 5h2l2-2H5L7 5z"/>','fa-percentage':'<path d="M2.5 0A2.5 2.5 0 000 2.5 2.5 2.5 0 002.5 5 2.5 2.5 0 005 2.5 2.5 2.5 0 002.5 0zM14 0L0 16h2L16 0h-2zm-.5 11A2.5 2.5 0 0011 13.5a2.5 2.5 0 002.5 2.5A2.5 2.5 0 0016 13.5 2.5 2.5 0 0013.5 11z"/>','fa-search':'<path d="M15.7 14.3l-4-4a6 6 0 10-1.4 1.4l4 4 1.4-1.4zM6 10a4 4 0 110-8 4 4 0 010 8z"/>'};
+function recSvg(name){var p=REC_ICONS[name]||'<path d="M8 0a8 8 0 100 16A8 8 0 008 0z"/>';return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" style="display:inline-block;width:1em;height:1em;vertical-align:-0.125em;fill:currentColor;">'+p+'</svg>';}
+const recContainer=document.getElementById('results-rec-cards');recContainer.innerHTML='';outcome.recs.forEach(rec=>{const a=document.createElement('a');a.href=rec.link;if(rec.link.startsWith('http')){a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('onclick',"if(typeof gtag!=='undefined')gtag('event','calendar_open',{page_location:window.location.href,page_title:document.title,cta_label:'Book a Strategy Call'})");}a.className='rec-path-card';a.innerHTML='<div class="rec-path-icon">'+recSvg(rec.icon)+'</div><div class="rec-path-body"><div class="rec-path-name">'+rec.name+(rec.primary?'<span class="rec-primary-badge">Best Fit</span>':'')+'</div><div class="rec-path-desc">'+rec.desc+'</div></div><div class="rec-path-arrow"><svg class="si" fill="currentColor" aria-hidden="true"><use href="#si1" xlink:href="#si1"/></svg></div>';recContainer.appendChild(a);});
+document.getElementById('results-cta-body').textContent=outcome.ctaBody;}
+function animateCount(id,from,to,duration){const el=document.getElementById(id);const start=performance.now();function tick(now){const progress=Math.min((now-start)/duration,1);const ease=1-Math.pow(1-progress,3);el.textContent=Math.round(from+(to-from)*ease);if(progress<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);}
+function animateBar(barId,valId,score){setTimeout(()=>{document.getElementById(barId).style.width=score+'%';document.getElementById(valId).textContent=score;},300);}
+function restartAssessment(){document.querySelectorAll('input[type="radio"]').forEach(r=>r.checked=false);document.querySelectorAll('input[type="checkbox"]').forEach(c=>c.checked=false);document.querySelectorAll('.option-card').forEach(c=>c.classList.remove('selected'));document.querySelectorAll('.checkbox-card').forEach(c=>c.classList.remove('selected'));['q-first-name','q-last-name','q-company','q-role','q-email'].forEach(id=>{document.getElementById(id).value='';});document.getElementById('results-panel').classList.remove('show');document.getElementById('progress-wrap').style.display='block';for(let i=1;i<=6;i++){const step=document.getElementById('step-'+i);step.style.display='';step.classList.remove('active');}document.getElementById('step-1').classList.add('active');currentStep=1;updateProgress(1);window.scrollTo({top:document.getElementById('assessment-anchor').offsetTop-80,behavior:'smooth'});}
+</script>
+</body>
+</html>
+`
+
+function resourceCat(iconCls: string, title: string, items: string[]) {
+  const iconName = iconCls.replace(/^fa[bs]\s+fa-/, '');
+  return `<div class="res-cat">
+    <div class="res-cat-icon">${svgIcon(iconName)}</div>
+    <h4>${title}</h4>
+    <ul>${items.map(i => `<li>${i}</li>`).join('')}</ul>
+  </div>`
+}
