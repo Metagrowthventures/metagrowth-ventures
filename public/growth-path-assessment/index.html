@@ -1,0 +1,1798 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What’s Limiting Your Growth? | MetaGrowth Ventures</title>
+    <meta
+      name="description"
+      content="A strategic business diagnostic from MetaGrowth Ventures that identifies the biggest growth constraint in your business and prescribes the right next step."
+    />
+    <link rel="canonical" href="https://metagrowth.ventures/growth-path-assessment" />
+    <link rel="icon" type="image/png" href="https://metagrowth.ventures/static/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --bg2: #111;
+        --bg3: #1a1a1a;
+        --panel: #121212;
+        --panel2: #171717;
+        --line: rgba(173, 120, 5, 0.18);
+        --line2: rgba(173, 120, 5, 0.38);
+        --gold: #ad7805;
+        --gold2: #c99220;
+        --gold3: #7d5503;
+        --text: #fff;
+        --muted: rgba(255, 255, 255, 0.72);
+        --soft: #9e9380;
+        --good: #48c48d;
+        --warn: #d6a33a;
+        --bad: #ef8d8d;
+        --r: 8px;
+        --rl: 16px;
+        --max: 1280px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family:
+          Inter,
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          sans-serif;
+        background: linear-gradient(180deg, #0b0b0b 0%, #101010 45%, #121212 100%);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      .container {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0 0 12px;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+      }
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 3.9rem);
+        font-weight: 800;
+      }
+      h2 {
+        font-size: clamp(1.65rem, 3vw, 2.45rem);
+        font-weight: 800;
+      }
+      h3 {
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        font-weight: 700;
+      }
+      h4 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      p {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+      .kicker {
+        display: inline-block;
+        color: var(--gold2);
+        font-size: 0.79rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        padding: 0 24px;
+        border: 2px solid transparent;
+        border-radius: var(--r);
+        font-size: 0.95rem;
+        font-weight: 700;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .btn-primary {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #0a0a0a;
+      }
+      .btn-secondary {
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.28);
+        color: var(--text);
+      }
+      .btn-ghost {
+        background: transparent;
+        border-color: var(--line);
+        color: var(--muted);
+      }
+      .btn[disabled] {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+      .hero {
+        background:
+          radial-gradient(circle at top right, rgba(173, 120, 5, 0.14), transparent 32%),
+          radial-gradient(circle at top left, rgba(201, 146, 32, 0.08), transparent 24%),
+          linear-gradient(180deg, #0d0d0d 0%, #111 100%);
+        border-bottom: 1px solid var(--line);
+        padding: 56px 0 34px;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 28px;
+        align-items: center;
+      }
+      .hero-copy p {
+        white-space: pre-line;
+        max-width: 760px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 24px;
+      }
+      .hero-note {
+        font-size: 0.92rem;
+        color: var(--soft);
+      }
+      .panel,
+      .assessment,
+      .report,
+      .score,
+      .metric,
+      .signal {
+        background: linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
+        border: 1px solid var(--line);
+        border-radius: var(--rl);
+      }
+      .panel {
+        padding: 24px;
+      }
+      .panel ul {
+        list-style: none;
+        padding: 0;
+        margin: 12px 0 0;
+      }
+      .panel li {
+        position: relative;
+        padding-left: 18px;
+        margin-bottom: 9px;
+        color: var(--muted);
+      }
+      .panel li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold);
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(173, 120, 5, 0.28);
+        background: rgba(173, 120, 5, 0.08);
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.82rem;
+      }
+      .wrap {
+        padding: 34px 0 42px;
+      }
+      .intro {
+        margin-bottom: 20px;
+      }
+      .assessment {
+        padding: 22px;
+      }
+      .topbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 18px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .prog-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        color: var(--soft);
+        font-size: 0.88rem;
+        margin-bottom: 8px;
+      }
+      .prog {
+        height: 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        overflow: hidden;
+      }
+      .prog > span {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: linear-gradient(90deg, var(--gold3), var(--gold2));
+      }
+      .meta {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .meta span {
+        font-size: 0.9rem;
+        color: var(--soft);
+      }
+      .step,
+      .gate,
+      .results {
+        min-height: 420px;
+      }
+      .stage {
+        display: inline-block;
+        color: var(--gold2);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+      .qtitle {
+        font-size: clamp(1.4rem, 2.4vw, 1.95rem);
+        color: var(--text);
+      }
+      .qsub {
+        color: var(--soft);
+        max-width: 860px;
+        margin-bottom: 16px;
+      }
+      .helper {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--soft);
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+      .tip {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid rgba(173, 120, 5, 0.38);
+        color: var(--gold2);
+        background: rgba(173, 120, 5, 0.08);
+        font-size: 0.72rem;
+        font-weight: 800;
+        cursor: help;
+      }
+      .tipb {
+        position: absolute;
+        left: 50%;
+        bottom: calc(100% + 10px);
+        transform: translateX(-50%);
+        width: 250px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: #141414;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.45;
+        display: none;
+        z-index: 20;
+      }
+      .tip:hover .tipb,
+      .tip:focus .tipb {
+        display: block;
+      }
+      .answers {
+        display: grid;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+      .choice,
+      .scale-btn {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(173, 120, 5, 0.14);
+        border-radius: 14px;
+        cursor: pointer;
+      }
+      .choice {
+        position: relative;
+        padding: 16px 18px;
+      }
+      .choice[aria-checked='true'],
+      .scale-btn.active {
+        border-color: var(--gold2);
+        background: linear-gradient(180deg, rgba(173, 120, 5, 0.16) 0%, rgba(23, 23, 23, 0.96) 100%);
+      }
+      .choice input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .ctitle {
+        color: var(--text);
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .text-answer {
+        width: 100%;
+        min-height: 54px;
+        padding: 0 14px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        outline: none;
+      }
+      .text-answer::placeholder {
+        color: rgba(255, 255, 255, 0.34);
+      }
+      .scale {
+        display: grid;
+        grid-template-columns: repeat(10, minmax(0, 1fr));
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+      .scale.s5 {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+      }
+      .scale-btn {
+        min-height: 66px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 10px 8px;
+      }
+      .scale-btn strong {
+        display: block;
+        color: var(--text);
+        font-size: 0.98rem;
+      }
+      .scale-btn span {
+        display: block;
+        color: var(--soft);
+        font-size: 0.78rem;
+        margin-top: 4px;
+      }
+      .legend {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        color: var(--soft);
+        font-size: 0.86rem;
+        margin-bottom: 22px;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+      }
+      .nav .btn {
+        min-width: 128px;
+      }
+      .gate-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .field.full {
+        grid-column: 1/-1;
+      }
+      .field label {
+        color: var(--text);
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+      .field input,
+      .field select {
+        min-height: 52px;
+        padding: 0 14px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+      }
+      .consent {
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        gap: 12px;
+        align-items: start;
+        padding-top: 6px;
+      }
+      .consent input {
+        margin-top: 4px;
+      }
+      .note,
+      .status,
+      .footer-note,
+      .submit-note {
+        color: var(--soft);
+        font-size: 0.92rem;
+      }
+      .status {
+        min-height: 24px;
+        margin-top: 12px;
+      }
+      .results-grid {
+        display: grid;
+        grid-template-columns: 1.16fr 0.84fr;
+        gap: 24px;
+      }
+      .hero-report {
+        padding: 24px;
+      }
+      .eyebrow {
+        color: var(--gold2);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .diag-chip {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(173, 120, 5, 0.34);
+        background: rgba(173, 120, 5, 0.08);
+        color: var(--text);
+        font-size: 0.9rem;
+        font-weight: 700;
+        margin: 4px 0 16px;
+      }
+      .advice {
+        display: grid;
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .metric,
+      .signal,
+      .score {
+        padding: 16px;
+      }
+      .metric h4,
+      .signal h4 {
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+      .program {
+        margin-top: 18px;
+        padding: 18px;
+        border: 1px solid rgba(173, 120, 5, 0.16);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.025);
+      }
+      .program ul {
+        margin: 12px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      .signals {
+        margin-top: 16px;
+        display: grid;
+        gap: 10px;
+      }
+      .scores {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .score.full {
+        grid-column: 1/-1;
+      }
+      .slabel {
+        color: var(--soft);
+        font-size: 0.84rem;
+        margin-bottom: 8px;
+      }
+      .sval {
+        color: var(--text);
+        font-size: 1.7rem;
+        font-weight: 800;
+      }
+      .bar {
+        height: 9px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        overflow: hidden;
+        margin-top: 12px;
+      }
+      .bar span {
+        display: block;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90deg, var(--gold3), var(--gold2));
+      }
+      .chart {
+        padding: 18px;
+        margin-bottom: 18px;
+      }
+      #radar {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 1/1;
+        display: block;
+        margin: 0 auto;
+      }
+      .bench {
+        color: var(--text);
+        font-weight: 700;
+      }
+      .side {
+        display: grid;
+        gap: 12px;
+      }
+      .hidden {
+        display: none !important;
+      }
+      .print-only {
+        display: none;
+      }
+      footer {
+        padding: 0 0 34px;
+      }
+      .footer-note {
+        text-align: center;
+        border-top: 1px solid var(--line);
+        padding-top: 14px;
+      }
+      @media (max-width: 980px) {
+        .hero-grid,
+        .results-grid,
+        .topbar {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (max-width: 760px) {
+        .container {
+          padding: 0 16px;
+        }
+        .hero {
+          padding-top: 38px;
+        }
+        .assessment,
+        .panel,
+        .hero-report,
+        .chart,
+        .score,
+        .metric,
+        .signal {
+          padding: 18px;
+        }
+        .gate-grid,
+        .scores,
+        .scale,
+        .scale.s5 {
+          grid-template-columns: 1fr;
+        }
+        .nav {
+          flex-direction: column-reverse;
+          align-items: stretch;
+        }
+        .nav .btn,
+        .hero-actions .btn,
+        .actions .btn {
+          width: 100%;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+          color: #111;
+        }
+        .hero,
+        .topbar,
+        .intro,
+        .nav,
+        .actions,
+        footer,
+        .note,
+        .submit-note,
+        .status,
+        .hero-actions {
+          display: none !important;
+        }
+        .assessment-wrap {
+          background: #fff !important;
+        }
+        .assessment,
+        .report,
+        .signal,
+        .score,
+        .metric,
+        .chart {
+          background: #fff !important;
+          color: #111 !important;
+          border: 1px solid #ccc !important;
+        }
+        .results,
+        .results-grid {
+          display: block !important;
+        }
+        .print-only {
+          display: block;
+        }
+        p,
+        li {
+          color: #222 !important;
+        }
+        .diag-chip {
+          background: #f5f0e8 !important;
+          color: #111 !important;
+          border-color: #d9c39b !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" aria-label="MetaGrowth Growth Path Assessment">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">MetaGrowth Ventures</div>
+          <h1>What’s Limiting Your Growth?</h1>
+          <p>
+            Most companies don't have a revenue problem. They have a leadership, accountability, execution, systems, or
+            infrastructure problem. This assessment will identify the biggest growth constraints in your business and
+            provide a strategic prescription for your next stage of growth.
+          </p>
+          <div class="hero-actions">
+            <a href="#assessment-app" class="btn btn-primary" id="startAssessmentBtn">Start Assessment</a>
+            <span class="hero-note">3–4 minutes • Strategic diagnostic • Professional report</span>
+          </div>
+        </div>
+        <aside class="panel" aria-label="Assessment overview">
+          <div class="kicker" style="margin-bottom: 10px">What you’ll receive</div>
+          <h3>Clear diagnosis. Direct prescription. The right next move.</h3>
+          <p>
+            This assessment is designed to identify the single most important constraint limiting predictable growth —
+            then translate that into practical advisory guidance.
+          </p>
+          <ul>
+            <li>Overall Growth Readiness Score</li>
+            <li>Five category scores across revenue, leadership, infrastructure, execution, and CEO effectiveness</li>
+            <li>Top 3 growth constraints and top 3 growth opportunities</li>
+            <li>A prescribed MetaGrowth path based on where the greatest opportunity exists</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Founders Revenue Council</span>
+            <span class="chip">CEO Growth Lab</span>
+            <span class="chip">Revenue Engine</span>
+            <span class="chip">Growth Acceleration</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wrap" id="assessment-app">
+      <div class="container">
+        <div class="intro">
+          <div class="kicker">Growth Path Diagnostic</div>
+          <h2>Identify the real constraint before you try to scale past it.</h2>
+          <p>
+            This diagnostic reviews the operating system beneath your growth: revenue generation, leadership capacity,
+            infrastructure maturity, execution discipline, and CEO effectiveness.
+          </p>
+        </div>
+
+        <div class="assessment">
+          <div class="topbar">
+            <div>
+              <div class="prog-meta">
+                <span id="progressLabel">Question 1 of 20</span><span id="progressPercent">5%</span>
+              </div>
+              <div class="prog" aria-hidden="true"><span id="progressFill"></span></div>
+            </div>
+            <div class="meta">
+              <span>One question at a time</span><span>Operational diagnostic</span><span>3–4 minutes</span>
+            </div>
+          </div>
+
+          <div class="step" id="step">
+            <div class="stage" id="stage">Company Snapshot</div>
+            <h2 class="qtitle" id="qtitle">Loading question…</h2>
+            <p class="qsub" id="qsub">
+              Provide the answer that most accurately reflects the current reality inside your business.
+            </p>
+            <div class="helper hidden" id="helper"></div>
+            <div class="answers" id="answers" role="radiogroup" aria-live="polite"></div>
+            <div class="nav">
+              <button type="button" class="btn btn-ghost" id="back">Back</button>
+              <button type="button" class="btn btn-primary" id="next" disabled>Next</button>
+            </div>
+          </div>
+
+          <div class="gate hidden" id="gate">
+            <div class="stage">Unlock Full Report</div>
+            <h2 class="qtitle">Enter your details to unlock your full diagnostic and strategic prescription.</h2>
+            <p class="qsub">
+              Your responses have been scored. We need your details to generate the full report and recommended next
+              step.
+            </p>
+            <div class="gate-grid">
+              <div class="field">
+                <label for="firstName">First Name</label><input id="firstName" type="text" autocomplete="given-name" />
+              </div>
+              <div class="field">
+                <label for="lastName">Last Name</label><input id="lastName" type="text" autocomplete="family-name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label><input id="email" type="email" autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="company">Company</label><input id="company" type="text" autocomplete="organization" />
+              </div>
+              <div class="field">
+                <label for="title">Title</label><input id="title" type="text" autocomplete="organization-title" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label><input id="phone" type="tel" autocomplete="tel" />
+              </div>
+              <div class="field full">
+                <div class="consent">
+                  <input id="consent" type="checkbox" /><label
+                    for="consent"
+                    style="font-weight: 400; color: var(--muted)"
+                    >I consent to MetaGrowth Ventures storing my information, delivering my assessment results, and
+                    following up with the most relevant advisory recommendation.</label
+                  >
+                </div>
+              </div>
+            </div>
+            <p class="note">Your MetaGrowth Growth Path Assessment Report will appear immediately, and any configured delivery endpoint can email these results as this report.</p>
+            <div class="nav" style="margin-top: 18px">
+              <button type="button" class="btn btn-ghost" id="gateBack">Back</button>
+              <button type="button" class="btn btn-primary" id="unlock">Send My Report</button>
+            </div>
+            <div class="status" id="status" aria-live="polite"></div>
+          </div>
+
+          <div class="results hidden" id="results">
+            <div class="print-only">
+              <h1>MetaGrowth Growth Path Assessment Report</h1>
+              <p>Strategic business diagnostic</p>
+            </div>
+            <div class="results-grid">
+              <div>
+                <div class="report hero-report">
+                  <div class="eyebrow">Primary Diagnosis</div>
+                  <h2 id="rHeadline">Your greatest growth opportunity is execution.</h2>
+                  <div class="diag-chip" id="rPrimary">Primary Diagnosis: Leadership & Accountability</div>
+                  <p id="rDiagnosis">
+                    The business likely has opportunity, but the operating system beneath that opportunity is not strong
+                    enough to make results consistent and repeatable.
+                  </p>
+                  <div class="advice">
+                    <div class="metric">
+                      <h4>What this likely means</h4>
+                      <p id="rMeans"></p>
+                    </div>
+                    <div class="metric">
+                      <h4>Strategic Prescription</h4>
+                      <p id="rPrescription"></p>
+                    </div>
+                    <div class="metric">
+                      <h4>Immediate Advice</h4>
+                      <p id="rAdvice"></p>
+                    </div>
+                    <div class="metric">
+                      <h4>Recommended Next Step</h4>
+                      <p id="rNext"></p>
+                    </div>
+                  </div>
+                  <div class="program">
+                    <div class="kicker" style="margin-bottom: 8px">Recommended Solution</div>
+                    <h3 id="rProgram"></h3>
+                    <p id="rWhy"></p>
+                    <ul id="rBenefits"></ul>
+                  </div>
+                  <div class="actions">
+                    <a class="btn btn-primary" id="rCta" href="#" target="_blank" rel="noopener noreferrer"
+                      >Explore Recommended Path</a
+                    >
+                    <button type="button" class="btn btn-secondary" id="pdf">Download PDF Report</button>
+                    <button type="button" class="btn btn-ghost" id="restart">Restart Assessment</button>
+                  </div>
+                  <p class="submit-note">Download uses your browser’s print-to-PDF flow.</p>
+                </div>
+                <div class="signals" id="constraints"></div>
+              </div>
+              <div>
+                <div class="report chart">
+                  <div class="kicker" style="margin-bottom: 8px">Score Profile</div>
+                  <canvas id="radar" width="360" height="360" aria-label="Growth profile radar chart"></canvas>
+                </div>
+                <div class="scores">
+                  <div class="score">
+                    <div class="slabel">Overall Growth Readiness</div>
+                    <div class="sval" id="sOverall">0</div>
+                    <div class="bar"><span id="bOverall"></span></div>
+                  </div>
+                  <div class="score">
+                    <div class="slabel">Growth Maturity Benchmark</div>
+                    <div class="bench" id="benchLabel">—</div>
+                    <p id="benchCopy" style="margin-top: 8px; margin-bottom: 0"></p>
+                  </div>
+                  <div class="score">
+                    <div class="slabel">Revenue Engine</div>
+                    <div class="sval" id="sRevenue">0</div>
+                    <div class="bar"><span id="bRevenue"></span></div>
+                  </div>
+                  <div class="score">
+                    <div class="slabel">Leadership</div>
+                    <div class="sval" id="sLeadership">0</div>
+                    <div class="bar"><span id="bLeadership"></span></div>
+                  </div>
+                  <div class="score">
+                    <div class="slabel">Infrastructure</div>
+                    <div class="sval" id="sInfrastructure">0</div>
+                    <div class="bar"><span id="bInfrastructure"></span></div>
+                  </div>
+                  <div class="score">
+                    <div class="slabel">Execution</div>
+                    <div class="sval" id="sExecution">0</div>
+                    <div class="bar"><span id="bExecution"></span></div>
+                  </div>
+                  <div class="score full">
+                    <div class="slabel">CEO Effectiveness</div>
+                    <div class="sval" id="sCEO">0</div>
+                    <div class="bar"><span id="bCEO"></span></div>
+                  </div>
+                </div>
+                <div class="side">
+                  <div class="signal">
+                    <h4>Top 3 Growth Opportunities</h4>
+                    <div id="opportunities"></div>
+                  </div>
+                  <div class="signal">
+                    <h4>Estimated Business Impact</h4>
+                    <p id="impact">—</p>
+                  </div>
+                  <div class="signal">
+                    <h4>90-Day Focus Areas</h4>
+                    <div id="focus"></div>
+                  </div>
+                  <div class="signal">
+                    <h4>Recommendation Code</h4>
+                    <p id="tag">—</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="footer-note">Preview build — hidden assessment page for internal review.</p>
+      </div>
+    </footer>
+
+    <script>
+      window.MetaGrowthAssessmentConfig = {
+        submissionEndpoint: 'https://email-proxy.josh-20a.workers.dev/api/send-assessment-report',
+        resultsWebhook: '',
+        pdfEndpoint: '',
+        programLinks: {
+          foundersCouncil: '#founders-revenue-council',
+          ceoGrowthLab: '#ceo-growth-lab',
+          revenueEngine: '#revenue-engine',
+          growthAcceleration: '#growth-acceleration-program',
+        },
+        hiddenPageSlug: '/growth-path-assessment',
+      };
+      (() => {
+        const K = 'mg_growth_path_assessment_v4',
+          T = {
+            'Pipeline Visibility':
+              'Your ability to accurately see the health, timing, and quality of future revenue inside the pipeline.',
+            'CRM Discipline':
+              'How consistently the team uses the CRM for management visibility, forecasting, and accountability.',
+            'Founder Dependence':
+              'How much day-to-day progress, decisions, and momentum still depend on the founder being directly involved.',
+            'Operational Efficiency':
+              'How well the business can scale output without creating confusion, rework, bottlenecks, or unnecessary cost.',
+          },
+          R = {
+            foundersCouncil: {
+              headline: 'Your greatest growth opportunity is perspective.',
+              diagnosis:
+                'You are likely solving important business challenges without enough outside operator perspective. The issue is not a lack of effort. It is a lack of calibrated strategic input.',
+              program: 'Founders Revenue Council',
+              tag: 'FOUNDERS_REVENUE_COUNCIL',
+              benefits: [
+                'Trusted peer network',
+                'Operator-level perspective',
+                'Strategic challenge and pattern recognition',
+                'Better decisions at the top',
+              ],
+              means:
+                'The business may not need another internal initiative first. It likely needs sharper thinking, better outside challenge, and stronger perspective around the CEO.',
+              prescription:
+                'Improve the quality of strategic input around the decisions shaping growth. Better decisions made earlier usually outperform more activity applied to the wrong problem.',
+              advice:
+                'Do not assume you need a new tactic. First improve the quality of perspective around major decisions.',
+              next: 'The right next step is a peer environment built to sharpen thinking, accelerate decisions, and reduce isolation at the top.',
+              why: 'Founders Revenue Council is the strongest fit when CEO effectiveness and perspective are the deepest limiting factors.',
+            },
+            ceoGrowthLab: {
+              headline: 'Your greatest growth opportunity is execution.',
+              diagnosis:
+                'The business likely has opportunity but lacks the leadership systems and accountability required to produce consistent results.',
+              program: 'CEO Growth Lab',
+              tag: 'CEO_GROWTH_LAB',
+              benefits: [
+                'Leadership development',
+                'Accountability systems',
+                'Quarterly planning rhythm',
+                'Execution discipline',
+              ],
+              means:
+                'Your next ceiling is likely leadership capacity, not market opportunity. Opportunity exists, but the business is not converting it consistently.',
+              prescription:
+                'Strengthen the operating discipline around leadership: clearer ownership, tighter accountability, stronger management cadence, and more consistent follow-through.',
+              advice: 'Adding more activity without improving accountability will create more noise, not more growth.',
+              next: 'Build stronger leadership infrastructure so execution becomes more predictable without increasing founder dependence.',
+              why: 'CEO Growth Lab is the strongest fit when growth is being constrained by leadership inconsistency, founder bottlenecks, or weak accountability.',
+            },
+            revenueEngine: {
+              headline: 'Your greatest growth opportunity is infrastructure.',
+              diagnosis:
+                'The business requires stronger systems, processes, technology, and revenue architecture to scale predictably.',
+              program: 'MetaGrowth Revenue Engine',
+              tag: 'REVENUE_ENGINE',
+              benefits: [
+                'Sales process architecture',
+                'Pipeline and CRM discipline',
+                'Systems modernization',
+                'Operational infrastructure improvement',
+              ],
+              means: 'The issue is not a lack of effort. The operating system beneath growth is not strong enough.',
+              prescription:
+                'Fix the infrastructure first: pipeline mechanics, process consistency, systems utilization, documentation, visibility, and scalability.',
+              advice: 'Do not add more activity on top of weak infrastructure. Fix the system first.',
+              next: 'Modernize the revenue engine and surrounding infrastructure so the company can scale with fewer leaks and less operational drag.',
+              why: 'MetaGrowth Revenue Engine is the strongest fit when inconsistent pipeline, weak process, or infrastructure drag is suppressing growth.',
+            },
+            growthAcceleration: {
+              headline: 'Your company is experiencing both leadership and infrastructure constraints.',
+              diagnosis:
+                'Improving only one area will limit growth. You need both leadership optimization and revenue system modernization to unlock the next stage.',
+              program: 'Growth Acceleration Program',
+              tag: 'GROWTH_ACCELERATION',
+              benefits: [
+                'CEO Growth Lab',
+                'Revenue Engine',
+                'Leadership development',
+                'Accountability systems',
+                'Revenue infrastructure',
+              ],
+              means:
+                'Your next ceiling is likely a combination of leadership capacity and infrastructure maturity — not market opportunity alone.',
+              prescription:
+                'Address both constraints in parallel. Solving only leadership or only infrastructure will improve the business, but it will not unlock the full next stage of growth.',
+              advice: 'Do not optimize one side of the business while the other remains a structural drag.',
+              next: 'The best next move is a coordinated program that upgrades leadership systems and revenue infrastructure at the same time.',
+              why: 'Growth Acceleration Program is designed for companies above $3M that are experiencing simultaneous leadership and infrastructure constraints.',
+            },
+          },
+          S = {
+            snapshot: 'Company Snapshot',
+            revenue: 'Revenue Engine',
+            leadership: 'Leadership & Accountability',
+            infra: 'Infrastructure & Execution',
+            ceo: 'CEO Effectiveness',
+          },
+          Q = [
+            [
+              'q1',
+              'snapshot',
+              'choice',
+              'Annual Revenue',
+              'This helps frame stage and operating complexity. It only lightly influences readiness.',
+              ['Under $1M', '$1M–$3M', '$3M–$10M', '$10M+'],
+            ],
+            ['q2', 'snapshot', 'choice', 'Team Size', '', ['1–10', '11–25', '26–50', '51+']],
+            [
+              'q3',
+              'snapshot',
+              'choice',
+              'Primary Growth Objective',
+              '',
+              [
+                'Increase Revenue',
+                'Improve Profitability',
+                'Build Leadership Team',
+                'Improve Operations',
+                'Scale Faster',
+              ],
+            ],
+            ['q4', 'snapshot', 'text', 'Industry', '', 'Enter your industry'],
+            [
+              'q5',
+              'revenue',
+              'scale10',
+              'Lead Generation',
+              'How consistently do you generate qualified opportunities?',
+            ],
+            [
+              'q6',
+              'revenue',
+              'scale10',
+              'Pipeline Visibility',
+              'How accurately can you forecast future revenue?',
+              null,
+              'Pipeline Visibility',
+            ],
+            ['q7', 'revenue', 'scale10', 'Sales Process', 'How documented and repeatable is your sales process?'],
+            [
+              'q8',
+              'revenue',
+              'scale10',
+              'CRM Discipline',
+              'How consistently is the CRM used by the team?',
+              null,
+              'CRM Discipline',
+            ],
+            [
+              'q9',
+              'revenue',
+              'scale10',
+              'Follow-Up Discipline',
+              'How confident are you that opportunities never fall through the cracks?',
+            ],
+            [
+              'q10',
+              'leadership',
+              'scale10',
+              'Leadership Team Strength',
+              'How capable is the leadership team without direct CEO involvement?',
+            ],
+            [
+              'q11',
+              'leadership',
+              'scale10',
+              'Founder Dependence',
+              'How much does day-to-day execution still depend on you?',
+              null,
+              'Founder Dependence',
+              1,
+            ],
+            ['q12', 'leadership', 'scale10', 'Delegation', 'How effectively are responsibilities delegated?'],
+            ['q13', 'leadership', 'scale10', 'Accountability', 'How consistently are goals tracked and reviewed?'],
+            [
+              'q14',
+              'leadership',
+              'scale10',
+              'Department Alignment',
+              'How aligned are departments around company priorities?',
+            ],
+            ['q15', 'infra', 'scale10', 'Recruiting', 'Ability to attract strong talent'],
+            ['q16', 'infra', 'scale10', 'Documentation', 'Quality of documented systems and processes'],
+            ['q17', 'infra', 'scale10', 'Technology Stack', 'Effectiveness of systems and tools'],
+            [
+              'q18',
+              'infra',
+              'scale10',
+              'Operational Efficiency',
+              'Ability to scale without creating chaos',
+              null,
+              'Operational Efficiency',
+            ],
+            ['q19', 'ceo', 'scale5', 'I regularly spend time working ON the business instead of IN the business.', ''],
+            [
+              'q20',
+              'ceo',
+              'scale5',
+              'I have trusted advisors and clear visibility into where growth constraints exist.',
+              '',
+            ],
+          ],
+          E = {
+            progressLabel: g('progressLabel'),
+            progressPercent: g('progressPercent'),
+            progressFill: g('progressFill'),
+            stage: g('stage'),
+            qtitle: g('qtitle'),
+            qsub: g('qsub'),
+            helper: g('helper'),
+            answers: g('answers'),
+            back: g('back'),
+            next: g('next'),
+            step: g('step'),
+            gate: g('gate'),
+            results: g('results'),
+            gateBack: g('gateBack'),
+            unlock: g('unlock'),
+            status: g('status'),
+            firstName: g('firstName'),
+            lastName: g('lastName'),
+            email: g('email'),
+            company: g('company'),
+            title: g('title'),
+            phone: g('phone'),
+            consent: g('consent'),
+            rHeadline: g('rHeadline'),
+            rPrimary: g('rPrimary'),
+            rDiagnosis: g('rDiagnosis'),
+            rMeans: g('rMeans'),
+            rPrescription: g('rPrescription'),
+            rAdvice: g('rAdvice'),
+            rNext: g('rNext'),
+            rProgram: g('rProgram'),
+            rWhy: g('rWhy'),
+            rBenefits: g('rBenefits'),
+            rCta: g('rCta'),
+            sOverall: g('sOverall'),
+            benchLabel: g('benchLabel'),
+            benchCopy: g('benchCopy'),
+            sRevenue: g('sRevenue'),
+            sLeadership: g('sLeadership'),
+            sInfrastructure: g('sInfrastructure'),
+            sExecution: g('sExecution'),
+            sCEO: g('sCEO'),
+            bOverall: g('bOverall'),
+            bRevenue: g('bRevenue'),
+            bLeadership: g('bLeadership'),
+            bInfrastructure: g('bInfrastructure'),
+            bExecution: g('bExecution'),
+            bCEO: g('bCEO'),
+            radar: g('radar'),
+            tag: g('tag'),
+            impact: g('impact'),
+            focus: g('focus'),
+            constraints: g('constraints'),
+            opportunities: g('opportunities'),
+            restart: g('restart'),
+            pdf: g('pdf'),
+          };
+        let st = load() || { i: 0, a: {}, l: {}, r: null };
+        fillGate();
+        render();
+        g('startAssessmentBtn').onclick = () =>
+          g('assessment-app').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        E.back.onclick = () => {
+          if (st.i > 0) {
+            st.i--;
+            save();
+            render();
+          }
+        };
+        E.next.onclick = () => {
+          if (!answered()) return;
+          advance();
+        };
+        E.gateBack.onclick = () => show('step');
+        E.unlock.onclick = async () => {
+          if (!validGate()) return;
+          grabGate();
+          st.r = calc();
+          save();
+          paint(st.r);
+          await post(st.r);
+        };
+        E.restart.onclick = () => {
+          localStorage.removeItem(K);
+          st = { i: 0, a: {}, l: {}, r: null };
+          fillGate();
+          render();
+          g('assessment-app').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+        E.pdf.onclick = () => window.print();
+
+        function g(id) {
+          return document.getElementById(id);
+        }
+        function load() {
+          try {
+            return JSON.parse(localStorage.getItem(K) || 'null');
+          } catch (e) {
+            return null;
+          }
+        }
+        function save() {
+          localStorage.setItem(K, JSON.stringify(st));
+        }
+        function advance() {
+          if (st.i < Q.length - 1) {
+            st.i++;
+            save();
+            render();
+          } else {
+            show('gate');
+          }
+        }
+        function fillGate() {
+          ['firstName', 'lastName', 'email', 'company', 'title', 'phone'].forEach((k) => {
+            let el = E[k];
+            if (el) el.value = st.l[k] || '';
+          });
+          E.consent.checked = !!st.l.consent;
+        }
+        function grabGate() {
+          st.l = {
+            firstName: E.firstName.value.trim(),
+            lastName: E.lastName.value.trim(),
+            email: E.email.value.trim(),
+            company: E.company.value.trim(),
+            title: E.title.value.trim(),
+            phone: E.phone.value.trim(),
+            annualRevenue: st.a.q1 || '',
+            consent: E.consent.checked,
+          };
+        }
+        function validGate() {
+          if (
+            !E.firstName.value.trim() ||
+            !E.lastName.value.trim() ||
+            !E.email.value.trim() ||
+            !E.company.value.trim()
+          ) {
+            E.status.textContent = 'Please complete all required fields before unlocking your report.';
+            return 0;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(E.email.value.trim())) {
+            E.status.textContent = 'Please enter a valid email address.';
+            return 0;
+          }
+          if (!E.consent.checked) {
+            E.status.textContent = 'Consent is required before we can display your full report.';
+            return 0;
+          }
+          E.status.textContent = '';
+          return 1;
+        }
+        function show(which) {
+          E.step.classList.toggle('hidden', which !== 'step');
+          E.gate.classList.toggle('hidden', which !== 'gate');
+          E.results.classList.toggle('hidden', which !== 'results');
+        }
+        function answered() {
+          let q = Q[st.i],
+            v = st.a[q[0]];
+          return !(v === undefined || v === null || v === '');
+        }
+        function render() {
+          if (st.r) {
+            paint(st.r);
+            return;
+          }
+          show('step');
+          let q = Q[st.i],
+            pct = Math.round(((st.i + 1) / Q.length) * 100);
+          E.progressLabel.textContent = `Question ${st.i + 1} of ${Q.length}`;
+          E.progressPercent.textContent = pct + '%';
+          E.progressFill.style.width = pct + '%';
+          E.stage.textContent = S[q[1]];
+          E.qtitle.textContent = q[3];
+          E.qsub.textContent =
+            q[4] || 'Provide the answer that most accurately reflects the current reality inside your business.';
+          if (q[6]) {
+            E.helper.classList.remove('hidden');
+            E.helper.innerHTML = `Helpful context <span class="tip" tabindex="0">?<span class="tipb">${esc(T[q[6]])}</span></span>`;
+          } else {
+            E.helper.classList.add('hidden');
+            E.helper.innerHTML = '';
+          }
+          E.answers.innerHTML = '';
+          if (q[2] === 'choice') renderChoice(q);
+          if (q[2] === 'text') renderText(q);
+          if (q[2] === 'scale10') renderScale(q, 10);
+          if (q[2] === 'scale5') renderScale(q, 5);
+          E.back.disabled = st.i === 0;
+          E.next.disabled = !answered();
+          E.next.classList.toggle('hidden', q[2] !== 'text');
+        }
+        function renderChoice(q) {
+          let sel = st.a[q[0]] || '';
+          q[5].forEach((opt) => {
+            let l = document.createElement('label');
+            l.className = 'choice';
+            l.setAttribute('role', 'radio');
+            l.setAttribute('aria-checked', String(sel === opt));
+            l.innerHTML = `<input type="radio" name="${q[0]}" value="${esc(opt)}"${sel === opt ? ' checked' : ''}><div class="ctitle">${esc(opt)}</div>`;
+            l.onclick = () => {
+              st.a[q[0]] = opt;
+              save();
+              advance();
+            };
+            E.answers.appendChild(l);
+          });
+        }
+        function renderText(q) {
+          let i = document.createElement('input');
+          i.className = 'text-answer';
+          i.placeholder = q[5] || '';
+          i.value = st.a[q[0]] || '';
+          i.oninput = () => {
+            st.a[q[0]] = i.value.trim();
+            save();
+            E.next.disabled = !answered();
+          };
+          E.answers.appendChild(i);
+        }
+        function renderScale(q, n) {
+          let lg = document.createElement('div');
+          lg.className = 'legend';
+          lg.innerHTML =
+            n === 10
+              ? '<span>1 = Major Weakness</span><span>10 = World Class</span>'
+              : '<span>Strongly Disagree</span><span>Strongly Agree</span>';
+          E.answers.appendChild(lg);
+          let grid = document.createElement('div');
+          grid.className = 'scale' + (n === 5 ? ' s5' : '');
+          let sel = +st.a[q[0]] || 0;
+          for (let i = 1; i <= n; i++) {
+            let b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'scale-btn' + (sel === i ? ' active' : '');
+            b.innerHTML =
+              n === 5
+                ? `<strong>${i}</strong><span>${['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'][i - 1]}</span>`
+                : `<strong>${i}</strong>`;
+            b.onclick = () => {
+              st.a[q[0]] = i;
+              save();
+              advance();
+            };
+            grid.appendChild(b);
+          }
+          E.answers.appendChild(grid);
+        }
+        function n10(v, rev) {
+          let n = +v || 0,
+            s = cl(Math.round(((n - 1) / 9) * 100), 0, 100);
+          return rev ? 100 - s : s;
+        }
+        function n5(v) {
+          let n = +v || 0;
+          return cl(Math.round(((n - 1) / 4) * 100), 0, 100);
+        }
+        function snapshot() {
+          let s = 50,
+            r = st.a.q1,
+            t = st.a.q2,
+            o = st.a.q3;
+          if (r === '$3M–$10M') s += 10;
+          if (r === '$10M+') s += 16;
+          if (t === '26–50') s += 6;
+          if (t === '51+') s += 10;
+          if (o === 'Scale Faster') s += 8;
+          if (o === 'Improve Operations' || o === 'Build Leadership Team') s += 4;
+          return cl(s, 25, 90);
+        }
+        function calc() {
+          let revenue = avg([n10(st.a.q5), n10(st.a.q6), n10(st.a.q7), n10(st.a.q8), n10(st.a.q9)]),
+            leadership = avg([n10(st.a.q10), n10(st.a.q11, 1), n10(st.a.q12), n10(st.a.q13), n10(st.a.q14)]),
+            infra = avg([n10(st.a.q15), n10(st.a.q16), n10(st.a.q17), n10(st.a.q18)]),
+            execution = avg([n10(st.a.q13), n10(st.a.q14), n10(st.a.q16), n10(st.a.q18), n5(st.a.q19)]),
+            ceo = avg([n5(st.a.q19), n5(st.a.q20)]),
+            overall = cl(
+              rnd(
+                revenue * 0.24 + leadership * 0.22 + infra * 0.18 + execution * 0.18 + ceo * 0.14 + snapshot() * 0.04,
+              ),
+              0,
+              100,
+            ),
+            maj = [
+              ['revenue', 'Revenue Engine', revenue],
+              ['leadership', 'Leadership & Accountability', leadership],
+              ['infrastructure', 'Infrastructure', infra],
+              ['execution', 'Execution', execution],
+              ['ceo', 'CEO Effectiveness', ceo],
+            ].sort((a, b) => a[2] - b[2])[0],
+            items = weakItems(),
+            constraints = items
+              .slice()
+              .sort((a, b) => a.score - b.score)
+              .slice(0, 3),
+            ops = constraints.map((x) => ({ label: oppLabel(x.label), advice: oppAdvice(x.label) })),
+            revLabel = st.l.annualRevenue || st.a.q1 || '',
+            ga = (revLabel === '$3M–$10M' || revLabel === '$10M+') && leadership < 70 && revenue < 70,
+            key = ga
+              ? 'growthAcceleration'
+              : maj[0] === 'ceo'
+                ? 'foundersCouncil'
+                : maj[0] === 'leadership' || maj[0] === 'execution'
+                  ? 'ceoGrowthLab'
+                  : 'revenueEngine',
+            rec = R[key];
+          return {
+            scores: { overall, revenue, leadership, infrastructure: infra, execution, ceo },
+            weakest: maj[1],
+            recommendationKey: key,
+            recommendation: rec,
+            constraints,
+            ops,
+            benchmark: bench(overall),
+            impact: impact(Math.min(maj[2], constraints[0].score), key),
+            focus: focus(key, constraints),
+            primary: 'Primary Diagnosis: ' + maj[1],
+            timestamp: new Date().toISOString(),
+          };
+        }
+        function weakItems() {
+          return [
+            { label: 'Lead Generation', score: n10(st.a.q5) },
+            { label: 'Pipeline Visibility', score: n10(st.a.q6) },
+            { label: 'Sales Process', score: n10(st.a.q7) },
+            { label: 'CRM Discipline', score: n10(st.a.q8) },
+            { label: 'Follow-Up Discipline', score: n10(st.a.q9) },
+            { label: 'Leadership Team Strength', score: n10(st.a.q10) },
+            { label: 'Founder Dependence', score: n10(st.a.q11, 1) },
+            { label: 'Delegation', score: n10(st.a.q12) },
+            { label: 'Accountability', score: n10(st.a.q13) },
+            { label: 'Department Alignment', score: n10(st.a.q14) },
+            { label: 'Recruiting', score: n10(st.a.q15) },
+            { label: 'Documentation', score: n10(st.a.q16) },
+            { label: 'Technology Stack', score: n10(st.a.q17) },
+            { label: 'Operational Efficiency', score: n10(st.a.q18) },
+            { label: 'CEO Strategic Time', score: n5(st.a.q19) },
+            { label: 'CEO Advisor Access & Visibility', score: n5(st.a.q20) },
+          ];
+        }
+        function oppLabel(l) {
+          return (
+            {
+              'Lead Generation': 'Stronger opportunity generation',
+              'Pipeline Visibility': 'Better forecast visibility',
+              'Sales Process': 'More repeatable sales execution',
+              'CRM Discipline': 'Tighter CRM discipline',
+              'Follow-Up Discipline': 'Stronger follow-up rigor',
+              'Leadership Team Strength': 'Stronger leadership bench',
+              'Founder Dependence': 'Reduced founder dependence',
+              Delegation: 'Clearer delegation',
+              Accountability: 'Tighter accountability',
+              'Department Alignment': 'Better alignment across functions',
+              Recruiting: 'Stronger recruiting engine',
+              Documentation: 'Better process documentation',
+              'Technology Stack': 'Stronger systems foundation',
+              'Operational Efficiency': 'More scalable operations',
+              'CEO Strategic Time': 'More time working on the business',
+              'CEO Advisor Access & Visibility': 'Stronger CEO perspective and visibility',
+            }[l] || l
+          );
+        }
+        function oppAdvice(l) {
+          return (
+            {
+              'Lead Generation': 'Build a more consistent top-of-funnel motion.',
+              'Pipeline Visibility': 'Improve forecast discipline and pipeline inspection.',
+              'Sales Process': 'Document the sales path and enforce it consistently.',
+              'CRM Discipline': 'Make CRM usage part of management discipline.',
+              'Follow-Up Discipline': 'Install stricter next-step ownership and review.',
+              'Leadership Team Strength': 'Strengthen leadership capability without CEO dependency.',
+              'Founder Dependence': 'Shift decision-making out of the founder bottleneck.',
+              Delegation: 'Clarify ownership and handoff expectations.',
+              Accountability: 'Track goals on a real operating cadence.',
+              'Department Alignment': 'Align functions around shared priorities and outcomes.',
+              Recruiting: 'Tighten the talent pipeline before growth accelerates.',
+              Documentation: 'Codify key operating processes before scale increases.',
+              'Technology Stack': 'Close the systems gap limiting scale.',
+              'Operational Efficiency': 'Remove friction before volume increases.',
+              'CEO Strategic Time': 'Protect strategic time at the top.',
+              'CEO Advisor Access & Visibility': 'Increase outside challenge and clarity around constraints.',
+            }[l] || 'Improve this area to raise growth readiness.'
+          );
+        }
+        function paint(r) {
+          show('results');
+          let x = r.recommendation;
+          E.rHeadline.textContent = x.headline;
+          E.rPrimary.textContent = r.primary;
+          E.rDiagnosis.textContent = x.diagnosis;
+          E.rMeans.textContent = x.means;
+          E.rPrescription.textContent = x.prescription;
+          E.rAdvice.textContent = x.advice;
+          E.rNext.textContent = x.next;
+          E.rProgram.textContent = x.program;
+          E.rWhy.textContent = x.why;
+          E.rBenefits.innerHTML = x.benefits.map((v) => `<li>${esc(v)}</li>`).join('');
+          E.rCta.textContent = cta(r.recommendationKey);
+          E.rCta.href = (window.MetaGrowthAssessmentConfig.programLinks || {})[r.recommendationKey] || '#';
+          fill(E.sOverall, E.bOverall, r.scores.overall);
+          fill(E.sRevenue, E.bRevenue, r.scores.revenue);
+          fill(E.sLeadership, E.bLeadership, r.scores.leadership);
+          fill(E.sInfrastructure, E.bInfrastructure, r.scores.infrastructure);
+          fill(E.sExecution, E.bExecution, r.scores.execution);
+          fill(E.sCEO, E.bCEO, r.scores.ceo);
+          E.benchLabel.textContent = r.benchmark.label;
+          E.benchCopy.textContent = r.benchmark.copy;
+          E.tag.textContent = x.tag;
+          E.impact.textContent = r.impact;
+          E.constraints.innerHTML = `<div class="signal"><h4>Top 3 Growth Constraints</h4>${r.constraints.map((v) => `<p><strong>${esc(v.label)}:</strong> ${esc(oppAdvice(v.label))}</p>`).join('')}</div>`;
+          E.opportunities.innerHTML = r.ops
+            .map((v) => `<p><strong>${esc(v.label)}:</strong> ${esc(v.advice)}</p>`)
+            .join('');
+          E.focus.innerHTML = r.focus.map((v) => `<p>• ${esc(v)}</p>`).join('');
+          radar(
+            [r.scores.revenue, r.scores.leadership, r.scores.infrastructure, r.scores.execution, r.scores.ceo],
+            ['Revenue', 'Leadership', 'Infrastructure', 'Execution', 'CEO'],
+          );
+        }
+        function fill(a, b, v) {
+          a.textContent = String(v);
+          b.style.width = v + '%';
+        }
+        function cta(k) {
+          return (
+            {
+              foundersCouncil: 'Explore Founders Revenue Council',
+              ceoGrowthLab: 'Explore CEO Growth Lab',
+              revenueEngine: 'Explore MetaGrowth Revenue Engine',
+              growthAcceleration: 'Explore Growth Acceleration Program',
+            }[k] || 'Explore Recommended Path'
+          );
+        }
+        function bench(s) {
+          if (s <= 39)
+            return {
+              label: 'Fragile Growth System',
+              copy: 'Too much of growth is still dependent on effort instead of a durable operating system.',
+            };
+          if (s <= 54)
+            return {
+              label: 'Emerging Foundation',
+              copy: 'There is a base to build on, but important parts of the operating system are still inconsistent.',
+            };
+          if (s <= 69)
+            return {
+              label: 'Functional but Inconsistent',
+              copy: 'The business can produce results, but predictability is limited by a few material constraints.',
+            };
+          if (s <= 84)
+            return {
+              label: 'Scaling with Constraints',
+              copy: 'The company has real momentum, but unresolved bottlenecks will become more expensive as growth continues.',
+            };
+          return {
+            label: 'Strong Growth Readiness',
+            copy: 'The operating system is comparatively strong, and the focus shifts toward refinement, leverage, and scale efficiency.',
+          };
+        }
+        function impact(w, k) {
+          if (w < 45)
+            return 'High impact: resolving this constraint would likely create a meaningful step change in predictability, leadership confidence, and operating performance.';
+          if (w < 60)
+            return 'Significant impact: there is a meaningful opportunity to improve consistency, reduce drag, and raise growth readiness over the next 90 days.';
+          return k === 'growthAcceleration'
+            ? 'Moderate to high impact: the business is already functional, but coordinated improvements would likely unlock a stronger next stage of scale.'
+            : 'Moderate optimization upside: the business is functioning, but a few targeted improvements should increase leverage and predictability.';
+        }
+        function focus(k, c) {
+          let l = c.map((x) => x.label);
+          if (k === 'foundersCouncil')
+            return [
+              'Add structured outside challenge to major strategic decisions.',
+              'Build a repeatable cadence for CEO perspective and accountability.',
+              'Reduce strategic isolation before it distorts operating decisions.',
+            ];
+          if (k === 'ceoGrowthLab')
+            return [
+              'Clarify ownership and tighten accountability around ' + l.slice(0, 2).join(' and ') + '.',
+              'Install a stronger operating cadence for review, follow-through, and decision-making.',
+              'Reduce founder dependence by shifting more execution responsibility into the team.',
+            ];
+          if (k === 'revenueEngine')
+            return [
+              'Strengthen the weakest revenue/infrastructure signals: ' + l.slice(0, 2).join(' and ') + '.',
+              'Improve system discipline before adding more activity or complexity.',
+              'Create better visibility into the metrics and process steps driving growth.',
+            ];
+          return [
+            'Address leadership and infrastructure constraints in parallel, not sequentially.',
+            'Tighten accountability while upgrading the revenue operating system beneath growth.',
+            'Prioritize the weakest signals first: ' + l.slice(0, 3).join(', ') + '.',
+          ];
+        }
+        async function post(r) {
+          let p = payload(r),
+            targets = [
+              window.MetaGrowthAssessmentConfig.submissionEndpoint,
+              window.MetaGrowthAssessmentConfig.resultsWebhook,
+            ].filter(Boolean);
+          E.status.textContent = 'Preparing your MetaGrowth Growth Path Assessment Report…';
+          if (!targets.length) {
+            E.status.textContent = 'Your report is ready below. Add a delivery endpoint to send it by email.';
+            return;
+          }
+          try {
+            await Promise.all(
+              targets.map((u) =>
+                fetch(u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(p) }),
+              ),
+            );
+            E.status.textContent = 'Your MetaGrowth Growth Path Assessment Report has been sent.';
+          } catch (e) {
+            E.status.textContent = 'We could not send the email, but your MetaGrowth Growth Path Assessment Report is ready below.';
+          }
+        }
+        function payload(r) {
+          return {
+            first_name: st.l.firstName || '',
+            last_name: st.l.lastName || '',
+            email: st.l.email || '',
+            report_name: 'MetaGrowth Growth Path Assessment Report',
+            report_source: 'This email contains results from the MetaGrowth Growth Path Assessment Report.',
+            email_subject: 'Your MetaGrowth Growth Path Assessment Report',
+            email_intro: 'This email contains your results from the MetaGrowth Growth Path Assessment Report, including your diagnosis, score profile, and recommended next step.',
+            company: st.l.company || '',
+            title: st.l.title || '',
+            phone: st.l.phone || '',
+            annual_revenue: st.l.annualRevenue || st.a.q1 || '',
+            consent: !!st.l.consent,
+            assessment_answers: st.a,
+            scores: {
+              overall: r.scores.overall,
+              revenue_engine: r.scores.revenue,
+              leadership: r.scores.leadership,
+              infrastructure: r.scores.infrastructure,
+              execution: r.scores.execution,
+              ceo_effectiveness: r.scores.ceo,
+            },
+            primary_diagnosis: r.weakest,
+            recommendation: r.recommendation.program,
+            recommendation_key: r.recommendationKey,
+            tag: r.recommendation.tag,
+            top_constraints: r.constraints.map((x) => x.label),
+            top_opportunities: r.ops.map((x) => x.label),
+            maturity_benchmark: r.benchmark.label,
+            estimated_business_impact: r.impact,
+            focus_areas: r.focus,
+            page_slug: window.MetaGrowthAssessmentConfig.hiddenPageSlug,
+            timestamp: r.timestamp,
+          };
+        }
+        function radar(vals, labs) {
+          let c = E.radar,
+            ctx = c.getContext('2d'),
+            w = c.width,
+            h = c.height,
+            cx = w / 2,
+            cy = h / 2,
+            r = 118,
+            n = labs.length;
+          ctx.clearRect(0, 0, w, h);
+          ctx.strokeStyle = 'rgba(173,120,5,.18)';
+          ctx.lineWidth = 1;
+          for (let lv = 1; lv <= 5; lv++) {
+            let rr = (r * lv) / 5;
+            ctx.beginPath();
+            for (let i = 0; i < n; i++) {
+              let a = -Math.PI / 2 + (Math.PI * 2 * i) / n,
+                x = cx + Math.cos(a) * rr,
+                y = cy + Math.sin(a) * rr;
+              i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+            }
+            ctx.closePath();
+            ctx.stroke();
+          }
+          labs.forEach((lab, i) => {
+            let a = -Math.PI / 2 + (Math.PI * 2 * i) / n,
+              x = cx + Math.cos(a) * r,
+              y = cy + Math.sin(a) * r;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            let lx = cx + Math.cos(a) * (r + 22),
+              ly = cy + Math.sin(a) * (r + 22);
+            ctx.fillStyle = 'rgba(255,255,255,.72)';
+            ctx.font = '12px Inter';
+            ctx.textAlign = lx < cx - 8 ? 'right' : lx > cx + 8 ? 'left' : 'center';
+            ctx.fillText(lab, lx, ly);
+          });
+          ctx.beginPath();
+          vals.forEach((v, i) => {
+            let a = -Math.PI / 2 + (Math.PI * 2 * i) / n,
+              rr = r * (v / 100),
+              x = cx + Math.cos(a) * rr,
+              y = cy + Math.sin(a) * rr;
+            i ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+          });
+          ctx.closePath();
+          ctx.fillStyle = 'rgba(173,120,5,.16)';
+          ctx.strokeStyle = 'rgba(201,146,32,.9)';
+          ctx.lineWidth = 2;
+          ctx.fill();
+          ctx.stroke();
+          vals.forEach((v, i) => {
+            let a = -Math.PI / 2 + (Math.PI * 2 * i) / n,
+              rr = r * (v / 100),
+              x = cx + Math.cos(a) * rr,
+              y = cy + Math.sin(a) * rr;
+            ctx.beginPath();
+            ctx.fillStyle = '#c99220';
+            ctx.arc(x, y, 4, 0, Math.PI * 2);
+            ctx.fill();
+          });
+        }
+        function rnd(n) {
+          return Math.round(n);
+        }
+        function cl(n, min, max) {
+          return Math.max(min, Math.min(max, n));
+        }
+        function avg(a) {
+          return rnd(a.reduce((x, y) => x + y, 0) / a.length);
+        }
+        function esc(s) {
+          return String(s).replace(
+            /[&<>"']/g,
+            (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c],
+          );
+        }
+      })();
+    </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
