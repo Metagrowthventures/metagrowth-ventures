@@ -935,10 +935,6 @@
       <div class="container">
         <p class="footer-note">Preview build — hidden assessment page for internal review.</p>
       </div>
-        <footer>
-      <div class="container">
-        <p class="footer-note">MetaGrowth Ventures Growth Path Assessment</p>
-      </div>
     </footer>
 
     <script>
@@ -1238,11 +1234,13 @@
         E.gateBack.onclick = () => show('step');
         E.unlock.onclick = async () => {
           if (!validGate()) return;
+          E.unlock.disabled = true;
           grabGate();
           st.r = calc();
           save();
-          paint(st.r);
           await post(st.r);
+          paint(st.r);
+          E.unlock.disabled = false;
         };
         E.restart.onclick = () => {
           localStorage.removeItem(K);
@@ -1670,14 +1668,19 @@
             return;
           }
           try {
-            await Promise.all(
+            let responses = await Promise.all(
               targets.map((u) =>
                 fetch(u, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(p) }),
               ),
             );
+            let bad = responses.find((res) => !res.ok);
+            if (bad) {
+              throw new Error(`Email endpoint returned HTTP ${bad.status}`);
+            }
             E.status.textContent = 'Your MetaGrowth Growth Path Assessment Report has been sent.';
           } catch (e) {
-            E.status.textContent = 'We could not send the email, but your MetaGrowth Growth Path Assessment Report is ready below.';
+            console.error('Assessment report email failed:', e);
+            E.status.textContent = `We could not send the email (${e.message || 'unknown error'}), but your MetaGrowth Growth Path Assessment Report is ready below.`;
           }
         }
         function payload(r) {
@@ -1787,7 +1790,7 @@
           return Math.max(min, Math.min(max, n));
         }
         function avg(a) {
-          return Math.round(a.reduce((x, y) => x + y, 0) / a.length);
+          return rnd(a.reduce((x, y) => x + y, 0) / a.length);
         }
         function esc(s) {
           return String(s).replace(
@@ -1797,13 +1800,6 @@
         }
       })();
     </script>
-
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
-      integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ=="
-      data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
 </html>
