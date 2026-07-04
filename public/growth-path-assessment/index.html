@@ -860,6 +860,7 @@
                     <button type="button" class="btn btn-secondary" id="pdf">Download PDF Report</button>
                     <button type="button" class="btn btn-ghost" id="restart">Restart Assessment</button>
                   </div>
+                  <div class="status" id="reportStatus" aria-live="polite"></div>
                   <p class="submit-note">Download uses your browser’s print-to-PDF flow.</p>
                 </div>
                 <div class="signals" id="constraints"></div>
@@ -1174,6 +1175,7 @@
             gateBack: g('gateBack'),
             unlock: g('unlock'),
             status: g('status'),
+            reportStatus: g('reportStatus'),
             firstName: g('firstName'),
             lastName: g('lastName'),
             email: g('email'),
@@ -1317,6 +1319,10 @@
           E.step.classList.toggle('hidden', which !== 'step');
           E.gate.classList.toggle('hidden', which !== 'gate');
           E.results.classList.toggle('hidden', which !== 'results');
+        }
+        function setDeliveryStatus(message) {
+          E.status.textContent = message;
+          if (E.reportStatus) E.reportStatus.textContent = message;
         }
         function answered() {
           let q = Q[st.i],
@@ -1662,9 +1668,9 @@
               window.MetaGrowthAssessmentConfig.submissionEndpoint,
               window.MetaGrowthAssessmentConfig.resultsWebhook,
             ].filter(Boolean);
-          E.status.textContent = 'Preparing your MetaGrowth Growth Path Assessment Report…';
+          setDeliveryStatus('Preparing your MetaGrowth Growth Path Assessment Report…');
           if (!targets.length) {
-            E.status.textContent = 'Your report is ready below. Add a delivery endpoint to send it by email.';
+            setDeliveryStatus('Your report is ready below. Add a delivery endpoint to send it by email.');
             return;
           }
           try {
@@ -1677,10 +1683,10 @@
             if (bad) {
               throw new Error(`Email endpoint returned HTTP ${bad.status}`);
             }
-            E.status.textContent = 'Your MetaGrowth Growth Path Assessment Report has been sent.';
+            setDeliveryStatus('Your MetaGrowth Growth Path Assessment Report has been sent.');
           } catch (e) {
             console.error('Assessment report email failed:', e);
-            E.status.textContent = `We could not send the email (${e.message || 'unknown error'}), but your MetaGrowth Growth Path Assessment Report is ready below.`;
+            setDeliveryStatus(`We could not send the email (${e.message || 'unknown error'}), but your MetaGrowth Growth Path Assessment Report is ready below.`);
           }
         }
         function payload(r) {
