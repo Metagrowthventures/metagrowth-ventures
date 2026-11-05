@@ -25,6 +25,7 @@ for (const [path, source, payload] of cases) {
       const records = []
       const messages = []
       t.mock.method(globalThis, 'fetch', async (url, init) => {
+        assert.equal(records.length, 1, 'lead is stored before any outbound request')
         if (String(url) === 'https://oauth2.googleapis.com/token') {
           return Response.json({ access_token: 'local-test-token' })
         }
@@ -63,6 +64,29 @@ for (const [path, source, payload] of cases) {
       if (source === 'pdf-gate') assert.match(messages[1], /https:\/\/metagrowth\.ventures\/static\/test\.pdf/)
     })
   }
+}
+
+for (const [path, source, payload] of cases) {
+  test(`${source}: thrown notification error cannot prevent KV persistence`, async (t) => {
+    const records = []
+    t.mock.method(console, 'error', () => {})
+    t.mock.method(globalThis, 'fetch', async () => {
+      assert.equal(records.length, 1)
+      throw new Error('Simulated network exception')
+    })
+    const response = await worker.fetch(new Request(`https://local.invalid${path}`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+    }), {
+      ...gmail,
+      SLACK_WEBHOOK_URL: 'https://slack.invalid/webhook',
+      LEADS: { put: async (key, value) => records.push(JSON.parse(value)) },
+    }, { waitUntil() {} })
+    // Existing handler error semantics remain unchanged; the lead survives the error.
+    assert.equal(response.status, 500)
+    assert.equal(records.length, 1)
+    assert.equal(records[0].source, source)
+    assert.equal(records[0].email, leadEmail)
+  })
 }
 
 test('application source contains no obsolete mailbox', () => {

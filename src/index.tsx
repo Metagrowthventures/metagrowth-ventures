@@ -194,6 +194,15 @@ app.post('/api/contact', async (c) => {
 
     const timestamp = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', dateStyle: 'medium', timeStyle: 'short' })
 
+    // Persist before notifications so delivery failures cannot discard the lead.
+    if (c.env.LEADS) {
+      await saveLead(c.env.LEADS, isCouncil ? 'founders-council' : 'contact-form', {
+        name, email, company, title, phone, revenue,
+        team_size: teamSize, solution, challenge, why, contribute,
+        submitted_at: timestamp,
+      })
+    }
+
     // -- 1. Slack notification ------------------------------------------------
     const slackWebhook = c.env.SLACK_WEBHOOK_URL
     if (slackWebhook) {
@@ -361,15 +370,6 @@ app.post('/api/contact', async (c) => {
       }
     }
 
-    // -- KV: persist lead for HubSpot pull -----------------------------------
-    if (c.env.LEADS) {
-      await saveLead(c.env.LEADS, isCouncil ? 'founders-council' : 'contact-form', {
-        name, email, company, title, phone, revenue,
-        team_size: teamSize, solution, challenge, why, contribute,
-        submitted_at: timestamp,
-      })
-    }
-
     return c.json({ ok: true })
   } catch (err) {
     console.error('Contact form error:', err)
@@ -399,6 +399,20 @@ app.post('/api/assessment', async (c) => {
       timeZone: 'America/New_York', dateStyle: 'medium', timeStyle: 'short'
     })
     const errors: string[] = []
+
+    // Persist before notifications so delivery failures cannot discard the lead.
+    if (c.env.LEADS) {
+      await saveLead(c.env.LEADS, 'assessment', {
+        name, first_name: firstName, last_name: lastName,
+        email, phone, company, role,
+        score, stage_badge: stageBadge, stage_title: stageTitle,
+        bottleneck_count: bottlenecks.length,
+        bottleneck_titles: bottlenecks.map(b => b.title),
+        utm_source, utm_medium, utm_campaign, utm_term, utm_content,
+        referrer, landing_page, source_url,
+        submitted_at: timestamp,
+      })
+    }
 
     // -- Bottleneck blocks (light — used in both emails) -----------------------
     const bottleneckEmailBlocks = bottlenecks.map((bn, i) => {
@@ -742,20 +756,6 @@ app.post('/api/assessment', async (c) => {
       }
     }
 
-    // -- KV: persist lead for HubSpot pull -----------------------------------
-    if (c.env.LEADS) {
-      await saveLead(c.env.LEADS, 'assessment', {
-        name, first_name: firstName, last_name: lastName,
-        email, phone, company, role,
-        score, stage_badge: stageBadge, stage_title: stageTitle,
-        bottleneck_count: bottlenecks.length,
-        bottleneck_titles: bottlenecks.map(b => b.title),
-        utm_source, utm_medium, utm_campaign, utm_term, utm_content,
-        referrer, landing_page, source_url,
-        submitted_at: timestamp,
-      })
-    }
-
     return c.json({ ok: errors.length === 0, errors })
   } catch (err) {
     console.error('Assessment notification error:', err)
@@ -791,6 +791,19 @@ app.post('/api/pdf-gate', async (c) => {
     const timestamp = new Date().toLocaleString('en-US', { timeZone: 'America/New_York', dateStyle: 'medium', timeStyle: 'short' })
 
     const errors: string[] = []
+
+    // Persist before notifications so delivery failures cannot discard the lead.
+    if (c.env.LEADS) {
+      await saveLead(c.env.LEADS, 'pdf-gate', {
+        name, first_name: firstName, last_name: lastName,
+        email, company, website, role, goal,
+        pdf_name: pdfName, pdf_url: pdfUrl, page_url: pageUrl,
+        utm_source: utmSource, utm_medium: utmMedium, utm_campaign: utmCampaign,
+        utm_term: utmTerm, utm_content: utmContent,
+        referrer, landing_page: landingPage,
+        submitted_at: timestamp,
+      })
+    }
 
     // -- 1. Slack notification ------------------------------------------------
     const slackWebhook = c.env.SLACK_WEBHOOK_URL
@@ -974,19 +987,6 @@ app.post('/api/pdf-gate', async (c) => {
         })
         if (!leadResult.ok) errors.push(`Lead email failed: ${leadResult.error}`)
       }
-    }
-
-    // -- KV: persist lead for HubSpot pull -----------------------------------
-    if (c.env.LEADS) {
-      await saveLead(c.env.LEADS, 'pdf-gate', {
-        name, first_name: firstName, last_name: lastName,
-        email, company, website, role, goal,
-        pdf_name: pdfName, pdf_url: pdfUrl, page_url: pageUrl,
-        utm_source: utmSource, utm_medium: utmMedium, utm_campaign: utmCampaign,
-        utm_term: utmTerm, utm_content: utmContent,
-        referrer, landing_page: landingPage,
-        submitted_at: timestamp,
-      })
     }
 
     return c.json({ ok: errors.length === 0, errors, pdfUrl })
