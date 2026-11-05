@@ -307,9 +307,9 @@ app.post('/api/contact', async (c) => {
   </div>
 </div></body></html>`
 
-      // -- Internal notification → info@metagrowth.ventures ------------------
+      // -- Internal notification → josh@metagrowth.ventures ------------------
       const gmailResult = await sendViaGmail(c.env, {
-        to: 'info@metagrowth.ventures',
+        to: 'josh@metagrowth.ventures',
         subject: emailSubject,
         html: contactHtml,
         replyTo: email,
@@ -332,7 +332,7 @@ app.post('/api/contact', async (c) => {
     <p style="font-size:15px;color:#111;margin:0 0 16px;">Hi ${name || 'there'},</p>
     <p style="font-size:15px;color:#333;line-height:1.7;margin:0 0 16px;">Thank you for applying to the <strong>Founders' Revenue Council™</strong>. We've received your application and will review it personally.</p>
     <p style="font-size:15px;color:#333;line-height:1.7;margin:0 0 16px;">If your profile is a strong fit, Josh will reach out directly within a few business days to discuss next steps.</p>
-    <p style="font-size:15px;color:#333;line-height:1.7;margin:0 0 24px;">In the meantime, if you have any questions, reply to this email or reach us at <a href="mailto:info@metagrowth.ventures" style="color:#ad7805;">info@metagrowth.ventures</a>.</p>
+    <p style="font-size:15px;color:#333;line-height:1.7;margin:0 0 24px;">In the meantime, if you have any questions, reply to this email or reach us at <a href="mailto:josh@metagrowth.ventures" style="color:#ad7805;">josh@metagrowth.ventures</a>.</p>
     <p style="font-size:15px;color:#333;margin:0;">— The MetaGrowth Ventures Team</p>
     <div style="margin-top:28px;padding-top:20px;border-top:1px solid #e2e8f0;font-size:12px;color:#9ca3af;">MetaGrowth Ventures · <a href="https://metagrowth.ventures" style="color:#ad7805;text-decoration:none;">metagrowth.ventures</a></div>
   </div>
@@ -355,7 +355,7 @@ app.post('/api/contact', async (c) => {
           to: email,
           subject: confirmSubject,
           html: confirmHtml,
-          replyTo: 'info@metagrowth.ventures',
+          replyTo: 'josh@metagrowth.ventures',
         })
         if (!confirmResult.ok) console.error('Gmail confirm error:', confirmResult.error)
       }
@@ -573,7 +573,7 @@ app.post('/api/assessment', async (c) => {
 </html>`
 
       const internalResult = await sendViaGmail(c.env, {
-        to: 'info@metagrowth.ventures',
+        to: 'josh@metagrowth.ventures',
         subject: `New Assessment: ${name} (${company}) - Score ${score}/100`,
         html: internalHtml,
         replyTo: email || undefined,
@@ -677,7 +677,7 @@ app.post('/api/assessment', async (c) => {
           to: email,
           subject: `Your Revenue Assessment Results - Score ${score}/100`,
           html: leadHtml,
-          replyTo: 'info@metagrowth.ventures',
+          replyTo: 'josh@metagrowth.ventures',
         })
         if (!leadResult.ok) {
           errors.push(`Lead email failed: ${leadResult.error}`)
@@ -938,7 +938,7 @@ app.post('/api/pdf-gate', async (c) => {
 </body></html>`
 
       const internalResult = await sendViaGmail(c.env, {
-        to: 'info@metagrowth.ventures',
+        to: 'josh@metagrowth.ventures',
         subject: `PDF Lead: ${name}${role ? ` · ${role}` : ''} @ ${company || emailDomain} — ${pdfName}`,
         html: internalHtml,
         replyTo: email,
